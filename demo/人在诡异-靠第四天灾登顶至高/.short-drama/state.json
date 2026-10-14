@@ -185,6 +185,23 @@
       "review": null,
       "updated_at": "2026-10-14T21:13:26.565056Z"
     },
+    "creator-decisions:CD-0011": {
+      "acceptance": {
+        "at": "2026-10-14T22:09:13.499218Z",
+        "decision": "accepted",
+        "note": "",
+        "outputs": {
+          "创作者决策/CD-0011-gothic-spectacle.jsonl": "abe7fd58c2678fcc61d1d0310bd7936d0d0c3cf4421245225b2eeaa86211164e"
+        }
+      },
+      "inputs": {},
+      "outputs": [
+        "创作者决策/CD-0011-gothic-spectacle.jsonl"
+      ],
+      "owner": "short-drama",
+      "review": null,
+      "updated_at": "2026-10-14T22:09:13.499235Z"
+    },
     "source-analysis:index": {
       "acceptance": null,
       "inputs": {
@@ -232,14 +249,14 @@
       "value_sha256": "ed5b6ab11e35df33c521fb79de90e1a888895b929b13b20f617a5ef3a64e8482"
     },
     "/creator_authority/visual_direction": {
-      "decision": "创作者决策/CD-0010-western-fantasy-otome-cg.jsonl#CD-0010",
-      "set_at": "2026-10-14T21:13:26.631128Z",
-      "value_sha256": "a0d8864dd5be7ff4d1c801e6a4828e5a09ab0a81e4033c4eabec1ca1a3a9cfda"
+      "decision": "创作者决策/CD-0011-gothic-spectacle.jsonl#CD-0011",
+      "set_at": "2026-10-14T22:09:13.564540Z",
+      "value_sha256": "c432c04f69bdd7792aa8db32a0a779b37719bcff2cac4127dc0e78dc4b2c7683"
     }
   },
   "last_action": "authority_set",
   "project_id": "SD-18CCF40428AA",
   "project_layout_mode": "canonical",
   "schema_version": "2.0",
-  "updated_at": "2026-10-14T21:13:26.631151Z"
+  "updated_at": "2026-10-14T22:09:13.564567Z"
 }
