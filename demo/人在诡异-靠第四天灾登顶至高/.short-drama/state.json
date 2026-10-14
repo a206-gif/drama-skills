@@ -3,14 +3,14 @@
     "EP000:image-prompts": {
       "acceptance": null,
       "inputs": {
-        "剧集/EP000/视觉设定.md": "859f05e6b2c636471ebdc63f794d3d25a9abe86729edf52c699178d326c409d8"
+        "剧集/EP000/视觉设定.md": "bf7336dd0d02f4378885c44647a0575f1037e276f404bb72d2107277fc2bd079"
       },
       "outputs": [
         "剧集/EP000/图片提示词.md"
       ],
       "owner": "short-drama-image-prompts",
       "review": null,
-      "updated_at": "2026-10-14T15:43:13.943828Z"
+      "updated_at": "2026-10-14T16:48:13.389533Z"
     },
     "EP000:script": {
       "acceptance": null,
@@ -28,14 +28,14 @@
       "acceptance": null,
       "inputs": {
         "剧集/EP000/剧本.md": "32c89be427736b444a8fd8b67add1303ff1eabf372f576e6b0f42d9afd6b6ecd",
-        "剧集/EP000/视觉设定.md": "859f05e6b2c636471ebdc63f794d3d25a9abe86729edf52c699178d326c409d8"
+        "剧集/EP000/视觉设定.md": "bf7336dd0d02f4378885c44647a0575f1037e276f404bb72d2107277fc2bd079"
       },
       "outputs": [
         "剧集/EP000/分镜.md"
       ],
       "owner": "short-drama-storyboard",
       "review": null,
-      "updated_at": "2026-10-14T15:43:08.889464Z"
+      "updated_at": "2026-10-14T16:48:13.457820Z"
     },
     "EP000:visual-bible": {
       "acceptance": null,
@@ -47,7 +47,7 @@
       ],
       "owner": "short-drama-assets",
       "review": null,
-      "updated_at": "2026-10-14T15:43:08.956952Z"
+      "updated_at": "2026-10-14T16:48:13.311881Z"
     },
     "creator-decisions:CD-0001": {
       "acceptance": {
@@ -82,6 +82,23 @@
       "owner": "short-drama",
       "review": null,
       "updated_at": "2026-10-14T15:06:37.763272Z"
+    },
+    "creator-decisions:CD-0005": {
+      "acceptance": {
+        "at": "2026-10-14T16:48:13.159540Z",
+        "decision": "accepted",
+        "note": "创作者 2026-10-15 指令：画风正式定为该逐字串；女性角色一律高挑九头身、必须美型不能丑",
+        "outputs": {
+          "创作者决策/CD-0005-style-and-figure.jsonl": "d7d4ea4b9893b0afc9d6eb9db4fd2417bae194d0b54e610cc80bd8f93e2315dd"
+        }
+      },
+      "inputs": {},
+      "outputs": [
+        "创作者决策/CD-0005-style-and-figure.jsonl"
+      ],
+      "owner": "short-drama",
+      "review": null,
+      "updated_at": "2026-10-14T16:48:13.159567Z"
     },
     "source-analysis:index": {
       "acceptance": null,
@@ -125,14 +142,14 @@
       "value_sha256": "43db00caad8c2d13338f160e7e1c771d26099cf1c6c9f5ae2ccd7ef82f1c6eb6"
     },
     "/creator_authority/visual_direction": {
-      "decision": "创作者决策/CD-0002-visual-direction.jsonl#CD-0003",
-      "set_at": "2026-10-14T15:06:37.829953Z",
-      "value_sha256": "29f072f895eba4b6f823e8b7195d61d5078ff99463b70a9f32bbda13f7110f44"
+      "decision": "创作者决策/CD-0005-style-and-figure.jsonl#CD-0005",
+      "set_at": "2026-10-14T16:48:13.237864Z",
+      "value_sha256": "f586a88ebd0b7ac7b02fd18dd266f5c9dbe171f8f27ce2a75ceb4c16556a4a66"
     }
   },
   "last_action": "published",
   "project_id": "SD-18CCF40428AA",
   "project_layout_mode": "canonical",
   "schema_version": "2.0",
-  "updated_at": "2026-10-14T15:44:44.026324Z"
+  "updated_at": "2026-10-14T16:48:13.457858Z"
 }
