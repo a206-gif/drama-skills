@@ -151,6 +151,40 @@
       "review": null,
       "updated_at": "2026-10-14T20:46:33.368323Z"
     },
+    "creator-decisions:CD-0009": {
+      "acceptance": {
+        "at": "2026-10-14T21:02:55.719591Z",
+        "decision": "accepted",
+        "note": "",
+        "outputs": {
+          "创作者决策/CD-0009-xianxia-cgi-style.jsonl": "4b74cd460c75835d63e31c406186f1c44c924ec8c7c20b268961c45c0a3393b9"
+        }
+      },
+      "inputs": {},
+      "outputs": [
+        "创作者决策/CD-0009-xianxia-cgi-style.jsonl"
+      ],
+      "owner": "short-drama",
+      "review": null,
+      "updated_at": "2026-10-14T21:02:55.719615Z"
+    },
+    "creator-decisions:CD-0010": {
+      "acceptance": {
+        "at": "2026-10-14T21:13:26.565037Z",
+        "decision": "accepted",
+        "note": "",
+        "outputs": {
+          "创作者决策/CD-0010-western-fantasy-otome-cg.jsonl": "3a650a39eeee4f50be6bdb973047ed58b9e5db82f3e9e21829b5085366c666bd"
+        }
+      },
+      "inputs": {},
+      "outputs": [
+        "创作者决策/CD-0010-western-fantasy-otome-cg.jsonl"
+      ],
+      "owner": "short-drama",
+      "review": null,
+      "updated_at": "2026-10-14T21:13:26.565056Z"
+    },
     "source-analysis:index": {
       "acceptance": null,
       "inputs": {
@@ -198,14 +232,14 @@
       "value_sha256": "ed5b6ab11e35df33c521fb79de90e1a888895b929b13b20f617a5ef3a64e8482"
     },
     "/creator_authority/visual_direction": {
-      "decision": "创作者决策/CD-0008-nun-style-anchor.jsonl#CD-0008",
-      "set_at": "2026-10-14T20:46:33.431074Z",
-      "value_sha256": "2f7cc2634409d0c1c2573f09f9e699ca12f91b959fbd0df037e2c38f0753619c"
+      "decision": "创作者决策/CD-0010-western-fantasy-otome-cg.jsonl#CD-0010",
+      "set_at": "2026-10-14T21:13:26.631128Z",
+      "value_sha256": "a0d8864dd5be7ff4d1c801e6a4828e5a09ab0a81e4033c4eabec1ca1a3a9cfda"
     }
   },
   "last_action": "authority_set",
   "project_id": "SD-18CCF40428AA",
   "project_layout_mode": "canonical",
   "schema_version": "2.0",
-  "updated_at": "2026-10-14T20:46:33.431096Z"
+  "updated_at": "2026-10-14T21:13:26.631151Z"
 }
