@@ -100,6 +100,40 @@
       "review": null,
       "updated_at": "2026-10-14T16:48:13.159567Z"
     },
+    "creator-decisions:CD-0006": {
+      "acceptance": {
+        "at": "2026-10-14T20:41:37.629403Z",
+        "decision": "accepted",
+        "note": "",
+        "outputs": {
+          "创作者决策/CD-0006-production-profile.jsonl": "2d722e93f2045358cf6779dc80059d4422ab888cdcada0c9090469a4eb24eba1"
+        }
+      },
+      "inputs": {},
+      "outputs": [
+        "创作者决策/CD-0006-production-profile.jsonl"
+      ],
+      "owner": "short-drama",
+      "review": null,
+      "updated_at": "2026-10-14T20:41:37.629421Z"
+    },
+    "creator-decisions:CD-0007": {
+      "acceptance": {
+        "at": "2026-10-14T20:42:05.104181Z",
+        "decision": "accepted",
+        "note": "",
+        "outputs": {
+          "创作者决策/CD-0007-production-constraints.jsonl": "aeed5ef35f5d9ab9d03c57f4c8e44449cd9818326b5cffe31154de90a9c3776a"
+        }
+      },
+      "inputs": {},
+      "outputs": [
+        "创作者决策/CD-0007-production-constraints.jsonl"
+      ],
+      "owner": "short-drama",
+      "review": null,
+      "updated_at": "2026-10-14T20:42:05.104205Z"
+    },
     "source-analysis:index": {
       "acceptance": null,
       "inputs": {
@@ -137,9 +171,14 @@
   },
   "authority": {
     "/creator_authority/constraints": {
-      "decision": "创作者决策/CD-0001-promo-scope.jsonl#CD-0004",
-      "set_at": "2026-10-14T15:19:10.159108Z",
-      "value_sha256": "43db00caad8c2d13338f160e7e1c771d26099cf1c6c9f5ae2ccd7ef82f1c6eb6"
+      "decision": "创作者决策/CD-0007-production-constraints.jsonl#CD-0007",
+      "set_at": "2026-10-14T20:42:05.170897Z",
+      "value_sha256": "e1cd5b1e5b46916af7ae34af73fc4216457b466c80177cf877c5e2bfe25c7fe3"
+    },
+    "/creator_authority/production_profile/choices": {
+      "decision": "创作者决策/CD-0006-production-profile.jsonl#CD-0006",
+      "set_at": "2026-10-14T20:41:37.693020Z",
+      "value_sha256": "ed5b6ab11e35df33c521fb79de90e1a888895b929b13b20f617a5ef3a64e8482"
     },
     "/creator_authority/visual_direction": {
       "decision": "创作者决策/CD-0005-style-and-figure.jsonl#CD-0005",
@@ -147,9 +186,9 @@
       "value_sha256": "f586a88ebd0b7ac7b02fd18dd266f5c9dbe171f8f27ce2a75ceb4c16556a4a66"
     }
   },
-  "last_action": "published",
+  "last_action": "authority_set",
   "project_id": "SD-18CCF40428AA",
   "project_layout_mode": "canonical",
   "schema_version": "2.0",
-  "updated_at": "2026-10-14T17:04:40.822697Z"
+  "updated_at": "2026-10-14T20:42:05.170923Z"
 }

@@ -6,7 +6,9 @@
       "改编素材范围锁定原著第 1–12 章；第 13 章及以后本轮不进入任何创作文档",
       "快评（triage）结论已接受：值得拆；全量改编成本在第 76 章断崖，本阶段不碰",
       "制作管线是生成式的，没有 rig。不存在模型与骨骼，也不存在可复用的动作库；每一格画面由生成器独立产出，一致性只能来自参考图、连续性锁与每镜重复的身份描述。下游不要写出依赖 rig 的镜头（可复用循环动作、跨镜绝对一致的脸、精细手部交互）",
-      "提示词正文语言为简体中文（zh-CN）。图片提示词、冻结关键帧、视频提示词三份正文都用中文写"
+      "提示词正文语言为简体中文（zh-CN）。图片提示词、冻结关键帧、视频提示词三份正文都用中文写",
+      "EP000 修女希维尔以输入/参考图/REF-XIWEIER-修女定稿.jpeg为正式身份与本集黑白礼裙造型；旧角色板不再用于正式镜头",
+      "本轮 Seedance 2.5 每次生成选择 15 秒，允许多张参考图；15 秒是执行请求设置，不是每个分镜的剪辑镜长或模型原生最短时长"
     ],
     "decisions_artifact": "创作者决策/",
     "delivery_surface": {
@@ -16,8 +18,23 @@
       "status": "unset"
     },
     "production_profile": {
-      "choices": {},
-      "status": "unset"
+      "choices": {
+        "audio_generation": "same_pass",
+        "native_duration_seconds": {
+          "max": 30,
+          "min": 4
+        },
+        "supported_generation_modes": [
+          "text",
+          "reference",
+          "edit",
+          "extend"
+        ],
+        "target_video_model": "seedance-2.5",
+        "video_prompt_dialect": "seedance-2.5",
+        "video_prompt_language": "zh-CN"
+      },
+      "status": "accepted"
     },
     "rhythm_profile": {
       "status": "unset"
