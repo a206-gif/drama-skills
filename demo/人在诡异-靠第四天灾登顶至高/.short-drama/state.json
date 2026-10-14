@@ -47,7 +47,7 @@
       ],
       "owner": "short-drama-assets",
       "review": null,
-      "updated_at": "2026-10-14T16:48:13.311881Z"
+      "updated_at": "2026-10-14T17:04:40.822472Z"
     },
     "creator-decisions:CD-0001": {
       "acceptance": {
@@ -151,5 +151,5 @@
   "project_id": "SD-18CCF40428AA",
   "project_layout_mode": "canonical",
   "schema_version": "2.0",
-  "updated_at": "2026-10-14T16:48:13.457858Z"
+  "updated_at": "2026-10-14T17:04:40.822697Z"
 }
