@@ -134,6 +134,23 @@
       "review": null,
       "updated_at": "2026-10-14T20:42:05.104205Z"
     },
+    "creator-decisions:CD-0008": {
+      "acceptance": {
+        "at": "2026-10-14T20:46:33.368304Z",
+        "decision": "accepted",
+        "note": "",
+        "outputs": {
+          "创作者决策/CD-0008-nun-style-anchor.jsonl": "6b1a8a7692932fff38947b59a3683c8e2de0fdcb289d0a37d9f634bb58f77b32"
+        }
+      },
+      "inputs": {},
+      "outputs": [
+        "创作者决策/CD-0008-nun-style-anchor.jsonl"
+      ],
+      "owner": "short-drama",
+      "review": null,
+      "updated_at": "2026-10-14T20:46:33.368323Z"
+    },
     "source-analysis:index": {
       "acceptance": null,
       "inputs": {
@@ -181,14 +198,14 @@
       "value_sha256": "ed5b6ab11e35df33c521fb79de90e1a888895b929b13b20f617a5ef3a64e8482"
     },
     "/creator_authority/visual_direction": {
-      "decision": "创作者决策/CD-0005-style-and-figure.jsonl#CD-0005",
-      "set_at": "2026-10-14T16:48:13.237864Z",
-      "value_sha256": "f586a88ebd0b7ac7b02fd18dd266f5c9dbe171f8f27ce2a75ceb4c16556a4a66"
+      "decision": "创作者决策/CD-0008-nun-style-anchor.jsonl#CD-0008",
+      "set_at": "2026-10-14T20:46:33.431074Z",
+      "value_sha256": "2f7cc2634409d0c1c2573f09f9e699ca12f91b959fbd0df037e2c38f0753619c"
     }
   },
   "last_action": "authority_set",
   "project_id": "SD-18CCF40428AA",
   "project_layout_mode": "canonical",
   "schema_version": "2.0",
-  "updated_at": "2026-10-14T20:42:05.170923Z"
+  "updated_at": "2026-10-14T20:46:33.431096Z"
 }
