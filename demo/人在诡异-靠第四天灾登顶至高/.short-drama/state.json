@@ -1,0 +1,138 @@
+{
+  "artifacts": {
+    "EP000:image-prompts": {
+      "acceptance": null,
+      "inputs": {
+        "剧集/EP000/视觉设定.md": "859f05e6b2c636471ebdc63f794d3d25a9abe86729edf52c699178d326c409d8"
+      },
+      "outputs": [
+        "剧集/EP000/图片提示词.md"
+      ],
+      "owner": "short-drama-image-prompts",
+      "review": null,
+      "updated_at": "2026-10-14T15:43:13.943828Z"
+    },
+    "EP000:script": {
+      "acceptance": null,
+      "inputs": {
+        "项目开发/source-analysis/_index.json": "ff5c26c7ca48d98312dd7c1f0b0394caa3563ca4d3360591359b7180b52fadb9"
+      },
+      "outputs": [
+        "剧集/EP000/剧本.md"
+      ],
+      "owner": "short-drama-write",
+      "review": null,
+      "updated_at": "2026-10-14T14:50:40.234628Z"
+    },
+    "EP000:storyboard": {
+      "acceptance": null,
+      "inputs": {
+        "剧集/EP000/剧本.md": "32c89be427736b444a8fd8b67add1303ff1eabf372f576e6b0f42d9afd6b6ecd",
+        "剧集/EP000/视觉设定.md": "859f05e6b2c636471ebdc63f794d3d25a9abe86729edf52c699178d326c409d8"
+      },
+      "outputs": [
+        "剧集/EP000/分镜.md"
+      ],
+      "owner": "short-drama-storyboard",
+      "review": null,
+      "updated_at": "2026-10-14T15:43:08.889464Z"
+    },
+    "EP000:visual-bible": {
+      "acceptance": null,
+      "inputs": {
+        "剧集/EP000/剧本.md": "32c89be427736b444a8fd8b67add1303ff1eabf372f576e6b0f42d9afd6b6ecd"
+      },
+      "outputs": [
+        "剧集/EP000/视觉设定.md"
+      ],
+      "owner": "short-drama-assets",
+      "review": null,
+      "updated_at": "2026-10-14T15:43:08.956952Z"
+    },
+    "creator-decisions:CD-0001": {
+      "acceptance": {
+        "at": "2026-10-14T15:19:10.093975Z",
+        "decision": "accepted",
+        "note": "创作者答复：没有 rig；提示词用中文",
+        "outputs": {
+          "创作者决策/CD-0001-promo-scope.jsonl": "79764870efe624c5923b39d9e61d4845dd7fa05149d6f1504a4bd681c9b150f8"
+        }
+      },
+      "inputs": {},
+      "outputs": [
+        "创作者决策/CD-0001-promo-scope.jsonl"
+      ],
+      "owner": "short-drama",
+      "review": null,
+      "updated_at": "2026-10-14T15:19:10.093995Z"
+    },
+    "creator-decisions:CD-0002": {
+      "acceptance": {
+        "at": "2026-10-14T15:06:37.763249Z",
+        "decision": "accepted",
+        "note": "创作者补充：美型只给主角档；光头躯体不刻意美型，仅保持同一渲染画风",
+        "outputs": {
+          "创作者决策/CD-0002-visual-direction.jsonl": "51d3f518464680d4dad4a867d0986f404f2fada303e31fdcc1693a3fac220ef4"
+        }
+      },
+      "inputs": {},
+      "outputs": [
+        "创作者决策/CD-0002-visual-direction.jsonl"
+      ],
+      "owner": "short-drama",
+      "review": null,
+      "updated_at": "2026-10-14T15:06:37.763272Z"
+    },
+    "source-analysis:index": {
+      "acceptance": null,
+      "inputs": {
+        "输入/人在诡异，靠第四天灾登顶至高_我时糕手_.txt": "9bdae5b2dd5c5af6df4209172525ed20458b42098589f7f4a8aafacc2b53210f"
+      },
+      "outputs": [
+        "项目开发/source-analysis/_index.json"
+      ],
+      "owner": "short-drama-novel-analyze",
+      "review": null,
+      "updated_at": "2026-10-14T14:41:39.372270Z"
+    },
+    "source-analysis:progress": {
+      "acceptance": null,
+      "inputs": {},
+      "outputs": [
+        "项目开发/source-analysis/_progress.md"
+      ],
+      "owner": "short-drama-novel-analyze",
+      "review": null,
+      "updated_at": "2026-10-14T15:44:44.026300Z"
+    },
+    "source-analysis:triage": {
+      "acceptance": null,
+      "inputs": {
+        "项目开发/source-analysis/_index.json": "ff5c26c7ca48d98312dd7c1f0b0394caa3563ca4d3360591359b7180b52fadb9"
+      },
+      "outputs": [
+        "项目开发/source-analysis/triage.md"
+      ],
+      "owner": "short-drama-novel-analyze",
+      "review": null,
+      "updated_at": "2026-10-14T14:42:40.766573Z"
+    }
+  },
+  "authority": {
+    "/creator_authority/constraints": {
+      "decision": "创作者决策/CD-0001-promo-scope.jsonl#CD-0004",
+      "set_at": "2026-10-14T15:19:10.159108Z",
+      "value_sha256": "43db00caad8c2d13338f160e7e1c771d26099cf1c6c9f5ae2ccd7ef82f1c6eb6"
+    },
+    "/creator_authority/visual_direction": {
+      "decision": "创作者决策/CD-0002-visual-direction.jsonl#CD-0003",
+      "set_at": "2026-10-14T15:06:37.829953Z",
+      "value_sha256": "29f072f895eba4b6f823e8b7195d61d5078ff99463b70a9f32bbda13f7110f44"
+    }
+  },
+  "last_action": "published",
+  "project_id": "SD-18CCF40428AA",
+  "project_layout_mode": "canonical",
+  "schema_version": "2.0",
+  "updated_at": "2026-10-14T15:44:44.026324Z"
+}

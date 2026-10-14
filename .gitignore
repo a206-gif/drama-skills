@@ -15,7 +15,18 @@ maintainers/evals/
 # Scratch space for local showcase workspaces: real creator projects, opened in
 # the dashboard, carrying generated media and provider responses. Nothing here
 # ships. The published excerpt chain lives in examples/excerpt-chain/.
-/demo/
+# 写成 /demo/* 而不是 /demo/：排除一个目录本身之后，里面的文件无法再用 ! 规则
+# 单独放回来（gitignore 的父目录规则），而那条例外正是下面要做的。
+/demo/*
+
+# 例外（2026-10-14，创作者要求）：这一个 demo 项目要留在分支上供创作者直接取用
+# （剧本、视觉设定、图片提示词、分镜、创作者决策、参考图）。正文是外部输入
+# （第三方文本，2.1 MB），不进库；参考图要留在库里，因为两份交付文档的 `REF-...`
+# 槽位按项目相对路径指向它们。合并进 main 之前要连同这条例外一起评估。
+!/demo/人在诡异-靠第四天灾登顶至高/
+demo/人在诡异-靠第四天灾登顶至高/输入/*.txt
+# 索引工作区的抽样正文同样是第三方文本，不进库（_index.json 这类元数据进库）。
+demo/人在诡异-靠第四天灾登顶至高/项目开发/source-analysis/_work/
 
 # 项目锁是运行时产物，不随参考运行分发。
 **/.short-drama/project.lock
