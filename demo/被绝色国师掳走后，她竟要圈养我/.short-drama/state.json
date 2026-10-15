@@ -1,0 +1,48 @@
+{
+  "artifacts": {
+    "creator-decisions": {
+      "acceptance": {
+        "at": "2026-10-15T12:26:19.301423Z",
+        "decision": "accepted",
+        "note": "",
+        "outputs": {
+          "创作者决策/CD-seedance.jsonl": "495d67577386c8795a1179748a41814505d95bf02c8caeae039c1d230a9ff19c"
+        }
+      },
+      "inputs": {},
+      "outputs": [
+        "创作者决策/CD-seedance.jsonl"
+      ],
+      "owner": "short-drama",
+      "review": null,
+      "updated_at": "2026-10-15T12:26:19.301438Z"
+    }
+  },
+  "authority": {
+    "/creator_authority/production_profile/choices": {
+      "decision": "创作者决策/CD-seedance.jsonl#CD-01-production-profile",
+      "set_at": "2026-10-15T12:26:15.064580Z",
+      "value_sha256": "ddab8206c72cd0ea449c97cfc8abf9b1df6873a5a768c62819b8c97fbea362fb"
+    },
+    "/creator_authority/visual_direction/choices": {
+      "decision": "创作者决策/CD-seedance.jsonl#CD-02-visual-direction",
+      "set_at": "2026-10-15T12:26:15.117209Z",
+      "value_sha256": "5a28df4e51424333d029a98b2f523bb77d078f6669bd6e9bfccbf7901bb07d58"
+    },
+    "/format/pacing": {
+      "decision": "创作者决策/CD-seedance.jsonl#CD-03b-pacing",
+      "set_at": "2026-10-15T12:26:19.353625Z",
+      "value_sha256": "d6f1315385d8666b11e9831151b840a3e3b5f0ae072131960d9405abc3b86635"
+    },
+    "/format/target_seconds_per_episode": {
+      "decision": "创作者决策/CD-seedance.jsonl#CD-03a-target-seconds",
+      "set_at": "2026-10-15T12:26:15.168335Z",
+      "value_sha256": "94e634ac63620eab982ebd55f5f8862038782070d9f2e7f3c252b2f4c48d3193"
+    }
+  },
+  "last_action": "authority_set",
+  "project_id": "SD-0BE092BCC5D2",
+  "project_layout_mode": "canonical",
+  "schema_version": "2.0",
+  "updated_at": "2026-10-15T12:26:19.353641Z"
+}

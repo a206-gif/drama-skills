@@ -1,0 +1,62 @@
+{
+  "created_at": "2026-10-15T12:25:47.385785Z",
+  "creator_authority": {
+    "constraints": [],
+    "decisions_artifact": "创作者决策/",
+    "delivery_surface": {
+      "aspect": null,
+      "overlay_regions": [],
+      "source_ref": null,
+      "status": "unset"
+    },
+    "production_profile": {
+      "choices": {
+        "audio_generation": "same_pass",
+        "native_duration_seconds": {
+          "max": 10,
+          "min": 5
+        },
+        "notes": "竖屏 9:16；单条短片约 45 秒，由多条 5-10 秒原生镜头拼接",
+        "supported_generation_modes": [
+          "text",
+          "first_frame",
+          "first_last_frame",
+          "reference"
+        ],
+        "target_video_model": "jimeng-seedance-2.5",
+        "video_prompt_dialect": "seedance-2.5",
+        "video_prompt_language": "zh"
+      },
+      "status": "accepted"
+    },
+    "rhythm_profile": {
+      "status": "unset"
+    },
+    "visual_direction": {
+      "choices": {
+        "generation_tool": "Seedream",
+        "look_development": "character-sheet-seedream",
+        "notes": "图在 Seedream 出；本机模型解析加权语法偏平，已确认模型差异",
+        "reference_images": [
+          "画风图/微信图片_20261015005004_111_160.jpg"
+        ],
+        "style_baseline": "(Chinese xianxia 3D CGI:1.3) + (Unreal Engine 5 render:1.2)"
+      },
+      "status": "accepted"
+    }
+  },
+  "format": {
+    "aspect_ratio": "9:16",
+    "episode_count": 6,
+    "pacing": {
+      "seconds_per_action_paragraph": 3.5,
+      "spoken_characters_per_second": 4.7
+    },
+    "prompt_language": "zh",
+    "target_seconds_per_episode": 45.0
+  },
+  "language": "zh",
+  "project_id": "SD-0BE092BCC5D2",
+  "schema_version": "1.0.0-draft",
+  "title": "被绝色国师掳走后，她竟要圈养我"
+}

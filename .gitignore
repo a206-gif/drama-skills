@@ -15,7 +15,11 @@ maintainers/evals/
 # Scratch space for local showcase workspaces: real creator projects, opened in
 # the dashboard, carrying generated media and provider responses. Nothing here
 # ships. The published excerpt chain lives in examples/excerpt-chain/.
-/demo/
+/demo/*
+# 例外：创作者点名的成品项目入库（图片曾在工作区重置中丢失一次，见该目录 README）。
+!/demo/被绝色国师掳走后，她竟要圈养我/
+# 正文不入库：仓库根目录已有被跟踪的同名 txt。
+/demo/被绝色国师掳走后，她竟要圈养我/输入/*.txt
 
 # 项目锁是运行时产物，不随参考运行分发。
 **/.short-drama/project.lock
