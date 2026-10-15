@@ -47,7 +47,7 @@
     }
   },
   "format": {
-    "aspect_ratio": "9:16",
+    "aspect_ratio": "16:9",
     "episode_count": null,
     "pacing": {
       "seconds_per_action_paragraph": null,
