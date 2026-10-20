@@ -2,47 +2,39 @@
   "image": "漫画改编/第08话/P5-拉勾.png",
   "output": "漫画改编/第08话/P5-拉勾-贴字.png",
   "font": "漫画改编/工具/CJK.ttf",
-  "min_font": 15,
+  "min_font": 14,
   "items": [
     {
-      "type": "narr",
+      "type": "box",
       "panel": 1,
       "corner": "tl",
-      "width": 0.42,
+      "width": 0.26,
       "lines": [
-        "他把她的脚抱在",
-        "怀里暖着。"
+        "他把她的脚",
+        "抱在怀里暖着。"
       ]
     },
     {
-      "type": "bubble",
+      "type": "oval",
       "panel": 2,
       "at": [
-        0.3,
-        0.07
+        0.26,
+        0.11
       ],
-      "tail": [
-        0.32,
-        0.3
-      ],
-      "width": 0.44,
+      "width": 0.28,
       "lines": [
         "你的人生，",
         "不是只有我。"
       ]
     },
     {
-      "type": "bubble",
+      "type": "oval",
       "panel": 3,
       "at": [
-        0.32,
-        0.1
+        0.3,
+        0.11
       ],
-      "tail": [
-        0.52,
-        0.26
-      ],
-      "width": 0.36,
+      "width": 0.2,
       "lines": [
         "好，拉勾。"
       ]

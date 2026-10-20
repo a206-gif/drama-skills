@@ -2,67 +2,54 @@
   "image": "漫画改编/第08话/P4-蟹肉.png",
   "output": "漫画改编/第08话/P4-蟹肉-贴字.png",
   "font": "漫画改编/工具/CJK.ttf",
-  "min_font": 15,
+  "min_font": 14,
   "items": [
     {
-      "type": "bubble",
+      "type": "oval",
       "panel": 1,
       "at": [
-        0.3,
-        0.09
+        0.5,
+        0.1
       ],
-      "tail": [
-        0.28,
-        0.34
-      ],
-      "width": 0.42,
+      "width": 0.34,
       "lines": [
         "一个小孩子而已，",
         "随便糊弄糊弄就好。"
       ]
     },
     {
-      "type": "bubble",
+      "type": "oval",
       "panel": 2,
       "at": [
-        0.52,
-        0.07
+        0.26,
+        0.1
       ],
-      "tail": [
-        0.54,
-        0.34
-      ],
-      "width": 0.42,
+      "width": 0.24,
       "lines": [
         "你们端着",
         "什么？"
       ]
     },
     {
-      "type": "narr",
-      "panel": 4,
+      "type": "box",
+      "panel": 3,
       "corner": "tl",
-      "width": 0.38,
+      "width": 0.27,
       "lines": [
         "花花扑了下去，",
         "守住了楼梯。"
       ]
     },
     {
-      "type": "bubble",
-      "panel": 4,
+      "type": "oval",
+      "panel": 3,
       "at": [
         0.8,
-        0.1
+        0.14
       ],
-      "tail": [
-        0.86,
-        0.32
-      ],
-      "width": 0.32,
+      "width": 0.18,
       "lines": [
-        "里面有",
-        "蟹肉。"
+        "里面有蟹肉。"
       ]
     }
   ]

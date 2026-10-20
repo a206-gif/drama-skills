@@ -33,6 +33,9 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 STYLES = {
+    # 第 01 话版式：细边小方框（旁白/心声/画外音）与椭圆气泡（对白）
+    "box": {"fill": (255, 255, 255, 238), "ink": (28, 28, 30, 255), "edge": (42, 42, 44, 255), "width": 2},
+    "oval": {"fill": (255, 255, 255, 241), "ink": (26, 26, 28, 255), "edge": (50, 50, 52, 255), "width": 2},
     "bubble": {"fill": (255, 255, 255, 244), "ink": (18, 18, 20, 255), "edge": (20, 20, 22, 255), "width": 3},
     "narr": {"fill": (252, 250, 244, 236), "ink": (24, 24, 26, 255), "edge": (24, 24, 26, 255), "width": 3},
     "sys": {"fill": (18, 48, 104, 232), "ink": (235, 246, 255, 255), "edge": (96, 186, 255, 255), "width": 3},
@@ -209,6 +212,103 @@ def draw_bubble(canvas: Image.Image, rect, item, font_path, min_size):
         ty += line_h
 
 
+def _place(item, x0, y0, pw, ph, box_w, box_h, margin):
+    """按 at（中心比例）或 corner 计算框左上角。"""
+    if item.get("at"):
+        bx = x0 + int(pw * item["at"][0]) - box_w // 2
+        by = y0 + int(ph * item["at"][1]) - box_h // 2
+        bx = min(max(bx, x0 + margin), x0 + pw - margin - box_w)
+        by = min(max(by, y0 + margin), y0 + ph - margin - box_h)
+        return bx, by
+    corner = item.get("corner", "tl")
+    bx = x0 + margin if corner[1] == "l" else x0 + pw - margin - box_w
+    by = y0 + margin if corner[0] == "t" else y0 + ph - margin - box_h
+    return bx, by
+
+
+def _draw_tail(od, style, bx, by, box_w, box_h, tip, ph):
+    """细锥尾：根窄尖长，根部压进框内，末端指向说话者。"""
+    import math
+    tx, ty = tip
+    cx0, cy0 = bx + box_w // 2, by + box_h // 2
+    if bx - 6 <= tx <= bx + box_w + 6 and by - 6 <= ty <= by + box_h + 6:
+        return
+    max_len = max(box_h * 0.9, ph * 0.20)
+    dx, dy = tx - cx0, ty - cy0
+    dist = math.hypot(dx, dy) or 1
+    if dist > max_len:
+        tx, ty = int(cx0 + dx / dist * max_len), int(cy0 + dy / dist * max_len)
+        dx, dy, dist = tx - cx0, ty - cy0, max_len
+    ang = math.atan2(dy, dx)
+    rx, ry = box_w / 2, box_h / 2
+    t = 1.0 / math.sqrt((math.cos(ang) / rx) ** 2 + (math.sin(ang) / ry) ** 2)
+    ex, ey = cx0 + t * math.cos(ang), cy0 + t * math.sin(ang)
+    half = max(box_w * 0.07, 8)
+    nx, ny = -math.sin(ang), math.cos(ang)
+    ix, iy = cx0 + (ex - cx0) * 0.94, cy0 + (ey - cy0) * 0.94
+    od.polygon([(ix + nx * half, iy + ny * half), (tx, ty), (ix - nx * half, iy - ny * half)],
+               fill=style["fill"], outline=style["edge"])
+    od.line([(ix + nx * half * 0.92, iy + ny * half * 0.92), (tx, ty)],
+            fill=style["edge"], width=style["width"])
+    od.line([(ix - nx * half * 0.92, iy - ny * half * 0.92), (tx, ty)],
+            fill=style["edge"], width=style["width"])
+
+
+def draw_box(canvas: Image.Image, rect, item, font_path, min_size):
+    """第 01 话的细边小方框：旁白 / 心声 / 画外音。"""
+    x0, y0, x1, y1 = rect
+    pw, ph = x1 - x0, y1 - y0
+    style = STYLES["box"]
+    box_w = int(pw * item.get("width", 0.30))
+    pad = max(8, int(box_w * 0.055))
+    text = "\n".join(item["lines"])
+    font, lines, line_h = fit_lines(text, font_path, box_w - 2 * pad, int(ph * 0.34),
+                                    int(pw * 0.030), min_size)
+    box_h = line_h * len(lines) + 2 * pad
+    bx, by = _place(item, x0, y0, pw, ph, box_w, box_h, int(pw * 0.018))
+    overlay = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
+    od = ImageDraw.Draw(overlay)
+    if item.get("tail"):
+        _draw_tail(od, style, bx, by, box_w, box_h,
+                   (x0 + int(pw * item["tail"][0]), y0 + int(ph * item["tail"][1])), ph)
+    od.rectangle((bx, by, bx + box_w, by + box_h), fill=style["fill"],
+                 outline=style["edge"], width=style["width"])
+    canvas.alpha_composite(overlay)
+    d = ImageDraw.Draw(canvas)
+    ty = by + pad
+    for line in lines:
+        d.text((bx + pad, ty), line, font=font, fill=style["ink"])
+        ty += line_h
+
+
+def draw_oval(canvas: Image.Image, rect, item, font_path, min_size):
+    """第 01 话的椭圆气泡：对白。"""
+    x0, y0, x1, y1 = rect
+    pw, ph = x1 - x0, y1 - y0
+    style = STYLES["oval"]
+    box_w = int(pw * item.get("width", 0.34))
+    pad = max(10, int(box_w * 0.10))
+    text = "\n".join(item["lines"])
+    font, lines, line_h = fit_lines(text, font_path, box_w - 2 * pad, int(ph * 0.36),
+                                    int(pw * 0.030), min_size)
+    box_h = line_h * len(lines) + 2 * pad
+    bx, by = _place(item, x0, y0, pw, ph, box_w, box_h, int(pw * 0.02))
+    overlay = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
+    od = ImageDraw.Draw(overlay)
+    if item.get("tail"):
+        _draw_tail(od, style, bx, by, box_w, box_h,
+                   (x0 + int(pw * item["tail"][0]), y0 + int(ph * item["tail"][1])), ph)
+    od.ellipse((bx, by, bx + box_w, by + box_h), fill=style["fill"],
+               outline=style["edge"], width=style["width"])
+    canvas.alpha_composite(overlay)
+    d = ImageDraw.Draw(canvas)
+    ty = by + pad + max(0, (box_h - 2 * pad - line_h * len(lines)) // 2)
+    for line in lines:
+        w = font.getlength(line)
+        d.text((bx + (box_w - w) / 2, ty), line, font=font, fill=style["ink"])
+        ty += line_h
+
+
 def draw_narr(canvas: Image.Image, rect, item, font_path, min_size):
     x0, y0, x1, y1 = rect
     pw, ph = x1 - x0, y1 - y0
@@ -301,6 +401,10 @@ def main(argv):
         kind = item.get("type", "bubble")
         if kind == "bubble":
             draw_bubble(canvas, rect, item, font_path, min_size)
+        elif kind == "box":
+            draw_box(canvas, rect, item, font_path, min_size)
+        elif kind == "oval":
+            draw_oval(canvas, rect, item, font_path, min_size)
         elif kind == "narr":
             draw_narr(canvas, rect, item, font_path, min_size)
         elif kind == "sys":
