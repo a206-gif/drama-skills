@@ -1,0 +1,57 @@
+{
+  "image": "漫画改编/第05话/P3-狗牌.png",
+  "output": "漫画改编/第05话/P3-狗牌-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 14,
+  "items": [
+    {
+      "type": "box",
+      "panel": 1,
+      "corner": "tl",
+      "width": 0.22,
+      "lines": [
+        "小花翻着肚皮，",
+        "求摸。"
+      ]
+    },
+    {
+      "type": "oval",
+      "panel": 2,
+      "corner": "tr",
+      "width": 0.2,
+      "lines": [
+        "为什么",
+        "我没有？"
+      ]
+    },
+    {
+      "type": "oval",
+      "panel": 2,
+      "corner": "bl",
+      "width": 0.22,
+      "lines": [
+        "狗牌……",
+        "是狗戴的。"
+      ]
+    },
+    {
+      "type": "oval",
+      "panel": 3,
+      "corner": "tr",
+      "width": 0.3,
+      "lines": [
+        "戴了牌，大家就知道",
+        "我是姐姐的人。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "bl",
+      "width": 0.2,
+      "lines": [
+        "小狗永远忠诚。"
+      ]
+    }
+  ]
+}

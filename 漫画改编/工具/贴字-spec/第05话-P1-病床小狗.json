@@ -1,0 +1,38 @@
+{
+  "image": "漫画改编/第05话/P1-病床小狗.png",
+  "output": "漫画改编/第05话/P1-病床小狗-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 14,
+  "items": [
+    {
+      "type": "box",
+      "panel": 1,
+      "corner": "tl",
+      "width": 0.26,
+      "lines": [
+        "她醒来时，",
+        "是海城的清晨。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "corner": "tl",
+      "width": 0.24,
+      "lines": [
+        "他把脑袋，",
+        "蹭进她的掌心。"
+      ]
+    },
+    {
+      "type": "oval",
+      "panel": 3,
+      "corner": "bl",
+      "width": 0.44,
+      "lines": [
+        "他抢了小花的位置！",
+        "还说自己是姐姐的小狗！"
+      ]
+    }
+  ]
+}

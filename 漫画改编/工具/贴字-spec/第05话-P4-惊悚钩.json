@@ -1,0 +1,48 @@
+{
+  "image": "漫画改编/第05话/P4-惊悚钩.png",
+  "output": "漫画改编/第05话/P4-惊悚钩-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 14,
+  "items": [
+    {
+      "type": "oval",
+      "panel": 1,
+      "corner": "tr",
+      "width": 0.28,
+      "lines": [
+        "沈凝死前，",
+        "有人付过一笔钱。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "corner": "bl",
+      "width": 0.26,
+      "lines": [
+        "后视镜里，",
+        "他的眼神不像孩子。"
+      ]
+    },
+    {
+      "type": "oval",
+      "panel": 3,
+      "corner": "tr",
+      "width": 0.34,
+      "lines": [
+        "妈妈早就死掉了。",
+        "他们都会死的。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "bl",
+      "width": 0.3,
+      "lines": [
+        "我会送他们……",
+        "去陪妈妈。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "image": "漫画改编/第04话/P3-钉死.png",
+  "output": "漫画改编/第04话/P3-钉死-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 14,
+  "items": [
+    {
+      "type": "box",
+      "panel": 1,
+      "corner": "tl",
+      "width": 0.24,
+      "lines": [
+        "监控显示：她下午",
+        "就在医院门外。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "corner": "bl",
+      "width": 0.2,
+      "lines": [
+        "姐姐没骗人。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "bl",
+      "width": 0.3,
+      "lines": [
+        "苏梨……",
+        "要是去死就好了。"
+      ]
+    }
+  ]
+}
