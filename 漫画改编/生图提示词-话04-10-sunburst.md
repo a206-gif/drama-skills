@@ -51,7 +51,7 @@
 ---
 ---
 
-# 第 5 话｜小花登场·杀狗记忆闪回·苏澄伏笔（ch11–12）※已有 arena 版；要统一 2.5 质感可用此包重生成
+# 第 5 话｜小花登场·杀狗记忆闪回·苏澄伏笔（ch11–12）※已按 01 话基准重出（2026-10-20，4/4 完成）
 
 ## P1「病床小狗」（3 格）
 `A full-color comic book page with exactly three rectangular panels arranged vertically, thin white gutters, clear panel borders. Panel 1 (wide shot, dawn): a quiet seaside hospital room with tall arched windows showing a calm blue sea; the 苏梨幼年 girl lies in a wooden bed waking up, a small oxygen mask fogged with her breath, soft morning light across the blanket. Panel 2 (heartwarming close-up): the 霍谢山幼年 boy gently presses the top of his head into her open palm on the blanket, his dark red eyes shining with quiet joy like a puppy being petted, her small hand resting on his messy black hair. Panel 3 (comedy family beat): at the bedside the 苏澄幼年 boy puffs his cheeks and points an accusing finger while an old German shepherd dog with a shiny brass tag on its collar sits proudly; the sick girl giggles weakly into her mask. Same child character designs stay consistent across panels. STYLE Digital painting, premium Japanese otome game CG style with semi-realistic painterly rendering: refined elegant faces, expressive detailed eyes, fine individual hair strands, soft luminous skin, rich fabric textures, soft cinematic lighting, muted harmonious colors, high-end commercial illustration quality. Modest, tasteful, non-graphic content suitable for a general audience.`
