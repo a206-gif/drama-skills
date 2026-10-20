@@ -1,0 +1,30 @@
+{
+  "image": "漫画改编/第06话/P2-平板点名.png",
+  "output": "漫画改编/第06话/P2-平板点名-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 14,
+  "panel_rects": [[22, 17, 826, 418], [22, 431, 826, 834], [21, 846, 827, 1247]],
+  "items": [
+    {
+      "type": "oval",
+      "panel": 1,
+      "corner": "tl",
+      "width": 0.33,
+      "lines": ["沈成贵是好人？", "那这些，是什么？"]
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "corner": "tl",
+      "width": 0.36,
+      "lines": ["她握着所有人的秘密。"]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "tr",
+      "width": 0.28,
+      "lines": ["恐惧，开始蔓延。"]
+    }
+  ]
+}
