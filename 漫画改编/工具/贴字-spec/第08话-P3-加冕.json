@@ -1,0 +1,18 @@
+{
+  "image": "漫画改编/第08话/P3-加冕.png",
+  "output": "漫画改编/第08话/P3-加冕-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 16,
+  "items": [
+    {"type": "narr", "panel": 1, "corner": "tl", "width": 0.40,
+     "lines": ["照着花花的狗链做的，", "只是更精致。"]},
+    {"type": "bubble", "panel": 2, "at": [0.46, 0.08], "tail": [0.58, 0.34], "width": 0.50,
+     "lines": ["想走的话，", "这个就用不上了。"]},
+    {"type": "bubble", "panel": 3, "at": [0.44, 0.08], "tail": [0.30, 0.34], "width": 0.56,
+     "lines": ["……他哭了。"]},
+    {"type": "bubble", "panel": 4, "at": [0.50, 0.07], "tail": [0.62, 0.33], "width": 0.36,
+     "lines": ["汪汪！"]},
+    {"type": "narr", "panel": 5, "corner": "tl", "width": 0.50,
+     "lines": ["他主动扣到最紧，", "把自己拴牢了。"]}
+  ]
+}
