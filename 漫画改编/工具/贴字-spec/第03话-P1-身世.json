@@ -1,0 +1,45 @@
+{
+  "image": "漫画改编/第03话/P1-身世.png",
+  "output": "漫画改编/第03话/P1-身世-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 14,
+  "items": [
+    {
+      "type": "box",
+      "panel": 1,
+      "corner": "tl",
+      "width": 0.26,
+      "lines": [
+        "母亲新丧，",
+        "他被全村排挤。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "corner": "tr",
+      "width": 0.18,
+      "lines": [
+        "……想留给她。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "corner": "bl",
+      "width": 0.22,
+      "lines": [
+        "他的身影，越来越小。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "br",
+      "width": 0.2,
+      "lines": [
+        "就当没见过吧。"
+      ]
+    }
+  ]
+}

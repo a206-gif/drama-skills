@@ -1,0 +1,82 @@
+{
+  "image": "漫画改编/第03话/P4-恶鬼与小狗.png",
+  "output": "漫画改编/第03话/P4-恶鬼与小狗-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 14,
+  "items": [
+    {
+      "type": "oval",
+      "panel": 1,
+      "corner": "tr",
+      "width": 0.26,
+      "lines": [
+        "住手！我来保护你们！"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 1,
+      "corner": "bl",
+      "width": 0.26,
+      "lines": [
+        "她看到的，是这样一幕。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "corner": "tl",
+      "width": 0.18,
+      "lines": [
+        "脏脏的小狗。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "corner": "br",
+      "width": 0.1,
+      "lines": [
+        "汪汪。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "tl",
+      "width": 0.16,
+      "lines": [
+        "我相信你。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "br",
+      "width": 0.24,
+      "lines": [
+        "拉钩为约：要乖。"
+      ]
+    }
+  ],
+  "panel_rects": [
+    [
+      0,
+      0,
+      896,
+      396
+    ],
+    [
+      0,
+      396,
+      896,
+      786
+    ],
+    [
+      0,
+      786,
+      896,
+      1200
+    ]
+  ]
+}

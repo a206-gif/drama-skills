@@ -1,0 +1,39 @@
+{
+  "image": "漫画改编/第04话/P2-定性.png",
+  "output": "漫画改编/第04话/P2-定性-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 14,
+  "items": [
+    {
+      "type": "oval",
+      "panel": 1,
+      "corner": "tr",
+      "width": 0.28,
+      "lines": [
+        "是霍谢山保护了我。",
+        "那个叔叔说，",
+        "我很值钱……"
+      ]
+    },
+    {
+      "type": "oval",
+      "panel": 2,
+      "corner": "tr",
+      "width": 0.26,
+      "lines": [
+        "爸爸……",
+        "不想要梨梨了吗？"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "bl",
+      "width": 0.24,
+      "lines": [
+        "她站在门外，",
+        "没人再看她一眼。"
+      ]
+    }
+  ]
+}

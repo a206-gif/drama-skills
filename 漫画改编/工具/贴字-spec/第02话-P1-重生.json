@@ -1,0 +1,57 @@
+{
+  "image": "漫画改编/第02话/P1-重生.png",
+  "output": "漫画改编/第02话/P1-重生-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 14,
+  "items": [
+    {
+      "type": "box",
+      "panel": 1,
+      "corner": "tl",
+      "width": 0.27,
+      "lines": [
+        "高烧醒来，",
+        "我回到了九岁。"
+      ]
+    },
+    {
+      "type": "oval",
+      "panel": 1,
+      "corner": "tr",
+      "width": 0.26,
+      "lines": [
+        "做噩梦了吗？",
+        "妈妈在呢。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "corner": "bl",
+      "width": 0.24,
+      "lines": [
+        "不是梦……",
+        "我回来了。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "corner": "br",
+      "width": 0.2,
+      "lines": [
+        "换我先出手。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "bl",
+      "width": 0.3,
+      "lines": [
+        "收养日——",
+        "一切悲剧的起点。"
+      ]
+    }
+  ]
+}

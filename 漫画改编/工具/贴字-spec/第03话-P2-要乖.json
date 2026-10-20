@@ -1,0 +1,44 @@
+{
+  "image": "漫画改编/第03话/P2-要乖.png",
+  "output": "漫画改编/第03话/P2-要乖-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 14,
+  "items": [
+    {
+      "type": "box",
+      "panel": 1,
+      "corner": "tl",
+      "width": 0.22,
+      "lines": [
+        "舅舅当众殴打他。"
+      ]
+    },
+    {
+      "type": "oval",
+      "panel": 2,
+      "corner": "tr",
+      "width": 0.24,
+      "lines": [
+        "要不要和我回家？"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "tl",
+      "width": 0.22,
+      "lines": [
+        "那你要乖一点哦。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "bl",
+      "width": 0.1,
+      "lines": [
+        "好……"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "image": "漫画改编/第04话/P1-剧本破产.png",
+  "output": "漫画改编/第04话/P1-剧本破产-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 14,
+  "items": [
+    {
+      "type": "oval",
+      "panel": 1,
+      "corner": "tr",
+      "width": 0.24,
+      "lines": [
+        "我会保护你们！"
+      ]
+    },
+    {
+      "type": "oval",
+      "panel": 2,
+      "corner": "bl",
+      "width": 0.28,
+      "lines": [
+        "他还没碰到人，",
+        "自己就倒了。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "bl",
+      "width": 0.28,
+      "lines": [
+        "你好像在等什么人……",
+        "替你解决困难？"
+      ]
+    }
+  ]
+}

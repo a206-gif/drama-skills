@@ -1,0 +1,36 @@
+{
+  "image": "漫画改编/第03话/P3-坏种.png",
+  "output": "漫画改编/第03话/P3-坏种-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 14,
+  "items": [
+    {
+      "type": "box",
+      "panel": 1,
+      "corner": "tr",
+      "width": 0.24,
+      "lines": [
+        "右耳失聪，满身旧伤。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "corner": "tl",
+      "width": 0.24,
+      "lines": [
+        "深夜，黑影潜入病房。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "bl",
+      "width": 0.28,
+      "lines": [
+        "加了料的酒，",
+        "放倒了大人。"
+      ]
+    }
+  ]
+}

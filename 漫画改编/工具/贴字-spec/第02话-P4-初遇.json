@@ -1,0 +1,46 @@
+{
+  "image": "漫画改编/第02话/P4-初遇.png",
+  "output": "漫画改编/第02话/P4-初遇-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 14,
+  "items": [
+    {
+      "type": "box",
+      "panel": 1,
+      "corner": "tl",
+      "width": 0.3,
+      "lines": [
+        "疯狗霍谢山。",
+        "我们提前见面了。"
+      ]
+    },
+    {
+      "type": "oval",
+      "panel": 1,
+      "corner": "br",
+      "width": 0.26,
+      "lines": [
+        "手很疼……",
+        "帮帮我，好吗？"
+      ]
+    },
+    {
+      "type": "oval",
+      "panel": 2,
+      "corner": "br",
+      "width": 0.1,
+      "lines": [
+        "好。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "bl",
+      "width": 0.18,
+      "lines": [
+        "命运，从此改写。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "image": "漫画改编/第02话/P3-设局.png",
+  "output": "漫画改编/第02话/P3-设局-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 14,
+  "items": [
+    {
+      "type": "box",
+      "panel": 1,
+      "corner": "tr",
+      "width": 0.26,
+      "lines": [
+        "要断她的路，",
+        "先付点代价。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "corner": "tr",
+      "width": 0.16,
+      "lines": [
+        "好疼……"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "tl",
+      "width": 0.26,
+      "lines": [
+        "她算好了",
+        "被找到的时间。"
+      ]
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "corner": "bl",
+      "width": 0.2,
+      "lines": [
+        "身后，",
+        "传来脚步声。"
+      ]
+    }
+  ]
+}
