@@ -30,11 +30,11 @@ import json
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 # 底色透明度：参照第 01 话 P3 的观感，约 6.5 成白，能透出画面纹理。
 # 每页可在 spec 里用 "alpha": 0.55~0.8 覆盖。
-DEFAULT_ALPHA = 0.56
+DEFAULT_ALPHA = 0.42
 
 STYLES = {
     # 第 01 话版式：细边小方框（旁白/心声/画外音）与椭圆气泡（对白）
@@ -216,17 +216,125 @@ def draw_bubble(canvas: Image.Image, rect, item, font_path, min_size):
         ty += line_h
 
 
-def _place(item, x0, y0, pw, ph, box_w, box_h, margin):
+
+def _busy_map(canvas: Image.Image):
+    """返回整页的"忙碌度"图（缩略图 + 边缘强度 + 肤色权重），用于自动避让人物。"""
+    small = canvas.convert("RGB").resize((canvas.width // 8, canvas.height // 8))
+    gray = small.convert("L")
+    edges = gray.filter(ImageFilter.FIND_EDGES)
+    px_e = edges.load()
+    px_c = small.load()
+    w, h = small.size
+    cost = [[0.0] * w for _ in range(h)]
+    for y in range(h):
+        for x in range(w):
+            r, g, b = px_c[x, y]
+            e = px_e[x, y] / 255.0
+            # 肤色：偏红、饱和中等、较亮 —— 人脸与手的主要特征
+            skin = 1.0 if (r > 110 and r > g + 12 and r > b + 18 and g > 60 and b > 40
+                           and (r - min(g, b)) < 110) else 0.0
+            cost[y][x] = e + skin * 1.6
+    return cost, w, h
+
+
+def _region_cost(cost, w, h, bx, by, bw, bh):
+    x0, x1 = max(0, bx // 8), min(w, (bx + bw) // 8)
+    y0, y1 = max(0, by // 8), min(h, (by + bh) // 8)
+    if x1 <= x0 or y1 <= y0:
+        return 999.0
+    tot = 0.0
+    n = 0
+    for y in range(y0, y1):
+        row = cost[y]
+        for x in range(x0, x1):
+            tot += row[x]
+            n += 1
+    return tot / max(1, n)
+
+
+OCCUPIED = []   # 已放置的文字框，供后续框避让（页内共享）
+
+
+def _overlap_penalty(bx, by, bw, bh):
+    pen = 0.0
+    for (ox, oy, ow, oh) in OCCUPIED:
+        ix = min(bx + bw, ox + ow) - max(bx, ox)
+        iy = min(by + bh, oy + oh) - max(by, oy)
+        if ix > 0 and iy > 0:
+            pen += (ix * iy) / float(bw * bh) * 6.0
+    return pen
+
+
+def _nudge(canvas, x0, y0, pw, ph, box_w, box_h, margin, bx, by):
+    """指定位置与已放置的框重叠时，在格内做网格搜索，挑最干净的新位置。"""
+    if not OCCUPIED:
+        return bx, by
+    best = None
+    cost, cw, ch = _busy_map(canvas)
+    step_x = max(12, box_w // 4)
+    step_y = max(12, box_h // 4)
+    for ty in range(y0 + margin, max(y0 + margin + 1, y0 + ph - margin - box_h), step_y):
+        for tx in range(x0 + margin, max(x0 + margin + 1, x0 + pw - margin - box_w), step_x):
+            pen = _overlap_penalty(tx, ty, box_w, box_h)
+            if pen > 0:
+                continue
+            busy = _region_cost(cost, cw, ch, tx, ty, box_w, box_h)
+            dist = ((tx - bx) ** 2 + (ty - by) ** 2) ** 0.5 / max(1.0, pw)
+            score = busy + dist * 1.2
+            if best is None or score < best[0]:
+                best = (score, tx, ty)
+    if best:
+        return best[1], best[2]
+    return bx, by
+
+
+def _best_place(canvas, x0, y0, pw, ph, box_w, box_h, margin, prefer=None):
+    """在格内挑一块最"干净"的位置：优先靠近偏好角，但更看画面忙碌度。"""
+    cost, cw, ch = _busy_map(canvas)
+    cands = []
+    corners = ["tl", "tr", "bl", "br", "tc", "bc"]
+    for c in corners:
+        if c == "tc":
+            bx = x0 + (pw - box_w) // 2
+            by = y0 + margin
+        elif c == "bc":
+            bx = x0 + (pw - box_w) // 2
+            by = y0 + ph - margin - box_h
+        else:
+            bx = x0 + margin if c[1] == "l" else x0 + pw - margin - box_w
+            by = y0 + margin if c[0] == "t" else y0 + ph - margin - box_h
+        bx = int(min(max(bx, x0 + margin), x0 + pw - margin - box_w))
+        by = int(min(max(by, y0 + margin), y0 + ph - margin - box_h))
+        score = _region_cost(cost, cw, ch, bx, by, box_w, box_h)
+        score += _overlap_penalty(bx, by, box_w, box_h)
+        if prefer and c == prefer:
+            score *= 0.72          # 偏好角给折扣，但不强制
+        cands.append((score, bx, by, c))
+    cands.sort(key=lambda t: t[0])
+    return cands[0][1], cands[0][2], cands[0][3]
+
+
+def _place(item, x0, y0, pw, ph, box_w, box_h, margin, canvas=None):
     """按 at（中心比例）或 corner 计算框左上角。"""
     if item.get("at"):
         bx = x0 + int(pw * item["at"][0]) - box_w // 2
         by = y0 + int(ph * item["at"][1]) - box_h // 2
-        bx = min(max(bx, x0 + margin), x0 + pw - margin - box_w)
-        by = min(max(by, y0 + margin), y0 + ph - margin - box_h)
+        bx = int(min(max(bx, x0 + margin), x0 + pw - margin - box_w))
+        by = int(min(max(by, y0 + margin), y0 + ph - margin - box_h))
+        if canvas is not None and item.get("fixed") is not True:
+            bx, by = _nudge(canvas, x0, y0, pw, ph, box_w, box_h, margin, bx, by)
+        OCCUPIED.append((bx, by, box_w, box_h))
         return bx, by
     corner = item.get("corner", "tl")
+    # 自动避让：默认开启，除非显式 "fixed": true
+    if canvas is not None and item.get("fixed") is not True:
+        bx, by, chosen = _best_place(canvas, x0, y0, pw, ph, box_w, box_h, margin, prefer=corner)
+        item["_placed_corner"] = chosen
+        OCCUPIED.append((bx, by, box_w, box_h))
+        return bx, by
     bx = x0 + margin if corner[1] == "l" else x0 + pw - margin - box_w
     by = y0 + margin if corner[0] == "t" else y0 + ph - margin - box_h
+    OCCUPIED.append((bx, by, box_w, box_h))
     return bx, by
 
 
@@ -262,9 +370,9 @@ def _style_with_alpha(name, item, alpha):
     base = dict(STYLES[name])
     a = item.get("alpha", alpha)
     r, g, b, _ = base["fill"]
-    base["fill"] = (r, g, b, int(255 * max(0.35, min(0.95, a))))
+    base["fill"] = (r, g, b, int(255 * max(0.28, min(0.95, a))))
     er, eg, eb, _ = base["edge"]
-    base["edge"] = (er, eg, eb, int(255 * max(0.4, min(0.95, a + 0.15))))
+    base["edge"] = (er, eg, eb, int(255 * max(0.32, min(0.95, a + 0.13))))
     return base
 
 
@@ -279,7 +387,7 @@ def draw_box(canvas: Image.Image, rect, item, font_path, min_size, alpha=DEFAULT
     font, lines, line_h = fit_lines(text, font_path, box_w - 2 * pad, int(ph * 0.34),
                                     int(pw * 0.030), min_size)
     box_h = line_h * len(lines) + 2 * pad
-    bx, by = _place(item, x0, y0, pw, ph, box_w, box_h, int(pw * 0.018))
+    bx, by = _place(item, x0, y0, pw, ph, box_w, box_h, int(pw * 0.018), canvas)
     overlay = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
     od = ImageDraw.Draw(overlay)
     if item.get("tail"):
@@ -306,7 +414,7 @@ def draw_oval(canvas: Image.Image, rect, item, font_path, min_size, alpha=DEFAUL
     font, lines, line_h = fit_lines(text, font_path, box_w - 2 * pad, int(ph * 0.36),
                                     int(pw * 0.030), min_size)
     box_h = line_h * len(lines) + 2 * pad
-    bx, by = _place(item, x0, y0, pw, ph, box_w, box_h, int(pw * 0.02))
+    bx, by = _place(item, x0, y0, pw, ph, box_w, box_h, int(pw * 0.02), canvas)
     overlay = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
     od = ImageDraw.Draw(overlay)
     if item.get("tail"):
@@ -319,7 +427,8 @@ def draw_oval(canvas: Image.Image, rect, item, font_path, min_size, alpha=DEFAUL
     ty = by + pad + max(0, (box_h - 2 * pad - line_h * len(lines)) // 2)
     for line in lines:
         w = font.getlength(line)
-        d.text((bx + (box_w - w) / 2, ty), line, font=font, fill=style["ink"])
+        d.text((bx + (box_w - w) / 2, ty), line, font=font, fill=style["ink"],
+               stroke_width=max(1, int(font.size * 0.045)), stroke_fill=(255, 255, 255, 235))
         ty += line_h
 
 
@@ -359,8 +468,11 @@ def draw_sys(canvas: Image.Image, rect, item, font_path, min_size):
     font, lines, line_h = fit_lines(text, font_path, box_w - 2 * pad, int(ph * 0.3), int(pw * 0.028), min_size)
     box_h = line_h * len(lines) + 2 * pad
     cx, cy = item.get("at", (0.5, 0.15))
-    bx = min(max(x0 + int(pw * cx) - box_w // 2, x0 + 6), x1 - 6 - box_w)
-    by = min(max(y0 + int(ph * cy) - box_h // 2, y0 + 6), y1 - 6 - box_h)
+    bx = int(min(max(x0 + int(pw * cx) - box_w // 2, x0 + 6), x1 - 6 - box_w))
+    by = int(min(max(y0 + int(ph * cy) - box_h // 2, y0 + 6), y1 - 6 - box_h))
+    if item.get("fixed") is not True:
+        bx, by = _nudge(canvas, x0, y0, pw, ph, box_w, box_h, 6, bx, by)
+    OCCUPIED.append((bx, by, box_w, box_h))
     overlay = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
     od = ImageDraw.Draw(overlay)
     od.rectangle((bx, by, bx + box_w, by + box_h), fill=style["fill"], outline=style["edge"], width=style["width"])
@@ -408,6 +520,7 @@ def main(argv):
         dbg.convert("RGB").save(root / spec.get("debug_output", "panels-debug.png"))
         print(f"panels: {panels}")
 
+    OCCUPIED.clear()
     font_path = root / spec.get("font", "漫画改编/工具/CJK.ttf")
     min_size = spec.get("min_font", 20)
     alpha = spec.get("alpha", DEFAULT_ALPHA)
