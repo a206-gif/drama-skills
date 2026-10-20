@@ -374,10 +374,40 @@ HUO XIESHAN (25) — reference: the attached HUO XIESHAN reference image. A tall
 | 黑衣少年 | `HEIYI YOUTH — no reference image. A lean teenage boy in plain black clothes, sharp cold handsome face, one arm held as if nursing an old ache.` |
 | 沈夫人 | `MADAME SHEN — no reference image. An elegant sorrowful woman in her forties, dark tailored coat, hair in a low bun.` |
 
-## 三、页面骨架
+## 三、先定版式，再写提示词（第 11 话起强制）
+
+**顺序不能反**：先按 `工具/版式库.md` 给这一话排「页 → 版式代号」，再写提示词。
+版式句是提示词的**第一句**，放在 CAST LOCK 之前，模型才会先搭格子再放人。
+
+| 代号 | 版式句（英文，直接放开头） |
+|---|---|
+| `L3-V` | `exactly three equal panels stacked vertically, separated only by thin white horizontal gutters` |
+| `L2-W` | `two panels: a wide panoramic panel across the top third, and one large close-up panel filling the bottom two thirds, separated only by a thin white gutter` |
+| `L3-T` | `three panels: one large panel filling the top two thirds, and two smaller panels side by side in the bottom third, separated only by thin white gutters` |
+| `L3-B` | `three panels: two smaller panels side by side across the top third, and one large panel filling the bottom two thirds, separated only by thin white gutters` |
+| `L4-Q` | `four panels in a two by two grid, separated only by thin white gutters` |
+| `L2-D` | `two panels side by side in a vertical split, a thin white vertical gutter between them` |
+| `L3-S` | `one huge panel across the top two thirds, a narrow horizontal strip panel beneath it, and one final panel at the bottom, separated only by thin white gutters` |
+| `L5-T` | `four panels: a wide horizontal strip at the top, two equal panels in the middle row, and a wide horizontal strip at the bottom, separated only by thin white gutters` |
+| `L-S` | 单镜页，不写 gutters：`ONE single full-page cinematic illustration, no panel borders, no panel divisions — the entire page is one uninterrupted painting` |
+
+**每页规划表**（写提示词前先填，随提示词一起交付）
 
 ```
-A vertical full-color comic page in cinematic Korean webtoon style: exactly three panels stacked vertically, separated only by thin white horizontal gutters, no black frame lines, no ink outlines, full-bleed painterly illustration in every panel, clean uncluttered space near panel edges for later lettering.
+| 页 | 版式 | 这一页的功能 | 是否有单镜页理由 |
+| P1 | L2-W | 交代地点 + 抛出人物情绪 | — |
+| P2 | L3-T | 冲突 + 两种反应 | — |
+| P3 | L4-Q | 群像哗然 | — |
+| P4 | L3-B | 两条线收束 | — |
+| P5 | L-S  | 转折点：当众揭穿 | 三问 3/3 |
+```
+
+**全套版式必须遵守的三不**：不相邻两页同版式、同版式一话 ≤2 次、单镜页一话 ≤1 次。
+
+## 三·A、页面骨架（多格页）
+
+```
+A vertical full-color comic page in cinematic Korean webtoon style: <版式句>, separated only by thin white horizontal gutters, no black frame lines, no ink outlines, full-bleed painterly illustration in every panel, clean uncluttered space near panel edges for later lettering.
 
 [CAST 块：两张主角锁 + 本页配角文字锁，一人一句]
 RULE OF PRESENCE: a character listed here appears ONLY in the panels where that character is named; a panel that names no character is an empty shot with zero people in it.
@@ -389,12 +419,33 @@ PANEL 1 — CAST: [本格有谁；空镜写 NONE]. (shot size, location, time of
 PANEL 2 — CAST: [...] (shot size, ...) HUO XIESHAN [动作]，the same black wolf-tail, hearing-aid man.
 PANEL 3 — CAST: [...] (shot size, ...) [点名写动作 + 配角服装复述]，两人同框写 exactly two people in this panel。
 
-CONSISTENCY LOCK: the same faces, hair length, hair color, eye color, age, costume and height difference (少年 19 cm / 成年 23 cm) across the panels where each character appears; every named character keeps the same outfit and identifying prop in every panel they are in; any panel marked CAST: NONE contains no figures at all. Human ears; the wolf-tail is a haircut, not animal ears.
+CONSISTENCY LOCK: the same faces, hair length, hair color, eye color, age, costume and height difference across the panels where each character appears; every named character keeps the same outfit and identifying prop in every panel they are in; any panel marked CAST: NONE contains no figures at all. Human ears; the wolf-tail is a haircut, not animal ears.
 
 RENDERING: premium Japanese otome game CG digital painting, semi-realistic Korean manhwa cover quality, thick painterly brushwork, refined elegant faces, expressive detailed eyes, fine individual hair strands, soft luminous skin, rich fabric textures, soft cinematic lighting, muted harmonious color palette, high-end commercial illustration quality.
 
 RATING: modest, tasteful, non-graphic, suitable for a general audience.
 ```
+
+## 三·A2、单镜页骨架（L-S）
+
+```
+A vertical full-color SINGLE-PANEL cinematic illustration in Korean webtoon style: ONE uninterrupted painting,
+no panel borders, no panel divisions, full-bleed, clean negative space in the upper area for later lettering.
+
+[CAST 块：只写画面里真的出现的人，通常 1–2 人]
+SINGLE SUBJECT: [一句话说清这一击是什么 —— 谁、在什么处境、什么表情、什么光]
+
+COMPOSITION: [镜头/机位/光位/景深/留白位置]，[关键道具位置]，[情绪落点]
+
+CONSISTENCY LOCK: [角色] matches the attached reference exactly in face, hair, eye color and age; the same costume and identifying prop as the previous pages of this chapter. Human ears; the wolf-tail is a haircut, not animal ears.
+
+RENDERING: premium Japanese otome game CG digital painting, semi-realistic Korean manhwa cover quality, thick painterly brushwork, refined elegant faces, expressive detailed eyes, fine individual hair strands, soft luminous skin, rich fabric textures, soft cinematic lighting, muted harmonious color palette, high-end commercial illustration quality.
+
+RATING: modest, tasteful, non-graphic, suitable for a general audience.
+```
+
+> 单镜页**不写** `PANEL 1/2/3`、不写 `gutters`、不写 `panels`；
+> 一旦出现 `panel` 这个词，模型就会自作主张切格子。
 
 ## 三·B、空镜格（CAST: NONE）写法
 
