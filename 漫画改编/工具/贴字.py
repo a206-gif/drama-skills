@@ -32,10 +32,14 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
+# 底色透明度：参照第 01 话 P3 的观感，约 6.5 成白，能透出画面纹理。
+# 每页可在 spec 里用 "alpha": 0.55~0.8 覆盖。
+DEFAULT_ALPHA = 0.56
+
 STYLES = {
     # 第 01 话版式：细边小方框（旁白/心声/画外音）与椭圆气泡（对白）
-    "box": {"fill": (255, 255, 255, 238), "ink": (28, 28, 30, 255), "edge": (42, 42, 44, 255), "width": 2},
-    "oval": {"fill": (255, 255, 255, 241), "ink": (26, 26, 28, 255), "edge": (50, 50, 52, 255), "width": 2},
+    "box": {"fill": (255, 255, 255, 168), "ink": (24, 24, 26, 255), "edge": (255, 255, 255, 205), "width": 2},
+    "oval": {"fill": (255, 255, 255, 172), "ink": (24, 24, 26, 255), "edge": (255, 255, 255, 205), "width": 2},
     "bubble": {"fill": (255, 255, 255, 244), "ink": (18, 18, 20, 255), "edge": (20, 20, 22, 255), "width": 3},
     "narr": {"fill": (252, 250, 244, 236), "ink": (24, 24, 26, 255), "edge": (24, 24, 26, 255), "width": 3},
     "sys": {"fill": (18, 48, 104, 232), "ink": (235, 246, 255, 255), "edge": (96, 186, 255, 255), "width": 3},
@@ -254,11 +258,21 @@ def _draw_tail(od, style, bx, by, box_w, box_h, tip, ph):
             fill=style["edge"], width=style["width"])
 
 
-def draw_box(canvas: Image.Image, rect, item, font_path, min_size):
-    """第 01 话的细边小方框：旁白 / 心声 / 画外音。"""
+def _style_with_alpha(name, item, alpha):
+    base = dict(STYLES[name])
+    a = item.get("alpha", alpha)
+    r, g, b, _ = base["fill"]
+    base["fill"] = (r, g, b, int(255 * max(0.35, min(0.95, a))))
+    er, eg, eb, _ = base["edge"]
+    base["edge"] = (er, eg, eb, int(255 * max(0.4, min(0.95, a + 0.15))))
+    return base
+
+
+def draw_box(canvas: Image.Image, rect, item, font_path, min_size, alpha=DEFAULT_ALPHA):
+    """第 01 话的细边小方框：旁白 / 心声 / 画外音（半透明，不糊画面）。"""
     x0, y0, x1, y1 = rect
     pw, ph = x1 - x0, y1 - y0
-    style = STYLES["box"]
+    style = _style_with_alpha("box", item, alpha)
     box_w = int(pw * item.get("width", 0.30))
     pad = max(8, int(box_w * 0.055))
     text = "\n".join(item["lines"])
@@ -281,11 +295,11 @@ def draw_box(canvas: Image.Image, rect, item, font_path, min_size):
         ty += line_h
 
 
-def draw_oval(canvas: Image.Image, rect, item, font_path, min_size):
-    """第 01 话的椭圆气泡：对白。"""
+def draw_oval(canvas: Image.Image, rect, item, font_path, min_size, alpha=DEFAULT_ALPHA):
+    """第 01 话的椭圆气泡：对白（半透明，不糊画面）。"""
     x0, y0, x1, y1 = rect
     pw, ph = x1 - x0, y1 - y0
-    style = STYLES["oval"]
+    style = _style_with_alpha("oval", item, alpha)
     box_w = int(pw * item.get("width", 0.34))
     pad = max(10, int(box_w * 0.10))
     text = "\n".join(item["lines"])
@@ -396,15 +410,16 @@ def main(argv):
 
     font_path = root / spec.get("font", "漫画改编/工具/CJK.ttf")
     min_size = spec.get("min_font", 20)
+    alpha = spec.get("alpha", DEFAULT_ALPHA)
     for item in spec["items"]:
         rect = (0, 0, *size) if item.get("panel") is None else panels[item["panel"] - 1]
         kind = item.get("type", "bubble")
         if kind == "bubble":
             draw_bubble(canvas, rect, item, font_path, min_size)
         elif kind == "box":
-            draw_box(canvas, rect, item, font_path, min_size)
+            draw_box(canvas, rect, item, font_path, min_size, alpha)
         elif kind == "oval":
-            draw_oval(canvas, rect, item, font_path, min_size)
+            draw_oval(canvas, rect, item, font_path, min_size, alpha)
         elif kind == "narr":
             draw_narr(canvas, rect, item, font_path, min_size)
         elif kind == "sys":
