@@ -33,6 +33,25 @@
       ],
       "width": 0.26,
       "corner": "tr"
+    },
+    {
+      "type": "box",
+      "panel": 1,
+      "lines": [
+        "上京霍家的人，来了。"
+      ],
+      "corner": "tl",
+      "width": 0.26
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "lines": [
+        "他提着排骨站在雨里，",
+        "头发还在滴水。"
+      ],
+      "corner": "tr",
+      "width": 0.3
     }
   ]
 }

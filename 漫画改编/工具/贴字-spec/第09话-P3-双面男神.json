@@ -33,6 +33,25 @@
       ],
       "width": 0.38,
       "corner": "tl"
+    },
+    {
+      "type": "box",
+      "panel": 1,
+      "lines": [
+        "人前的霍谢山，温和、谦逊、",
+        "谁求助都应。"
+      ],
+      "corner": "tl",
+      "width": 0.36
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "lines": [
+        "人后的他，在烧一张照片。"
+      ],
+      "corner": "tr",
+      "width": 0.3
     }
   ]
 }

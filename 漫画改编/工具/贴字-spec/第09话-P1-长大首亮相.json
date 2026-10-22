@@ -33,6 +33,26 @@
       ],
       "width": 0.34,
       "corner": "bl"
+    },
+    {
+      "type": "box",
+      "panel": 1,
+      "lines": [
+        "十七岁这年，苏梨第一次",
+        "站到了阳台上。"
+      ],
+      "corner": "tl",
+      "width": 0.32
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "lines": [
+        "教官说，这孩子三天就",
+        "打赢了比他大六岁的人。"
+      ],
+      "corner": "tl",
+      "width": 0.34
     }
   ]
 }

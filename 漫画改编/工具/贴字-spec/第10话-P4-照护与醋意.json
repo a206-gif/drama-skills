@@ -44,6 +44,16 @@
       ],
       "width": 0.3,
       "corner": "tr"
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "lines": [
+        "一针一针缝下去，",
+        "他只看她。"
+      ],
+      "corner": "tl",
+      "width": 0.26
     }
   ]
 }

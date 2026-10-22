@@ -42,6 +42,16 @@
       ],
       "width": 0.26,
       "corner": "tr"
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "lines": [
+        "他捧着她的手，",
+        "像捧着一件供品。"
+      ],
+      "corner": "tl",
+      "width": 0.28
     }
   ]
 }
