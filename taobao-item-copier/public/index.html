@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>淘宝商品搬运台</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>📦</text></svg>"/>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">📦</span>
+    <div>
+      <h1>淘宝商品搬运台</h1>
+      <p class="sub">采集 → 清洗改写 → 官方 API 发布 · 数据全在本机</p>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <div class="pill" id="pill-top" title="开放平台凭据状态">凭据 ···</div>
+    <div class="pill" id="pill-ext" title="浏览器扩展连接状态">扩展 ···</div>
+    <div class="pill" id="pill-count">商品 0</div>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button data-tab="library" class="active">商品库</button>
+  <button data-tab="collect">采集导入</button>
+  <button data-tab="rules">批量改写</button>
+  <button data-tab="publish">发布</button>
+  <button data-tab="tasks">任务</button>
+  <button data-tab="categories">类目属性</button>
+  <button data-tab="settings">设置</button>
+</nav>
+
+<main>
+<!-- ============ 商品库 ============ -->
+<section id="tab-library" class="tab active">
+  <div class="toolbar">
+    <input id="q" type="search" placeholder="搜标题 / 商品ID / 店铺…" />
+    <select id="filter-status">
+      <option value="">全部状态</option>
+      <option value="collected">已采集</option>
+      <option value="ready">已就绪</option>
+      <option value="publishing">发布中</option>
+      <option value="published">已发布</option>
+      <option value="ready-in-stock">已入仓库</option>
+      <option value="failed">失败</option>
+    </select>
+    <select id="filter-shop"><option value="">全部店铺</option></select>
+    <select id="sort">
+      <option value="newest">最新采集</option>
+      <option value="price-asc">价格 ↑</option>
+      <option value="price-desc">价格 ↓</option>
+      <option value="title">标题</option>
+    </select>
+    <span class="spacer"></span>
+    <button class="ghost" id="btn-select-all">全选本页</button>
+    <button class="ghost" id="btn-download-images">下载图片到本地</button>
+    <button class="ghost" id="btn-export-zip">导出素材包</button>
+    <button class="danger ghost" id="btn-delete">删除</button>
+  </div>
+
+  <div class="list" id="item-list"></div>
+
+  <div class="pager">
+    <button class="ghost" id="prev-page">上一页</button>
+    <span id="page-info">1 / 1</span>
+    <button class="ghost" id="next-page">下一页</button>
+    <select id="page-size">
+      <option>20</option><option selected>50</option><option>100</option><option>200</option>
+    </select>
+  </div>
+</section>
+
+<!-- ============ 采集导入 ============ -->
+<section id="tab-collect" class="tab">
+  <div class="grid2">
+    <div class="card">
+      <h2>① 给个店铺链接，抓全部宝贝</h2>
+      <p class="hint">抓取动作在你浏览器里的扩展中执行（用你的登录态和 mtop 签名），本地服务只负责接收和排队。</p>
+      <label>店铺链接
+        <input id="shop-url" placeholder="https://shop123456.taobao.com 或 https://xxx.tmall.com"/>
+      </label>
+      <div class="row">
+        <label>抓取方式
+          <select id="shop-mode">
+            <option value="auto">自动（先 mtop，失败退回 DOM）</option>
+            <option value="mtop">mtop 接口</option>
+            <option value="dom">DOM 解析（最耐改版）</option>
+          </select>
+        </label>
+        <label>深度
+          <select id="shop-depth">
+            <option value="list">只拿列表（快，字段少）</option>
+            <option value="detail">逐个进详情页（慢，字段全）</option>
+          </select>
+        </label>
+        <label>最多页数 <input id="shop-pages" type="number" value="20" min="1" max="100" style="width:6rem"/></label>
+      </div>
+      <button class="primary" id="btn-collect-shop">开始采集整店</button>
+      <div class="progress-box" id="shop-progress"></div>
+    </div>
+
+    <div class="card">
+      <h2>② 手动粘贴</h2>
+      <p class="hint">不想装扩展时用这条：在商品页 Ctrl+A / Ctrl+C 复制页面源码，或 Ctrl+S 存成网页后把 HTML 贴进来。店铺页 HTML 也能识别（自动认出里面所有宝贝链接）。</p>
+      <label>内容
+        <textarea id="paste-content" rows="10" placeholder="粘贴 HTML / JSON / CSV…"></textarea>
+      </label>
+      <div class="row">
+        <label>类型
+          <select id="paste-kind">
+            <option value="">自动识别</option>
+            <option value="html">单个商品页 HTML</option>
+            <option value="shop-html">店铺页 HTML（批量）</option>
+            <option value="json">JSON</option>
+            <option value="csv">CSV</option>
+          </select>
+        </label>
+        <label>原商品链接（选填） <input id="paste-url" placeholder="https://item.taobao.com/item.htm?id=…"/></label>
+      </div>
+      <button class="primary" id="btn-paste">解析并入库</button>
+      <div class="progress-box" id="paste-result"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>已采集过的店铺</h2>
+    <div id="shop-list" class="shop-list"></div>
+  </div>
+</section>
+
+<!-- ============ 批量改写 ============ -->
+<section id="tab-rules" class="tab">
+  <div class="card">
+    <h2>批量改写规则</h2>
+    <p class="hint">搬过来的东西不能原样上架：标题会撞车、价格要加价、别人品牌名必须换掉。<b>先「预览」看清效果，再「应用」落库。</b></p>
+
+    <fieldset>
+      <legend>标题</legend>
+      <div class="row">
+        <label>前缀 <input id="r-title-prefix" placeholder="例如：现货"/></label>
+        <label>后缀 <input id="r-title-suffix" placeholder="例如：包邮"/></label>
+        <label class="check"><input id="r-title-strip-brackets" type="checkbox"/>删掉【】[]（）里的内容</label>
+        <label class="check"><input id="r-title-variant" type="checkbox"/>同类商品加不同修饰词（防同质化）</label>
+      </div>
+      <label>删除这些词（逗号分隔，通常是别人品牌名/店铺名）
+        <input id="r-title-remove" placeholder="XX旗舰店,正品保证,专柜"/>
+      </label>
+      <div id="r-title-replacements"></div>
+      <button class="ghost small" id="btn-add-replacement">+ 加一条关键词替换</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>价格与库存</legend>
+      <div class="row">
+        <label>倍率 <input id="r-price-mult" type="number" step="0.01" placeholder="1.35"/></label>
+        <label>加价 <input id="r-price-offset" type="number" step="0.1" placeholder="5"/></label>
+        <label>尾数 <input id="r-price-ending" placeholder="9 → 29.9"/></label>
+        <label>最低 <input id="r-price-min" type="number" step="0.1"/></label>
+        <label>最高 <input id="r-price-max" type="number" step="0.1"/></label>
+        <label>统一库存 <input id="r-quantity" type="number" placeholder="留空则不改"/></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>图片</legend>
+      <div class="row">
+        <label class="check"><input id="r-img-original" type="checkbox" checked/>去掉 CDN 尺寸后缀，取原图</label>
+        <label>主图最多 <input id="r-img-max" type="number" value="5" min="1" max="5" style="width:5rem"/></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>属性与详情</legend>
+      <div class="row">
+        <label>品牌改成 <input id="r-prop-brand" placeholder="其他 / 你自己的品牌"/></label>
+        <label class="check"><input id="r-desc-clean" type="checkbox" checked/>清洗详情（去脚本/外链/二维码/店招）</label>
+      </div>
+      <label>详情头部插入 HTML（选填） <input id="r-desc-header" placeholder="&lt;p&gt;本店承诺 7 天无理由&lt;/p&gt;"/></label>
+      <label>详情尾部插入 HTML（选填） <input id="r-desc-footer"/></label>
+    </fieldset>
+
+    <div class="row actions">
+      <label class="check"><input id="r-apply-all" type="checkbox"/>应用到全部商品（否则只应用勾选的）</label>
+      <span class="spacer"></span>
+      <button class="ghost" id="btn-rules-preview">预览效果</button>
+      <button class="primary" id="btn-rules-apply">应用改写</button>
+    </div>
+    <div id="rules-preview" class="preview"></div>
+  </div>
+</section>
+
+<!-- ============ 发布 ============ -->
+<section id="tab-publish" class="tab">
+  <div class="card">
+    <h2>发布到我自己店铺</h2>
+    <p class="hint">走淘宝开放平台官方接口，链路是：查必填属性 → 传图 → <code>taobao.item.add</code> → 补主图 → 补属性图 → （可选）上架。<b>建议先选「存入仓库」，人工核对无误再上架。</b></p>
+    <div class="row">
+      <label>发布类目 cid（必填，叶子类目）
+        <input id="p-cid" placeholder="去「类目属性」页查"/>
+      </label>
+      <label>上架方式
+        <select id="p-approve">
+          <option value="instock">存入仓库（推荐，先核对）</option>
+          <option value="onsale">立即上架</option>
+        </select>
+      </label>
+      <label>运费承担
+        <select id="p-freight">
+          <option value="seller">卖家承担（包邮）</option>
+          <option value="buyer">买家承担</option>
+        </select>
+      </label>
+      <label>运费模板 ID <input id="p-postage" placeholder="选填"/></label>
+    </div>
+    <div class="row">
+      <label>所在地 省 <input id="p-loc-state" placeholder="浙江"/></label>
+      <label>市 <input id="p-loc-city" placeholder="杭州"/></label>
+      <label>图片方式
+        <select id="p-image-mode">
+          <option value="remote">外链直传（快，可能被拒）</option>
+          <option value="local">先下载再以字节上传（稳）</option>
+        </select>
+      </label>
+      <label>步骤间隔 ms <input id="p-delay" type="number" value="600" style="width:6rem"/></label>
+      <label>商品间隔 ms <input id="p-item-delay" type="number" value="1500" style="width:7rem"/></label>
+    </div>
+    <div class="row">
+      <label class="check"><input id="p-skip-prop-check" type="checkbox"/>跳过必填属性检查（不建议）</label>
+      <label class="check"><input id="p-stop-on-error" type="checkbox"/>遇到失败就停</label>
+    </div>
+    <div class="row actions">
+      <span id="publish-selected-count" class="hint">未选中商品</span>
+      <span class="spacer"></span>
+      <button class="ghost" id="btn-dry-run">试运行（只校验参数，不真发布）</button>
+      <button class="primary" id="btn-publish">开始发布</button>
+    </div>
+    <div id="publish-log" class="log"></div>
+  </div>
+</section>
+
+<!-- ============ 任务 ============ -->
+<section id="tab-tasks" class="tab">
+  <div class="card">
+    <h2>任务记录</h2>
+    <div id="task-list" class="task-list"></div>
+    <div id="task-log" class="log"></div>
+  </div>
+</section>
+
+<!-- ============ 类目属性 ============ -->
+<section id="tab-categories" class="tab">
+  <div class="grid2">
+    <div class="card">
+      <h2>类目浏览</h2>
+      <div class="row">
+        <input id="cat-q" placeholder="搜类目名，如：连衣裙"/>
+        <button class="ghost" id="btn-cat-search">搜索</button>
+        <button class="ghost" id="btn-cat-root">回到根类目</button>
+      </div>
+      <div id="cat-breadcrumb" class="breadcrumb"></div>
+      <div id="cat-list" class="cat-list"></div>
+    </div>
+    <div class="card">
+      <h2>类目属性</h2>
+      <p class="hint">选中一个叶子类目后，这里列出它的<b>必填关键属性</b>和<b>销售属性</b>。发布失败十有八九是这里没填全。</p>
+      <div id="cat-props"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 设置 ============ -->
+<section id="tab-settings" class="tab">
+  <div class="grid2">
+    <div class="card">
+      <h2>淘宝开放平台凭据</h2>
+      <p class="hint">
+        到 <a href="https://open.taobao.com" target="_blank" rel="noreferrer">open.taobao.com</a> → 控制台 → 创建「自用型」应用，
+        拿到 AppKey / AppSecret，并在「接口管理」申请商品发布相关权限包（item.add、item.img.upload、itemprops.get、itemcats.get、picture.upload、user.seller.get）。
+      </p>
+      <label>AppKey <input id="s-appkey"/></label>
+      <label>AppSecret <input id="s-appsecret" type="password" placeholder="已保存则显示掩码，留空表示不改"/></label>
+      <label>网关 <input id="s-gateway"/></label>
+      <div class="row actions">
+        <button class="primary" id="btn-save-settings">保存</button>
+        <button class="ghost" id="btn-test-settings">连通性自检</button>
+      </div>
+      <div id="settings-test" class="preview"></div>
+    </div>
+
+    <div class="card">
+      <h2>店铺授权（session）</h2>
+      <p class="hint">用你的<b>卖家账号</b>授权。授权码会跳回本机 <code>/api/settings/oauth/callback</code>，所以应用里登记的回调地址必须和下面这个一致；对不上就用「手动粘贴」。</p>
+      <label>回调地址 <input id="s-redirect"/></label>
+      <div class="row actions">
+        <button class="primary" id="btn-oauth">授权登录</button>
+        <span class="spacer"></span>
+      </div>
+      <label>手动粘贴 access_token <input id="s-session" placeholder="已保存则显示掩码"/></label>
+      <label>店铺昵称（选填） <input id="s-nick"/></label>
+      <div class="row actions">
+        <button class="ghost" id="btn-save-session">保存 session</button>
+        <button class="ghost" id="btn-whoami">查当前授权店铺</button>
+      </div>
+      <div id="session-info" class="preview"></div>
+    </div>
+
+    <div class="card">
+      <h2>采集口令</h2>
+      <p class="hint">浏览器扩展里要填同一个口令，否则本机任意网页都能往你的商品库塞数据。</p>
+      <label>口令 <input id="s-token"/></label>
+      <div class="row actions">
+        <button class="ghost" id="btn-copy-token">复制</button>
+        <button class="primary" id="btn-save-token">保存</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>发布默认值</h2>
+      <label>默认类目 cid <input id="s-def-cid"/></label>
+      <label>默认运费模板 <input id="s-def-postage"/></label>
+      <div class="row">
+        <label>默认省 <input id="s-def-state"/></label>
+        <label>默认市 <input id="s-def-city"/></label>
+      </div>
+      <div class="row actions">
+        <button class="primary" id="btn-save-publish-defaults">保存默认值</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ 商品编辑抽屉 ============ -->
+<div class="drawer-mask" id="drawer-mask"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h2>编辑商品</h2>
+    <button class="ghost small" id="drawer-close">关闭 ✕</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
+
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

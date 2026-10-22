@@ -1,0 +1,20 @@
+{
+  "name": "taobao-item-copier",
+  "version": "0.1.0",
+  "private": true,
+  "description": "淘宝商品搬运台：店铺宝贝批量采集 → 本地清洗改写 → 官方开放平台 API 一键发布",
+  "type": "commonjs",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test test/",
+    "seed": "node tools/seed-demo.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

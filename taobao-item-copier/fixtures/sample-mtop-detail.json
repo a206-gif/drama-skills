@@ -1,0 +1,61 @@
+{
+  "api": "mtop.taobao.detail.getdetail",
+  "v": "6.0",
+  "ret": ["SUCCESS::调用成功"],
+  "data": {
+    "item": {
+      "itemId": "723456789012",
+      "title": "【旗舰店正品】2026新款纯棉宽松短袖T恤女夏季ins潮百搭打底衫上衣 包邮",
+      "images": [
+        "https://img.alicdn.com/imgextra/i1/1234567/O1CN01abc000_!!1234567.jpg",
+        "https://img.alicdn.com/imgextra/i2/1234567/O1CN01abc001_!!1234567.jpg",
+        "https://img.alicdn.com/imgextra/i3/1234567/O1CN01abc002_!!1234567.jpg"
+      ],
+      "categoryId": "50000671",
+      "quantity": 200
+    },
+    "price": {
+      "price": { "priceText": "39.90", "priceMoney": "3990" },
+      "extraPrices": [{ "priceText": "89.00", "priceTitle": "价格" }]
+    },
+    "seller": {
+      "shopId": "111222333",
+      "userId": "1234567",
+      "shopName": "样例女装旗舰店",
+      "shopUrl": "//shop111222333.taobao.com"
+    },
+    "skuBase": {
+      "props": [
+        {
+          "pid": "1627207",
+          "name": "颜色分类",
+          "values": [
+            { "vid": "28320", "name": "白色", "image": "//img.alicdn.com/imgextra/i4/1234567/O1CN01white.jpg" },
+            { "vid": "28326", "name": "黑色" }
+          ]
+        },
+        { "pid": "20509", "name": "尺码", "values": [{ "vid": "28314", "name": "M" }, { "vid": "28315", "name": "L" }] }
+      ],
+      "skus": [
+        { "skuId": "5001", "propPath": "1627207:28320;20509:28314" },
+        { "skuId": "5002", "propPath": "1627207:28320;20509:28315" },
+        { "skuId": "5003", "propPath": "1627207:28326;20509:28314" },
+        { "skuId": "5004", "propPath": "1627207:28326;20509:28315" }
+      ]
+    },
+    "skuCore": {
+      "sku2info": {
+        "0": { "price": { "priceText": "39.90" }, "quantity": 200 },
+        "5001": { "price": { "priceText": "39.90" }, "quantity": 120 },
+        "5002": { "price": { "priceText": "42.90" }, "quantity": 80 },
+        "5003": { "price": { "priceText": "39.90" }, "quantity": 30 },
+        "5004": { "price": { "priceText": "45.90" }, "quantity": 0 }
+      }
+    },
+    "components": {
+      "data": {
+        "groupProps": [{ "基本信息": [{ "品牌": "SAMPLE" }, { "材质": "棉" }, { "袖长": "短袖" }] }]
+      }
+    }
+  }
+}

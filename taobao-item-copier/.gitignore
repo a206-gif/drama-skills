@@ -1,0 +1,6 @@
+node_modules/
+# 运行时数据：本地商品库、下载的图片、以及含 appsecret / session 的配置，一律不入库
+data/
+!data/.gitkeep
+.env
+*.log
