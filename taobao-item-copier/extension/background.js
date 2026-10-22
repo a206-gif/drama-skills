@@ -655,6 +655,26 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
           sendResponse(r);
           break;
         }
+        case 'copier:publish-batch': {
+          // 批量发布：把多条商品推送到已打开的千牛面板队列，用户在一个标签页里逐条填+提交
+          const items = Array.isArray(msg.items) ? msg.items : [];
+          if (!items.length) { sendResponse({ ok: false, error: '没有选中商品' }); break; }
+          const SELLER_RE = /^https?:\/\/(myseller|seller|sell|work|qianniu|qianiu|qn)\.taobao\.com\//;
+          const allTabs = await chrome.tabs.query({});
+          let tab = allTabs.find((t) => t.url && SELLER_RE.test(t.url));
+          let opened = false;
+          if (!tab) {
+            tab = await chrome.tabs.create({ url: cfg.publishUrl || PUBLISH_URL, active: true });
+            await waitForTabComplete(tab.id, 40000).catch(() => {});
+            opened = true;
+          } else {
+            await chrome.tabs.update(tab.id, { active: true }).catch(() => {});
+          }
+          // 把队列投递给该标签页所有 frame 的面板（顶层那个会收下并展示）
+          await chrome.tabs.sendMessage(tab.id, { type: 'copier:queue-items', items }).catch(() => {});
+          sendResponse({ ok: true, count: items.length, opened });
+          break;
+        }
         case 'copier:publish': {
           const r = await publishViaAutofill(msg.item || {});
           sendResponse({ ok: true, ...r });

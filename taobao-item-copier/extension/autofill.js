@@ -59,6 +59,8 @@
   if (isTop) {
     let panelEl = null;
     let itemsCache = [];
+    let pushedQueue = [];   // 控制台「批量发布到千牛」推来的商品队列
+    let queueNote = '';
 
     function ensurePanel() {
       if (panelEl && document.contains(panelEl)) return panelEl;
@@ -84,6 +86,11 @@
           #__copier_panel .rep .ok{color:#3fb950} #__copier_panel .rep .man{color:#d29922} #__copier_panel .rep .fail{color:#f85149}
           #__copier_panel button.mini{margin:6px 13px;padding:5px 9px;border-radius:7px;border:1px solid #22304f;background:#161f3a;color:#e6edf3;cursor:pointer;font-size:12px}
           #__copier_panel .hd .mini{margin:0;padding:2px 8px}
+          #__copier_panel .qhdr{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 13px 4px;color:#ffb066;font-size:12px;font-weight:600}
+          #__copier_panel .qclear{cursor:pointer;color:#93a3bd;border:1px solid #22304f;background:none;border-radius:6px;font-size:11px;padding:1px 7px}
+          #__copier_panel .qnote{padding:0 13px 5px;color:#6f8098;font-size:11px}
+          #__copier_panel .it.q{background:#141d38}
+          #__copier_panel .qbadge{color:#ff7a1a;font-size:11px;flex:0 0 auto;border:1px solid #3a2a18;border-radius:6px;padding:1px 6px}
         </style>
         <div class="hd">
           <b>📦 搬运台 · 发布助手</b>
@@ -101,34 +108,54 @@
     async function loadItems() {
       const p = ensurePanel();
       const bd = p.querySelector('#__cp_bd');
-      bd.innerHTML = '<div class="tip">读取本地商品库…</div>';
+      bd.innerHTML = renderQueue() + '<div class="tip">读取本地商品库…</div>';
       const cfg = await getCfg();
+      let listHtml = '';
       try {
         const res = await fetch(`${cfg.localBase}/api/items?size=60&sort=newest`, {
           headers: cfg.token ? { 'X-Collector-Token': cfg.token } : {},
         });
         const d = await res.json();
         itemsCache = d.items || [];
-        if (!itemsCache.length) {
-          bd.innerHTML = '<div class="tip">本地商品库是空的。先在淘宝商品页/店铺页用扩展采集，或确认本地服务已启动。</div>';
-          return;
-        }
-        bd.innerHTML = itemsCache.map((it) => `
-          <div class="it" data-id="${esc(it.id)}">
-            <img src="${esc((it.images || [])[0] || '')}" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"/>
-            <div class="tt"><b>${esc(it.title || '(无标题)')}</b><span>¥${Number(it.price || 0).toFixed(2)} · 库存${esc(it.quantity ?? 0)}${it.publishedItemId ? ' · 已发布' : ''}</span></div>
-            ${it.publishedItemId ? '<span class="pub">✓已发</span>' : ''}
-          </div>`).join('');
-        bd.querySelectorAll('.it').forEach((row) => {
-          row.onclick = () => pickItem(row.dataset.id);
-        });
+        listHtml = itemsCache.length
+          ? `<div class="qhdr" style="border-top:1px solid #22304f">本地商品库（${itemsCache.length}）</div>` + itemsCache.map((it) => `
+            <div class="it" data-id="${esc(it.id)}">
+              <img src="${esc((it.images || [])[0] || '')}" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"/>
+              <div class="tt"><b>${esc(it.title || '(无标题)')}</b><span>¥${Number(it.price || 0).toFixed(2)} · 库存${esc(it.quantity ?? 0)}${(it.collectCount || 1) > 1 ? ' · 🔁已搬运' + it.collectCount + '次' : ''}${it.publishedItemId ? ' · ✅已发布' : ''}</span></div>
+              ${it.publishedItemId ? '<span class="pub">✓已发</span>' : ''}
+            </div>`).join('')
+          : '<div class="tip">本地商品库是空的。先在淘宝商品页/店铺页用扩展采集，或确认本地服务已启动。</div>';
       } catch (e) {
-        bd.innerHTML = `<div class="tip" style="color:#f85149">连不上本地服务：${esc(e.message)}<br>确认 npm start 在跑、扩展选项里本地地址正确。</div>`;
+        listHtml = `<div class="tip" style="color:#f85149">连不上本地服务：${esc(e.message)}<br>确认 npm start 在跑、扩展选项里本地地址正确。</div>`;
       }
+      bd.innerHTML = renderQueue() + listHtml;
+      bindItemRows(bd);
     }
 
-    async function pickItem(id) {
-      const item = itemsCache.find((x) => x.id === id);
+    // 控制台「批量发布到千牛」推来的队列，单独成区置顶
+    function renderQueue() {
+      if (!pushedQueue.length) return '';
+      const rows = pushedQueue.map((it, idx) => `
+        <div class="it q" data-q="${idx}">
+          <img src="${esc((it.images || [])[0] || '')}" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"/>
+          <div class="tt"><b>${esc(it.title || '(无标题)')}</b><span>¥${Number(it.price || 0).toFixed(2)} · 库存${esc(it.quantity ?? 0)}</span></div>
+          <span class="qbadge">待发布</span>
+        </div>`).join('');
+      return `<div class="qhdr">📋 控制台推来的待发布（${pushedQueue.length}）<button class="qclear" id="__cp_qclear">清空</button></div>` +
+        (queueNote ? `<div class="qnote">${esc(queueNote)}</div>` : '') + rows;
+    }
+
+    function bindItemRows(bd) {
+      bd.querySelectorAll('.it[data-id]').forEach((row) => { row.onclick = () => pickItem(row.dataset.id, false); });
+      bd.querySelectorAll('.it[data-q]').forEach((row) => { row.onclick = () => pickItem(row.dataset.q, true); });
+      const qc = bd.querySelector('#__cp_qclear');
+      if (qc) qc.onclick = () => { pushedQueue = []; queueNote = ''; loadItems(); };
+    }
+
+    async function pickItem(id, isQueue) {
+      const item = isQueue
+        ? pushedQueue[Number(id)]
+        : itemsCache.find((x) => x.id === id);
       if (!item) return;
       const p = ensurePanel();
       const bd = p.querySelector('#__cp_bd');
@@ -200,6 +227,24 @@
       if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ensureLauncher);
       else ensureLauncher();
     }
+
+    // 接收控制台「批量发布到千牛」推来的商品队列，置顶展示，用户在这里逐条填+提交
+    chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+      if (msg && msg.type === 'copier:queue-items') {
+        const incoming = Array.isArray(msg.items) ? msg.items : [];
+        for (const it of incoming) {
+          if (!pushedQueue.some((x) => x.id === it.id)) pushedQueue.push(it);
+        }
+        // 同时并进本地缓存，pickItem 按 id 也能查到
+        for (const it of incoming) {
+          if (!itemsCache.some((x) => x.id === it.id)) itemsCache.push(it);
+        }
+        queueNote = `共 ${pushedQueue.length} 条。先在千牛点「发布宝贝」选好类目，再逐条点下面的商品自动填入，核对后你自己提交。`;
+        ensurePanel();
+        loadItems();
+        sendResponse({ ok: true, queued: pushedQueue.length });
+      }
+    });
   }
 
   /* ================= 所有 frame：响应填充广播 ================= */

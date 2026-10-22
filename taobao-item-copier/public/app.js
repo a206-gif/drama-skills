@@ -217,7 +217,8 @@ function renderItems() {
             <span>${esc(it.sourceShop?.title || it.sourcePlatform || '')}</span>
             <span>${esc(it.collectedVia || '')}</span>
             ${warns ? `<span class="warn" title="${esc((it.warnings || []).join('；'))}">⚠ ${warns} 项待补</span>` : ''}
-            ${it.publishedItemId ? `<span>已发布 → ${esc(it.publishedItemId)}</span>` : ''}
+            ${(it.collectCount || 1) > 1 ? `<span class="dupe" title="这条以前采集过，系统按指纹自动认出来了，没有重复入库">🔁 已搬运过 ${esc(it.collectCount)} 次</span>` : ''}
+            ${it.publishedItemId ? `<span class="published-tag">✅ 已发布 → ${esc(it.publishedItemId)}</span>` : ''}
           </div>
         </div>
         <div class="price">¥${Number(it.price || 0).toFixed(2)}</div>
@@ -264,6 +265,40 @@ function updateSelectionUi() {
   $('#btn-delete').disabled = !n;
   $('#btn-download-images').disabled = !n;
   $('#btn-export-zip').disabled = !n;
+  const bp = $('#btn-batch-publish');
+  if (bp) { bp.disabled = !n; bp.textContent = n ? `🚀 批量发布到千牛（${n}）` : '🚀 批量发布到千牛'; }
+}
+
+/**
+ * 批量发布到千牛：把选中的多条商品一次性推送到「已打开的千牛发布面板」队列里，
+ * 你在千牛那一个标签页里逐条自动填表、核对后自己点提交 —— 不会每条都开新标签页刷屏。
+ * 仍然只用你已登录的身份，不需要开放平台 appkey。
+ */
+async function publishBatchViaExtension() {
+  const ids = [...state.selected];
+  if (!ids.length) return toast('先在商品库勾选要发布的商品', 'err');
+  if (!window.__extId || !window.chrome?.runtime?.sendMessage) {
+    return toast('没检测到扩展。请先在 Chrome 加载 extension/ 目录，并保持千牛/淘宝登录、扩展在线（顶栏「扩展在线 ✓」）。', 'err');
+  }
+  const items = state.items.filter((it) => ids.includes(it.id));
+  toast(`正在把 ${items.length} 条商品推送到千牛发布面板…`);
+  try {
+    const resp = await new Promise((resolve, reject) => {
+      const timer = setTimeout(() => reject(new Error('扩展响应超时')), 30000);
+      chrome.runtime.sendMessage(window.__extId, { type: 'copier:publish-batch', items }, (r) => {
+        clearTimeout(timer);
+        if (chrome.runtime.lastError) reject(new Error(chrome.runtime.lastError.message));
+        else resolve(r);
+      });
+    });
+    if (resp && resp.ok) {
+      toast(`已把 ${resp.count || items.length} 条商品推送到千牛面板${resp.opened ? '（新开了千牛标签页）' : ''}。切到千牛，点「发布宝贝」选好类目，再从面板里逐条填入、核对后自己提交。`, 'ok');
+    } else {
+      toast(`推送失败：${resp?.error || '未知'}`, 'err');
+    }
+  } catch (e) {
+    toast(`唤起扩展失败：${e.message}`, 'err');
+  }
 }
 
 $('#btn-select-all').addEventListener('click', () => {
@@ -272,6 +307,8 @@ $('#btn-select-all').addEventListener('click', () => {
   renderItems();
   updateSelectionUi();
 });
+
+$('#btn-batch-publish').addEventListener('click', () => publishBatchViaExtension());
 
 $('#q').addEventListener('input', debounce(() => { state.page = 1; loadItems(); }, 320));
 ['#filter-status', '#filter-shop', '#sort'].forEach((s) => $(s).addEventListener('change', () => { state.page = 1; loadItems(); }));
