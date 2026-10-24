@@ -4,6 +4,7 @@ from __future__ import annotations
 import importlib.util
 import json
 import unittest
+import zipfile
 from pathlib import Path
 from unittest import mock
 
@@ -36,6 +37,22 @@ class ComicLetteringTests(unittest.TestCase):
         font, _, _ = lettering.fit_lines("继续说。", self.font, 400, 200, 30, 26)
         self.assertEqual(font.size, 30)
 
+    def test_ch11_corrected_source_page_mapping(self):
+        with zipfile.ZipFile(ROOT / "漫画改编/P11.zip") as archive:
+            for stem, member, panel_count in (
+                ("P3-约会", "P11/p11-5.png", 2),
+                ("P5-反客为主", "P11/p11-3.png", 1),
+            ):
+                with self.subTest(page=stem):
+                    data = json.loads((ROOT / f"漫画改编/工具/贴字-spec/第11话-{stem}.json").read_text())
+                    self.assertEqual(data["source_member"], member)
+                    self.assertEqual((ROOT / data["image"]).read_bytes(), archive.read(member))
+                    self.assertEqual(len(data["panel_rects"]), panel_count)
+        specs = ROOT / "漫画改编/工具/贴字-spec"
+        single_pages = [p.stem for p in specs.glob("第11话-*.json")
+                        if len(json.loads(p.read_text())["panel_rects"]) == 1]
+        self.assertEqual(single_pages, ["第11话-P5-反客为主"])
+
     def test_closeout_specs_and_rendered_boxes(self):
         specs = ROOT / "漫画改编/工具/贴字-spec"
         paths = sorted(specs.glob("第11话-*.json")) + sorted(specs.glob("第12话-*.json"))
@@ -50,8 +67,16 @@ class ComicLetteringTests(unittest.TestCase):
                     self.assertEqual(out.size, canvas.size)
                     self.assertEqual(out.mode, "RGB")
                 panels = data["panel_rects"]
-                # Current closeout pages have visible straight gutters or a single panel.
-                self.assertEqual(panels, [list(r) for r in lettering.detect_panels(canvas)[0]])
+                # P3 的偏暖细白缝无法由默认检测识别，验证手测坐标及核心白线。
+                if path.name == "第11话-P3-约会.json":
+                    self.assertEqual(panels, [[0, 0, 1024, 494], [0, 498, 1024, 1536]])
+                    for y in (495, 496):
+                        for x in range(0, canvas.width, 4):
+                            rgb = canvas.getpixel((x, y))[:3]
+                            self.assertGreater(min(rgb), 190)
+                            self.assertLess(max(rgb) - min(rgb), 40)
+                else:
+                    self.assertEqual(panels, [list(r) for r in lettering.detect_panels(canvas)[0]])
                 lettering.OCCUPIED.clear()
                 for i, item in enumerate(data["items"]):
                     self.assertTrue(item["fixed"], "已目检坐标不可再自动漂移")
