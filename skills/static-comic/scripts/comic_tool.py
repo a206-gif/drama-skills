@@ -240,7 +240,7 @@ def unique_json(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
 def lettering_config(layout: dict[str, Any]) -> dict[str, Any]:
     """Keep speaker/type in the source while allowing different visible strategies."""
     value = layout.get("lettering", {"mode": "labelled"})
-    fields(value, {"mode"}, {"bubble_opacity", "speakers"}, "lettering")
+    fields(value, {"mode"}, {"bubble_opacity", "speakers", "kinds"}, "lettering")
     require(isinstance(value["mode"], str) and value["mode"] in {"labelled", "embedded"}, "lettering/mode 必须为 labelled 或 embedded")
     require(value["mode"] == "embedded" or value.keys() == {"mode"},
             "透明度/人物样式仅用于 embedded；旧标签模式不静默忽略样式")
@@ -252,15 +252,34 @@ def lettering_config(layout: dict[str, Any]) -> dict[str, Any]:
     for name, style in speakers.items():
         require(isinstance(name, str) and bool(name.strip()) and name == name.strip(),
                 "lettering/speakers 人物名必须为非空完整姓名，不含首尾空白")
-        fields(style, set(), {"color", "dialogue_shape", "thought_shape"}, "lettering/" + name)
-        if "color" in style:
-            require(isinstance(style["color"], str)
-                    and re.fullmatch(r"#[0-9a-fA-F]{6}", style["color"]) is not None,
-                    "lettering/color 必须为 #RRGGBB")
+        fields(style, set(), {"color", "dialogue_color", "thought_color", "dialogue_shape", "thought_shape"}, "lettering/" + name)
+        for key in ("color", "dialogue_color", "thought_color"):
+            if key in style:
+                require(isinstance(style[key], str)
+                        and re.fullmatch(r"#[0-9a-fA-F]{6}", style[key]) is not None,
+                        "lettering/color 必须为 #RRGGBB")
         for key in ("dialogue_shape", "thought_shape"):
             if key in style:
                 require(isinstance(style[key], str) and style[key] in {"round", "oval", "rect", "none"},
                         "lettering/shape 必须为 round、oval、rect 或 none")
+    kinds = value.get("kinds", {})
+    require(isinstance(kinds, dict) and not kinds.keys() - KINDS, "lettering/kinds 只能按现有文字类型配置")
+    for kind, style in kinds.items():
+        fields(style, set(), {"shape", "align", "color", "stroke_color", "stroke_width", "outline_color"},
+               "lettering/kinds/" + kind)
+        if "shape" in style:
+            require(isinstance(style["shape"], str) and style["shape"] in {"round", "oval", "rect", "none"},
+                    "lettering/shape 无效")
+        if "align" in style:
+            require(isinstance(style["align"], str) and style["align"] in {"left", "center"},
+                    "lettering/align 必须为 left 或 center")
+        for key in ("color", "stroke_color", "outline_color"):
+            if key in style:
+                require(isinstance(style[key], str) and re.fullmatch(r"#[0-9a-fA-F]{6}", style[key]) is not None,
+                        "lettering/color 必须为 #RRGGBB")
+        if "stroke_width" in style:
+            integer(style["stroke_width"], 0, "lettering/stroke_width")
+            require(style["stroke_width"] <= 8, "lettering/stroke_width 超出0–8像素资源范围")
     return value
 
 
@@ -270,10 +289,16 @@ def lettering_style(config: dict[str, Any], source: dict[str, Any]) -> dict[str,
     actor = config.get("speakers", {}).get(source["fields"].get("说话人"), {}) \
         if kind in {"dialogue", "thought"} else {}
     shape = {"dialogue": "round", "thought": "oval", "narration": "rect", "sfx": "none"}[kind]
+    style = {"mode": mode, "shape": shape, "opacity": config.get("bubble_opacity", 96),
+             "color": "#20282C", "align": "left" if shape == "none" else "center",
+             "stroke_width": 2, "stroke_color": "#FFFFFF"}
     if mode == "embedded":
-        shape = actor.get(kind + "_shape", shape)
-    return {"mode": mode, "shape": shape, "opacity": config.get("bubble_opacity", 96),
-            "color": actor.get("color", "#20282C")}
+        style.update(config.get("kinds", {}).get(kind, {}))
+        style["shape"] = actor.get(kind + "_shape", style["shape"])
+        if "align" not in config.get("kinds", {}).get(kind, {}):
+            style["align"] = "left" if style["shape"] == "none" else "center"
+        style["color"] = actor.get(kind + "_color", actor.get("color", style["color"]))
+    return style
 
 
 def load_project(path: Path, media: bool = False, previous: Path | None = None) -> dict[str, Any]:
@@ -284,7 +309,10 @@ def load_project(path: Path, media: bool = False, previous: Path | None = None) 
     lettering_config(data)
     require(type(data["version"]) is int and data["version"] == 1, "不支持的排版 version")
     canvas = data["canvas"]
-    fields(canvas, {"width", "height", "margin"}, set(), "canvas")
+    fields(canvas, {"width", "height", "margin"}, {"panel_border_width"}, "canvas")
+    border = canvas.get("panel_border_width", 3)
+    integer(border, 0, "canvas/panel_border_width")
+    require(border <= 64, "panel_border_width 超出0–64像素资源范围")
     for key in ("width", "height", "margin"):
         integer(canvas[key], 0 if key == "margin" else 1, key)
     w, h, margin = (canvas[key] for key in ("width", "height", "margin"))
@@ -461,7 +489,8 @@ def letter_metrics(text: dict[str, Any], source: dict[str, Any], font: Any,
     padding = text.get("padding", 20)
     iw, ih = width - 2 * padding, height - 2 * padding
     if embedded:
-        iw, ih = iw - 4, ih - 4  # Keep the opaque two-pixel text halo inside the measured box.
+        reserve = 2 * style["stroke_width"]
+        iw, ih = iw - reserve, ih - reserve  # Measure the actual opaque text outline.
     if style["shape"] == "oval":
         iw, ih = math.floor(iw / math.sqrt(2)), math.floor(ih / math.sqrt(2))
     if kind == "sfx":
@@ -478,7 +507,7 @@ def letter_metrics(text: dict[str, Any], source: dict[str, Any], font: Any,
     used = body["used"] + (label["used"] + gap if label else 0)
     require(used <= ih,
             f"{text['id']}: 文字高度溢出（{'画内正文' if embedded else '含可见名签'}）；增框、改版式或回分镜改字，不能自动缩字")
-    return {**body, "used": used, "label": label, "gap": gap, "style": style}
+    return {**body, "used": used, "label": label, "gap": gap, "style": style, "inner_width": iw}
 
 
 def draw_lettering(draw: Any, text: dict[str, Any], source: dict[str, Any],
@@ -493,7 +522,8 @@ def draw_lettering(draw: Any, text: dict[str, Any], source: dict[str, Any],
     shape = style["shape"]
     color = tuple(int(style["color"][i:i + 2], 16) for i in (1, 3, 5))
     fill = (255, 255, 255, style["opacity"]) if embedded else "white"
-    outline = (*color, round(style["opacity"] * 0.6)) if embedded else "black"
+    edge = tuple(int(style.get("outline_color", style["color"])[i:i + 2], 16) for i in (1, 3, 5))
+    outline = (*edge, round(style["opacity"] * 0.6)) if embedded else "black"
     border = 1 if embedded else 2
     if "tail" in text:
         tx, ty = px + text["tail"][0], py + text["tail"][1]
@@ -502,11 +532,11 @@ def draw_lettering(draw: Any, text: dict[str, Any], source: dict[str, Any],
         scale = min((w / 2) / abs(dx) if dx else math.inf,
                     (h / 2) / abs(dy) if dy else math.inf)
         bx, by = cx + dx * scale, cy + dy * scale
+        if shape == "oval":
+            # The tail starts on the actual ellipse for speech as well as thought.
+            scale = 1 / math.sqrt((dx / (w / 2)) ** 2 + (dy / (h / 2)) ** 2)
+            bx, by = cx + dx * scale, cy + dy * scale
         if kind == "thought":
-            if shape == "oval":
-                # Start on the ellipse only when there actually is an ellipse.
-                scale = 1 / math.sqrt((dx / (w / 2)) ** 2 + (dy / (h / 2)) ** 2)
-                bx, by = cx + dx * scale, cy + dy * scale
             for fraction, radius in ((0.3, 6), (0.7, 4)):
                 dotx, doty = bx + (tx - bx) * fraction, by + (ty - by) * fraction
                 radius = min(radius, dotx - px, doty - py)
@@ -539,12 +569,15 @@ def draw_lettering(draw: Any, text: dict[str, Any], source: dict[str, Any],
         content_top += label["used"] + metrics["gap"]
     baseline = content_top - metrics["top"]
     for index, (line, box) in enumerate(zip(metrics["lines"], metrics["boxes"])):
-        left = (x + text.get("padding", 20) - box[0] if embedded and shape == "none"
+        inset = ((w - metrics["inner_width"]) / 2 if shape == "oval"
+                 else max(text.get("padding", 20), style["stroke_width"]))
+        left = (x + inset - box[0] if embedded and style["align"] == "left"
                 else x + (w - (box[2] - box[0])) / 2 - box[0])
         draw.text((left, baseline + index * metrics["step"]), line, font=font,
                   fill=(*color, 255) if embedded else "black", anchor="ls",
-                  stroke_width=2 if kind == "sfx" or embedded else 0,
-                  stroke_fill=(255, 255, 255, 255) if embedded else "white")
+                  stroke_width=style["stroke_width"] if embedded else (2 if kind == "sfx" else 0),
+                  stroke_fill=(*tuple(int(style["stroke_color"][i:i + 2], 16) for i in (1, 3, 5)), 255)
+                  if embedded else "white")
 
 
 def speaker_font_options(values: list[str]) -> dict[str, Path]:
@@ -632,7 +665,9 @@ def render(plan: dict[str, Any], font_path: Path, out: Path, image_format: str,
                     if "image_rect" in panel:
                         draw.rectangle((x + ix, y + iy, x + ix + iw - 1, y + iy + ih - 1),
                                        outline="black", width=2)
-                    draw.rectangle((x, y, x + w - 1, y + h - 1), outline="black", width=3)
+                    border = canvas.get("panel_border_width", 3)
+                    if border:
+                        draw.rectangle((x, y, x + w - 1, y + h - 1), outline="black", width=border)
                     # Paint into the panel crop so tails/outlines cannot leak into another panel.
                     with sheet.crop((x, y, x + w, y + h)).convert("RGBA" if embedded else "RGB") as lettered:
                         local_draw = ImageDraw.Draw(lettered)

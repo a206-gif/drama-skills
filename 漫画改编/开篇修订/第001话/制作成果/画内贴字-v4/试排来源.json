@@ -1,6 +1,6 @@
 {
   "date": "2026-10-25",
-  "status": "embedded_partial_preview_pending_creator_review",
+  "status": "historical_superseded_by_reference_v5",
   "scope": "selected_pages",
   "episode": "CH001",
   "episode_pages": 9,
@@ -89,5 +89,7 @@
       "scope": "all_dialogue_and_thought_body",
       "appears_in_selected_pages": false
     }
-  }
+  },
+  "original_status": "embedded_partial_preview_pending_creator_review",
+  "superseded_by": "../画内贴字-v5/看图说明.md"
 }

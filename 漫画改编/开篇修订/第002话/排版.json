@@ -4,7 +4,8 @@
   "canvas": {
     "width": 1080,
     "height": 1440,
-    "margin": 48
+    "margin": 0,
+    "panel_border_width": 0
   },
   "pages": [
     {
@@ -99,7 +100,7 @@
                 24,
                 24,
                 936,
-                118
+                183
               ],
               "font_size": 40,
               "padding": 16
@@ -224,7 +225,7 @@
                 24,
                 24,
                 936,
-                118
+                183
               ],
               "font_size": 40,
               "padding": 16
@@ -400,7 +401,7 @@
                 24,
                 24,
                 936,
-                120
+                183
               ],
               "font_size": 40,
               "padding": 16
@@ -723,7 +724,7 @@
                 24,
                 24,
                 936,
-                118
+                183
               ],
               "font_size": 40,
               "padding": 16
@@ -736,29 +737,48 @@
   "lettering": {
     "mode": "embedded",
     "bubble_opacity": 88,
+    "kinds": {
+      "dialogue": {
+        "shape": "oval",
+        "align": "center",
+        "stroke_width": 1,
+        "stroke_color": "#263238",
+        "outline_color": "#FFFFFF"
+      },
+      "thought": {
+        "shape": "rect",
+        "align": "left",
+        "stroke_width": 0,
+        "outline_color": "#FFFFFF"
+      },
+      "narration": {
+        "shape": "rect",
+        "align": "left",
+        "color": "#20282C",
+        "stroke_width": 0,
+        "outline_color": "#FFFFFF"
+      }
+    },
     "speakers": {
       "苏梨": {
         "color": "#843B60",
-        "dialogue_shape": "round",
-        "thought_shape": "none"
+        "dialogue_color": "#F2CDD9"
       },
       "霍谢山": {
         "color": "#284F70",
-        "dialogue_shape": "rect",
-        "thought_shape": "none"
+        "dialogue_color": "#C4DEF1"
       },
       "姜月烟": {
         "color": "#294444",
-        "dialogue_shape": "round",
-        "thought_shape": "none"
+        "dialogue_color": "#F1F5F0"
       },
       "秦音": {
         "color": "#654C7C",
-        "dialogue_shape": "round",
-        "thought_shape": "none"
+        "dialogue_color": "#DED3EC"
       },
       "系统（仅秦音可闻）": {
         "color": "#3B617E",
+        "dialogue_color": "#D7EAF6",
         "dialogue_shape": "rect"
       }
     }

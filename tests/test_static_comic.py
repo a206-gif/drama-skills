@@ -167,6 +167,45 @@ class StructureTests(ProjectCase):
                 self.save()
                 comic.load_project(self.path)
 
+    def test_optional_panel_border_width_accepts_zero_and_rejects_untyped_values(self) -> None:
+        for width in (0, 1, 9):
+            self.layout["canvas"]["panel_border_width"] = width
+            self.save()
+            self.assertEqual(comic.load_project(self.path)["layout"]["canvas"]["panel_border_width"], width)
+        for width in (False, True, -1, "0", [], None, 65):
+            with self.subTest(width=width), self.assertRaises(comic.ComicError):
+                self.layout["canvas"]["panel_border_width"] = width
+                self.save()
+                comic.load_project(self.path)
+
+    def test_kind_style_contract_and_speaker_color_precedence(self) -> None:
+        profile = {"mode": "embedded", "kinds": {
+            "dialogue": {"shape": "oval", "align": "center", "color": "#102030", "stroke_width": 1,
+                         "stroke_color": "#203040", "outline_color": "#FFFFFF"},
+            "thought": {"shape": "rect", "align": "left", "stroke_width": 0}},
+            "speakers": {"A": {"color": "#813956", "dialogue_color": "#F2CDD9", "thought_color": "#704060"}}}
+        self.layout["lettering"] = profile
+        self.save()
+        config = comic.lettering_config(comic.load_project(self.path)["layout"])
+        source = comic.read_script(self.story)[0]["panels"][0]["texts"]
+        dialogue, thought = [comic.lettering_style(config, item) for item in source]
+        self.assertEqual((dialogue["shape"], dialogue["color"], dialogue["stroke_width"]),
+                         ("oval", "#F2CDD9", 1))
+        self.assertEqual((thought["shape"], thought["align"], thought["color"]),
+                         ("rect", "left", "#704060"))
+        bad = [{"kinds": []}, {"kinds": {"unknown": {}}}, {"kinds": {"thought": []}},
+               {"kinds": {"thought": {"shape": []}}}, {"kinds": {"thought": {"align": []}}},
+               {"kinds": {"thought": {"align": "right"}}}, {"kinds": {"thought": {"stroke_width": True}}},
+               {"kinds": {"thought": {"stroke_width": -1}}}, {"kinds": {"thought": {"stroke_width": 9}}},
+               {"kinds": {"thought": {"stroke_color": "white"}}},
+               {"kinds": {"thought": {"outline_color": []}}}, {"kinds": {"thought": {"body": "copied"}}},
+               {"speakers": {"A": {"dialogue_color": []}}}]
+        for extra in bad:
+            with self.subTest(extra=extra), self.assertRaises(comic.ComicError):
+                self.layout["lettering"] = {"mode": "embedded", **extra}
+                self.save()
+                comic.load_project(self.path)
+
     def test_explicit_breaks_reference_source_positions_without_copying_body(self) -> None:
         text = self.panel()["texts"][0]
         text["breaks"] = [2, 9]
@@ -750,6 +789,112 @@ class RenderTests(ProjectCase):
         self.assertFalse(report["visible_labels"])
         self.assertFalse(report["episode_media_checked"])
         self.assertEqual(report["selected_pages"], ["PAGE-001"])
+
+    def test_kind_styles_draw_left_captions_and_light_speech_without_name_labels(self) -> None:
+        self.embedded(128, {"A": {"color": "#813956", "dialogue_color": "#F2CDD9"}})
+        self.layout["lettering"]["kinds"] = {
+            "dialogue": {"shape": "oval", "stroke_width": 1, "stroke_color": "#263238"},
+            "thought": {"shape": "rect", "align": "left", "stroke_width": 0, "outline_color": "#FFFFFF"},
+            "narration": {"shape": "rect", "align": "left", "stroke_width": 0, "color": "#102030"}}
+        self.save()
+        calls = {}
+        original = ImageDraw.ImageDraw.text
+
+        def record(draw, xy, value, *args, **kwargs):
+            calls[value] = (xy, kwargs)
+            return original(draw, xy, value, *args, **kwargs)
+
+        with mock.patch.object(ImageDraw.ImageDraw, "text", new=record):
+            result = self.export()
+        self.assertEqual(set(calls), {"A sealed letter.", "Not my name.", "The visitor returns."})
+        self.assertEqual(calls["A sealed letter."][1]["fill"], (242, 205, 217, 255))
+        self.assertEqual(calls["A sealed letter."][1]["stroke_width"], 1)
+        for body, color in (("Not my name.", (129, 57, 86, 255)),
+                            ("The visitor returns.", (16, 32, 48, 255))):
+            xy, options = calls[body]
+            self.assertEqual(options["fill"], color)
+            self.assertEqual(options["stroke_width"], 0)
+            self.assertEqual(xy[0], 32 - options["font"].getbbox(body, anchor="ls")[0])
+        with Image.open(result["outputs"][0]) as image:
+            self.assertEqual(image.getpixel((42, 42)), (20, 70, 180))  # Outside the oval.
+            self.assertEqual(image.getpixel((42, 162)), (138, 163, 218))  # Translucent rectangle.
+            self.assertEqual(image.getpixel((42, 160)), (91, 126, 203))  # Its configured light edge.
+
+    def test_border_free_full_bleed_and_three_pixel_gutter_are_real_pixels(self) -> None:
+        self.embedded()
+        self.layout["canvas"].update({"margin": 0, "panel_border_width": 0})
+        self.panel()["rect"] = [0, 0, 400, 298]
+        self.layout["pages"][0]["panels"][1]["rect"] = [0, 301, 400, 299]
+        self.layout["pages"][1]["panels"][0]["rect"] = [0, 0, 400, 600]
+        self.save()
+        result = self.export()
+        with Image.open(result["outputs"][0]) as image:
+            for point in ((0, 0), (399, 0), (0, 297), (399, 297)):
+                self.assertEqual(image.getpixel(point), (20, 70, 180))
+            for y in (298, 299, 300):
+                self.assertEqual(set(image.crop((0, y, 400, y + 1)).getdata()), {(255, 255, 255)})
+            self.assertEqual(image.getpixel((0, 301)), (160, 60, 20))
+            self.assertEqual(image.getpixel((399, 599)), (160, 60, 20))
+
+    def test_explicit_defaults_preserve_existing_embedded_and_panel_pixels(self) -> None:
+        self.embedded(speakers={"A": {"thought_shape": "none"}})
+        before = self.export("implicit-style")
+        self.layout["canvas"]["panel_border_width"] = 3
+        self.layout["lettering"]["kinds"] = {
+            "dialogue": {"shape": "round", "align": "center", "stroke_width": 2, "stroke_color": "#FFFFFF"},
+            "thought": {"shape": "none", "align": "left", "stroke_width": 2, "stroke_color": "#FFFFFF"}}
+        self.save()
+        after = self.export("explicit-style")
+        for first, second in zip(before["outputs"], after["outputs"]):
+            with Image.open(first) as a, Image.open(second) as b:
+                self.assertEqual(a.tobytes(), b.tobytes())
+
+    def test_configured_stroke_is_measured_and_failure_does_not_shrink_or_export(self) -> None:
+        self.embedded()
+        self.pages[0]["panels"][0]["texts"][0]["body"] = "AB"
+        write_story(self.story, self.pages)
+        box = self.panel()["texts"][0]
+        box.update({"rect": [20, 20, 200, 23], "padding": 0})
+        self.layout["lettering"]["kinds"] = {"dialogue": {"shape": "rect", "stroke_width": 0}}
+        self.save()
+        self.export("no-stroke")
+        self.layout["lettering"]["kinds"]["dialogue"]["stroke_width"] = 4
+        self.save()
+        with self.assertRaisesRegex(comic.ComicError, "文字高度溢出"):
+            self.export("stroke-overflow")
+        self.assertEqual(box["font_size"], 24)
+        self.assertFalse((self.root / "stroke-overflow").exists())
+
+    def test_left_oval_uses_safe_inset_and_speech_tail_starts_on_ellipse(self) -> None:
+        self.embedded()
+        self.layout["lettering"]["kinds"] = {"dialogue": {"shape": "oval", "align": "left"}}
+        self.save()
+        texts, polygons = [], []
+        original_text, original_polygon = ImageDraw.ImageDraw.text, ImageDraw.ImageDraw.polygon
+
+        def record_text(draw, xy, value, *args, **kwargs):
+            if value == "A sealed letter.":
+                texts.append((xy, kwargs["font"]))
+            return original_text(draw, xy, value, *args, **kwargs)
+
+        def record_polygon(draw, xy, *args, **kwargs):
+            polygons.append(xy)
+            return original_polygon(draw, xy, *args, **kwargs)
+
+        with mock.patch.object(ImageDraw.ImageDraw, "text", new=record_text), \
+                mock.patch.object(ImageDraw.ImageDraw, "polygon", new=record_polygon):
+            self.export()
+        source = comic.read_script(self.story)[0]["panels"][0]["texts"][0]
+        config = comic.lettering_config(self.layout)
+        metrics = comic.letter_metrics(self.panel()["texts"][0], source, texts[0][1],
+                                       style=comic.lettering_style(config, source))
+        expected = 20 + (300 - metrics["inner_width"]) / 2 - texts[0][1].getbbox(source["fields"]["正文"], anchor="ls")[0]
+        self.assertEqual(texts[0][0][0], expected)
+        base = polygons[0][:2]
+        bx, by = ((base[0][i] + base[1][i]) / 2 for i in (0, 1))
+        ellipse_distance = ((bx - 170) / 150) ** 2 + ((by - 60) / 40) ** 2
+        self.assertGreater(ellipse_distance, 0.65)
+        self.assertLess(ellipse_distance, 1)
 
     def test_embedded_late_image_error_remains_transactional(self) -> None:
         self.embedded()

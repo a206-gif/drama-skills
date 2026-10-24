@@ -4,7 +4,8 @@
   "canvas": {
     "width": 1080,
     "height": 1440,
-    "margin": 24
+    "margin": 0,
+    "panel_border_width": 0
   },
   "pages": [
     {
@@ -35,9 +36,9 @@
               "id": "TEXT-001-02",
               "rect": [
                 652,
-                300,
+                233,
                 316,
-                116
+                183
               ],
               "font_size": 40,
               "padding": 16
@@ -298,7 +299,7 @@
                 24,
                 24,
                 936,
-                117
+                181
               ],
               "font_size": 40,
               "padding": 16
@@ -358,9 +359,9 @@
               "id": "TEXT-006-02",
               "rect": [
                 24,
-                518,
+                453,
                 936,
-                118
+                183
               ],
               "font_size": 40,
               "padding": 16
@@ -449,10 +450,10 @@
         {
           "id": "PANEL-008-01",
           "rect": [
-            24,
-            24,
-            1032,
-            1392
+            0,
+            0,
+            1080,
+            1440
           ],
           "image": "制作成果/格图/PANEL-008-01-v3.png",
           "focus": [
@@ -463,39 +464,39 @@
             {
               "id": "TEXT-008-01",
               "rect": [
-                24,
-                48,
-                210,
-                108
+                26,
+                262,
+                194,
+                86
               ],
-              "font_size": 44,
-              "padding": 12
+              "font_size": 36,
+              "padding": 8
             },
             {
               "id": "TEXT-008-02",
               "rect": [
-                620,
-                790,
-                386,
-                180
+                728,
+                806,
+                320,
+                224
               ],
-              "font_size": 40,
-              "padding": 14,
-              "tail": [
-                860,
-                738
+              "font_size": 34,
+              "padding": 10,
+              "breaks": [
+                3,
+                8
               ]
             },
             {
               "id": "TEXT-008-03",
               "rect": [
-                38,
+                30,
                 1220,
-                570,
-                130
+                408,
+                116
               ],
-              "font_size": 42,
-              "padding": 8,
+              "font_size": 36,
+              "padding": 12,
               "breaks": [
                 6
               ]
@@ -510,10 +511,10 @@
         {
           "id": "PANEL-009-01",
           "rect": [
-            24,
-            24,
-            1032,
-            700
+            0,
+            0,
+            1080,
+            733
           ],
           "image": "制作成果/格图/PANEL-008-02-v2.png",
           "focus": [
@@ -524,17 +525,13 @@
             {
               "id": "TEXT-009-01",
               "rect": [
-                14,
-                30,
-                270,
-                196
+                16,
+                18,
+                320,
+                200
               ],
-              "font_size": 40,
-              "padding": 12,
-              "tail": [
-                286,
-                270
-              ],
+              "font_size": 34,
+              "padding": 10,
               "breaks": [
                 5,
                 9
@@ -543,18 +540,15 @@
             {
               "id": "TEXT-009-02",
               "rect": [
-                398,
-                562,
-                610,
-                130
+                20,
+                480,
+                520,
+                208
               ],
-              "font_size": 40,
+              "font_size": 34,
               "padding": 10,
-              "tail": [
-                450,
-                532
-              ],
               "breaks": [
+                4,
                 14
               ]
             }
@@ -563,23 +557,26 @@
         {
           "id": "PANEL-009-02",
           "rect": [
-            24,
-            748,
-            1032,
-            668
+            0,
+            736,
+            1080,
+            704
           ],
           "image": "制作成果/格图/PANEL-009-02-双人近景-v2.png",
           "texts": [
             {
               "id": "TEXT-009-03",
               "rect": [
-                28,
-                516,
-                900,
-                120
+                18,
+                16,
+                500,
+                116
               ],
-              "font_size": 42,
-              "padding": 8
+              "font_size": 36,
+              "padding": 10,
+              "breaks": [
+                7
+              ]
             }
           ],
           "focus": [
@@ -593,29 +590,48 @@
   "lettering": {
     "mode": "embedded",
     "bubble_opacity": 88,
+    "kinds": {
+      "dialogue": {
+        "shape": "oval",
+        "align": "center",
+        "stroke_width": 1,
+        "stroke_color": "#263238",
+        "outline_color": "#FFFFFF"
+      },
+      "thought": {
+        "shape": "rect",
+        "align": "left",
+        "stroke_width": 0,
+        "outline_color": "#FFFFFF"
+      },
+      "narration": {
+        "shape": "rect",
+        "align": "left",
+        "color": "#20282C",
+        "stroke_width": 0,
+        "outline_color": "#FFFFFF"
+      }
+    },
     "speakers": {
       "苏梨": {
         "color": "#843B60",
-        "dialogue_shape": "round",
-        "thought_shape": "none"
+        "dialogue_color": "#F2CDD9"
       },
       "霍谢山": {
         "color": "#284F70",
-        "dialogue_shape": "rect",
-        "thought_shape": "none"
+        "dialogue_color": "#C4DEF1"
       },
       "姜月烟": {
         "color": "#294444",
-        "dialogue_shape": "round",
-        "thought_shape": "none"
+        "dialogue_color": "#F1F5F0"
       },
       "秦音": {
         "color": "#654C7C",
-        "dialogue_shape": "round",
-        "thought_shape": "none"
+        "dialogue_color": "#DED3EC"
       },
       "系统（仅秦音可闻）": {
         "color": "#3B617E",
+        "dialogue_color": "#D7EAF6",
         "dialogue_shape": "rect"
       }
     }

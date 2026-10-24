@@ -67,7 +67,7 @@ JSON 不写对白、提示词或交接事件副本；未知字段会拒绝，防
 |---|---|---|
 | 根 | `version` | 固定整数 `1` |
 | 根 | `storyboard` | 相对本 JSON 的分镜 Markdown 路径 |
-| 根 | `canvas` | `width`、`height`、`margin`，整数像素；边距明确选择后按该值检查 |
+| 根 | `canvas` | `width`、`height`、`margin`，整数像素；可选`panel_border_width`控制格外框，默认3、0不画，0–64为本地资源范围；边距明确选择后按该值检查 |
 | 根 | `pages` | 按分镜顺序的非空页列表 |
 | 页 | `id`、`panels` | 页 ID 与按分镜顺序排列的格列表 |
 | 格 | `id`、`rect`、`image`、`texts` | 格 ID、页坐标 `[x,y,w,h]`、格图相对路径、文字列表 |
@@ -116,10 +116,10 @@ python3 {技能目录}/scripts/comic_tool.py render 第002话/排版.json \
   多帧 PNG/WebP 拒绝。输出为不携带源 EXIF 的 RGB 静态 PNG/JPG。
 - 所有文字从当前 Markdown 读取。字体常见缺字会检测，仍须预览核对字形、标点、授权和手机可读性。
 - 中文横排按实测宽度断行，避开常见行首闭标点/行尾开标点。复杂塑形、彩色 emoji 和连字用人工检查或外部排版。
-- 对话圆角框、可有三角尾；思考椭圆框、可有点状尾；旁白矩形，拟声字描边。
+- 旧默认对话圆角框/三角尾、思考椭圆/点尾、旁白矩形、拟声描边；embedded可按类型/人物选择形状。椭圆对白的尾巴也从实际椭圆边缘起，不从矩形角起。
 - 不配置`lettering`时维持旧`labelled`：可见“姓名｜对白/内心”“旁白｜身份”，来源仍是Markdown，名签计入字形/宽高；`--speaker-font`仅换名签，正文保持`--font`。这是兼容行为，不是所有漫画必须画姓名。
 - `lettering.mode: embedded`：不画姓名/类别标签，`--speaker-font`用于该角色完整对白/内心正文；旁白/未配置人物用`--font`。隐藏的姓名不要求出现在字体字库中，实际正文仍查缺字/溢出。角色按完整字段精确匹配，不猜昵称。
-- embedded的半透明气泡先画RGBA再实际叠到图片上；`bubble_opacity`仅控制气泡底/轮廓，字本身100%不透明、有2px浅色描边。无底内心可用`none`，并左对齐；`oval`按椭圆安全区测量，其余按矩形内区。不可仅修改PNG元数据假装透明。
+- embedded的半透明气泡先画RGBA再实际叠到图片上；`bubble_opacity`仅控制气泡底/轮廓，字本身100%不透明，旧默认2px白描边；可按类型改细描边/深描边或0不描边。无底内心可用`none`；可显式左对齐矩形内心/叙述，`oval`左对齐也从椭圆安全内区开始，其他默认居中。按形状、实际描边量安全区。不可仅修改PNG元数据假装透明。
 - 标签模式默认中文，纯英文可`--label-language en`；embedded不画标签，参数不改正文语言。输出明确`lettering_mode`与`visible_labels:false`，不表示源身份字段可以省掉。
 
 ```bash
@@ -157,15 +157,22 @@ JSON 输出 `status: valid/rendered/preview_rendered/invalid`；失败退出码 
 "lettering": {
   "mode": "embedded",
   "bubble_opacity": 88,
+  "kinds": {
+    "dialogue": {"shape": "oval", "stroke_width": 1, "stroke_color": "#263238", "outline_color": "#FFFFFF"},
+    "thought": {"shape": "rect", "align": "left", "stroke_width": 0, "outline_color": "#FFFFFF"},
+    "narration": {"shape": "rect", "align": "left", "color": "#20282C", "stroke_width": 0}
+  },
   "speakers": {
-    "角色甲": {"color": "#843B60", "dialogue_shape": "round", "thought_shape": "none"},
-    "角色乙": {"color": "#284F70", "dialogue_shape": "rect", "thought_shape": "rect"}
+    "角色甲": {"color": "#843B60", "dialogue_color": "#F2CDD9"},
+    "角色乙": {"color": "#284F70", "dialogue_color": "#C4DEF1"}
   }
 }
 ```
 
 - `mode`必填且只能`embedded`或`labelled`；labelled不接受新样式参数，避免静默忽略。以上数值是例子，不是质量配额。
 - `bubble_opacity`为0–255整数，不接受bool，默认96。0是底/边完全透明，255实底；文字始终不透明。更透明不代表在任何背景上都更清晰，须看实际字形/描边与关键画面。
-- `speakers`可省略；键为源中完整姓名，值只允许`color`（#RRGGBB）、`dialogue_shape`/`thought_shape`（round/oval/rect/none）。无配置按源类型选圆角对白、椭圆内心、矩形叙述/无框音效；不允许把正文或提示词放进样式。
+- `speakers`可省略；键为源中完整姓名，值只允许`color`、`dialogue_color`、`thought_color`（#RRGGBB），以及`dialogue_shape`/`thought_shape`（round/oval/rect/none）。人物专用类型字色优先于人物基础色，再优先于类型色。人物形状优先于类型形状。无配置按源类型选圆角对白、椭圆内心、矩形叙述/无框音效；不允许把正文或提示词放进样式。
+- `kinds`可省略；键只用`dialogue/thought/narration/sfx`，每种可选`shape`（同上）、`align`（left/center）、`color`/`stroke_color`/`outline_color`（#RRGGBB）及`stroke_width`（0–8整数，本地资源限制，不是审美门槛）。`stroke_width: 0`不画字边，实际描边宽度计入安全区；`outline_color`只改气泡边色，其alpha仍随底不透明度，不改字透明度。类型默认形状和描边与旧embedded兼容；显式align缺省时，无框字左对齐、其他居中。未知键/错误类型拒绝，不复制正文。
+- `canvas.margin`只规定格的安全边，不自动重排格子；格缝来自`rect`间隔。选择满幅细缝时显式设margin/格框，并改真实格坐标；`panel_border_width: 0`不改变可选`image_rect`的窗口框。不要把示例像素或参考三等格当通用公式，仍核真实图和阅读路径。
 - TEXT布局允许可选`breaks: [5, 9]`，表示在**源正文**第5、9个Unicode字符之后手工换行；不复制正文。列表必须递增、不重复、在正文内部，不以闭标点开行/开括号结行；片段仍按实际宽度继续折行，字符/顺序不变。改源后重看断点与画面，不能拿有效索引代替自然断句自查。
 - 使用`--speaker-font`为角色甲/乙传入实际不同字体；embedded时作用于全文，缺文件/缺正文字形拒绝。气泡/字色/位置与字体共同辨识，不能用透明度掩盖字看不清或谁在说不明。
