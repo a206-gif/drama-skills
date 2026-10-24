@@ -20,3 +20,7 @@ New entries begin at the explicit `1.0.0` semver baseline; known existing entrie
 
 `supportedRuntimes` remains empty until that exact package has been exercised on the runtime; publication alone is not runtime verification. `runtimeDependsOn` records declared host/binary prerequisites but is not a verification claim.
 
+
+## Static comic
+
+`skills/static-comic` is available in source but explicitly `excluded` from ClawHub publishing. Its distribution rights and listing review remain unconfirmed; the existing publisher field follows the inventory namespace and is not evidence that a listing or permission exists. No ClawHub URL or verified runtime is claimed. Optional Pillow and a creator-supplied font are only needed for raster export; checking remains standard-library-only.

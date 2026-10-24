@@ -22,6 +22,7 @@
     "skills/short-drama-video-prompts/SKILL.md",
     "skills/short-drama-write/SKILL.md",
     "skills/short-drama/SKILL.md",
+    "skills/static-comic/SKILL.md",
     "VERSION"
   ],
   "excludePaths": [
@@ -39,7 +40,8 @@
         "tests (py3.14)",
         "Dashboard browser regressions",
         "Windows CRLF installation and dashboard",
-        "lint and types"
+        "lint and types",
+        "Static comic rendering (Python 3.9)"
       ]
     },
     {

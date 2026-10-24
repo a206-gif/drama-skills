@@ -1,0 +1,44 @@
+{
+  "status": "preview_rendered",
+  "scope": "selected_pages",
+  "episode": "CH001",
+  "episode_pages": 9,
+  "selected_pages": [
+    "PAGE-008",
+    "PAGE-009"
+  ],
+  "selected_media_checked": true,
+  "episode_media_checked": false,
+  "storyboard_sha256": "4301b2e7b19c082e56d5a7aa46e39a51210596568334a0d25a4c653d25886722",
+  "layout_sha256": "e00666d23e80fa20d23c553a21d933d485a979f2a80cef9ab0622d9583fdebfc",
+  "outputs": [
+    {
+      "page": "PAGE-008",
+      "file": "PAGE-008.png",
+      "sha256": "2f66c66e6e177bf77cf3950545c9db7e6b67bfffceea7b24f2efa7c0b18f63fc",
+      "size": [
+        1080,
+        1440
+      ]
+    },
+    {
+      "page": "PAGE-009",
+      "file": "PAGE-009.png",
+      "sha256": "703c2259b47f2084d6aa1793ee04909579f6f594ae9f1aceeaefb84a8acb048b",
+      "size": [
+        1080,
+        1440
+      ]
+    }
+  ],
+  "additional_image_generation_calls": 0,
+  "review": "助手实图自查，未获整页/手机平台验收",
+  "notes": [
+    "24个TEXT正文未改；3个TEXT按新页号迁移",
+    "同一瞬间裁切反应，不新增动作",
+    "推广身份短签为推广提示，说明留来源",
+    "全话其余缺图不以局部试排顶替"
+  ],
+  "deterministic_rerender_verified": true,
+  "phone_approximation": "已查看360px宽缩览；不是实机或平台验收"
+}

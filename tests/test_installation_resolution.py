@@ -13,6 +13,7 @@ SUITE = Path(__file__).resolve().parents[1]
 SKILLS = SUITE / "skills"
 CORE = SKILLS / "short-drama"
 EXPECTED_SKILLS = {
+    "static-comic",
     "short-drama",
     "short-drama-novel-analyze",
     "short-drama-develop",
