@@ -32,9 +32,18 @@ def main() -> int:
         first["image_rect"] = [0, 0, first["rect"][2], first["rect"][3] // 2]
         write(windowed)
         load_project(layout)
+        embedded = copy.deepcopy(original)
+        embedded["lettering"] = {"mode": "embedded", "bubble_opacity": 88,
+                                  "speakers": {"角色甲": {"color": "#843B60", "thought_shape": "none"}}}
+        write(embedded)
+        load_project(layout)
+        invalid_style = copy.deepcopy(embedded)
+        invalid_style["lettering"]["bubble_opacity"] = True
+        invalid_breaks = copy.deepcopy(original)
+        invalid_breaks["pages"][0]["panels"][0]["texts"][0]["breaks"] = [0]
         outside = copy.deepcopy(windowed)
         outside["pages"][0]["panels"][0]["image_rect"][2] += 1
-        mutations = [outside]
+        mutations = [outside, invalid_style, invalid_breaks]
         omitted = copy.deepcopy(original)
         omitted["pages"][0]["panels"][0]["texts"] = []
         mutations.append(omitted)

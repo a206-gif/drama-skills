@@ -729,31 +729,38 @@
               "padding": 16
             }
           ]
-        },
-        {
-          "id": "PANEL-012-03",
-          "rect": [
-            48,
-            1200,
-            984,
-            192
-          ],
-          "image": "制作成果/格图/PANEL-012-03.png",
-          "texts": [
-            {
-              "id": "TEXT-012-03",
-              "rect": [
-                24,
-                20,
-                936,
-                152
-              ],
-              "font_size": 36,
-              "padding": 12
-            }
-          ]
         }
       ]
     }
-  ]
+  ],
+  "lettering": {
+    "mode": "embedded",
+    "bubble_opacity": 88,
+    "speakers": {
+      "苏梨": {
+        "color": "#843B60",
+        "dialogue_shape": "round",
+        "thought_shape": "none"
+      },
+      "霍谢山": {
+        "color": "#284F70",
+        "dialogue_shape": "rect",
+        "thought_shape": "none"
+      },
+      "姜月烟": {
+        "color": "#294444",
+        "dialogue_shape": "round",
+        "thought_shape": "none"
+      },
+      "秦音": {
+        "color": "#654C7C",
+        "dialogue_shape": "round",
+        "thought_shape": "none"
+      },
+      "系统（仅秦音可闻）": {
+        "color": "#3B617E",
+        "dialogue_shape": "rect"
+      }
+    }
+  }
 }

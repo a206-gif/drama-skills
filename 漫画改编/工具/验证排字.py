@@ -36,20 +36,23 @@ class Fonts:
         for path in [body, *speakers.values()]:
             comic.require(path.is_file(), f"字体不存在: {path}")
 
-    def get(self, source: dict, size: int):
+    def get(self, source: dict, size: int, config: dict | None = None):
+        embedded = config is not None and config["mode"] == "embedded"
         data = source["fields"]
         label_path = (self.speakers.get(data.get("说话人"), self.body_path)
                       if data["类型"] in {"dialogue", "thought"} else self.body_path)
         result = []
-        for key in ((self.body_path, size), (label_path, max(1, round(size * 0.75)))):
+        for key in ((label_path if embedded else self.body_path, size),
+                    (label_path, max(1, round(size * 0.75)))):
             if key not in self.cache:
                 self.cache[key] = self.factory(str(key[0]), key[1])
             result.append(self.cache[key])
         return result
 
-    def metrics(self, placement: dict, source: dict):
-        body, label = self.get(source, placement["font_size"])
-        return comic.letter_metrics(placement, source, body, label)
+    def metrics(self, placement: dict, source: dict, config: dict | None = None):
+        body, label = self.get(source, placement["font_size"], config)
+        style = comic.lettering_style(config, source) if config is not None else None
+        return comic.letter_metrics(placement, source, body, label, style=style)
 
 
 def source_check() -> None:
@@ -147,11 +150,11 @@ def main() -> None:
     parser.add_argument("--font", type=Path, required=True)
     parser.add_argument("--speaker-font", action="append", default=[])
     parser.add_argument("--write-layouts", action="store_true", help="首次写入三个开篇排版.json，拒绝覆盖")
-    parser.add_argument("--sample", type=Path, help="另外输出纯排字样张，不输出小说插画")
+    parser.add_argument("--sample", type=Path, help="旧labelled兼容调试样张，不是本项目当前画内贴字或小说插画")
     args = parser.parse_args()
     source_check()
     fonts = Fonts(args.font, comic.speaker_font_options(args.speaker_font))
-    comic.require({"苏梨", "霍谢山"} <= fonts.speakers.keys(), "本项目两位主角都须指定名签字体")
+    comic.require({"苏梨", "霍谢山"} <= fonts.speakers.keys(), "本项目两位主角都须指定实际专属字体")
     faces = [fonts.factory(str(fonts.speakers[name]), 30).getname() for name in ("苏梨", "霍谢山")]
     comic.require(faces[0] != faces[1], "本项目两位主角需实际不同字体，不只改文件名")
     targets = [p.with_name("排版.json") for p in STORIES]
@@ -168,18 +171,20 @@ def main() -> None:
         else:
             comic.require(targets[i].is_file(), "缺候选排版；首次用 --write-layouts，不自动重建已验收版式")
             plan = comic.load_project(targets[i], previous=previous)
+            config = comic.lettering_config(plan["layout"])
             for page, authored in zip(plan["layout"]["pages"], plan["script"]):
                 for panel, source in zip(page["panels"], authored["panels"]):
                     for box, written in zip(panel["texts"], source["texts"]):
-                        fonts.metrics(box, written)
+                        fonts.metrics(box, written, config)
             reports.append(comic.summary(plan, False))
+    common = comic.lettering_config(json.loads(targets[0].read_text(encoding="utf-8")))
     text_count = 0
     for story in DRAFTS:
         for page in comic.read_script(story):
             for panel in page["panels"]:
                 for text in panel["texts"]:
                     fonts.metrics({"id": text["id"], "rect": [0, 0, 936, 4096],
-                                   "font_size": 40, "padding": 16}, text)
+                                   "font_size": 40, "padding": 16}, text, common)
                     text_count += 1
     if args.sample:
         comic.require(not args.sample.exists(), "样张已存在；选择新文件名，不覆盖旧版")

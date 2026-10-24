@@ -1,5 +1,5 @@
 {
-  "status": "preview_rendered",
+  "status": "historical_rejected_lettering",
   "scope": "selected_pages",
   "episode": "CH001",
   "episode_pages": 9,
@@ -40,5 +40,7 @@
     "全话其余缺图不以局部试排顶替"
   ],
   "deterministic_rerender_verified": true,
-  "phone_approximation": "已查看360px宽缩览；不是实机或平台验收"
+  "phone_approximation": "已查看360px宽缩览；不是实机或平台验收",
+  "superseded_by": "../画内贴字-v4/看图说明.md",
+  "creator_typography_feedback_date": "2026-10-25"
 }

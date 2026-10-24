@@ -41,3 +41,5 @@ Status: implemented
 2026-10-25后续：按时期分工与首话实际旧图核对已另记[制作分工/原图复用](../process/2026-10-25-novel-comic-art-split-and-original-audit.md)。本笔记上列验证与未出图状态是前序文本轮记录，不冒充后续制作轮状态。
 
 本轮后续：已将弹性页面/持续技巧回写落skill，并交付第8–9页真实局部试排；新窗口/局部预览与验证见[弹性页面与skill沉淀](2026-10-25-comic-flexible-pages-and-skill-learning.md)。前列页数/未出图等为相应历史轮状态。
+
+创作者后续明确翻转本项目呈现：旧实白名签/独立白字区不采用，改画内半透明字与主角全文字体；旧决定保历史、labelled兼容仍在，见[画内贴字与故事优先](2026-10-25-comic-embedded-lettering-and-story-first.md)。

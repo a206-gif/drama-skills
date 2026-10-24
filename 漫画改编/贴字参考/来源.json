@@ -1,0 +1,21 @@
+{
+  "repository": "a206-gif/drama-skills",
+  "source_commit": "cf408fb5a7d573826f0da4e0a3ef4ac51bddb9f1",
+  "visually_inspected": true,
+  "references": [
+    {
+      "file": "贴字参考/旧02-P2-贴字-参考.jpg",
+      "original_git_blob": "1a1381c70b9b455a7d594c6a2dd6731abfcbe9c3",
+      "original_sha256": "a74615e6c54c2e40b1d6b6a156a138cf07e8a0c026b4ca4f9b65d11307d5b3b9",
+      "sha256": "8c7c9efc85dfde2941d93ace14bdb33ee7a34db5b06a5c33e019143a42167eac",
+      "scope": "排字位置/透明层/框形参考，不采旧剧情/年龄/角色造型"
+    },
+    {
+      "file": "贴字参考/旧02-P4-贴字-参考.jpg",
+      "original_git_blob": "4759a4b42871392943361462479d44d83b8467e6",
+      "original_sha256": "9223104182b4c680fdfcc0f01f544de07bcb5261bc3fd2364a10da150945f836",
+      "sha256": "a6d8d3ddf09d236c0125cdd6e87c8cc67982e7fa9bcc611eef1225426ed44d25",
+      "scope": "排字位置/透明层/框形参考，不采旧剧情/年龄/角色造型"
+    }
+  ]
+}

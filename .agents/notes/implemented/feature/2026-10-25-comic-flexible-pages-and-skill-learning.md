@@ -30,3 +30,5 @@ Status: implemented
 - Python3.11/Pillow11.3完整765 tests：737通过、28跳过；当前63漫画+5小说共68正常/优化通过。标准库隔离selftest、153文字块实际CJK/3话相邻记录、ruff/diff、来源/图/派生/成人快照及本地链接通过。
 - 固定控制器对基线4ac970965ce967d83f23c6c8eed78f9d5ba044d2离线核验通过；core1.0.1/digest a1b1107520046f6e6e26c5921dab744a30d4412769bf318a7250fd77a64aed36相对前轮已验证值不变，static-comic0.1.0仍excluded，未发布。
 - 全话媒体仍按预期在PANEL-001-02缺图拒绝；局部两页自查不是整话/独立review/手机平台或发布验收。当前无3.9运行时，未复跑下限；未上传/commit/push。
+
+创作者后续明确翻转本项目呈现：旧实白名签/独立白字区不采用，改画内半透明字与主角全文字体；旧决定保历史、labelled兼容仍在，见[画内贴字与故事优先](2026-10-25-comic-embedded-lettering-and-story-first.md)。

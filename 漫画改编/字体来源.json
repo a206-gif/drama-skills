@@ -2,7 +2,7 @@
   "license": "SIL Open Font License 1.1；字体许可不等于原著或旧图改编许可",
   "fonts": [
     {
-      "role": "正文、配角与默认身份名签",
+      "role": "配角/默认正文；labelled旧模式默认字",
       "filename": "NotoSansCJKsc-Regular.otf",
       "family": "Noto Sans CJK SC",
       "style": "Regular",
@@ -12,7 +12,7 @@
       "license_file": "字体许可/NotoSans-LICENSE.txt"
     },
     {
-      "role": "苏梨名签",
+      "role": "苏梨全部对白/内心正文（embedded）；旧labelled兼容名签",
       "filename": "LXGWWenKai-Medium.ttf",
       "family": "LXGW WenKai",
       "style": "Medium",
@@ -22,7 +22,7 @@
       "license_file": "字体许可/LXGWWenKai-OFL.txt"
     },
     {
-      "role": "霍谢山名签",
+      "role": "霍谢山全部对白/内心正文（embedded）；旧labelled兼容名签",
       "filename": "NotoSerifCJKsc-Bold.otf",
       "family": "Noto Serif CJK SC",
       "style": "Bold",

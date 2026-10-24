@@ -5,16 +5,16 @@
   "status": "audit_and_task_preparation_complete_generation_not_started",
   "source": {
     "file": "漫画改编/开篇修订/第002话/漫画分镜.md",
-    "sha256": "926b656cc09f57b78f6864cd0d7b0f8cd9b8fcbfe1e0683adb8b26d69a89dfa0",
+    "sha256": "d50f00e723e23591eeff1354c1807fc0afa5d0c9986f60472b5400b7d0a1f9c3",
     "counts": {
       "pages": 12,
-      "panels": 28,
-      "texts": 32
+      "panels": 27,
+      "texts": 31
     }
   },
   "previous_source": {
     "file": "漫画改编/开篇修订/第001话/漫画分镜.md",
-    "sha256": "4301b2e7b19c082e56d5a7aa46e39a51210596568334a0d25a4c653d25886722",
+    "sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
     "episode": "CH001",
     "adoption_proposal_panels": [
       "PANEL-009-01",
@@ -111,7 +111,7 @@
         "mother_base",
         "scene"
       ],
-      "source_prompt_sha256": "ffad036be63d23df1f8d2caf3e7f8a231982b30c17c34bedfe2c6507c3adce84",
+      "source_prompt_sha256": "224405b69a53301fc8973717ad294c4003ec39c5e7a037388f3435baf343130e",
       "output_target": "制作成果/格图/PANEL-001-01.png"
     },
     {
@@ -126,7 +126,7 @@
         "scene",
         "qin_identity"
       ],
-      "source_prompt_sha256": "982d8c7ae958dbc280e2251c5613d6b3b9443fd3d77bfd091eaf5701e15a1d0d",
+      "source_prompt_sha256": "bd1d46f12dc34bc983140b2817bb56b4b21661f5e4971d93b20ec5977d65e32a",
       "output_target": "制作成果/格图/PANEL-002-01.png"
     },
     {
@@ -141,7 +141,7 @@
         "scene",
         "qin_identity"
       ],
-      "source_prompt_sha256": "9b59c49d9736dcf81d978ac22c27e7babaed498b84b0d48dd02c661ca718056b",
+      "source_prompt_sha256": "00e915ac928cfa7e5b17443c74c14cfda5c0fe4a4f9b7705e67c60ef975ca34a",
       "output_target": "制作成果/格图/PANEL-002-02.png"
     }
   ],
@@ -177,7 +177,7 @@
   ],
   "export": {
     "file": "漫画改编/开篇修订/第002话/出图交接/第二话首批/童年三格完整提示词.txt",
-    "sha256": "7e7348031050c3f8f1f86d33eac9f273f9aa72af3803706b0f8ec722633eceb5"
+    "sha256": "9c36fe7e74e636abf2e4bdab10c2e70ba696d3d7478389db8fc66c3e596729ab"
   },
   "generation_this_round": {
     "actual_model_calls": 0,
@@ -208,5 +208,11 @@
     "前世回忆造型/责任未定，PAGE-001仍不能成页",
     "三项新图确认并通过后才调整真图裁切/气泡，不套固定等大横格",
     "未做手机/平台/独立审查，未上传漫画平台"
-  ]
+  ],
+  "lettering_revision": {
+    "mode": "embedded",
+    "visible_labels": false,
+    "promotional_footer": "moved_outside_story",
+    "new_generation_authorized": false
+  }
 }

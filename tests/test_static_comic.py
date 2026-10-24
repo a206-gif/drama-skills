@@ -146,6 +146,42 @@ class ProjectCase(unittest.TestCase):
 
 
 class StructureTests(ProjectCase):
+    def test_embedded_profile_is_optional_and_validates_exact_typed_styles(self) -> None:
+        self.assertEqual(comic.lettering_config(self.layout)["mode"], "labelled")
+        good = {"mode": "embedded", "bubble_opacity": 88,
+                "speakers": {"A": {"color": "#813956", "dialogue_shape": "round", "thought_shape": "none"}}}
+        self.layout["lettering"] = good
+        self.save()
+        self.assertEqual(comic.lettering_config(comic.load_project(self.path)["layout"]), good)
+        bad = [None, [], {"mode": []}, {"mode": "off"}, {"mode": "embedded", "bubble_opacity": True},
+               {"mode": "embedded", "bubble_opacity": -1}, {"mode": "embedded", "bubble_opacity": 256},
+               {"mode": "embedded", "speakers": []}, {"mode": "embedded", "speakers": {" A ": {}}},
+               {"mode": "embedded", "speakers": {"A": {"color": "red"}}},
+               {"mode": "embedded", "speakers": {"A": {"color": [1, 2, 3]}}},
+               {"mode": "embedded", "speakers": {"A": {"thought_shape": []}}},
+               {"mode": "embedded", "speakers": {"A": {"body": "another script"}}},
+               {"mode": "labelled", "bubble_opacity": 100}]
+        for profile in bad:
+            with self.subTest(profile=profile), self.assertRaises(comic.ComicError):
+                self.layout["lettering"] = profile
+                self.save()
+                comic.load_project(self.path)
+
+    def test_explicit_breaks_reference_source_positions_without_copying_body(self) -> None:
+        text = self.panel()["texts"][0]
+        text["breaks"] = [2, 9]
+        self.save()
+        comic.load_project(self.path)
+        length = len(self.pages[0]["panels"][0]["texts"][0]["body"])
+        for points in (None, "2", [True], [0], [length], [4, 2], [2, 2], [1.5]):
+            with self.subTest(points=points), self.assertRaises(comic.ComicError):
+                text["breaks"] = points
+                self.save()
+                comic.load_project(self.path)
+        for value, points in (("AB,CD", [2]), ("AB(CD", [3])):
+            with self.subTest(value=value), self.assertRaises(comic.ComicError):
+                comic.check_breaks(value, points, "fixture")
+
     def test_shipped_example_is_a_valid_text_only_handoff(self) -> None:
         plan = comic.load_project(SKILL / "assets/page-layout.example.json")
         result = comic.summary(plan, media=False)
@@ -597,6 +633,130 @@ class RenderTests(ProjectCase):
     def export(self, name: str = "发布-v1", image_format: str = "png", speaker_fonts=None) -> dict:
         return comic.render(comic.load_project(self.path, media=True), self.font, self.root / name,
                             image_format, speaker_fonts=speaker_fonts, label_language="en")
+
+    def embedded(self, opacity=88, speakers=None) -> None:
+        self.layout["lettering"] = {"mode": "embedded", "bubble_opacity": opacity,
+                                    "speakers": speakers or {}}
+        self.save()
+
+    def test_embedded_draws_full_body_in_speaker_font_and_color_without_labels(self) -> None:
+        custom = self.root / "speaker-body.ttf"
+        custom.write_bytes(self.font.read_bytes())
+        self.embedded(speakers={"A": {"color": "#813956", "thought_shape": "none"}})
+        calls = []
+        original = ImageDraw.ImageDraw.text
+
+        def record(draw, xy, value, *args, **kwargs):
+            calls.append((value, Path(kwargs["font"].path), kwargs["fill"]))
+            return original(draw, xy, value, *args, **kwargs)
+
+        with mock.patch.object(ImageDraw.ImageDraw, "text", new=record):
+            report = self.export(speaker_fonts={"A": custom})
+        for value in ("A sealed letter.", "Not my name."):
+            self.assertIn((value, custom, (129, 57, 86, 255)), calls)
+        self.assertEqual({value for value, _, _ in calls},
+                         {"A sealed letter.", "Not my name.", "The visitor returns."})
+        self.assertFalse(report["visible_labels"])
+        self.assertEqual(report["lettering_mode"], "embedded")
+
+    def test_embedded_alpha_is_composited_over_art_not_applied_to_text(self) -> None:
+        for opacity in (0, 128, 255):
+            with self.subTest(opacity=opacity):
+                self.embedded(opacity, {"A": {"color": "#813956"}})
+                report = self.export("opacity-" + str(opacity))
+                with Image.open(report["outputs"][0]) as image:
+                    expected = tuple(round((v * (255 - opacity) + 255 * opacity) / 255)
+                                     for v in (20, 70, 180))
+                    self.assertEqual(image.getpixel((65, 55)), expected)
+                    self.assertIn((129, 57, 86), image.crop((40, 40, 340, 120)).getdata())
+
+    def test_embedded_free_thought_does_not_paint_a_background_panel(self) -> None:
+        self.embedded(255, {"A": {"thought_shape": "none"}})
+        report = self.export()
+        with Image.open(report["outputs"][0]) as image:
+            self.assertEqual(image.getpixel((190, 175)), (20, 70, 180))
+            self.assertNotEqual(image.getpixel((65, 55)), (20, 70, 180))
+
+    def test_hidden_identity_glyphs_are_not_required_but_body_glyphs_still_are(self) -> None:
+        self.embedded()
+        self.pages[0]["panels"][0]["texts"][0]["speaker"] = "中文姓名"
+        write_story(self.story, self.pages)
+        self.export("hidden-identity")
+        self.pages[0]["panels"][0]["texts"][0]["body"] = "中文正文"
+        write_story(self.story, self.pages)
+        with self.assertRaisesRegex(comic.ComicError, "字体缺字"):
+            self.export("missing-body-glyph")
+        self.assertFalse((self.root / "missing-body-glyph").exists())
+
+    def test_embedded_missing_speaker_body_font_fails_before_any_output(self) -> None:
+        self.embedded()
+        with self.assertRaisesRegex(comic.ComicError, "专属字体不存在"):
+            self.export(speaker_fonts={"A": self.root / "absent.ttf"})
+        self.assertFalse((self.root / "发布-v1").exists())
+
+    def test_explicit_labelled_mode_is_pixel_identical_to_legacy_default(self) -> None:
+        before = self.export("legacy-default")
+        self.layout["lettering"] = {"mode": "labelled"}
+        self.save()
+        after = self.export("explicit-labelled")
+        for a, b in zip(before["outputs"], after["outputs"]):
+            with Image.open(a) as first, Image.open(b) as second:
+                self.assertEqual(first.tobytes(), second.tobytes())
+
+    def test_manual_breaks_draw_complete_source_once_in_requested_segments(self) -> None:
+        self.embedded()
+        self.pages[0]["panels"][0]["texts"][0]["body"] = "ABCDEFGH"
+        write_story(self.story, self.pages)
+        self.panel()["texts"][0]["breaks"] = [4]
+        self.panel()["texts"][0]["rect"][3] = 110
+        self.save()
+        calls = []
+        original = ImageDraw.ImageDraw.text
+
+        def record(draw, xy, value, *args, **kwargs):
+            calls.append(value)
+            return original(draw, xy, value, *args, **kwargs)
+
+        with mock.patch.object(ImageDraw.ImageDraw, "text", new=record):
+            self.export()
+        self.assertEqual(calls[:2], ["ABCD", "EFGH"])
+        self.assertEqual("".join(calls[:2]), self.pages[0]["panels"][0]["texts"][0]["body"])
+
+    def test_embedded_body_can_fit_where_nameplate_mode_cannot_without_shrinking(self) -> None:
+        self.embedded()
+        self.panel()["texts"][0]["rect"][3] = 48
+        self.save()
+        self.export()
+        self.assertEqual(self.panel()["texts"][0]["font_size"], 24)
+
+    def test_embedded_oval_shape_changes_painted_pixels_and_safe_text_space(self) -> None:
+        self.embedded(speakers={"A": {"dialogue_shape": "round"}})
+        a = self.export("round")
+        self.embedded(speakers={"A": {"dialogue_shape": "oval"}})
+        b = self.export("oval")
+        with Image.open(a["outputs"][0]) as first, Image.open(b["outputs"][0]) as second:
+            self.assertNotEqual(first.crop((40, 40, 340, 120)).tobytes(),
+                                second.crop((40, 40, 340, 120)).tobytes())
+
+    def test_embedded_preview_cli_preserves_partial_scope_and_no_label_claim(self) -> None:
+        self.embedded()
+        out = self.root / "embedded-cli"
+        command = [sys.executable, str(SKILL / "scripts/comic_tool.py"), "preview", str(self.path),
+                   "--page", "PAGE-001", "--font", str(self.font), "--out", str(out)]
+        result = subprocess.run(command, capture_output=True, text=True, check=False)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        report = json.loads(result.stdout)
+        self.assertEqual(report["lettering_mode"], "embedded")
+        self.assertFalse(report["visible_labels"])
+        self.assertFalse(report["episode_media_checked"])
+        self.assertEqual(report["selected_pages"], ["PAGE-001"])
+
+    def test_embedded_late_image_error_remains_transactional(self) -> None:
+        self.embedded()
+        (self.root / "格图/third.png").write_bytes(b"not an image")
+        with self.assertRaises((OSError, comic.ComicError)):
+            self.export()
+        self.assertFalse((self.root / "发布-v1").exists())
 
     def test_labels_are_actually_drawn_and_only_nameplates_use_speaker_font(self) -> None:
         custom = self.root / "speaker.ttf"

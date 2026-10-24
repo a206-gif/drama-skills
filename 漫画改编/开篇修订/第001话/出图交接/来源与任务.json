@@ -147,7 +147,7 @@
     "sha256": "ac944bd483aa76a66a9cbf5dbfc11461a0bedddd24a49c06374598f2e6fd9cc6",
     "status": "旧图上格内容复用；未做最终贴字/脸手遮挡与手机验收，不等于已完成整页"
   },
-  "storyboard_sha256": "4301b2e7b19c082e56d5a7aa46e39a51210596568334a0d25a4c653d25886722",
+  "storyboard_sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
   "tasks": [
     {
       "panel": "PANEL-001-02",
@@ -183,6 +183,8 @@
       984,
       432
     ],
-    "status": "首格局部贴字检查，非整页/整话或手机平台验收"
+    "status": "历史实白姓名名签示例，已被本轮贴字反馈否决；非当前版式证明",
+    "historical_snapshot_commit": "cb78c74d7257f22e6fe889736c4e47df112fc9d0",
+    "current_lettering_accepted": false
   }
 }

@@ -237,11 +237,51 @@ def unique_json(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
     return result
 
 
+def lettering_config(layout: dict[str, Any]) -> dict[str, Any]:
+    """Keep speaker/type in the source while allowing different visible strategies."""
+    value = layout.get("lettering", {"mode": "labelled"})
+    fields(value, {"mode"}, {"bubble_opacity", "speakers"}, "lettering")
+    require(isinstance(value["mode"], str) and value["mode"] in {"labelled", "embedded"}, "lettering/mode 必须为 labelled 或 embedded")
+    require(value["mode"] == "embedded" or value.keys() == {"mode"},
+            "透明度/人物样式仅用于 embedded；旧标签模式不静默忽略样式")
+    opacity = value.get("bubble_opacity", 96)
+    integer(opacity, 0, "lettering/bubble_opacity")
+    require(opacity <= 255, "lettering/bubble_opacity 必须在 0–255")
+    speakers = value.get("speakers", {})
+    require(isinstance(speakers, dict), "lettering/speakers 必须为对象")
+    for name, style in speakers.items():
+        require(isinstance(name, str) and bool(name.strip()) and name == name.strip(),
+                "lettering/speakers 人物名必须为非空完整姓名，不含首尾空白")
+        fields(style, set(), {"color", "dialogue_shape", "thought_shape"}, "lettering/" + name)
+        if "color" in style:
+            require(isinstance(style["color"], str)
+                    and re.fullmatch(r"#[0-9a-fA-F]{6}", style["color"]) is not None,
+                    "lettering/color 必须为 #RRGGBB")
+        for key in ("dialogue_shape", "thought_shape"):
+            if key in style:
+                require(isinstance(style[key], str) and style[key] in {"round", "oval", "rect", "none"},
+                        "lettering/shape 必须为 round、oval、rect 或 none")
+    return value
+
+
+def lettering_style(config: dict[str, Any], source: dict[str, Any]) -> dict[str, Any]:
+    kind = source["fields"]["类型"]
+    mode = config["mode"]
+    actor = config.get("speakers", {}).get(source["fields"].get("说话人"), {}) \
+        if kind in {"dialogue", "thought"} else {}
+    shape = {"dialogue": "round", "thought": "oval", "narration": "rect", "sfx": "none"}[kind]
+    if mode == "embedded":
+        shape = actor.get(kind + "_shape", shape)
+    return {"mode": mode, "shape": shape, "opacity": config.get("bubble_opacity", 96),
+            "color": actor.get("color", "#20282C")}
+
+
 def load_project(path: Path, media: bool = False, previous: Path | None = None) -> dict[str, Any]:
     path = path.resolve()
     root = path.parent
     data = json.loads(path.read_text(encoding="utf-8-sig"), object_pairs_hook=unique_json)
-    fields(data, {"version", "storyboard", "canvas", "pages"}, set(), "排版")
+    fields(data, {"version", "storyboard", "canvas", "pages"}, {"lettering"}, "排版")
+    lettering_config(data)
     require(type(data["version"]) is int and data["version"] == 1, "不支持的排版 version")
     canvas = data["canvas"]
     fields(canvas, {"width", "height", "margin"}, set(), "canvas")
@@ -288,7 +328,9 @@ def load_project(path: Path, media: bool = False, previous: Path | None = None) 
             text_boxes: list[list[int]] = []
             for text, written in zip(panel["texts"], source["texts"]):
                 tid = text["id"]
-                fields(text, {"id", "rect", "font_size"}, {"padding", "tail"}, tid)
+                fields(text, {"id", "rect", "font_size"}, {"padding", "tail", "breaks"}, tid)
+                if "breaks" in text:
+                    check_breaks(written["fields"]["正文"], text["breaks"], tid)
                 rectangle(text["rect"], pw, ph, 0, tid)
                 require(not any(intersects(text["rect"], other) for other in text_boxes), f"{tid}: 文字框相交")
                 text_boxes.append(text["rect"])
@@ -380,14 +422,27 @@ def visible_label(source: dict[str, Any], language: str = "zh") -> str:
     return f"{identity}｜{names[kind]}" if language == "zh" else f"{identity} / {kind}"
 
 
-def measured_lines(value: str, font: Any, width: int, where: str) -> dict[str, Any]:
+def check_breaks(value: str, breaks: Any, where: str) -> None:
+    require(isinstance(breaks, list) and all(type(i) is int and 0 < i < len(value) for i in breaks),
+            f"{where}: breaks 必须为正文内的正整数断点列表")
+    require(breaks == sorted(set(breaks)), f"{where}: breaks 必须递增且不重复")
+    require(all(value[i] not in NO_START and value[i - 1] not in NO_END for i in breaks),
+            f"{where}: 手工断行不能把标点放到行首或把开括号放到行尾")
+
+
+def measured_lines(value: str, font: Any, width: int, where: str,
+                   breaks: list[int] | None = None) -> dict[str, Any]:
     require(len(value) <= 100_000, f"{where}: 文字超出排字资源上限")
     missing = font.getmask("\U0010ffff")
     signature = missing.size, bytes(missing)
     for character in set(value) - set(" \t"):
         mask = font.getmask(character)
         require((mask.size, bytes(mask)) != signature, f"{where}: 字体缺字 {character!r}")
-    lines = wrap_text(value, font, width)
+    if breaks is not None:
+        check_breaks(value, breaks, where)
+    points = [0, *(breaks or []), len(value)]
+    lines = [line for start, end in zip(points, points[1:])
+             for line in wrap_text(value[start:end], font, width)]
     boxes = [font.getbbox(line, anchor="ls") for line in lines]
     top = min(box[1] for box in boxes)
     bottom = max(box[3] for box in boxes)
@@ -397,17 +452,22 @@ def measured_lines(value: str, font: Any, width: int, where: str) -> dict[str, A
 
 
 def letter_metrics(text: dict[str, Any], source: dict[str, Any], font: Any,
-                   label_font: Any = None, label_language: str = "zh") -> dict[str, Any]:
+                   label_font: Any = None, label_language: str = "zh",
+                   style: dict[str, Any] | None = None) -> dict[str, Any]:
     kind = source["fields"]["类型"]
+    style = style or lettering_style({"mode": "labelled"}, source)
+    embedded = style["mode"] == "embedded"
     _, _, width, height = text["rect"]
     padding = text.get("padding", 20)
     iw, ih = width - 2 * padding, height - 2 * padding
-    if kind == "thought":
+    if embedded:
+        iw, ih = iw - 4, ih - 4  # Keep the opaque two-pixel text halo inside the measured box.
+    if style["shape"] == "oval":
         iw, ih = math.floor(iw / math.sqrt(2)), math.floor(ih / math.sqrt(2))
     if kind == "sfx":
         iw, ih = iw - 4, ih - 4
-    body = measured_lines(source["fields"]["正文"], font, iw, text["id"])
-    label_value = visible_label(source, label_language)
+    body = measured_lines(source["fields"]["正文"], font, iw, text["id"], text.get("breaks"))
+    label_value = "" if embedded else visible_label(source, label_language)
     label, gap = None, 0
     if label_value:
         if label_font is None:
@@ -417,8 +477,8 @@ def letter_metrics(text: dict[str, Any], source: dict[str, Any], font: Any,
         gap = max(4, math.ceil(font.size * 0.2))
     used = body["used"] + (label["used"] + gap if label else 0)
     require(used <= ih,
-            f"{text['id']}: 文字高度溢出（含可见名签）；增框、改版式或回分镜改字，不能自动缩字")
-    return {**body, "used": used, "label": label, "gap": gap}
+            f"{text['id']}: 文字高度溢出（{'画内正文' if embedded else '含可见名签'}）；增框、改版式或回分镜改字，不能自动缩字")
+    return {**body, "used": used, "label": label, "gap": gap, "style": style}
 
 
 def draw_lettering(draw: Any, text: dict[str, Any], source: dict[str, Any],
@@ -428,6 +488,13 @@ def draw_lettering(draw: Any, text: dict[str, Any], source: dict[str, Any],
     x, y = px + x, py + y
     bounds = (x, y, x + w - 1, y + h - 1)
     kind = source["fields"]["类型"]
+    style = metrics["style"]
+    embedded = style["mode"] == "embedded"
+    shape = style["shape"]
+    color = tuple(int(style["color"][i:i + 2], 16) for i in (1, 3, 5))
+    fill = (255, 255, 255, style["opacity"]) if embedded else "white"
+    outline = (*color, round(style["opacity"] * 0.6)) if embedded else "black"
+    border = 1 if embedded else 2
     if "tail" in text:
         tx, ty = px + text["tail"][0], py + text["tail"][1]
         cx, cy = x + w / 2, y + h / 2
@@ -436,14 +503,15 @@ def draw_lettering(draw: Any, text: dict[str, Any], source: dict[str, Any],
                     (h / 2) / abs(dy) if dy else math.inf)
         bx, by = cx + dx * scale, cy + dy * scale
         if kind == "thought":
-            # The first dot starts on the ellipse rather than on its bounding box.
-            scale = 1 / math.sqrt((dx / (w / 2)) ** 2 + (dy / (h / 2)) ** 2)
-            bx, by = cx + dx * scale, cy + dy * scale
+            if shape == "oval":
+                # Start on the ellipse only when there actually is an ellipse.
+                scale = 1 / math.sqrt((dx / (w / 2)) ** 2 + (dy / (h / 2)) ** 2)
+                bx, by = cx + dx * scale, cy + dy * scale
             for fraction, radius in ((0.3, 6), (0.7, 4)):
                 dotx, doty = bx + (tx - bx) * fraction, by + (ty - by) * fraction
                 radius = min(radius, dotx - px, doty - py)
                 draw.ellipse((dotx - radius, doty - radius, dotx + radius, doty + radius),
-                             fill="white", outline="black", width=2)
+                             fill=fill, outline=outline, width=border)
         else:
             delta = min(12, w / 8, h / 8)
             # Inset the base so its black edge is covered by the balloon.
@@ -453,13 +521,13 @@ def draw_lettering(draw: Any, text: dict[str, Any], source: dict[str, Any],
             else:
                 base = [(bx - delta, by - math.copysign(4, dy)),
                         (bx + delta, by - math.copysign(4, dy))]
-            draw.polygon([*base, (tx, ty)], fill="white", outline="black", width=2)
-    if kind == "dialogue":
-        draw.rounded_rectangle(bounds, radius=min(w, h) // 5, fill="white", outline="black", width=2)
-    elif kind == "thought":
-        draw.ellipse(bounds, fill="white", outline="black", width=2)
-    elif kind == "narration":
-        draw.rectangle(bounds, fill="white", outline="black", width=2)
+            draw.polygon([*base, (tx, ty)], fill=fill, outline=outline, width=border)
+    if shape == "round":
+        draw.rounded_rectangle(bounds, radius=min(w, h) // 5, fill=fill, outline=outline, width=border)
+    elif shape == "oval":
+        draw.ellipse(bounds, fill=fill, outline=outline, width=border)
+    elif shape == "rect":
+        draw.rectangle(bounds, fill=fill, outline=outline, width=border)
     content_top = y + (h - metrics["used"]) / 2
     label = metrics["label"]
     if label:
@@ -471,10 +539,12 @@ def draw_lettering(draw: Any, text: dict[str, Any], source: dict[str, Any],
         content_top += label["used"] + metrics["gap"]
     baseline = content_top - metrics["top"]
     for index, (line, box) in enumerate(zip(metrics["lines"], metrics["boxes"])):
-        left = x + (w - (box[2] - box[0])) / 2 - box[0]
+        left = (x + text.get("padding", 20) - box[0] if embedded and shape == "none"
+                else x + (w - (box[2] - box[0])) / 2 - box[0])
         draw.text((left, baseline + index * metrics["step"]), line, font=font,
-                  fill="black", anchor="ls", stroke_width=2 if kind == "sfx" else 0,
-                  stroke_fill="white")
+                  fill=(*color, 255) if embedded else "black", anchor="ls",
+                  stroke_width=2 if kind == "sfx" or embedded else 0,
+                  stroke_fill=(255, 255, 255, 255) if embedded else "white")
 
 
 def speaker_font_options(values: list[str]) -> dict[str, Path]:
@@ -497,30 +567,38 @@ def render(plan: dict[str, Any], font_path: Path, out: Path, image_format: str,
     require(image_format in {"png", "jpg"}, "输出格式必须是 png 或 jpg")
     require(font_path.is_file(), "必须显式提供实际可用的中文字体文件")
     require(label_language in {"zh", "en"}, "名签语言必须为 zh 或 en")
+    config = lettering_config(plan["layout"])
+    embedded = config["mode"] == "embedded"
     speaker_fonts = speaker_fonts or {}
     for name, path in speaker_fonts.items():
-        require(bool(name.strip()) and path.is_file(), f"{name}: 专属名签字体不存在")
+        require(bool(name.strip()) and path.is_file(),
+                f"{name}: {'专属字体' if embedded else '专属名签字体'}不存在")
     require(not out.is_symlink(), "输出不能是符号链接")
     out = out.resolve()
     require(not out.exists(), "输出目录已存在；请选新目录，不覆盖旧版")
     layout = plan["layout"]
     canvas = layout["canvas"]
-    fonts: dict[int, Any] = {}
+    fonts: dict[tuple[Path, int], Any] = {}
     label_fonts: dict[tuple[Path, int], Any] = {}
     prepared: dict[str, Any] = {}
     for page, authored in zip(layout["pages"], plan["script"]):
         for panel, source in zip(page["panels"], authored["panels"]):
             for text, written in zip(panel["texts"], source["texts"]):
                 size = text["font_size"]
-                if size not in fonts:
-                    fonts[size] = ImageFont.truetype(str(font_path), size)
-                label_path = speaker_fonts.get(written["fields"].get("说话人", ""), font_path) \
+                actor_path = speaker_fonts.get(written["fields"].get("说话人", ""), font_path) \
                     if written["fields"]["类型"] in {"dialogue", "thought"} else font_path
-                key = label_path, max(1, round(size * 0.75))
-                if key not in label_fonts:
-                    label_fonts[key] = ImageFont.truetype(str(label_path), key[1])
-                prepared[text["id"]] = letter_metrics(text, written, fonts[size],
-                                                       label_fonts[key], label_language)
+                body_key = (actor_path if embedded else font_path), size
+                if body_key not in fonts:
+                    fonts[body_key] = ImageFont.truetype(str(body_key[0]), size)
+                key = actor_path, max(1, round(size * 0.75))
+                label_font = None
+                if not embedded:
+                    if key not in label_fonts:
+                        label_fonts[key] = ImageFont.truetype(str(key[0]), key[1])
+                    label_font = label_fonts[key]
+                metrics = letter_metrics(text, written, fonts[body_key], label_font, label_language,
+                                         lettering_style(config, written))
+                prepared[text["id"]] = {**metrics, "body_font": fonts[body_key]}
     out.parent.mkdir(parents=True, exist_ok=True)
     outputs: list[str] = []
     with tempfile.TemporaryDirectory(prefix=".comic-render-", dir=out.parent) as temporary:
@@ -556,11 +634,18 @@ def render(plan: dict[str, Any], font_path: Path, out: Path, image_format: str,
                                        outline="black", width=2)
                     draw.rectangle((x, y, x + w - 1, y + h - 1), outline="black", width=3)
                     # Paint into the panel crop so tails/outlines cannot leak into another panel.
-                    with sheet.crop((x, y, x + w, y + h)) as lettered:
+                    with sheet.crop((x, y, x + w, y + h)).convert("RGBA" if embedded else "RGB") as lettered:
                         local_draw = ImageDraw.Draw(lettered)
                         for text, written in zip(panel["texts"], source["texts"]):
-                            draw_lettering(local_draw, text, written, fonts[text["font_size"]],
-                                           prepared[text["id"]], (0, 0))
+                            metrics = prepared[text["id"]]
+                            if embedded:
+                                # Draw translucent balloons once, then composite; keep glyphs opaque.
+                                with Image.new("RGBA", (w, h), (0, 0, 0, 0)) as overlay:
+                                    draw_lettering(ImageDraw.Draw(overlay), text, written,
+                                                   metrics["body_font"], metrics, (0, 0))
+                                    lettered.alpha_composite(overlay)
+                            else:
+                                draw_lettering(local_draw, text, written, metrics["body_font"], metrics, (0, 0))
                         sheet.paste(lettered, (x, y))
                 name = f"{page['id']}.{image_format}"
                 sheet.save(staged / name, **({"quality": 95, "subsampling": 0} if image_format == "jpg" else {}))
@@ -570,7 +655,8 @@ def render(plan: dict[str, Any], font_path: Path, out: Path, image_format: str,
         staged.rename(out)
     result = {"status": "rendered", "pages": len(outputs), "outputs": outputs,
             "episode": plan["continuity"]["id"], "checked_previous": plan["continuity"]["checked_previous"],
-            "visible_labels": label_language, "speaker_font_names": sorted(speaker_fonts),
+            "visible_labels": False if embedded else label_language,
+            "lettering_mode": config["mode"], "speaker_font_names": sorted(speaker_fonts),
             "note": "仅本地静态图片；仍需手机/平台预览、授权与内容检查，未上传"}
     if "preview_scope" in plan:
         result.update({"status": "preview_rendered", "scope": "selected_pages",
@@ -596,7 +682,7 @@ def main(argv: list[str] | None = None) -> int:
         target.add_argument("layout", type=Path)
         target.add_argument("--font", type=Path, required=True)
         target.add_argument("--speaker-font", action="append", default=[], metavar="姓名=字体路径",
-                            help="可重复；仅此人物的可见名签换字体，正文保持 --font")
+                            help="可重复；embedded 用于此人物全部正文，labelled 仅换名签；其余用 --font")
         target.add_argument("--label-language", choices=("zh", "en"), default="zh",
                             help="可见类型标签语言，默认中文；字体必须覆盖名签与正文")
         target.add_argument("--out", type=Path, required=True)

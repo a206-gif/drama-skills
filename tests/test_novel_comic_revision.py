@@ -61,8 +61,9 @@ class NovelComicRevisionTests(unittest.TestCase):
             pages = comic.read_script(story)
             footers = [p for page in pages for p in page["panels"]
                        if p["fields"].get("版式角色") == "推广尾栏"]
-            self.assertEqual(len(footers), 1)
-            self.assertTrue(footers[0]["texts"][0]["fields"]["叙述身份"].startswith("推广提示"))
+            self.assertFalse(footers)
+            self.assertTrue(story.with_name("发布文案.md").is_file())
+            self.assertEqual(value["lettering"]["mode"], "embedded")
 
     def test_next_childhood_batch_exports_match_current_source_and_explicit_scope(self) -> None:
         batch = STORIES[1].parent / "出图交接" / "第二话首批"
