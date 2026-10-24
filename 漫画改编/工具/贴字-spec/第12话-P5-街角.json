@@ -1,0 +1,98 @@
+{
+  "image": "漫画改编/第12话/P5-街角.png",
+  "output": "漫画改编/第12话/P5-街角-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 26,
+  "alpha": 0.42,
+  "panel_rects": [
+    [
+      0,
+      0,
+      1024,
+      432
+    ],
+    [
+      0,
+      435,
+      1024,
+      1536
+    ]
+  ],
+  "items": [
+    {
+      "type": "box",
+      "panel": 1,
+      "lines": [
+        "街角的暗处，",
+        "有人在看。"
+      ],
+      "width": 0.37,
+      "at": [
+        0.22,
+        0.25
+      ],
+      "fixed": true,
+      "speaker": "旁白"
+    },
+    {
+      "type": "oval",
+      "panel": 2,
+      "lines": [
+        "霍谢山：",
+        "看得开心吗。"
+      ],
+      "width": 0.3,
+      "at": [
+        0.82,
+        0.07
+      ],
+      "fixed": true,
+      "speaker": "霍谢山"
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "lines": [
+        "相机里全是偷拍的照片。",
+        "她的一张，嘴唇的特写，",
+        "他没删。"
+      ],
+      "width": 0.46,
+      "at": [
+        0.74,
+        0.6
+      ],
+      "fixed": true,
+      "speaker": "旁白"
+    },
+    {
+      "type": "oval",
+      "panel": 2,
+      "lines": [
+        "听话。"
+      ],
+      "width": 0.24,
+      "at": [
+        0.26,
+        0.91
+      ],
+      "fixed": true,
+      "speaker": "霍谢山（低声）"
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "lines": [
+        "项圈一点点扣紧。",
+        "这一次，咒语没有生效。"
+      ],
+      "width": 0.45,
+      "at": [
+        0.75,
+        0.91
+      ],
+      "fixed": true,
+      "speaker": "旁白"
+    }
+  ]
+}

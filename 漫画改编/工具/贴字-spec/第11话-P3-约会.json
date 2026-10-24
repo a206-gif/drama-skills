@@ -1,0 +1,64 @@
+{
+  "image": "漫画改编/第11话/P3-约会.png",
+  "output": "漫画改编/第11话/P3-约会-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 26,
+  "alpha": 0.42,
+  "panel_rects": [
+    [
+      0,
+      0,
+      1024,
+      1536
+    ]
+  ],
+  "items": [
+    {
+      "type": "box",
+      "panel": 1,
+      "lines": [
+        "三天后，他约她吃饭。",
+        "包下整层顶楼，",
+        "请了乐手。"
+      ],
+      "width": 0.36,
+      "at": [
+        0.8,
+        0.09
+      ],
+      "fixed": true,
+      "speaker": "旁白"
+    },
+    {
+      "type": "oval",
+      "panel": 1,
+      "lines": [
+        "霍启珏：",
+        "梨梨，约会用不上",
+        "这么多人吧。"
+      ],
+      "width": 0.3,
+      "at": [
+        0.83,
+        0.28
+      ],
+      "fixed": true,
+      "speaker": "霍启珏（画外）"
+    },
+    {
+      "type": "oval",
+      "panel": 1,
+      "lines": [
+        "谁说要和你",
+        "约会了。"
+      ],
+      "width": 0.28,
+      "at": [
+        0.84,
+        0.5
+      ],
+      "fixed": true,
+      "speaker": "苏梨"
+    }
+  ]
+}

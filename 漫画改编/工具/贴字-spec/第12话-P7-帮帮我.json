@@ -1,0 +1,111 @@
+{
+  "image": "漫画改编/第12话/P7-帮帮我.png",
+  "output": "漫画改编/第12话/P7-帮帮我-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 26,
+  "alpha": 0.42,
+  "panel_rects": [
+    [
+      0,
+      0,
+      512,
+      1536
+    ],
+    [
+      519,
+      0,
+      1024,
+      1536
+    ]
+  ],
+  "items": [
+    {
+      "type": "oval",
+      "panel": 1,
+      "lines": [
+        "霍谢山：姐姐今天，",
+        "没有什么话要对我说吗。"
+      ],
+      "width": 0.94,
+      "at": [
+        0.5,
+        0.24
+      ],
+      "fixed": true,
+      "speaker": "霍谢山（画外）"
+    },
+    {
+      "type": "oval",
+      "panel": 1,
+      "lines": [
+        "下次做了坏事，",
+        "记得收尾干净一些。"
+      ],
+      "width": 0.91,
+      "at": [
+        0.5,
+        0.5
+      ],
+      "fixed": true,
+      "speaker": "苏梨"
+    },
+    {
+      "type": "oval",
+      "panel": 1,
+      "lines": [
+        "或者，来求求我。"
+      ],
+      "width": 0.9,
+      "at": [
+        0.48,
+        0.68
+      ],
+      "fixed": true,
+      "speaker": "苏梨"
+    },
+    {
+      "type": "oval",
+      "panel": 1,
+      "lines": [
+        "说「姐姐，帮帮我」，",
+        "我会勉为其难地帮你。"
+      ],
+      "width": 0.94,
+      "at": [
+        0.5,
+        0.87
+      ],
+      "fixed": true,
+      "speaker": "苏梨"
+    },
+    {
+      "type": "oval",
+      "panel": 2,
+      "lines": [
+        "姐姐，帮帮我。"
+      ],
+      "width": 0.88,
+      "at": [
+        0.52,
+        0.64
+      ],
+      "fixed": true,
+      "speaker": "霍谢山"
+    },
+    {
+      "type": "box",
+      "panel": 2,
+      "lines": [
+        "他学得很快。",
+        "快得让人心慌。"
+      ],
+      "width": 0.9,
+      "at": [
+        0.5,
+        0.91
+      ],
+      "fixed": true,
+      "speaker": "旁白"
+    }
+  ]
+}

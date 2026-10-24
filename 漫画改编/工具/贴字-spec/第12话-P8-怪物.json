@@ -1,0 +1,76 @@
+{
+  "image": "漫画改编/第12话/P8-怪物.png",
+  "output": "漫画改编/第12话/P8-怪物-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 26,
+  "alpha": 0.42,
+  "panel_rects": [
+    [
+      0,
+      0,
+      1024,
+      1536
+    ]
+  ],
+  "items": [
+    {
+      "type": "box",
+      "panel": 1,
+      "lines": [
+        "入夜。他做了个梦，",
+        "梦里他把助听器摘了。"
+      ],
+      "width": 0.42,
+      "at": [
+        0.23,
+        0.055
+      ],
+      "fixed": true,
+      "speaker": "旁白"
+    },
+    {
+      "type": "oval",
+      "panel": 1,
+      "lines": [
+        "姐姐，我听不见。"
+      ],
+      "width": 0.37,
+      "at": [
+        0.79,
+        0.07
+      ],
+      "fixed": true,
+      "speaker": "霍谢山（低声）"
+    },
+    {
+      "type": "box",
+      "panel": 1,
+      "lines": [
+        "醒来时，那股亢奋还没退。",
+        "他盯着镜子里的自己，",
+        "像在看一只不受控的怪物。"
+      ],
+      "width": 0.49,
+      "at": [
+        0.27,
+        0.61
+      ],
+      "fixed": true,
+      "speaker": "旁白"
+    },
+    {
+      "type": "box",
+      "panel": 1,
+      "lines": [
+        "他要杀了它。"
+      ],
+      "width": 0.28,
+      "at": [
+        0.84,
+        0.95
+      ],
+      "fixed": true,
+      "speaker": "旁白"
+    }
+  ]
+}

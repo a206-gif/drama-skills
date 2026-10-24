@@ -1,0 +1,132 @@
+{
+  "image": "漫画改编/第12话/P6-杨少.png",
+  "output": "漫画改编/第12话/P6-杨少-贴字.png",
+  "font": "漫画改编/工具/CJK.ttf",
+  "min_font": 26,
+  "alpha": 0.42,
+  "panel_rects": [
+    [
+      0,
+      0,
+      560,
+      738
+    ],
+    [
+      564,
+      0,
+      1024,
+      738
+    ],
+    [
+      0,
+      739,
+      1024,
+      1536
+    ]
+  ],
+  "items": [
+    {
+      "type": "box",
+      "panel": 1,
+      "lines": [
+        "杨家少爷坐着轮椅",
+        "来拦她的车，",
+        "话都说不清。"
+      ],
+      "width": 0.88,
+      "at": [
+        0.5,
+        0.86
+      ],
+      "fixed": true,
+      "speaker": "旁白"
+    },
+    {
+      "type": "oval",
+      "panel": 2,
+      "lines": [
+        "随从：杨少说，请看。"
+      ],
+      "width": 0.91,
+      "at": [
+        0.5,
+        0.91
+      ],
+      "fixed": true,
+      "speaker": "随从（画外）"
+    },
+    {
+      "type": "oval",
+      "panel": 3,
+      "lines": [
+        "还有别的证据吗。"
+      ],
+      "width": 0.36,
+      "at": [
+        0.2,
+        0.12
+      ],
+      "fixed": true,
+      "speaker": "苏梨"
+    },
+    {
+      "type": "oval",
+      "panel": 3,
+      "lines": [
+        "那我就放心了。"
+      ],
+      "width": 0.34,
+      "at": [
+        0.2,
+        0.29
+      ],
+      "fixed": true,
+      "speaker": "苏梨"
+    },
+    {
+      "type": "box",
+      "panel": 3,
+      "lines": [
+        "U 盘丢给刘叔，",
+        "当场销毁。"
+      ],
+      "width": 0.36,
+      "at": [
+        0.2,
+        0.47
+      ],
+      "fixed": true,
+      "speaker": "旁白"
+    },
+    {
+      "type": "oval",
+      "panel": 3,
+      "lines": [
+        "刘叔：小姐，",
+        "真的没关系吗。"
+      ],
+      "width": 0.4,
+      "at": [
+        0.22,
+        0.65
+      ],
+      "fixed": true,
+      "speaker": "刘叔"
+    },
+    {
+      "type": "oval",
+      "panel": 3,
+      "lines": [
+        "没关系。他只是",
+        "太想保护我了。"
+      ],
+      "width": 0.44,
+      "at": [
+        0.24,
+        0.93
+      ],
+      "fixed": true,
+      "speaker": "苏梨"
+    }
+  ]
+}

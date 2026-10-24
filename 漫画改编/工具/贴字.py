@@ -137,14 +137,15 @@ def _wrap(text: str, font: ImageFont.FreeTypeFont, max_w: int):
 
 
 def fit_lines(text, font_path, max_w, max_h, start_size, min_size, line_ratio=1.28):
-    size = start_size
+    # 半宽格的比例字号可能低于下限；min_size 同样约束起始值。
+    size = max(start_size, min_size)
     while True:
         font = ImageFont.truetype(font_path, size)
         lines = _wrap(text, font, max_w)
         line_h = int(size * line_ratio)
         if (line_h * len(lines) <= max_h and all(font.getlength(l) <= max_w for l in lines)) or size <= min_size:
             return font, lines, line_h
-        size -= 2
+        size = max(min_size, size - 2)
 
 
 def draw_bubble(canvas: Image.Image, rect, item, font_path, min_size):
