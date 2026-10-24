@@ -5,6 +5,7 @@ import hashlib
 import importlib.util
 import json
 import subprocess
+import struct
 import sys
 import unittest
 from pathlib import Path
@@ -62,6 +63,58 @@ class NovelComicRevisionTests(unittest.TestCase):
                        if p["fields"].get("版式角色") == "推广尾栏"]
             self.assertEqual(len(footers), 1)
             self.assertTrue(footers[0]["texts"][0]["fields"]["叙述身份"].startswith("推广提示"))
+
+    def test_next_childhood_batch_exports_match_current_source_and_explicit_scope(self) -> None:
+        batch = STORIES[1].parent / "出图交接" / "第二话首批"
+        manifest = json.loads((batch / "来源与任务.json").read_text(encoding="utf-8"))
+        for key, story in (("source", STORIES[1]), ("previous_source", STORIES[0])):
+            self.assertEqual((ROOT / manifest[key]["file"]).resolve(), story.resolve())
+            self.assertEqual(manifest[key]["sha256"], hashlib.sha256(story.read_bytes()).hexdigest())
+        pages = comic.read_script(STORIES[1])
+        by_id = {panel["id"]: panel for page in pages for panel in page["panels"]}
+        scope = manifest["scope"]
+        selected = [p["id"] for page in pages if page["id"] in scope["page_ids"]
+                    for p in page["panels"]]
+        self.assertEqual(scope["panel_ids"], selected)
+        classified = [row["panel_id"] for key in ("planned_generation", "local_assets", "deferred")
+                      for row in manifest[key]]
+        self.assertEqual(len(classified), len(set(classified)))
+        self.assertEqual(set(classified), set(selected))
+        export_path = ROOT / manifest["export"]["file"]
+        self.assertEqual(hashlib.sha256(export_path.read_bytes()).hexdigest(), manifest["export"]["sha256"])
+        blocks = export_path.read_text(encoding="utf-8").split("\n## ")[1:]
+        exported = {block.splitlines()[0]: block.split("\n提示词：\n", 1)[1].strip()
+                    for block in blocks}
+        self.assertEqual(set(exported), {row["panel_id"] for row in manifest["planned_generation"]})
+        refs = {row["id"] for row in manifest["references"]}
+        for row in manifest["planned_generation"]:
+            prompt = by_id[row["panel_id"]]["fields"]["提示词"]
+            self.assertEqual(exported[row["panel_id"]], prompt)
+            self.assertEqual(row["source_prompt_sha256"], hashlib.sha256(prompt.encode()).hexdigest())
+            self.assertLessEqual(set(row["reference_ids_in_order"]), refs)
+        for row in manifest["references"]:
+            path = (ROOT / row["file"]).resolve()
+            path.relative_to(ROOT.resolve())
+            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), row["sha256"])
+
+    def test_next_batch_local_crop_has_actual_saved_dimensions_and_source_bounds(self) -> None:
+        batch = STORIES[1].parent / "出图交接" / "第二话首批"
+        manifest = json.loads((batch / "来源与任务.json").read_text(encoding="utf-8"))
+        originals = {row["id"]: row for row in manifest["audited_old_images"]}
+        for row in manifest["local_assets"]:
+            path = (ROOT / row["file"]).resolve()
+            path.relative_to(ROOT.resolve())
+            raw = path.read_bytes()
+            self.assertEqual(hashlib.sha256(raw).hexdigest(), row["sha256"])
+            self.assertEqual(raw[:8], b"\x89PNG\r\n\x1a\n")
+            actual_size = struct.unpack(">II", raw[16:24])
+            self.assertEqual(list(actual_size), row["size"])
+            x1, y1, x2, y2 = row["crop_xyxy"]
+            source_w, source_h = originals[row["source_id"]]["size"]
+            self.assertTrue(0 <= x1 < x2 <= source_w)
+            self.assertTrue(0 <= y1 < y2 <= source_h)
+            self.assertEqual(actual_size, (x2 - x1, y2 - y1))
+            self.assertIsInstance(row["bound_in_layout"], bool)
 
     def test_real_sequel_cli_refuses_missing_previous_without_generating_media(self) -> None:
         before = {str(path) for story in STORIES for path in (story.parent / "制作成果").glob("**/*")}

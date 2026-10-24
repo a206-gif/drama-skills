@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-25",
+  "path_base": "repository_root_except_output_targets_relative_to_episode",
+  "status": "audit_and_task_preparation_complete_generation_not_started",
+  "source": {
+    "file": "漫画改编/开篇修订/第002话/漫画分镜.md",
+    "sha256": "926b656cc09f57b78f6864cd0d7b0f8cd9b8fcbfe1e0683adb8b26d69a89dfa0",
+    "counts": {
+      "pages": 12,
+      "panels": 28,
+      "texts": 32
+    }
+  },
+  "previous_source": {
+    "file": "漫画改编/开篇修订/第001话/漫画分镜.md",
+    "sha256": "4301b2e7b19c082e56d5a7aa46e39a51210596568334a0d25a4c653d25886722",
+    "episode": "CH001",
+    "adoption_proposal_panels": [
+      "PANEL-009-01",
+      "PANEL-009-02"
+    ]
+  },
+  "novel": {
+    "file": "阴湿小狗不语，只一味装乖绿茶 - 三月清梦.txt",
+    "git_blob": "c3e238ef89050c0a715d508f56d65f5e813bdebf",
+    "reviewed_lines_this_round": [
+      166,
+      246
+    ],
+    "age_gap": "L180前世回忆未给具体年龄，不按九岁/十二岁或参考卡年龄推断"
+  },
+  "scope": {
+    "episode": "CH002",
+    "page_ids": [
+      "PAGE-001",
+      "PAGE-002"
+    ],
+    "panel_ids": [
+      "PANEL-001-01",
+      "PANEL-001-02",
+      "PANEL-002-01",
+      "PANEL-002-02",
+      "PANEL-002-03"
+    ],
+    "checked_previous": "CH001",
+    "structure_and_adjacency_checked": true,
+    "episode_media_checked": false,
+    "page_rendered": false
+  },
+  "references": [
+    {
+      "id": "primary",
+      "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+      "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+    },
+    {
+      "id": "mother_base",
+      "file": "漫画改编/开篇修订/第001话/制作成果/格图/PANEL-008-01-v3.png",
+      "sha256": "8f1cda4559c8dfe5049e86584ca79ed503084969d3fce9c895f627060421d4fd"
+    },
+    {
+      "id": "scene",
+      "file": "漫画改编/开篇修订/第001话/制作成果/格图/PANEL-008-02-v2.png",
+      "sha256": "439432c9607aded5a69277eab9766c21298cfb90c220f982cdd38be11d85a993"
+    },
+    {
+      "id": "qin_identity",
+      "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-QINYIN-OLD-FACE.jpg",
+      "sha256": "02e2e9140e6a7112beaa55fefd3b53cc04b96a2b92b1aadc825037c853047cbb"
+    }
+  ],
+  "audited_old_images": [
+    {
+      "id": "old_rebirth",
+      "repository": "a206-gif/drama-skills",
+      "commit": "cf408fb5a7d573826f0da4e0a3ef4ac51bddb9f1",
+      "path": "漫画改编/第02话/P1-重生.png",
+      "git_blob": "97f2c5e8f3286be48a9b6409a17a8fe138a76075",
+      "sha256": "96410f51ac020a828e84addaf9a6ea1ec2ce562e714429ef97618481191003fc",
+      "size": [
+        768,
+        1376
+      ],
+      "visually_inspected_this_round": true
+    },
+    {
+      "id": "old_system",
+      "repository": "a206-gif/drama-skills",
+      "commit": "cf408fb5a7d573826f0da4e0a3ef4ac51bddb9f1",
+      "path": "漫画改编/第02话/P2-光环与系统.png",
+      "git_blob": "4024adf3415811f43077aa811646847fc3e15bcf",
+      "sha256": "5521855dabb71745b2c3584a4c7d6800748a561b4cc76d027cb3df93d222083d",
+      "size": [
+        848,
+        1264
+      ],
+      "visually_inspected_this_round": true
+    }
+  ],
+  "planned_generation": [
+    {
+      "panel_id": "PANEL-001-01",
+      "mode": "edit_existing",
+      "owner": "assistant_childhood",
+      "narrative_time": "current_orphanage_visit",
+      "state": "planned_not_authorized",
+      "goal": "抱姿/脸/衣装不改，只把惊醒表情接成乖巧回答",
+      "reference_ids_in_order": [
+        "primary",
+        "mother_base",
+        "scene"
+      ],
+      "source_prompt_sha256": "ffad036be63d23df1f8d2caf3e7f8a231982b30c17c34bedfe2c6507c3adce84",
+      "output_target": "制作成果/格图/PANEL-001-01.png"
+    },
+    {
+      "panel_id": "PANEL-002-01",
+      "mode": "new_single_panel",
+      "owner": "assistant_childhood",
+      "narrative_time": "current_orphanage_visit",
+      "state": "planned_not_authorized",
+      "goal": "院内分自己的零食礼包，母亲仍抱女儿",
+      "reference_ids_in_order": [
+        "primary",
+        "scene",
+        "qin_identity"
+      ],
+      "source_prompt_sha256": "982d8c7ae958dbc280e2251c5613d6b3b9443fd3d77bfd091eaf5701e15a1d0d",
+      "output_target": "制作成果/格图/PANEL-002-01.png"
+    },
+    {
+      "panel_id": "PANEL-002-02",
+      "mode": "new_single_panel",
+      "owner": "assistant_childhood",
+      "narrative_time": "current_orphanage_visit",
+      "state": "planned_not_authorized",
+      "goal": "秦音低垂眼睫的脑内问话近景，背景仍是院内",
+      "reference_ids_in_order": [
+        "primary",
+        "scene",
+        "qin_identity"
+      ],
+      "source_prompt_sha256": "9b59c49d9736dcf81d978ac22c27e7babaed498b84b0d48dd02c661ca718056b",
+      "output_target": "制作成果/格图/PANEL-002-02.png"
+    }
+  ],
+  "local_assets": [
+    {
+      "panel_id": "PANEL-002-03",
+      "file": "漫画改编/开篇修订/第002话/出图交接/第二话首批/候选复用/CH002-PANEL-002-03-去界面近景-v2.png",
+      "sha256": "66eb31caa4a47edbb38926b9f8c423b01c849f26df5eff8c8ed96c396ecc264e",
+      "kind": "unchanged_pixels_crop",
+      "source_id": "old_system",
+      "crop_xyxy": [
+        16,
+        424,
+        568,
+        884
+      ],
+      "size": [
+        552,
+        460
+      ],
+      "role": "subjective_reaction_candidate",
+      "bound_in_layout": false,
+      "note": "去除原画中有实体感的面板，保留完整眼角/鼻尖/下颌及冷蓝柔光；本轮实看，自查候选而非成页验收"
+    }
+  ],
+  "deferred": [
+    {
+      "panel_id": "PANEL-001-02",
+      "owner": "pending_timeline_and_responsibility_confirmation",
+      "narrative_time": "previous_life_age_unspecified",
+      "reason": "L180未给前世三人的具体年龄；不套当前年龄，不默认转交青年创作者，明确阶段后再按既有分工处理"
+    }
+  ],
+  "export": {
+    "file": "漫画改编/开篇修订/第002话/出图交接/第二话首批/童年三格完整提示词.txt",
+    "sha256": "7e7348031050c3f8f1f86d33eac9f273f9aa72af3803706b0f8ec722633eceb5"
+  },
+  "generation_this_round": {
+    "actual_model_calls": 0,
+    "new_batch_authorized": false,
+    "proposed_asset_count": 3,
+    "proposed_edit_assets": 1,
+    "proposed_new_assets": 2,
+    "pricing": "工具未提供报价；未知，不虚报免费/总账单",
+    "model_and_seed": "未调用，工具未提供指定实际底层型号/seed信息",
+    "retakes": "尚未发生，次数与新增费用不能预报"
+  },
+  "local_crop_trial": {
+    "v1": {
+      "crop_xyxy": [
+        28,
+        426,
+        535,
+        879
+      ],
+      "status": "rejected_face_edge_too_tight"
+    },
+    "selected": "v2",
+    "counts_as_model_generation": false
+  },
+  "limits": [
+    "未生成第二话新图；候选裁切不等于页面完成",
+    "未查看全旧库，不宣称其他位置没有可用图",
+    "前世回忆造型/责任未定，PAGE-001仍不能成页",
+    "三项新图确认并通过后才调整真图裁切/气泡，不套固定等大横格",
+    "未做手机/平台/独立审查，未上传漫画平台"
+  ]
+}
