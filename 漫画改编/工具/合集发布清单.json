@@ -1,0 +1,774 @@
+{
+  "filename": "漫画第01-12话_贴字成品合集.zip",
+  "tag": "comic-ep01-12-2026-10-25",
+  "source_commit": "5ffbdb8c63a6b466e221071e0a4e19b06a3d240b",
+  "entries": [
+    {
+      "name": "阅读说明.txt",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "ad30eceea85c4ae16610bedee634e6d1a2acffcebe2c5d384f8f635cd9676b2b",
+      "text": "漫画第01–12话｜贴字成品合集\n\n打包日期：2026-10-25\n来源提交：5ffbdb8c63a6b466e221071e0a4e19b06a3d240b\n\n共 56 页正片 + 第01话附赠CG 1张，合计57张PNG。\n按第01话至第12话、P1起依次阅读；附赠CG单独放置，不占正片页序。\n全部保留原尺寸PNG，不缩放、不转JPEG。未包含未贴字原图、问题图或原著文本。\n第11话采用已纠正的P3约会双格、P5反客为主单镜及重新贴字版本。\n第12话P2按创作者决定保留原图，只贴字。\n\n每话正片页数：\n第01话：3页\n第02话：4页\n第03话：4页\n第04话：4页\n第05话：4页\n第06话：4页\n第07话：5页\n第08话：5页\n第09话：5页\n第10话：5页\n第11话：5页\n第12话：8页\n\nSHA256SUMS.txt 可用于校验每张图片。\n"
+    },
+    {
+      "name": "第01话/P1-节哀-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "745611ec4e75f82614f126143c2a4f6fcd503ccc9e9b39de92868d9d11f99920",
+      "source": "漫画改编/第01话/P1-节哀-贴字.png"
+    },
+    {
+      "name": "第01话/P2-创口-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "cc835d87f5ea67dad818d2f2e2c98ab251f0a92b1c83b46b638b5e72b2226596",
+      "source": "漫画改编/第01话/P2-创口-贴字.png"
+    },
+    {
+      "name": "第01话/P3-密室-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "6f776b7e312c63d99891f9e669dd21a1b4cffef5190c6576ad30ab9e6896a779",
+      "source": "漫画改编/第01话/P3-密室-贴字.png"
+    },
+    {
+      "name": "第01话/附赠CG/CG1-注视-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "9344003a9feb904ac2a1137d2dc00ec0869831fc32c6f5a514ada4c50a591b77",
+      "source": "漫画改编/第01话/CG1-注视-贴字.png"
+    },
+    {
+      "name": "第02话/P1-重生-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "1701cdfe70028e4ee554f8284850000eb42f3e242ee67a7a4fb7cc06854f4178",
+      "source": "漫画改编/第02话/P1-重生-贴字.png"
+    },
+    {
+      "name": "第02话/P2-光环与系统-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "a74615e6c54c2e40b1d6b6a156a138cf07e8a0c026b4ca4f9b65d11307d5b3b9",
+      "source": "漫画改编/第02话/P2-光环与系统-贴字.png"
+    },
+    {
+      "name": "第02话/P3-设局-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "032a1ffbee7bcb90955ccaf4ceeeabc757867f207cc9e22c4f6b86da64473d28",
+      "source": "漫画改编/第02话/P3-设局-贴字.png"
+    },
+    {
+      "name": "第02话/P4-初遇-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "9223104182b4c680fdfcc0f01f544de07bcb5261bc3fd2364a10da150945f836",
+      "source": "漫画改编/第02话/P4-初遇-贴字.png"
+    },
+    {
+      "name": "第03话/P1-身世-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "7d44b1ce2e56e5d9d34bb9ac9ecb92625730143bec00b71a965ae8412f89a5d7",
+      "source": "漫画改编/第03话/P1-身世-贴字.png"
+    },
+    {
+      "name": "第03话/P2-要乖-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "083a979e9b3482f2ec8eae39d66e52777df0f102919d38cb9250d4e3c43d47d1",
+      "source": "漫画改编/第03话/P2-要乖-贴字.png"
+    },
+    {
+      "name": "第03话/P3-坏种-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "bc4f9ad8e876201868c3cca94bbcf12842bededfb16287a08248aaad90636c47",
+      "source": "漫画改编/第03话/P3-坏种-贴字.png"
+    },
+    {
+      "name": "第03话/P4-恶鬼与小狗-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "1918d85a8ff5e7474d6c711a5eb290c7da811d7976b9c05588e7576aa395ab56",
+      "source": "漫画改编/第03话/P4-恶鬼与小狗-贴字.png"
+    },
+    {
+      "name": "第04话/P1-剧本破产-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "ce50ed47152b1f35d90abc8aaba797867fec7c722c9a68e199c3658bcaa7e8e8",
+      "source": "漫画改编/第04话/P1-剧本破产-贴字.png"
+    },
+    {
+      "name": "第04话/P2-定性-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "1aea88f4767e7def2c5a82f767d09c610603b2a33b4e7711d44e75030702c2d8",
+      "source": "漫画改编/第04话/P2-定性-贴字.png"
+    },
+    {
+      "name": "第04话/P3-钉死-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "0d043cfdaef41044629b1f60d8672d4923ff9283c7afdfb680db54ad31736692",
+      "source": "漫画改编/第04话/P3-钉死-贴字.png"
+    },
+    {
+      "name": "第04话/P4-光环碎裂-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        24
+      ],
+      "sha256": "a3efedddb51f3d66ab106b5733374cf639e92c55f97f7aad04fb3d1ad891299b",
+      "source": "漫画改编/第04话/P4-光环碎裂-贴字.png"
+    },
+    {
+      "name": "第05话/P1-病床小狗-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "80afc8e1db20c65b7e691e34f867c35ba66a154ad97a7da165f1e1bc887f12f3",
+      "source": "漫画改编/第05话/P1-病床小狗-贴字.png"
+    },
+    {
+      "name": "第05话/P2-前世之刀-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "95a1ca61acba7ae8d4a4b417e6e29bdec83ac4b53a34f1666b92b6a97b9d0079",
+      "source": "漫画改编/第05话/P2-前世之刀-贴字.png"
+    },
+    {
+      "name": "第05话/P3-狗牌-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "7950be6f0773657deaaaec0b813a4944b93e58368925823817aa29d458f9b695",
+      "source": "漫画改编/第05话/P3-狗牌-贴字.png"
+    },
+    {
+      "name": "第05话/P4-惊悚钩-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "a9009e07206259824963b337ff675137bdb664f718489b3c9398e9b69be3814a",
+      "source": "漫画改编/第05话/P4-惊悚钩-贴字.png"
+    },
+    {
+      "name": "第06话/P1-围堵-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "57386fa706d9f9a6464d3b33012a5bf92e0d3a937cd8d5ac1e2c2db9cb3cdddd",
+      "source": "漫画改编/第06话/P1-围堵-贴字.png"
+    },
+    {
+      "name": "第06话/P2-平板点名-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "54c10e100c42e0369ec64f6ec99d7714c4244f51c5a662bd9c372d6427e54cd8",
+      "source": "漫画改编/第06话/P2-平板点名-贴字.png"
+    },
+    {
+      "name": "第06话/P3-集体改口-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "62430bfc15e92093e25a6a57f25ebb78806b12307e292def88b1d233c18bf91b",
+      "source": "漫画改编/第06话/P3-集体改口-贴字.png"
+    },
+    {
+      "name": "第06话/P4-耳边-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "e229efdcb10444754b513f6230a078e82aad808311c15260461bdc1d5412b6f8",
+      "source": "漫画改编/第06话/P4-耳边-贴字.png"
+    },
+    {
+      "name": "第07话/P1-遗物-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "27a156e12a1836452032ceba5d9c0ca874dfbdec79f1029f35c5be7af58a6856",
+      "source": "漫画改编/第07话/P1-遗物-贴字.png"
+    },
+    {
+      "name": "第07话/P2-碰瓷破产-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "9f2a3c7aa01c64648f9b1488dfee813bb919b6619e19e0e71afbb2ed82ceeded",
+      "source": "漫画改编/第07话/P2-碰瓷破产-贴字.png"
+    },
+    {
+      "name": "第07话/P3-摊牌与逼供-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "5e3a3fa82aa7674ce968b8d90fefb98f0844bb0e71d1eef01ad8a63c0e8859c7",
+      "source": "漫画改编/第07话/P3-摊牌与逼供-贴字.png"
+    },
+    {
+      "name": "第07话/P4-递帕与来敌-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "e82b4ad0280f831c090b0e64281db6d79fcea8a0dd7a3401abe886d2619e1117",
+      "source": "漫画改编/第07话/P4-递帕与来敌-贴字.png"
+    },
+    {
+      "name": "第07话/P5-挡刀与钩子-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "de082ede2a7c1917332e68c09a736cf9d6e16bbbad28c2803cdc292bb9e37ec5",
+      "source": "漫画改编/第07话/P5-挡刀与钩子-贴字.png"
+    },
+    {
+      "name": "第08话/P1-逐客-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "845dc8cf2b51fef2ba1a78187905fe88983cc0c1ef530beb2e461a90c49ce1ef",
+      "source": "漫画改编/第08话/P1-逐客-贴字.png"
+    },
+    {
+      "name": "第08话/P2-哀求-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "dacc9c0d24dec8666a6c8c8ea4781b222fb19a1e4255247922bba4ff8ac869e7",
+      "source": "漫画改编/第08话/P2-哀求-贴字.png"
+    },
+    {
+      "name": "第08话/P3-加冕-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "7f9f52dece4476699608325626e9680c2b9e5cef330410ee478c2a5b6beb94a9",
+      "source": "漫画改编/第08话/P3-加冕-贴字.png"
+    },
+    {
+      "name": "第08话/P4-蟹肉-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "576137b51c69d7a36fce48c38503f4eae37cb52c5e74e62b835341b6e57699a3",
+      "source": "漫画改编/第08话/P4-蟹肉-贴字.png"
+    },
+    {
+      "name": "第08话/P5-拉勾-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "33a6b3251c91ef45280338ca8fae542e33adca0e17baac7a3658d70ad17b32f5",
+      "source": "漫画改编/第08话/P5-拉勾-贴字.png"
+    },
+    {
+      "name": "第09话/P1-长大首亮相-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "8ec11fa75eaba3524940e6d8748cc93affcd9c8815a3e6c2301b9455754a65df",
+      "source": "漫画改编/第09话/P1-长大首亮相-贴字.png"
+    },
+    {
+      "name": "第09话/P2-包间打脸-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "03ff0d1f6801a19fb324ce8e9b2054fcddf70468ee7a2a10544fb49c8d208809",
+      "source": "漫画改编/第09话/P2-包间打脸-贴字.png"
+    },
+    {
+      "name": "第09话/P3-双面男神-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "c02a5c7f8dd702de32df257555d9ecea8717cccef9edacd3858f11317d1eef34",
+      "source": "漫画改编/第09话/P3-双面男神-贴字.png"
+    },
+    {
+      "name": "第09话/P4-荒郊私刑-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "7f918073973a3a0a7b30e2bda863be5c6bd854b538d20d70f11746798a0c0a4e",
+      "source": "漫画改编/第09话/P4-荒郊私刑-贴字.png"
+    },
+    {
+      "name": "第09话/P5-心跳铃声-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "841abee9462362b3904563cb90c28a38c99bf39213894c9b0326930bfee852f4",
+      "source": "漫画改编/第09话/P5-心跳铃声-贴字.png"
+    },
+    {
+      "name": "第10话/P1-到访-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "7837eac624b4128cca4867bed2dbe0e491271e5535b3044fbc976caadb7e7b2f",
+      "source": "漫画改编/第10话/P1-到访-贴字.png"
+    },
+    {
+      "name": "第10话/P2-未婚夫冲突-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "69a116c8819fd4ec288afb8e866a9e959185ce34ec64525fbd561ac2ca0a40c2",
+      "source": "漫画改编/第10话/P2-未婚夫冲突-贴字.png"
+    },
+    {
+      "name": "第10话/P3-自割掌嫁祸-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "b952574d6680c989a1fdf4f663d8fa7494f473a7972d2df1913f31bd9c874fb3",
+      "source": "漫画改编/第10话/P3-自割掌嫁祸-贴字.png"
+    },
+    {
+      "name": "第10话/P4-照护与醋意-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "80652ae857e4e18ab9540e8504d9b2e187378f8472b5ccbb7828a29053c5fdc0",
+      "source": "漫画改编/第10话/P4-照护与醋意-贴字.png"
+    },
+    {
+      "name": "第10话/P5-舔血宣言-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "215bb793d8efb879424b310164b2b25ce4c29dd11ee000aa431f15bc4335ea36",
+      "source": "漫画改编/第10话/P5-舔血宣言-贴字.png"
+    },
+    {
+      "name": "第11话/P1-赔礼-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "6a8d435c9fba86d1f25d8cdb3380dad7dca1498beb47924a41d00fdbf05f9b67",
+      "source": "漫画改编/第11话/P1-赔礼-贴字.png"
+    },
+    {
+      "name": "第11话/P2-两盒游戏-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "3fbd3d6b3141346c9918c70596338aee0389d4197c8e053e13ce7a13a1b2a25f",
+      "source": "漫画改编/第11话/P2-两盒游戏-贴字.png"
+    },
+    {
+      "name": "第11话/P3-约会-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "3aa38478158d0b75cd401fc193bdeed08a570a929de32eca6faf4fffd090947f",
+      "source": "漫画改编/第11话/P3-约会-贴字.png"
+    },
+    {
+      "name": "第11话/P4-三问-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "708b6611ce535bd02cb6c3143e0b4f636153f2fcea7bdf4f88d46f80dad3d4a5",
+      "source": "漫画改编/第11话/P4-三问-贴字.png"
+    },
+    {
+      "name": "第11话/P5-反客为主-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        26
+      ],
+      "sha256": "1286a4820c2a53b447258e8e16cd229d8663a73ab51efc1542e6317c035e91aa",
+      "source": "漫画改编/第11话/P5-反客为主-贴字.png"
+    },
+    {
+      "name": "第12话/P1-霍音音-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        28
+      ],
+      "sha256": "5e32f587d8e583a36add53dc72867555ad7ec7cecf1ce662624e60c697fac788",
+      "source": "漫画改编/第12话/P1-霍音音-贴字.png"
+    },
+    {
+      "name": "第12话/P2-泼酒-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        28
+      ],
+      "sha256": "d7f9314dd3b76cdc0116e5ef3a4c3b1f35925d3f015bd5f9e144f43fe45bb160",
+      "source": "漫画改编/第12话/P2-泼酒-贴字.png"
+    },
+    {
+      "name": "第12话/P3-很适合当狗-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        28
+      ],
+      "sha256": "9f122cbbbf3798d54207c1997f9abe716fdfd74bbbaa8c04271e1c9ade1bafb9",
+      "source": "漫画改编/第12话/P3-很适合当狗-贴字.png"
+    },
+    {
+      "name": "第12话/P4-交易-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        28
+      ],
+      "sha256": "4c28e6ee2911636fa8ef75f16e2e7c92e8a9d4a477524f0ce98c87eeeb9a8d52",
+      "source": "漫画改编/第12话/P4-交易-贴字.png"
+    },
+    {
+      "name": "第12话/P5-街角-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        28
+      ],
+      "sha256": "92c34a2c1a338ce42a16b9fd8ab24027a156800e404a5362d7ac83e7e34b6ee7",
+      "source": "漫画改编/第12话/P5-街角-贴字.png"
+    },
+    {
+      "name": "第12话/P6-杨少-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        28
+      ],
+      "sha256": "6f49807d97a078d058ca7198e7b84f64d08bb9487cfd0b6884cd63b079c43e99",
+      "source": "漫画改编/第12话/P6-杨少-贴字.png"
+    },
+    {
+      "name": "第12话/P7-帮帮我-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        28
+      ],
+      "sha256": "8742273a731eb8ad79f1ab2764e5c31c4d52bec9d289b2882819fa53d80fa6a9",
+      "source": "漫画改编/第12话/P7-帮帮我-贴字.png"
+    },
+    {
+      "name": "第12话/P8-怪物-贴字.png",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        28
+      ],
+      "sha256": "42f9bd8a5726db4a1a5ac39375b413d60fab333e3c143e6df31d69ddcd2f0eaa",
+      "source": "漫画改编/第12话/P8-怪物-贴字.png"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "date_time": [
+        2026,
+        10,
+        24,
+        16,
+        16,
+        28
+      ],
+      "sha256": "df93a69547c744fce68251e5da85b67441792b0ed0c7d4efa6aafc715316b04f",
+      "text": "745611ec4e75f82614f126143c2a4f6fcd503ccc9e9b39de92868d9d11f99920  第01话/P1-节哀-贴字.png\ncc835d87f5ea67dad818d2f2e2c98ab251f0a92b1c83b46b638b5e72b2226596  第01话/P2-创口-贴字.png\n6f776b7e312c63d99891f9e669dd21a1b4cffef5190c6576ad30ab9e6896a779  第01话/P3-密室-贴字.png\n9344003a9feb904ac2a1137d2dc00ec0869831fc32c6f5a514ada4c50a591b77  第01话/附赠CG/CG1-注视-贴字.png\n1701cdfe70028e4ee554f8284850000eb42f3e242ee67a7a4fb7cc06854f4178  第02话/P1-重生-贴字.png\na74615e6c54c2e40b1d6b6a156a138cf07e8a0c026b4ca4f9b65d11307d5b3b9  第02话/P2-光环与系统-贴字.png\n032a1ffbee7bcb90955ccaf4ceeeabc757867f207cc9e22c4f6b86da64473d28  第02话/P3-设局-贴字.png\n9223104182b4c680fdfcc0f01f544de07bcb5261bc3fd2364a10da150945f836  第02话/P4-初遇-贴字.png\n7d44b1ce2e56e5d9d34bb9ac9ecb92625730143bec00b71a965ae8412f89a5d7  第03话/P1-身世-贴字.png\n083a979e9b3482f2ec8eae39d66e52777df0f102919d38cb9250d4e3c43d47d1  第03话/P2-要乖-贴字.png\nbc4f9ad8e876201868c3cca94bbcf12842bededfb16287a08248aaad90636c47  第03话/P3-坏种-贴字.png\n1918d85a8ff5e7474d6c711a5eb290c7da811d7976b9c05588e7576aa395ab56  第03话/P4-恶鬼与小狗-贴字.png\nce50ed47152b1f35d90abc8aaba797867fec7c722c9a68e199c3658bcaa7e8e8  第04话/P1-剧本破产-贴字.png\n1aea88f4767e7def2c5a82f767d09c610603b2a33b4e7711d44e75030702c2d8  第04话/P2-定性-贴字.png\n0d043cfdaef41044629b1f60d8672d4923ff9283c7afdfb680db54ad31736692  第04话/P3-钉死-贴字.png\na3efedddb51f3d66ab106b5733374cf639e92c55f97f7aad04fb3d1ad891299b  第04话/P4-光环碎裂-贴字.png\n80afc8e1db20c65b7e691e34f867c35ba66a154ad97a7da165f1e1bc887f12f3  第05话/P1-病床小狗-贴字.png\n95a1ca61acba7ae8d4a4b417e6e29bdec83ac4b53a34f1666b92b6a97b9d0079  第05话/P2-前世之刀-贴字.png\n7950be6f0773657deaaaec0b813a4944b93e58368925823817aa29d458f9b695  第05话/P3-狗牌-贴字.png\na9009e07206259824963b337ff675137bdb664f718489b3c9398e9b69be3814a  第05话/P4-惊悚钩-贴字.png\n57386fa706d9f9a6464d3b33012a5bf92e0d3a937cd8d5ac1e2c2db9cb3cdddd  第06话/P1-围堵-贴字.png\n54c10e100c42e0369ec64f6ec99d7714c4244f51c5a662bd9c372d6427e54cd8  第06话/P2-平板点名-贴字.png\n62430bfc15e92093e25a6a57f25ebb78806b12307e292def88b1d233c18bf91b  第06话/P3-集体改口-贴字.png\ne229efdcb10444754b513f6230a078e82aad808311c15260461bdc1d5412b6f8  第06话/P4-耳边-贴字.png\n27a156e12a1836452032ceba5d9c0ca874dfbdec79f1029f35c5be7af58a6856  第07话/P1-遗物-贴字.png\n9f2a3c7aa01c64648f9b1488dfee813bb919b6619e19e0e71afbb2ed82ceeded  第07话/P2-碰瓷破产-贴字.png\n5e3a3fa82aa7674ce968b8d90fefb98f0844bb0e71d1eef01ad8a63c0e8859c7  第07话/P3-摊牌与逼供-贴字.png\ne82b4ad0280f831c090b0e64281db6d79fcea8a0dd7a3401abe886d2619e1117  第07话/P4-递帕与来敌-贴字.png\nde082ede2a7c1917332e68c09a736cf9d6e16bbbad28c2803cdc292bb9e37ec5  第07话/P5-挡刀与钩子-贴字.png\n845dc8cf2b51fef2ba1a78187905fe88983cc0c1ef530beb2e461a90c49ce1ef  第08话/P1-逐客-贴字.png\ndacc9c0d24dec8666a6c8c8ea4781b222fb19a1e4255247922bba4ff8ac869e7  第08话/P2-哀求-贴字.png\n7f9f52dece4476699608325626e9680c2b9e5cef330410ee478c2a5b6beb94a9  第08话/P3-加冕-贴字.png\n576137b51c69d7a36fce48c38503f4eae37cb52c5e74e62b835341b6e57699a3  第08话/P4-蟹肉-贴字.png\n33a6b3251c91ef45280338ca8fae542e33adca0e17baac7a3658d70ad17b32f5  第08话/P5-拉勾-贴字.png\n8ec11fa75eaba3524940e6d8748cc93affcd9c8815a3e6c2301b9455754a65df  第09话/P1-长大首亮相-贴字.png\n03ff0d1f6801a19fb324ce8e9b2054fcddf70468ee7a2a10544fb49c8d208809  第09话/P2-包间打脸-贴字.png\nc02a5c7f8dd702de32df257555d9ecea8717cccef9edacd3858f11317d1eef34  第09话/P3-双面男神-贴字.png\n7f918073973a3a0a7b30e2bda863be5c6bd854b538d20d70f11746798a0c0a4e  第09话/P4-荒郊私刑-贴字.png\n841abee9462362b3904563cb90c28a38c99bf39213894c9b0326930bfee852f4  第09话/P5-心跳铃声-贴字.png\n7837eac624b4128cca4867bed2dbe0e491271e5535b3044fbc976caadb7e7b2f  第10话/P1-到访-贴字.png\n69a116c8819fd4ec288afb8e866a9e959185ce34ec64525fbd561ac2ca0a40c2  第10话/P2-未婚夫冲突-贴字.png\nb952574d6680c989a1fdf4f663d8fa7494f473a7972d2df1913f31bd9c874fb3  第10话/P3-自割掌嫁祸-贴字.png\n80652ae857e4e18ab9540e8504d9b2e187378f8472b5ccbb7828a29053c5fdc0  第10话/P4-照护与醋意-贴字.png\n215bb793d8efb879424b310164b2b25ce4c29dd11ee000aa431f15bc4335ea36  第10话/P5-舔血宣言-贴字.png\n6a8d435c9fba86d1f25d8cdb3380dad7dca1498beb47924a41d00fdbf05f9b67  第11话/P1-赔礼-贴字.png\n3fbd3d6b3141346c9918c70596338aee0389d4197c8e053e13ce7a13a1b2a25f  第11话/P2-两盒游戏-贴字.png\n3aa38478158d0b75cd401fc193bdeed08a570a929de32eca6faf4fffd090947f  第11话/P3-约会-贴字.png\n708b6611ce535bd02cb6c3143e0b4f636153f2fcea7bdf4f88d46f80dad3d4a5  第11话/P4-三问-贴字.png\n1286a4820c2a53b447258e8e16cd229d8663a73ab51efc1542e6317c035e91aa  第11话/P5-反客为主-贴字.png\n5e32f587d8e583a36add53dc72867555ad7ec7cecf1ce662624e60c697fac788  第12话/P1-霍音音-贴字.png\nd7f9314dd3b76cdc0116e5ef3a4c3b1f35925d3f015bd5f9e144f43fe45bb160  第12话/P2-泼酒-贴字.png\n9f122cbbbf3798d54207c1997f9abe716fdfd74bbbaa8c04271e1c9ade1bafb9  第12话/P3-很适合当狗-贴字.png\n4c28e6ee2911636fa8ef75f16e2e7c92e8a9d4a477524f0ce98c87eeeb9a8d52  第12话/P4-交易-贴字.png\n92c34a2c1a338ce42a16b9fd8ab24027a156800e404a5362d7ac83e7e34b6ee7  第12话/P5-街角-贴字.png\n6f49807d97a078d058ca7198e7b84f64d08bb9487cfd0b6884cd63b079c43e99  第12话/P6-杨少-贴字.png\n8742273a731eb8ad79f1ab2764e5c31c4d52bec9d289b2882819fa53d80fa6a9  第12话/P7-帮帮我-贴字.png\n42f9bd8a5726db4a1a5ac39375b413d60fab333e3c143e6df31d69ddcd2f0eaa  第12话/P8-怪物-贴字.png\n"
+    }
+  ]
+}

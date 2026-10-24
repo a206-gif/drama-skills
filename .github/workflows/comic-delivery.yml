@@ -1,0 +1,46 @@
+name: Comic ZIP delivery
+
+on:
+  push:
+    branches: ['arena/d05365eb-drama-skills']
+    paths:
+      - '.github/workflows/comic-delivery.yml'
+      - '漫画改编/工具/打包合集.py'
+      - '漫画改编/工具/合集发布清单.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: comic-ep01-12-delivery
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    if: github.ref == 'refs/heads/arena/d05365eb-drama-skills'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Build and verify original PNG collection
+        run: python3 漫画改编/工具/打包合集.py --output-dir out
+      - name: Publish comic attachment (not a software release)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag='comic-ep01-12-2026-10-25'
+          asset='out/漫画第01-12话_贴字成品合集.zip'
+          if ! gh release view "$tag" >/dev/null 2>&1; then
+            gh release create "$tag" --target 5ffbdb8c63a6b466e221071e0a4e19b06a3d240b \
+              --title '漫画第01–12话｜贴字成品合集' --prerelease \
+              --notes '漫画成品附件（非软件版本）：56页贴字正片＋1张CG，共57张原尺寸PNG，按话数分目录，含阅读说明和SHA256清单。第11话P3/P5已纠正。'
+          fi
+          # Do not silently overwrite an existing delivery.
+          gh release upload "$tag" "$asset"
+          gh release view "$tag" --json url,assets >> "$GITHUB_STEP_SUMMARY"
