@@ -57,3 +57,5 @@ Status: implemented
 本轮后续：已将弹性页面/持续技巧回写落skill，并交付第8–9页真实局部试排；新窗口/局部预览与验证见[弹性页面与skill沉淀](../feature/2026-10-25-comic-flexible-pages-and-skill-learning.md)。前列页数/未出图等为相应历史轮状态。
 
 后续分支交付/第二话首批：见[分支可见交付与分时段任务](2026-10-25-comic-branch-delivery-and-childhood-batches.md)。先前“未推送/待组页”等属当轮历史，当前入口见漫画README。
+
+最新首格局部已按既定v5应用，无姓名标签/白带，不改旁白/来客身份：见[受限单格贴字证明](../feature/2026-10-25-comic-single-panel-lettering-proof.md)。上列实白名签v2与其字号/版式只属当时历史；成年四图责任与原画来源不变。

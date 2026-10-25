@@ -24,24 +24,34 @@
             {
               "id": "TEXT-001-01",
               "rect": [
-                16,
-                16,
-                360,
-                188
+                6,
+                250,
+                286,
+                106
               ],
-              "font_size": 40,
-              "padding": 16
+              "font_size": 34,
+              "padding": 6,
+              "breaks": [
+                8
+              ]
             },
             {
               "id": "TEXT-001-02",
               "rect": [
-                652,
-                233,
-                316,
-                183
+                680,
+                250,
+                280,
+                150
               ],
-              "font_size": 40,
-              "padding": 16
+              "font_size": 34,
+              "padding": 10,
+              "breaks": [
+                4
+              ],
+              "tail": [
+                983,
+                300
+              ]
             }
           ]
         },
@@ -633,6 +643,10 @@
         "color": "#3B617E",
         "dialogue_color": "#D7EAF6",
         "dialogue_shape": "rect"
+      },
+      "来客（画外）": {
+        "color": "#3C454C",
+        "dialogue_color": "#F1F3F1"
       }
     }
   }
