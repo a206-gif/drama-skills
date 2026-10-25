@@ -2,10 +2,10 @@
   "schema_version": 1,
   "date": "2026-10-25",
   "path_base": "repository_root_except_output_targets_relative_to_episode",
-  "status": "audit_and_task_preparation_complete_generation_not_started",
+  "status": "three_assets_generated_page2_preview_complete_page1_deferred",
   "source": {
     "file": "漫画改编/开篇修订/第002话/漫画分镜.md",
-    "sha256": "d50f00e723e23591eeff1354c1807fc0afa5d0c9986f60472b5400b7d0a1f9c3",
+    "sha256": "70bceabccd643253bfa8f7fc38c3c15b7c3f4a990f11bf57a69afe5c292cd586",
     "counts": {
       "pages": 12,
       "panels": 27,
@@ -26,7 +26,7 @@
     "git_blob": "c3e238ef89050c0a715d508f56d65f5e813bdebf",
     "reviewed_lines_this_round": [
       166,
-      246
+      250
     ],
     "age_gap": "L180前世回忆未给具体年龄，不按九岁/十二岁或参考卡年龄推断"
   },
@@ -46,7 +46,13 @@
     "checked_previous": "CH001",
     "structure_and_adjacency_checked": true,
     "episode_media_checked": false,
-    "page_rendered": false
+    "page_rendered": true,
+    "rendered_page_ids": [
+      "PAGE-002"
+    ],
+    "single_panel_preview_ids": [
+      "PANEL-001-01"
+    ]
   },
   "references": [
     {
@@ -104,45 +110,47 @@
       "mode": "edit_existing",
       "owner": "assistant_childhood",
       "narrative_time": "current_orphanage_visit",
-      "state": "planned_not_authorized",
+      "state": "generated_selected_pending_creator_review",
       "goal": "抱姿/脸/衣装不改，只把惊醒表情接成乖巧回答",
       "reference_ids_in_order": [
-        "primary",
         "mother_base",
-        "scene"
+        "primary"
       ],
-      "source_prompt_sha256": "224405b69a53301fc8973717ad294c4003ec39c5e7a037388f3435baf343130e",
-      "output_target": "制作成果/格图/PANEL-001-01.png"
+      "source_prompt_sha256": "f969f7b2aae19e202a07cde0e3f4ef6c81fb690228fa911d8e2b49a520de2be3",
+      "output_target": "制作成果/格图/PANEL-001-01.png",
+      "output_sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff"
     },
     {
       "panel_id": "PANEL-002-01",
       "mode": "new_single_panel",
       "owner": "assistant_childhood",
       "narrative_time": "current_orphanage_visit",
-      "state": "planned_not_authorized",
+      "state": "generated_selected_pending_creator_review",
       "goal": "院内分自己的零食礼包，母亲仍抱女儿",
       "reference_ids_in_order": [
         "primary",
         "scene",
         "qin_identity"
       ],
-      "source_prompt_sha256": "bd1d46f12dc34bc983140b2817bb56b4b21661f5e4971d93b20ec5977d65e32a",
-      "output_target": "制作成果/格图/PANEL-002-01.png"
+      "source_prompt_sha256": "e0b22390b21e35d02ae5efc4fe4a7c029b95e982b1fb61b161525449caf63457",
+      "output_target": "制作成果/格图/PANEL-002-01.png",
+      "output_sha256": "5a6ed8326c44a4026bdc3238e6f7f82a51289433364dfad7a2f10acc69f8970e"
     },
     {
       "panel_id": "PANEL-002-02",
       "mode": "new_single_panel",
       "owner": "assistant_childhood",
       "narrative_time": "current_orphanage_visit",
-      "state": "planned_not_authorized",
+      "state": "generated_selected_pending_creator_review",
       "goal": "秦音低垂眼睫的脑内问话近景，背景仍是院内",
       "reference_ids_in_order": [
         "primary",
         "scene",
         "qin_identity"
       ],
-      "source_prompt_sha256": "00e915ac928cfa7e5b17443c74c14cfda5c0fe4a4f9b7705e67c60ef975ca34a",
-      "output_target": "制作成果/格图/PANEL-002-02.png"
+      "source_prompt_sha256": "f753fa51a2141bf7342fab5154f490815c3177ce0f94d9abaa3dee313165e741",
+      "output_target": "制作成果/格图/PANEL-002-02.png",
+      "output_sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
     }
   ],
   "local_assets": [
@@ -162,9 +170,9 @@
         552,
         460
       ],
-      "role": "subjective_reaction_candidate",
-      "bound_in_layout": false,
-      "note": "去除原画中有实体感的面板，保留完整眼角/鼻尖/下颌及冷蓝柔光；本轮实看，自查候选而非成页验收"
+      "role": "selected_subjective_reaction_for_page2",
+      "bound_in_layout": true,
+      "note": "原552×460候选原字节保留，本轮已绑定第2页；按眼/鼻/下颌选focus，未生成新动作或界面"
     }
   ],
   "deferred": [
@@ -177,17 +185,21 @@
   ],
   "export": {
     "file": "漫画改编/开篇修订/第002话/出图交接/第二话首批/童年三格完整提示词.txt",
-    "sha256": "9c36fe7e74e636abf2e4bdab10c2e70ba696d3d7478389db8fc66c3e596729ab"
+    "sha256": "7d67f0d99eecee23f70e012602952c801e90ec89f625168420538637a41e7809"
   },
   "generation_this_round": {
-    "actual_model_calls": 0,
-    "new_batch_authorized": false,
+    "actual_model_calls": 3,
+    "new_batch_authorized": true,
     "proposed_asset_count": 3,
     "proposed_edit_assets": 1,
     "proposed_new_assets": 2,
-    "pricing": "工具未提供报价；未知，不虚报免费/总账单",
-    "model_and_seed": "未调用，工具未提供指定实际底层型号/seed信息",
-    "retakes": "尚未发生，次数与新增费用不能预报"
+    "pricing": "工具未提供报价或费用明细，未知；不虚报免费或平台账单",
+    "model_and_seed": "工具未提供可指定的底层型号/seed；生成后如实记录返回信息",
+    "retakes": 0,
+    "authorization_verbatim": "C 你先把童年剧本相关写好了 直接出图就可以",
+    "authorization_scope": "CH002已有三项，1改2补；核好相关童年剧本后直接生成，不重复等待本批确认；不含前世年龄未定格、青年成年或全量故事",
+    "unused_outputs": 0,
+    "selected_assets": 3
   },
   "local_crop_trial": {
     "v1": {
@@ -203,16 +215,26 @@
     "counts_as_model_generation": false
   },
   "limits": [
-    "未生成第二话新图；候选裁切不等于页面完成",
+    "仅本批三项新生成并自检，第2页已局部排字，不是整话齐图/创作者验收",
     "未查看全旧库，不宣称其他位置没有可用图",
-    "前世回忆造型/责任未定，PAGE-001仍不能成页",
-    "三项新图确认并通过后才调整真图裁切/气泡，不套固定等大横格",
-    "未做手机/平台/独立审查，未上传漫画平台"
+    "前世回忆阶段/责任仍未定；第1页不能成页",
+    "其余页几何仍是候选，不能把第2页细缝说成全话重排",
+    "未做实机/平台/独立审查，未上传漫画平台"
   ],
   "lettering_revision": {
     "mode": "embedded",
     "visible_labels": false,
     "promotional_footer": "moved_outside_story",
-    "new_generation_authorized": false
+    "new_generation_authorized": true
+  },
+  "current_lettered_preview": {
+    "page": "漫画改编/开篇修订/第002话/制作成果/画内贴字-v5/PAGE-002.png",
+    "single_panel": "漫画改编/开篇修订/第002话/制作成果/画内贴字-v5/首格局部/PANEL-001-01.png",
+    "receipt": "漫画改编/开篇修订/第002话/制作成果/画内贴字-v5/试排来源.json",
+    "storyboard_sha256": "70bceabccd643253bfa8f7fc38c3c15b7c3f4a990f11bf57a69afe5c292cd586",
+    "layout_sha256": "ff1e0eb71a92f065ac68238ca999420da4ca822998c45e5dca16c804c7b85036",
+    "page_sha256": "7913a323f1dac63aa94936ae4a605380b8c09546ae5e156d763e9bf634b12cf2",
+    "single_panel_sha256": "4883e8763a8eed7c2b02cc7864ab9caf42e7dab7fede2aa34f066ed4cbc5e7ce",
+    "episode_media_checked": false
   }
 }
