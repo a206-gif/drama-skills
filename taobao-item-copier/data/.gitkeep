@@ -1,0 +1,2 @@
+# 运行时数据目录（db.json / images/ / settings.json）由程序生成，已被 .gitignore 忽略。
+# 保留此文件以确保克隆后 data/ 目录存在。

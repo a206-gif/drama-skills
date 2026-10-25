@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    width: 22rem; margin: 0; padding: .9rem 1rem 1.1rem;
+    background: #0b1020; color: #e6edf3;
+    font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 13px; line-height: 1.6;
+  }
+  h1 { margin: 0 0 .1rem; font-size: 14px; }
+  .sub { margin: 0 0 .8rem; color: #6f8098; font-size: 11px; }
+  label { display: block; margin-bottom: .55rem; color: #93a3bd; font-size: 11.5px; }
+  input, select {
+    display: block; width: 100%; margin-top: .2rem; padding: .38rem .5rem;
+    background: #161f3a; border: 1px solid #22304f; color: #e6edf3;
+    border-radius: 7px; font-size: 12px; font-family: inherit;
+  }
+  input:focus, select:focus { outline: none; border-color: #ff7a1a; }
+  button {
+    width: 100%; margin-top: .5rem; padding: .45rem .7rem; border-radius: 8px;
+    border: 1px solid #22304f; background: #161f3a; color: #e6edf3;
+    font-size: 12.5px; font-family: inherit; cursor: pointer;
+  }
+  button:hover { filter: brightness(1.2); }
+  button.primary { background: #ff7a1a; border-color: #ff7a1a; color: #1a0d03; font-weight: 650; }
+  .status { display: grid; gap: .25rem; margin-bottom: .7rem; }
+  .line { display: flex; justify-content: space-between; gap: .5rem; padding: .22rem .5rem;
+          background: #11182f; border: 1px solid #22304f; border-radius: 7px; font-size: 11.5px; }
+  .line b { font-weight: 600; }
+  .ok { color: #3fb950; } .warn { color: #d29922; } .err { color: #f85149; }
+  .msg { margin-top: .6rem; padding: .45rem .6rem; border-radius: 7px; background: #11182f;
+         border: 1px solid #22304f; font-size: 11.5px; display: none; word-break: break-all; }
+  .msg.show { display: block; }
+  .msg.ok { border-color: #1d4b2a; color: #8ff0a4; }
+  .msg.err { border-color: #5b2320; color: #ffb4ae; }
+  details { margin-top: .6rem; }
+  summary { cursor: pointer; color: #6f8098; font-size: 11.5px; }
+  .row { display: flex; gap: .5rem; }
+  .row > * { flex: 1; }
+</style>
+</head>
+<body>
+  <h1>🖼️ 淘宝店铺图片提取器 · 采集器</h1>
+  <p class="sub">所有请求都在你的浏览器里用你的登录态发出，只回传到本机。</p>
+
+  <div class="status" id="status">
+    <div class="line"><span>本地服务</span><b id="st-local">检测中…</b></div>
+    <div class="line"><span>淘宝登录</span><b id="st-login">检测中…</b></div>
+    <div class="line"><span>mtop 令牌</span><b id="st-token">检测中…</b></div>
+    <div class="line"><span>商品库</span><b id="st-items">-</b></div>
+  </div>
+
+  <label>本地服务地址 <input id="cfg-base" placeholder="http://127.0.0.1:8787"/></label>
+  <label>采集口令（可选，本地服务启用校验时才需要填） <input id="cfg-token" type="password" placeholder="不填则本地服务不校验"/></label>
+  <button class="primary" id="btn-save">保存并测试连接</button>
+
+  <div class="row">
+    <button id="btn-open-console">打开控制台</button>
+    <button id="btn-collect-tab">采集当前页</button>
+  </div>
+
+  <details>
+    <summary>高级：mtop 接口配置（店铺枚举失效时才需要动）</summary>
+    <label>appKey <input id="cfg-appkey"/></label>
+    <label>网关 <input id="cfg-gateway"/></label>
+    <label>店铺宝贝列表接口 api <input id="cfg-shopapi"/></label>
+    <div class="row">
+      <label>版本 v <input id="cfg-shopv"/></label>
+      <label>每页数量 <input id="cfg-pagesize" type="number"/></label>
+    </div>
+    <label>data 模板（JSON，可用 {{shopId}} {{sellerId}} {{page}} {{pageSize}}）
+      <input id="cfg-shopdata" placeholder='{"m":"shopitemsearch","shopId":"{{shopId}}"}'/></label>
+    <button id="btn-save-adv">保存高级配置</button>
+    <p class="sub" style="margin-top:.4rem">
+      怎么找当前接口：店铺「所有宝贝」页按 F12 → Network → 过滤 <code>mtop</code> →
+      翻页 → 找到返回宝贝列表的那条请求，把 URL 里的 api、v、data 抄过来。
+    </p>
+  </details>
+
+  <div class="msg" id="msg"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

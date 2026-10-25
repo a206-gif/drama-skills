@@ -1,0 +1,20 @@
+{
+  "name": "taobao-shop-image-extractor",
+  "version": "2.0.0",
+  "private": true,
+  "description": "淘宝店铺图片提取器：扫描店铺内全部宝贝链接 → 提取每个商品的主图/详情图/属性图 → 下载到本地库并打包 ZIP",
+  "type": "commonjs",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test \"test/*.test.js\"",
+    "seed": "node tools/seed-demo.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

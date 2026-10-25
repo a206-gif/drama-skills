@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>淘宝店铺图片提取器</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <h1>淘宝店铺图片提取器</h1>
+    <p class="sub">扫描店铺内所有商品链接 → 逐个链接提取图片 → 下载打包 · 数据全在本机</p>
+  </div>
+  <div class="pills">
+    <span class="pill" id="pill-ext">扩展待连接</span>
+    <span class="pill" id="pill-stat">加载中…</span>
+  </div>
+</header>
+
+<main>
+  <!-- ============ 扫描店铺 ============ -->
+  <section class="card" id="scan-card">
+    <h2>① 扫描店铺，抓出店内所有商品链接</h2>
+    <div class="scan-row">
+      <input id="shop-url" type="search" placeholder="粘贴店铺链接，如 https://shop123456.taobao.com 或 https://xxx.tmall.com"/>
+      <label class="inline">最多页数 <input id="shop-pages" type="number" value="20" min="1" max="100"/></label>
+      <select id="shop-mode">
+        <option value="auto">自动（先接口后页面）</option>
+        <option value="mtop">接口枚举（快、字段全）</option>
+        <option value="dom">页面翻页（兜底）</option>
+      </select>
+      <button class="primary" id="btn-scan">开始扫描整店</button>
+    </div>
+    <div class="progress-box" id="scan-progress"></div>
+    <p class="hint">
+      需要先在 Chrome 加载 <code>extension/</code> 扩展并保持淘宝登录（右上角显示「扩展在线 ✓」）。
+      扩展会在你已登录的浏览器里翻遍店铺「所有宝贝」，把每个商品的网址链接和图片抓回来。
+      不想装扩展也可以：在店铺页 Ctrl+S 存成网页，把 HTML 贴到下面「粘贴导入」。
+    </p>
+    <details class="paste-box">
+      <summary>粘贴导入（店铺页 / 商品页 HTML，或商品 JSON、CSV）</summary>
+      <textarea id="paste-content" placeholder="把店铺页或商品页的源码粘贴进来，自动识别里面的商品链接和图片"></textarea>
+      <div class="scan-row">
+        <input id="paste-shop-url" type="search" placeholder="（选填）这段 HTML 对应的店铺链接"/>
+        <button class="ghost" id="btn-paste">解析并导入</button>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ 图片画廊 ============ -->
+  <section id="gallery-section">
+    <div class="toolbar">
+      <input id="q" type="search" placeholder="搜标题 / 商品ID / 链接…"/>
+      <select id="filter-shop"><option value="">全部店铺</option></select>
+      <select id="sort">
+        <option value="newest">最新扫描</option>
+        <option value="imgs-desc">图片多 → 少</option>
+        <option value="title">标题</option>
+      </select>
+      <span class="spacer"></span>
+      <button class="ghost" id="btn-select-all">全选本页</button>
+      <button class="ghost" id="btn-download">⬇ 下载选中图片</button>
+      <button class="primary" id="btn-zip">📦 打包下载 ZIP</button>
+      <button class="danger ghost" id="btn-delete">删除</button>
+    </div>
+
+    <div class="gallery" id="gallery"></div>
+
+    <div class="pager">
+      <button class="ghost" id="prev-page">上一页</button>
+      <span id="page-info">1 / 1</span>
+      <button class="ghost" id="next-page">下一页</button>
+      <select id="page-size"><option>12</option><option selected>24</option><option>48</option><option>96</option></select>
+    </div>
+  </section>
+</main>
+
+<!-- ============ 图片灯箱 ============ -->
+<div class="lightbox" id="lightbox">
+  <div class="lb-head">
+    <b id="lb-title">图片</b>
+    <div class="lb-acts">
+      <a id="lb-open" class="ghost small" target="_blank" rel="noopener">在新标签打开</a>
+      <button class="ghost small" id="lb-close">关闭 ✕</button>
+    </div>
+  </div>
+  <div class="lb-grid" id="lb-grid"></div>
+</div>
+
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
