@@ -20,13 +20,13 @@
       "status": "accepted",
       "choices": {
         "look_development": null,
-        "direction": "乙女游戏《恋与深空》路线的高品质写实3D美术：次世代PBR 3D渲染取代卡通平涂，东亚精致审美与偏动画化理想五官比例，真实SSS次表面散射皮肤（细微毛孔、自然泛红），数十层面片堆叠的光泽立体发丝与发梢半透明，物理布料模拟与真丝光泽，影视级动态灯光、柔和轮廓光、体积光与景深，主机级游戏CG定妆质感"
+        "direction": "高端乙女游戏key art式2.5D半写实风格化3D渲染（2026-10-26二次校准定稿，取代《恋与深空》真人写实3D转向与二次元2D方向）：全维度CG立体形体与柔和全局光照、光泽立体层叠发丝与多层高光、光滑喷绘感渐变皮肤与柔和渐变腮红、真丝物理光泽与布料重量、影视级体积光/轮廓光/景深；五官保持东亚精致理想化娃娃脸风格化审美，非真人照片级写实；双向排除扁平2D动漫赛璐璐/墨线/平涂色块/卡通腮红贴纸与真人写实；渲染维度以画风图参考板及IMG-EP001-01/02定妆板实物为准"
       }
     },
     "production_profile": {
       "status": "candidate",
       "choices": {
-        "form": "otome_3d_realistic",
+        "form": "otome_2_5d_semi_realistic",
         "camera": "角色板中性全身与头肩细节视图；场景板空场地理参考",
         "target_video_model": "gemini-omni-flash-1.1",
         "video_prompt_dialect": "generic",
@@ -34,11 +34,22 @@
         "native_duration_seconds": {
           "min": 4,
           "max": 10,
-          "discrete_presets": [4, 6, 8, 10]
+          "discrete_presets": [
+            4,
+            6,
+            8,
+            10
+          ]
         },
-        "supported_generation_modes": ["text", "reference"],
+        "supported_generation_modes": [
+          "text",
+          "reference"
+        ],
         "reference_image_limit": 10,
-        "native_ratios": ["16:9", "9:16"],
+        "native_ratios": [
+          "16:9",
+          "9:16"
+        ],
         "audio_generation": "same_pass"
       }
     },
