@@ -27,7 +27,19 @@
       "status": "candidate",
       "choices": {
         "form": "anime_illustration",
-        "camera": "角色板中性全身与头肩细节视图；场景板空场地理参考"
+        "camera": "角色板中性全身与头肩细节视图；场景板空场地理参考",
+        "target_video_model": "gemini-omni-flash-1.1",
+        "video_prompt_dialect": "generic",
+        "video_prompt_language": "en",
+        "native_duration_seconds": {
+          "min": 4,
+          "max": 10,
+          "discrete_presets": [4, 6, 8, 10]
+        },
+        "supported_generation_modes": ["text", "reference"],
+        "reference_image_limit": 10,
+        "native_ratios": ["16:9", "9:16"],
+        "audio_generation": "same_pass"
       }
     },
     "delivery_surface": {
