@@ -238,6 +238,32 @@ class NovelComicRevisionTests(unittest.TestCase):
         self.assertEqual(hashlib.sha256(export.read_bytes()).hexdigest(), manifest["export"]["sha256"])
         self.assertTrue(manifest["execution_policy"]["resume_without_reapproval"])
 
+    def test_art_continuation_separates_moderation_and_explicit_material_edit(self) -> None:
+        folder = BASE / "连续童年出图"
+        manifest = json.loads((folder / "来源与任务.json").read_text(encoding="utf-8"))
+        continuation = next(row for row in manifest["rounds"] if row["round_id"] == "ART-FIRST-ROUND-02")
+        calls = [call for call in manifest["calls"] if call.get("round_id") == continuation["round_id"]]
+        blocked = [row for row in manifest["blocked_tool_attempts"] if row.get("round_id") == continuation["round_id"]]
+        self.assertEqual(continuation["actual_successful_calls"], len(calls))
+        self.assertEqual(continuation["tool_requests"], len(calls) + len(blocked))
+        self.assertTrue(continuation["next_turn_not_new_approval"])
+        for refusal in blocked:
+            self.assertEqual(refusal["status"], "blocked_content_moderation_no_file")
+            self.assertFalse(refusal["generated_file"])
+            self.assertFalse(refusal["count_as_successful_model_call"])
+        correction = next(job for job in manifest["jobs"] if job["key"] == "CH002/PANEL-009-01")
+        self.assertEqual(correction["kind"], "generated_corrected_detail")
+        self.assertFalse(correction["same_source_pixels"])
+        params = json.loads((ROOT / correction["local_material_correction"]).read_text(encoding="utf-8"))
+        mask = ROOT / params["mask_file"]
+        self.assertEqual(hashlib.sha256(mask.read_bytes()).hexdigest(), params["mask_sha256"])
+        self.assertEqual(mask.read_bytes()[25], 0)  # Real grayscale PNG mask, not a textual claim.
+        x1, y1, x2, y2 = params["crop_xyxy"]
+        self.assertEqual(struct.unpack(">II", mask.read_bytes()[16:24]), (x2 - x1, y2 - y1))
+        self.assertTrue(params["not_pixel_identical_to_raw_crop"])
+        self.assertTrue(params["outside_mask_unchanged"])
+        self.assertEqual(params["result_sha256"], hashlib.sha256((ROOT / correction["output"]).read_bytes()).hexdigest())
+
     def test_real_sequel_cli_refuses_missing_previous_without_generating_media(self) -> None:
         before = {str(path) for story in STORIES for path in (story.parent / "制作成果").glob("**/*")}
         command = [sys.executable, "-O", str(TOOL), "check", str(STORIES[1].with_name("排版.json"))]
