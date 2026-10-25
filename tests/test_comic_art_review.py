@@ -120,6 +120,23 @@ class RepositoryReviewTests(unittest.TestCase):
                 else:
                     self.assertLessEqual(row["fit"]["hidden_fraction"], 0.25 + 1e-6)
 
+    def test_current_ch002_selected_geometry_meets_craft_bounds(self) -> None:
+        # Round-7 geometry for pages 4-12: inserts display at <=1.6x, strips hide <=25%.
+        # PANEL-001-01/02 keep pre-round-5 geometry by declared deferral (001-02 art undecided).
+        deferred = {"CH002/PANEL-001-01", "CH002/PANEL-001-02"}
+        rows = [row for row in self.report["panels"]
+                if row["bound_in_layout"] and row["episode"] == "CH002"
+                and row["key"] not in deferred]
+        self.assertTrue(rows)
+        for row in rows:
+            with self.subTest(key=row["key"]):
+                panel_rect = row["panel_rect"]
+                is_insert = row["image_target"] != [0, 0, panel_rect[2], panel_rect[3]]
+                if is_insert:
+                    self.assertLessEqual(row["fit"]["scale"], 1.6 + 1e-6)
+                else:
+                    self.assertLessEqual(row["fit"]["hidden_fraction"], 0.25 + 1e-6)
+
     def test_old_round5_geometry_is_still_measured_as_unusable(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
