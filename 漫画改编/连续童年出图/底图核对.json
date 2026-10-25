@@ -1,27 +1,22 @@
 {
   "date": "2026-10-25",
-  "round_id": "ART-FIRST-ROUND-02",
-  "starting_ready": 10,
-  "new_ready": 9,
-  "current_ready": 19,
+  "round_id": "ART-FIRST-ROUND-03",
+  "starting_ready": 19,
+  "new_ready": 10,
+  "current_ready": 29,
   "total_jobs": 41,
-  "remaining_jobs": 22,
+  "remaining_jobs": 12,
   "round_tool_requests": 10,
-  "round_saved_png_requests": 9,
-  "round_moderation_no_file": 1,
-  "round_capacity_refusals": 0,
+  "round_png_deliveries": 10,
+  "round_moderation_or_capacity_refusals": 0,
   "new_full_frame_uses": 7,
-  "new_partial_uses": 2,
-  "material_correction_pixels": 838,
-  "outside_material_mask_unchanged": true,
-  "correction_reproduced_from_parameters": true,
-  "new_exact_subject_crop": 1,
+  "new_exact_crops": 3,
   "all_152_text_fields_and_handoffs_unchanged": true,
-  "old_pngs_unchanged": 34,
-  "all_old_geometry_and_typography_unchanged": true,
-  "old_generation_and_render_receipts_frozen": true,
-  "no_new_lettered_pages": true,
+  "old_pngs_unchanged": 44,
+  "all_old_geometry_typography_and_render_receipts_frozen": true,
   "new_full_pngs_rearchived_identically": 7,
+  "new_crops_exact_source_pixels": true,
+  "no_new_lettered_pages": true,
   "ready_media_pages_not_verdict": [
     "CH002/PAGE-002",
     "CH002/PAGE-003",
@@ -31,206 +26,309 @@
     "CH002/PAGE-007",
     "CH002/PAGE-008",
     "CH002/PAGE-009",
-    "CH002/PAGE-010"
+    "CH002/PAGE-010",
+    "CH002/PAGE-012",
+    "CH003/PAGE-001",
+    "CH003/PAGE-002"
   ],
   "unfinished_episode_refusals": {
     "CH002": "PANEL-001-02: 格图缺失或为空",
-    "CH003": "PANEL-001-01: 格图缺失或为空"
+    "CH003": "PANEL-003-03: 格图缺失或为空"
   },
-  "local_links": 282,
+  "local_links": 297,
   "markdown_files": 46,
-  "manual_visual_review": "9原图及2最终局部实际看，非独立/实机/平台通过；衣饰小蓝缎待统一复核",
+  "manual_visual_review": "10原图按稳定文件ID标接触表核对、关键部位原尺寸/3最终局部已看；不按工具展示次序猜编号，不等于独立/手机/平台验收",
   "outputs": [
     {
       "key": "CH002/PANEL-004-01",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-01.png",
-      "sha256": "5095c932588143d70c72c9868b8fb4a27faee85a17680277a09374fe4ef8ffca",
-      "decoded_pixel_sha256": "5b156ab3bf7ab06d2f80d1fa869a0cb8bcdebf2d99b30e15e1a4535fce358076",
       "size": [
         1376,
         768
-      ]
+      ],
+      "sha256": "5095c932588143d70c72c9868b8fb4a27faee85a17680277a09374fe4ef8ffca",
+      "decoded_pixel_sha256": "5b156ab3bf7ab06d2f80d1fa869a0cb8bcdebf2d99b30e15e1a4535fce358076"
     },
     {
       "key": "CH002/PANEL-004-02",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-02.png",
-      "sha256": "f582a909a297e223057fbbd6c11b4a3f1f3696831c385fef0875702c28ab0d3a",
-      "decoded_pixel_sha256": "a0ccd5487d6e5a2dadca640af8d9b8e282110c3b1e52980b02b5f5464959a5ea",
       "size": [
         1376,
         768
-      ]
+      ],
+      "sha256": "f582a909a297e223057fbbd6c11b4a3f1f3696831c385fef0875702c28ab0d3a",
+      "decoded_pixel_sha256": "a0ccd5487d6e5a2dadca640af8d9b8e282110c3b1e52980b02b5f5464959a5ea"
     },
     {
       "key": "CH002/PANEL-004-03",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-03.png",
-      "sha256": "f2cfb37c97b84adb043831f0033b2acdbbb867f6005045443ccf809e82f96a39",
-      "decoded_pixel_sha256": "5e1f504db8a4350de7449c9e5c5e36b71491538e79727b2d353801d8d4356568",
       "size": [
         1376,
         768
-      ]
+      ],
+      "sha256": "f2cfb37c97b84adb043831f0033b2acdbbb867f6005045443ccf809e82f96a39",
+      "decoded_pixel_sha256": "5e1f504db8a4350de7449c9e5c5e36b71491538e79727b2d353801d8d4356568"
     },
     {
       "key": "CH002/PANEL-005-01",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-005-01.png",
-      "sha256": "ab5bd7a2524c6dfafde16e66d3ca1ddee52fc64b86ab1e5a02df5e4557bb8c8e",
-      "decoded_pixel_sha256": "51adc1eafe5a4212346b1f5f5372fd7b9b62ca07b57ca8abad183ae769555f25",
       "size": [
         1376,
         768
-      ]
+      ],
+      "sha256": "ab5bd7a2524c6dfafde16e66d3ca1ddee52fc64b86ab1e5a02df5e4557bb8c8e",
+      "decoded_pixel_sha256": "51adc1eafe5a4212346b1f5f5372fd7b9b62ca07b57ca8abad183ae769555f25"
     },
     {
       "key": "CH002/PANEL-005-02",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-005-02.png",
-      "sha256": "a096ae0c3e2d215b6f3e11bf82c1b62dcf09d5ce806cc6ef8b4e6b94d9481932",
-      "decoded_pixel_sha256": "0fd6c27cebe5c1c811a2bab71286386469cf036558459d5c063ca0ce1aaeed0c",
       "size": [
         1376,
         768
-      ]
+      ],
+      "sha256": "a096ae0c3e2d215b6f3e11bf82c1b62dcf09d5ce806cc6ef8b4e6b94d9481932",
+      "decoded_pixel_sha256": "0fd6c27cebe5c1c811a2bab71286386469cf036558459d5c063ca0ce1aaeed0c"
     },
     {
       "key": "CH002/PANEL-006-01",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
-      "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
-      "decoded_pixel_sha256": "4be2292baf29d19eaa0044974cdc6aa91ce47518e1a67650f10fcb33d425d757",
       "size": [
         1376,
         768
-      ]
+      ],
+      "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
+      "decoded_pixel_sha256": "4be2292baf29d19eaa0044974cdc6aa91ce47518e1a67650f10fcb33d425d757"
     },
     {
       "key": "CH002/PANEL-006-02",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-02.png",
-      "sha256": "10d76fa2611e7621d766dcf8c5a3bd6613ae66f57c3fc4c71303fad55a8b853a",
-      "decoded_pixel_sha256": "6ac00c2e3598e0c7e4e202dcf22fb403bd2236168cabd60af6ec00bc60c6861a",
       "size": [
         1376,
         768
-      ]
+      ],
+      "sha256": "10d76fa2611e7621d766dcf8c5a3bd6613ae66f57c3fc4c71303fad55a8b853a",
+      "decoded_pixel_sha256": "6ac00c2e3598e0c7e4e202dcf22fb403bd2236168cabd60af6ec00bc60c6861a"
     },
     {
       "key": "CH002/PANEL-007-01",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-007-01-衣角细节.png",
-      "sha256": "29c1467608480f644ca80f3372b234f87d6927a3152a3e5a4b91f6c5aa403e89",
-      "decoded_pixel_sha256": "b7291623d4289e07d49b82d62217a59dcf4ebfe6ec7c342e6e1a0d4adeed985c",
       "size": [
         415,
         255
-      ]
+      ],
+      "sha256": "29c1467608480f644ca80f3372b234f87d6927a3152a3e5a4b91f6c5aa403e89",
+      "decoded_pixel_sha256": "b7291623d4289e07d49b82d62217a59dcf4ebfe6ec7c342e6e1a0d4adeed985c"
     },
     {
       "key": "CH002/PANEL-007-02",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-007-02-回应近景.png",
-      "sha256": "a86419a2ec934cf5155d9cef965bb7a928620d5ce48e9fc2d3ff8b30352dc3d0",
-      "decoded_pixel_sha256": "28fa8a1cc60b1ed3013aa5a9774458bb627901f0b63d7dc6e81b7ed48b6eae74",
       "size": [
         490,
         345
-      ]
+      ],
+      "sha256": "a86419a2ec934cf5155d9cef965bb7a928620d5ce48e9fc2d3ff8b30352dc3d0",
+      "decoded_pixel_sha256": "28fa8a1cc60b1ed3013aa5a9774458bb627901f0b63d7dc6e81b7ed48b6eae74"
     },
     {
       "key": "CH002/PANEL-008-01",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-      "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
-      "decoded_pixel_sha256": "4f5c5957ab7f7d5a1570f9fac3e5f33284464eb5bf14d5e0d61b9c0285d87cfb",
       "size": [
         1376,
         768
-      ]
+      ],
+      "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+      "decoded_pixel_sha256": "4f5c5957ab7f7d5a1570f9fac3e5f33284464eb5bf14d5e0d61b9c0285d87cfb"
     },
     {
       "key": "CH002/PANEL-008-02",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
-      "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700",
-      "decoded_pixel_sha256": "5f7ff3efff8add3b919e14ea9ee40171a8d10378f5704d11ea6c1eceb3b55573",
       "size": [
         1376,
         768
-      ]
+      ],
+      "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700",
+      "decoded_pixel_sha256": "5f7ff3efff8add3b919e14ea9ee40171a8d10378f5704d11ea6c1eceb3b55573"
     },
     {
       "key": "CH002/PANEL-008-03",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-03.png",
-      "sha256": "77d78996bc31297511be0e82995b0942bdb3beb38e14fc81b4352f15a62f421c",
-      "decoded_pixel_sha256": "d5e150884f723252738359f354d0555cedfe75f1b6bb0cfdd204657815da32c6",
       "size": [
         1376,
         768
-      ]
+      ],
+      "sha256": "77d78996bc31297511be0e82995b0942bdb3beb38e14fc81b4352f15a62f421c",
+      "decoded_pixel_sha256": "d5e150884f723252738359f354d0555cedfe75f1b6bb0cfdd204657815da32c6"
     },
     {
       "key": "CH002/PANEL-009-01",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-009-01-软芯递交.png",
-      "sha256": "ee18c41bcb64c899f9d5eeec1a7c1fec89ebf9890b5570496d83c2035af4cf01",
-      "decoded_pixel_sha256": "34247f9df67a43dbd4c77c99e3c42b176b9b5121616f20402c7d82eb07ea2272",
       "size": [
         380,
         185
-      ]
+      ],
+      "sha256": "ee18c41bcb64c899f9d5eeec1a7c1fec89ebf9890b5570496d83c2035af4cf01",
+      "decoded_pixel_sha256": "34247f9df67a43dbd4c77c99e3c42b176b9b5121616f20402c7d82eb07ea2272"
     },
     {
       "key": "CH002/PANEL-009-02",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-009-02.png",
-      "sha256": "206f949b22ee26986742727058fffb89deb58dce33f7c807067aa70a9ea3b8c4",
-      "decoded_pixel_sha256": "3478e1a177b50d9f13aed6ff49a85d482229e29dff80daa7a741105e031d4dcc",
       "size": [
         1376,
         768
-      ]
+      ],
+      "sha256": "206f949b22ee26986742727058fffb89deb58dce33f7c807067aa70a9ea3b8c4",
+      "decoded_pixel_sha256": "3478e1a177b50d9f13aed6ff49a85d482229e29dff80daa7a741105e031d4dcc"
     },
     {
       "key": "CH002/PANEL-010-01",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-010-01.png",
-      "sha256": "11e00761412b8e1d66bdfbdef446111b2308d529fa1a8a2baa4c2a46ed6032c8",
-      "decoded_pixel_sha256": "1f04939c26b46ba4a1f09521568a1c54f8d0f4bacad270573b21d7ef05bd7f81",
       "size": [
         1376,
         768
-      ]
+      ],
+      "sha256": "11e00761412b8e1d66bdfbdef446111b2308d529fa1a8a2baa4c2a46ed6032c8",
+      "decoded_pixel_sha256": "1f04939c26b46ba4a1f09521568a1c54f8d0f4bacad270573b21d7ef05bd7f81"
     },
     {
       "key": "CH002/PANEL-010-02",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-010-02-触头近景.png",
-      "sha256": "ad3919acfc399f45d148d5d6f25949b3a346e2b3c8043964a6b0a179d7894f91",
-      "decoded_pixel_sha256": "a100b6ebd3e9b43497ad1b9a4579192e36823944d859626d1dc8dd854f714c97",
       "size": [
         360,
         280
-      ]
+      ],
+      "sha256": "ad3919acfc399f45d148d5d6f25949b3a346e2b3c8043964a6b0a179d7894f91",
+      "decoded_pixel_sha256": "a100b6ebd3e9b43497ad1b9a4579192e36823944d859626d1dc8dd854f714c97"
+    },
+    {
+      "key": "CH002/PANEL-011-02",
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-011-02-床边回应近景.png",
+      "size": [
+        330,
+        300
+      ],
+      "sha256": "de5091fd79d95421a1e227669226e9640a868c5db245875e3dec4ce8b1343589",
+      "decoded_pixel_sha256": "cecb47bdca571527ca630e2a7bcaafdd87e0ca68ece6016ab68903218df8e20c"
+    },
+    {
+      "key": "CH002/PANEL-012-01",
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-012-01.png",
+      "size": [
+        1376,
+        768
+      ],
+      "sha256": "139811d577c43121357d9f364d4b9adee3b4abf0e2a188e3f8f973f8679f680e",
+      "decoded_pixel_sha256": "68ab58b68c500d45e49234e8c4fec693704545054951d6443e73421b73cd69c7"
     },
     {
       "key": "CH002/PANEL-012-02",
       "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-012-02-v2.png",
-      "sha256": "d4672a6440b8d0f63c22799a307201d683f4ae40cb49869be13032099a61d1ad",
-      "decoded_pixel_sha256": "76369da923f1edd1606bf9e2463c704ffc881f7cd18a86ea174f8016f7a2bbcc",
       "size": [
         1376,
         768
-      ]
+      ],
+      "sha256": "d4672a6440b8d0f63c22799a307201d683f4ae40cb49869be13032099a61d1ad",
+      "decoded_pixel_sha256": "76369da923f1edd1606bf9e2463c704ffc881f7cd18a86ea174f8016f7a2bbcc"
+    },
+    {
+      "key": "CH003/PANEL-001-01",
+      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-001-01-母女指控近景.png",
+      "size": [
+        345,
+        590
+      ],
+      "sha256": "7300c13f52ff3b8e66b468925b7a52a07018a99a39cd41d71d096a0aa01b7e02",
+      "decoded_pixel_sha256": "d6f0c15d69952532dab28d49d9fff9379be763a78738a37b1e05d2e345f53d22"
+    },
+    {
+      "key": "CH003/PANEL-001-02",
+      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-001-02.png",
+      "size": [
+        1376,
+        768
+      ],
+      "sha256": "46ec11d64700157c5a2798d8056bd1b46de4d4ec89e31e3395426f35df12cdc8",
+      "decoded_pixel_sha256": "db25b944378a8939deeb10cfb6d0f937ec6260bdaeccb77952bdfe13d367a95a"
+    },
+    {
+      "key": "CH003/PANEL-001-03",
+      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-001-03.png",
+      "size": [
+        1376,
+        768
+      ],
+      "sha256": "3f358f8d82b00f07a7bb312d0b97383db783f6929781ae9e70b489c489896123",
+      "decoded_pixel_sha256": "d71f65be2dfdc484427fca811a75b723d7f8fd6718ab6eaf48f252bf53427027"
+    },
+    {
+      "key": "CH003/PANEL-002-01",
+      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-01.png",
+      "size": [
+        1376,
+        768
+      ],
+      "sha256": "6c400390730aad995065bf98da61157f9b725650177d4a865de42ca5bc754aa6",
+      "decoded_pixel_sha256": "010179431475f89abb473153050e158f6bf4dfb58cdefaa46e4e187d8a8a5e89"
+    },
+    {
+      "key": "CH003/PANEL-002-02",
+      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-02.png",
+      "size": [
+        1376,
+        768
+      ],
+      "sha256": "a56beb435071409b93c2d4cb2584ab5763c19d4ca372bd9654bba574ad073174",
+      "decoded_pixel_sha256": "c27277656540dd923e45170cdbd91b42d0dceb5eb3bd39c0b585f2ceee900ebe"
+    },
+    {
+      "key": "CH003/PANEL-002-03",
+      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-03.png",
+      "size": [
+        1376,
+        768
+      ],
+      "sha256": "9e0ce624e78d24578c397fa4f6b2bda1de7f85c784695c3a2b7331be665fc99e",
+      "decoded_pixel_sha256": "f93393e3602a93d56a9aa08d6837132d9e633265817aba9044a8e2e760a6c5c0"
+    },
+    {
+      "key": "CH003/PANEL-003-01",
+      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-003-01-袖口未接触细节.png",
+      "size": [
+        375,
+        160
+      ],
+      "sha256": "7542edc021dda1ad6fbe4e66874f1d513d718c8e790a6f8026139811fe76d08c",
+      "decoded_pixel_sha256": "439a995edb2bc4a2baf2a8042b887e364969e6120a9b7a00def20ff2bb7ed054"
+    },
+    {
+      "key": "CH003/PANEL-003-02",
+      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-003-02.png",
+      "size": [
+        1376,
+        768
+      ],
+      "sha256": "a1283f9bb1841b593294ceb2765789ab7040495817bcf3481ab729f3ca2bc576",
+      "decoded_pixel_sha256": "1da3a4533016cfc4683f15e0ae5370f0af36532816fc9e1afed49e11833c7c06"
     },
     {
       "key": "CH003/PANEL-004-01",
       "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-004-01.png",
-      "sha256": "7e76fe807b3387d919a85fc78b32f3b4a97f55e1dacd457e46103a1c7360be01",
-      "decoded_pixel_sha256": "a8b5cc96c6276ff7dae6f5ba4ee0725ca47d8b8a0e679bc11884f6ac4c04056e",
       "size": [
         1376,
         768
-      ]
+      ],
+      "sha256": "7e76fe807b3387d919a85fc78b32f3b4a97f55e1dacd457e46103a1c7360be01",
+      "decoded_pixel_sha256": "a8b5cc96c6276ff7dae6f5ba4ee0725ca47d8b8a0e679bc11884f6ac4c04056e"
     },
     {
       "key": "CH003/PANEL-004-02",
       "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-004-02.png",
-      "sha256": "edc3371b19c89bd405f5ff6874cedd59a6e0ae1d1baff891c8e0fef7a419f91b",
-      "decoded_pixel_sha256": "fc1a3daf815653b2705565d179e6658c0d8f5fdaf9df268dfc9fff8c8330f7ac",
       "size": [
         350,
         395
-      ]
+      ],
+      "sha256": "edc3371b19c89bd405f5ff6874cedd59a6e0ae1d1baff891c8e0fef7a419f91b",
+      "decoded_pixel_sha256": "fc1a3daf815653b2705565d179e6658c0d8f5fdaf9df268dfc9fff8c8330f7ac"
     }
   ],
-  "cache_note": "原缓存本轮可核，跨轮不保证存在；采用像素/参数/源SHA/坐标永久保存，不承诺原稿可复取"
+  "cache_note": "本轮可比原缓存，跨轮不保证；采用像素/源SHA/坐标永久存，不承诺原稿可复取"
 }

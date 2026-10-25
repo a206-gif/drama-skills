@@ -241,16 +241,27 @@ class NovelComicRevisionTests(unittest.TestCase):
     def test_art_continuation_separates_moderation_and_explicit_material_edit(self) -> None:
         folder = BASE / "连续童年出图"
         manifest = json.loads((folder / "来源与任务.json").read_text(encoding="utf-8"))
-        continuation = next(row for row in manifest["rounds"] if row["round_id"] == "ART-FIRST-ROUND-02")
-        calls = [call for call in manifest["calls"] if call.get("round_id") == continuation["round_id"]]
-        blocked = [row for row in manifest["blocked_tool_attempts"] if row.get("round_id") == continuation["round_id"]]
-        self.assertEqual(continuation["actual_successful_calls"], len(calls))
-        self.assertEqual(continuation["tool_requests"], len(calls) + len(blocked))
-        self.assertTrue(continuation["next_turn_not_new_approval"])
-        for refusal in blocked:
-            self.assertEqual(refusal["status"], "blocked_content_moderation_no_file")
-            self.assertFalse(refusal["generated_file"])
-            self.assertFalse(refusal["count_as_successful_model_call"])
+        for continuation in manifest["rounds"]:
+            calls = [call for call in manifest["calls"] if call.get("round_id") == continuation["round_id"]]
+            blocked = [row for row in manifest["blocked_tool_attempts"] if row.get("round_id") == continuation["round_id"]]
+            self.assertEqual(continuation["actual_successful_calls"], len(calls))
+            self.assertEqual(continuation["tool_requests"], len(calls) + len(blocked))
+            self.assertTrue(continuation["next_turn_not_new_approval"])
+            self.assertLessEqual(continuation["tool_requests"], continuation["call_budget_observed"])
+            for refusal in blocked:
+                self.assertEqual(refusal["status"], "blocked_content_moderation_no_file")
+                self.assertFalse(refusal["generated_file"])
+                self.assertFalse(refusal["count_as_successful_model_call"])
+        # New phase anchors are selected pixels, not a claim that the whole source frame was right.
+        by_id = {ref["id"]: ref for ref in manifest["references"]}
+        for call in manifest["calls"]:
+            if call.get("round_id") != "ART-FIRST-ROUND-03":
+                continue
+            for ref in call["references_in_order"]:
+                self.assertEqual(ref["sha256"], hashlib.sha256((ROOT / ref["file"]).read_bytes()).hexdigest())
+            if call["panel_id"] in {"PANEL-001-02", "PANEL-001-03", "PANEL-002-01"}:
+                self.assertIn("unfixed_mother_child_anchor", [ref["id"] for ref in call["references_in_order"]])
+        self.assertNotEqual(by_id["unfixed_mother_child_anchor"]["file"], by_id["fixed_mother_child_anchor"]["file"])
         correction = next(job for job in manifest["jobs"] if job["key"] == "CH002/PANEL-009-01")
         self.assertEqual(correction["kind"], "generated_corrected_detail")
         self.assertFalse(correction["same_source_pixels"])

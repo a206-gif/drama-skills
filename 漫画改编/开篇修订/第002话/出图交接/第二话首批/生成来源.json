@@ -139,7 +139,7 @@
   "selected_generated_assets": 3,
   "parallel_submission": true,
   "call_id_note": "逻辑编号按任务顺序；三请求并行，不代表返回先后",
-  "current_storyboard_sha256": "01256f9443d3b89bd861cb8eec76d5e690b359971b8ef16457ad379593c07bf1",
+  "current_storyboard_sha256": "3356bcf434704c2085c39bacb540fc0097043faf8c5392522ab5252acaa2009b",
   "status": "three_generated_assets_selfchecked_pending_creator_review",
   "cumulative_childhood_calls": {
     "previous_batch": 5,
