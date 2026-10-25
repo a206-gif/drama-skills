@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0-draft",
+  "project_id": "REBIRTH-KISS-TYCOON",
+  "title": "重生觉醒！这次她吻向财阀老公",
+  "language": "zh-CN",
+  "format": {
+    "aspect_ratio": "9:16",
+    "prompt_language": "en",
+    "episode_count": null,
+    "target_seconds_per_episode": null
+  },
+  "creator_authority": {
+    "decisions_artifact": "创作者决策/",
+    "constraints": [
+      "本阶段只生产 EP001 图片提示词对应的人物与场景参考图，不混合视频、配音或音乐模态",
+      "不做独立道具板，剧情物只随人物状态出现",
+      "全部条目禁止可读文字、logo、水印、字幕"
+    ],
+    "visual_direction": {
+      "status": "accepted",
+      "choices": {
+        "look_development": null,
+        "direction": "高品质二次元角色插画，精致日系动漫画风，乙女游戏角色美术风格，韩系细腻厚涂，半写实动漫人物设计，专业游戏角色原画，精致唯美的角色定妆立绘"
+      }
+    },
+    "production_profile": {
+      "status": "candidate",
+      "choices": {
+        "form": "anime_illustration",
+        "camera": "角色板中性全身与头肩细节视图；场景板空场地理参考"
+      }
+    },
+    "delivery_surface": {
+      "status": "candidate",
+      "aspect": "9:16",
+      "overlay_regions": [],
+      "source_ref": null
+    }
+  }
+}
