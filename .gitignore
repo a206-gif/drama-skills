@@ -32,3 +32,6 @@ maintainers/evals/
 
 # produce 技能的运行时状态：job 临时输入、prepare 指纹、确认与尝试记录，不随仓库分发
 .short-drama/production/
+
+# prepare 的 job 输入文件（临时，不是创作文档）
+.short-drama/job-inputs/
