@@ -203,6 +203,41 @@ class NovelComicRevisionTests(unittest.TestCase):
         self.assertEqual(struct.unpack(">II", raw[16:24]), (1080, 1440))
         self.assertEqual(hashlib.sha256(raw).hexdigest(), output["sha256"])
 
+    def test_art_first_queue_counts_only_ready_assets_and_preserves_prompt_provenance(self) -> None:
+        folder = BASE / "连续童年出图"
+        manifest = json.loads((folder / "来源与任务.json").read_text(encoding="utf-8"))
+        jobs = manifest["jobs"]
+        self.assertEqual(len(jobs), 41)
+        self.assertEqual(len({job["key"] for job in jobs}), 41)
+        source_panels = {}
+        for episode in ["CH002", "CH003"]:
+            story = STORIES[int(episode[-1]) - 1]
+            self.assertEqual(manifest["source_sha256"][episode], hashlib.sha256(story.read_bytes()).hexdigest())
+            source_panels[episode] = {panel["id"]: panel for page in comic.read_script(story) for panel in page["panels"]}
+        for job in jobs:
+            prompt = source_panels[job["episode"]][job["panel_id"]]["fields"]["提示词"]
+            self.assertEqual(job["prompt_sha256"], hashlib.sha256(prompt.encode()).hexdigest())
+        ready = [job for job in jobs if job["status"].startswith("ready")]
+        stats = manifest["statistics"]
+        self.assertEqual(stats["completed_jobs"], len(ready))
+        self.assertEqual(stats["remaining_jobs"], len(jobs) - len(ready))
+        self.assertEqual(stats["successful_image_tool_calls"], len(manifest["calls"]))
+        for job in ready:
+            data = (ROOT / job["output"]).read_bytes()
+            self.assertEqual(data[:8], b"\x89PNG\r\n\x1a\n")
+            self.assertEqual(list(struct.unpack(">II", data[16:24])), job["size"])
+            self.assertEqual(hashlib.sha256(data).hexdigest(), job["output_sha256"])
+        calls = manifest["calls"]
+        self.assertEqual(stats["full_frame_selected_calls"], sum(call["status"] == "selected_pending_creator_review" for call in calls))
+        self.assertEqual(stats["partially_selected_calls"], sum(call["status"] == "partially_selected_subject_crop" for call in calls))
+        self.assertEqual(stats["unused_calls"], sum(call["status"].startswith("rejected") for call in calls))
+        for blocked in manifest["blocked_tool_attempts"]:
+            self.assertFalse(blocked["generated_file"])
+            self.assertFalse(blocked["count_as_successful_model_call"])
+        export = ROOT / manifest["export"]["file"]
+        self.assertEqual(hashlib.sha256(export.read_bytes()).hexdigest(), manifest["export"]["sha256"])
+        self.assertTrue(manifest["execution_policy"]["resume_without_reapproval"])
+
     def test_real_sequel_cli_refuses_missing_previous_without_generating_media(self) -> None:
         before = {str(path) for story in STORIES for path in (story.parent / "制作成果").glob("**/*")}
         command = [sys.executable, "-O", str(TOOL), "check", str(STORIES[1].with_name("排版.json"))]

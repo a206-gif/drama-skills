@@ -1,0 +1,1626 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-25",
+  "status": "partial_art_first_turn_limit_resume_authorized",
+  "based_on_commit": "71d7150bba675c69d6d1c42aacc8776dd1efa825",
+  "authorization": {
+    "verbatim": "A 后续话也制作了先把图都制作完",
+    "scope": "现有连续CH002余20童年格及CH003全21格，不逐页停下确认；先底图后排字",
+    "not_in_scope": [
+      "未定时期CH002 PANEL-001-02",
+      "青年/成年新增图",
+      "未整合的中段补写",
+      "全109章"
+    ]
+  },
+  "source_sha256": {
+    "CH002": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9",
+    "CH003": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+  },
+  "source_previous_sha256": {
+    "CH002": "ec25c4f892d32c1c599fc572bbce0ce177b0ff90b601e9463bab0592b15f6047",
+    "CH003": "610ee0aadb5e3e3d2d7a70b0635b02d4b72690e74145255086a581c773671763"
+  },
+  "references": [
+    {
+      "id": "S",
+      "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+      "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+    },
+    {
+      "id": "Q",
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
+      "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+    },
+    {
+      "id": "M",
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
+      "sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff"
+    },
+    {
+      "id": "H",
+      "file": "漫画改编/连续童年出图/参考/REF-HUO-CHILD-111.jpg",
+      "sha256": "7d71e5842b48884c1fd7983889a640d7530aab931d3f1d52030a1ce81238cf2c",
+      "source": {
+        "path": "漫画改编/参考画风111/男主幼年.png",
+        "git_blob": "db2ea74c1a00e21e8bbd1a42610ec8c13a66c02a",
+        "sha256": "e391a17c67fc9633fd0efa442f08aea140db193eefb721f897c72455897ef053",
+        "repository": "a206-gif/drama-skills",
+        "commit": "cf408fb5a7d573826f0da4e0a3ef4ac51bddb9f1"
+      },
+      "derivative_note": "原111整图JPEG95，只锁脸/眼/狼尾渲染；服装按原著换大卫衣，不复制破袍/饰物"
+    },
+    {
+      "id": "day_scene",
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-003-02.png",
+      "sha256": "0c874b4adcc8e61fb1d99fece7d4377a53199696f13de31f4b2c9cb933a0a441"
+    },
+    {
+      "id": "pond_anchor",
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-01.png",
+      "sha256": "5095c932588143d70c72c9868b8fb4a27faee85a17680277a09374fe4ef8ffca",
+      "role": "selected scene continuity; not a replacement identity master"
+    },
+    {
+      "id": "meet_anchor",
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
+      "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
+      "role": "selected scene continuity; not a replacement identity master"
+    },
+    {
+      "id": "hut_anchor",
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
+      "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+      "role": "selected scene continuity; not a replacement identity master"
+    },
+    {
+      "id": "reunion_correction_only",
+      "file": "漫画改编/连续童年出图/参考/REF-夜里重逢-未采用内景-纠正用.jpg",
+      "sha256": "a823461f684978f6acc79290a054a490620de80b71752e3c8d932b1ddd8d7ec3",
+      "role": "未采用内景仅供纠正时锁脸/衣服，绝不作当前外景或风格锚"
+    }
+  ],
+  "jobs": [
+    {
+      "key": "CH002/PANEL-004-01",
+      "episode": "CH002",
+      "panel_id": "PANEL-004-01",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "b376fc20216cabbe05b8b36a81a6b95a58b842dad5d275ac2a133ef54a22438a",
+      "reference_ids": [
+        "S",
+        "day_scene"
+      ],
+      "cast": [
+        "S",
+        "Q"
+      ],
+      "stage": "day",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-01.png",
+      "status": "ready_generated_selfchecked",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9",
+      "output_sha256": "5095c932588143d70c72c9868b8fb4a27faee85a17680277a09374fe4ef8ffca",
+      "size": [
+        1376,
+        768
+      ]
+    },
+    {
+      "key": "CH002/PANEL-004-02",
+      "episode": "CH002",
+      "panel_id": "PANEL-004-02",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "15db4f6f6c334d913979f808640451112796bd382f7dbe34206d155202e35e8b",
+      "reference_ids": [
+        "S",
+        "day_scene",
+        "pond_anchor"
+      ],
+      "cast": [
+        "S",
+        "Q"
+      ],
+      "stage": "day",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-02.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9"
+    },
+    {
+      "key": "CH002/PANEL-004-03",
+      "episode": "CH002",
+      "panel_id": "PANEL-004-03",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "28959f9ec71265fbebc9aa9ccba667cd0d57f4f1e4db273a857961751cc96387",
+      "reference_ids": [
+        "S",
+        "day_scene",
+        "pond_anchor"
+      ],
+      "cast": [
+        "S",
+        "Q"
+      ],
+      "stage": "day",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-03.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9"
+    },
+    {
+      "key": "CH002/PANEL-005-01",
+      "episode": "CH002",
+      "panel_id": "PANEL-005-01",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "f71ccf483ab70fd3e629f27161fed1577c3de1a369c1cdae19c05865abfeb04b",
+      "reference_ids": [
+        "S"
+      ],
+      "cast": [
+        "S"
+      ],
+      "stage": "day",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-005-01.png",
+      "status": "ready_generated_selfchecked",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9",
+      "output_sha256": "ab5bd7a2524c6dfafde16e66d3ca1ddee52fc64b86ab1e5a02df5e4557bb8c8e",
+      "size": [
+        1376,
+        768
+      ]
+    },
+    {
+      "key": "CH002/PANEL-005-02",
+      "episode": "CH002",
+      "panel_id": "PANEL-005-02",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "29f286ffd64174bea02fa12415db9c7f042974bda2b14a9cff2993a4b870e6d2",
+      "reference_ids": [
+        "S"
+      ],
+      "cast": [
+        "S"
+      ],
+      "stage": "path",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-005-02.png",
+      "status": "ready_generated_selfchecked",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9",
+      "output_sha256": "a096ae0c3e2d215b6f3e11bf82c1b62dcf09d5ce806cc6ef8b4e6b94d9481932",
+      "size": [
+        1376,
+        768
+      ]
+    },
+    {
+      "key": "CH002/PANEL-006-01",
+      "episode": "CH002",
+      "panel_id": "PANEL-006-01",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "8937cb883d8d866fcc4355655e6b044522fd08df6004a6a604cf6dacca9f7bb4",
+      "reference_ids": [
+        "S",
+        "H"
+      ],
+      "cast": [
+        "S",
+        "H"
+      ],
+      "stage": "path",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
+      "status": "ready_generated_selfchecked",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9",
+      "output_sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
+      "size": [
+        1376,
+        768
+      ]
+    },
+    {
+      "key": "CH002/PANEL-006-02",
+      "episode": "CH002",
+      "panel_id": "PANEL-006-02",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "5f8e5934e48d5c06227e3dd56f1c81609e110f22ede27ae01465c00efab7f042",
+      "reference_ids": [
+        "S",
+        "H",
+        "meet_anchor"
+      ],
+      "cast": [
+        "S",
+        "H"
+      ],
+      "stage": "path",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-02.png",
+      "status": "ready_generated_selfchecked",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9",
+      "output_sha256": "10d76fa2611e7621d766dcf8c5a3bd6613ae66f57c3fc4c71303fad55a8b853a",
+      "size": [
+        1376,
+        768
+      ]
+    },
+    {
+      "key": "CH002/PANEL-007-01",
+      "episode": "CH002",
+      "panel_id": "PANEL-007-01",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "319f412db40a6b8100d649d92b93b14cea310249b287c9d298a526fa2d12e46f",
+      "reference_ids": [
+        "S",
+        "H",
+        "meet_anchor"
+      ],
+      "cast": [
+        "S",
+        "H"
+      ],
+      "stage": "path",
+      "kind": "generated_subject_crop",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-007-01-衣角细节.png",
+      "status": "ready_local_crop",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9",
+      "output_sha256": "29c1467608480f644ca80f3372b234f87d6927a3152a3e5a4b91f6c5aa403e89",
+      "size": [
+        415,
+        255
+      ],
+      "crop_source_call_id": "ART-FIRST-20261025-009",
+      "crop_xyxy": [
+        430,
+        270,
+        845,
+        525
+      ]
+    },
+    {
+      "key": "CH002/PANEL-007-02",
+      "episode": "CH002",
+      "panel_id": "PANEL-007-02",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "df2056feeeaef2315926ad5104b13807962727034843b7fa2c06444ab56a95ba",
+      "reference_ids": [
+        "S",
+        "H",
+        "meet_anchor"
+      ],
+      "cast": [
+        "S",
+        "H"
+      ],
+      "stage": "path",
+      "kind": "generated_subject_crop",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-007-02-回应近景.png",
+      "status": "ready_local_crop",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9",
+      "output_sha256": "a86419a2ec934cf5155d9cef965bb7a928620d5ce48e9fc2d3ff8b30352dc3d0",
+      "size": [
+        490,
+        345
+      ],
+      "crop_source_call_id": "ART-FIRST-20261025-010",
+      "crop_xyxy": [
+        760,
+        20,
+        1250,
+        365
+      ]
+    },
+    {
+      "key": "CH002/PANEL-008-01",
+      "episode": "CH002",
+      "panel_id": "PANEL-008-01",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "a2eedfcbd8f5a7cc95e189010781286bd7d844bf865474a33f4bff9ccfc8d7af",
+      "reference_ids": [
+        "S",
+        "H"
+      ],
+      "cast": [
+        "S",
+        "H"
+      ],
+      "stage": "hut",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
+      "status": "ready_generated_selfchecked",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9",
+      "output_sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+      "size": [
+        1376,
+        768
+      ]
+    },
+    {
+      "key": "CH002/PANEL-008-02",
+      "episode": "CH002",
+      "panel_id": "PANEL-008-02",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "178f97b6dc0860b8b32ca6c5072aca3a1f762509fe71bb0624789cd881bb163c",
+      "reference_ids": [
+        "S",
+        "H",
+        "hut_anchor"
+      ],
+      "cast": [
+        "S",
+        "H"
+      ],
+      "stage": "hut",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9"
+    },
+    {
+      "key": "CH002/PANEL-008-03",
+      "episode": "CH002",
+      "panel_id": "PANEL-008-03",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "fab4bc6c8d34c24beab7263cd04e94419fc9988df2bea4fff77f5ae2d5a2b68e",
+      "reference_ids": [
+        "S",
+        "H",
+        "hut_anchor"
+      ],
+      "cast": [
+        "S",
+        "H"
+      ],
+      "stage": "hut",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-03.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9"
+    },
+    {
+      "key": "CH002/PANEL-009-01",
+      "episode": "CH002",
+      "panel_id": "PANEL-009-01",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "867b7d610d66d11b2979d20d65cb80026e21801a65f50ac3816f73a39b47e441",
+      "reference_ids": [
+        "S",
+        "H",
+        "hut_anchor"
+      ],
+      "cast": [
+        "S",
+        "H"
+      ],
+      "stage": "hut",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-009-01.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9"
+    },
+    {
+      "key": "CH002/PANEL-009-02",
+      "episode": "CH002",
+      "panel_id": "PANEL-009-02",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "1af93708668b1f453d5bea7fa7d25139967a166cabc1888b8b484d2dfd995e2b",
+      "reference_ids": [
+        "S",
+        "H",
+        "hut_anchor"
+      ],
+      "cast": [
+        "S",
+        "H"
+      ],
+      "stage": "hut",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-009-02.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9"
+    },
+    {
+      "key": "CH002/PANEL-010-01",
+      "episode": "CH002",
+      "panel_id": "PANEL-010-01",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "4995a77567abea76e1b678c3714e7a4c2b38c9f3aaeb62ebbac8b4442e4dee91",
+      "reference_ids": [
+        "S",
+        "H",
+        "hut_anchor"
+      ],
+      "cast": [
+        "S",
+        "H"
+      ],
+      "stage": "hut",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-010-01.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9"
+    },
+    {
+      "key": "CH002/PANEL-010-02",
+      "episode": "CH002",
+      "panel_id": "PANEL-010-02",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "a95ff8750436c6f2516ce2a593b294210fde7bfafedd5fdb5aadee489f44ad6e",
+      "reference_ids": [
+        "S",
+        "H",
+        "hut_anchor"
+      ],
+      "cast": [
+        "S",
+        "H"
+      ],
+      "stage": "hut",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-010-02.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9"
+    },
+    {
+      "key": "CH002/PANEL-011-01",
+      "episode": "CH002",
+      "panel_id": "PANEL-011-01",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "65932506f6add9dd6c6fd80aaf73e16c3b097b8449e77e2c14db83847834618b",
+      "reference_ids": [
+        "S",
+        "H",
+        "hut_anchor"
+      ],
+      "cast": [
+        "S",
+        "H"
+      ],
+      "stage": "hut",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-011-01.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9"
+    },
+    {
+      "key": "CH002/PANEL-011-02",
+      "episode": "CH002",
+      "panel_id": "PANEL-011-02",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "ba4ba1d4f2e1432e847f899e0b678fa9ebc87db375840c5f98443ea439d06b30",
+      "reference_ids": [
+        "S",
+        "H",
+        "hut_anchor"
+      ],
+      "cast": [
+        "S",
+        "H"
+      ],
+      "stage": "hut",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-011-02.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9"
+    },
+    {
+      "key": "CH002/PANEL-012-01",
+      "episode": "CH002",
+      "panel_id": "PANEL-012-01",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "03a9139c3ae85ee8440faeb1a9d65c1f7f31d3412303c0dcd81fd56aed9e0500",
+      "reference_ids": [
+        "S",
+        "H"
+      ],
+      "cast": [
+        "S",
+        "H",
+        "R"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-012-01.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9"
+    },
+    {
+      "key": "CH002/PANEL-012-02",
+      "episode": "CH002",
+      "panel_id": "PANEL-012-02",
+      "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+      "prompt_sha256": "1b030ca327a85abaf6fb7f6d11f10867f89cbc079de7515b20e09dbe66a1377e",
+      "reference_ids": [
+        "S",
+        "M",
+        "Q",
+        "reunion_correction_only"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "Q",
+        "D"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-012-02-v2.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9",
+      "output_sha256": "d2036fb1fb7019680730aeee3bafe973444258eedac212427e9420c205946c0e",
+      "size": [
+        1376,
+        768
+      ],
+      "raw_input_file": "/home/user/.cache/drama-tools/bulk-generated/CH002/PANEL-012-02-v2.png",
+      "runtime_reference_files": []
+    },
+    {
+      "key": "CH003/PANEL-001-01",
+      "episode": "CH003",
+      "panel_id": "PANEL-001-01",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "91c59532389152deb47ee311f830ddfd085afb0eee858c9f914fdbeb4b26ccfc",
+      "reference_ids": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "Q",
+        "D"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-001-01.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-001-02",
+      "episode": "CH003",
+      "panel_id": "PANEL-001-02",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "ada27c36f46bb6f17c2135f21c82d9953ac36043d3739fc718fcac55bb25bd2e",
+      "reference_ids": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-001-02.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-001-03",
+      "episode": "CH003",
+      "panel_id": "PANEL-001-03",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "7b6ecf1679c74167c8ffafa8b685bb722a64f60b5c4c8d075fb2a2207e39664a",
+      "reference_ids": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-001-03.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-002-01",
+      "episode": "CH003",
+      "panel_id": "PANEL-002-01",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "b3a6003e749c5586fb830e932a0d778d0245598c4952356772fbb3597a5f5beb",
+      "reference_ids": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-01.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-002-02",
+      "episode": "CH003",
+      "panel_id": "PANEL-002-02",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "744c4ed7d3cb4ff9119e637e907ca4f994d7de47ec47719295862483173192a7",
+      "reference_ids": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-02.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-002-03",
+      "episode": "CH003",
+      "panel_id": "PANEL-002-03",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "b579375a47a6f54b6df0221f0ba830a2ac4a76b2c5abe230ae715ad5210d4ab5",
+      "reference_ids": [
+        "S",
+        "M"
+      ],
+      "cast": [
+        "S",
+        "M"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-03.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-003-01",
+      "episode": "CH003",
+      "panel_id": "PANEL-003-01",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "d79679ff4cc4c978b135f833d638503751b7a9493b629005c3026995f8c5b373",
+      "reference_ids": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-003-01.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-003-02",
+      "episode": "CH003",
+      "panel_id": "PANEL-003-02",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "9f6dd5ca380e869ccec498478bed946c1d1fd0fbf0f349ab3505b43de09b44db",
+      "reference_ids": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-003-02.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-003-03",
+      "episode": "CH003",
+      "panel_id": "PANEL-003-03",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "12bf1dcff7260b99338447067fbb0a62d028823675b444c2ec8559029e18dd0d",
+      "reference_ids": [
+        "S",
+        "H",
+        "M"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "H"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-003-03.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-004-01",
+      "episode": "CH003",
+      "panel_id": "PANEL-004-01",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "b8d5e30072504c709aa1b9a9494c865f5ad6810ac3f14b90338c1446f27433c0",
+      "reference_ids": [
+        "Q"
+      ],
+      "cast": [
+        "Q"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-004-01.png",
+      "status": "ready_generated_selfchecked",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de",
+      "output_sha256": "7e76fe807b3387d919a85fc78b32f3b4a97f55e1dacd457e46103a1c7360be01",
+      "size": [
+        1376,
+        768
+      ]
+    },
+    {
+      "key": "CH003/PANEL-004-02",
+      "episode": "CH003",
+      "panel_id": "PANEL-004-02",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "c2c71f127c0e9b5d7d47daad0ecd7c9a174da29709042409ebecb47a7d3897dd",
+      "reference_ids": [
+        "Q"
+      ],
+      "cast": [
+        "Q"
+      ],
+      "stage": "night",
+      "kind": "same_moment_crop",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-004-02.png",
+      "status": "ready_local_crop",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de",
+      "crop_source_job": "CH003/PANEL-004-01",
+      "crop_source_sha256": "7e76fe807b3387d919a85fc78b32f3b4a97f55e1dacd457e46103a1c7360be01",
+      "crop_xyxy": [
+        750,
+        55,
+        1100,
+        450
+      ],
+      "size": [
+        350,
+        395
+      ],
+      "output_sha256": "edc3371b19c89bd405f5ff6874cedd59a6e0ae1d1baff891c8e0fef7a419f91b",
+      "same_source_pixels": true
+    },
+    {
+      "key": "CH003/PANEL-004-03",
+      "episode": "CH003",
+      "panel_id": "PANEL-004-03",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "ab82dce4feceb08c161b2e649798e5b860ce5968e31542834ef622ebbacf7241",
+      "reference_ids": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "Q",
+        "L"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-004-03.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-005-01",
+      "episode": "CH003",
+      "panel_id": "PANEL-005-01",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "529a14976edb3d8e8a464e2685feaf42f2329405f40c1692f85f21fde215abd5",
+      "reference_ids": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "Q",
+        "L"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-005-01.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-005-02",
+      "episode": "CH003",
+      "panel_id": "PANEL-005-02",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "909404a71e34179f8a23c48b2fceee0ee50e2ac3fec17d32884c46d046aabdf2",
+      "reference_ids": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "Q",
+        "L"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-005-02.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-005-03",
+      "episode": "CH003",
+      "panel_id": "PANEL-005-03",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "c1643124930b4286789f762101978ea1d128e6355763e6a0cb3d326fd0b1e0c7",
+      "reference_ids": [
+        "S",
+        "M",
+        "Q"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "Q",
+        "L"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-005-03.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-006-01",
+      "episode": "CH003",
+      "panel_id": "PANEL-006-01",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "1b38532f010bba110d5c96a1be9341936fd2b11c310ee966a98b38642f2592d7",
+      "reference_ids": [
+        "S",
+        "H",
+        "M"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "H"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-006-01.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-006-02",
+      "episode": "CH003",
+      "panel_id": "PANEL-006-02",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "3ce374a146621ebbc546a6ac732b8f7820a38be9d6d21465987baff9b13f1b81",
+      "reference_ids": [
+        "S",
+        "H",
+        "M"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "H",
+        "V"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-006-02.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-007-01",
+      "episode": "CH003",
+      "panel_id": "PANEL-007-01",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "ea98503c4a2272955afce593f27c0a34ece2df9c0c5e359fa77867c47f8b5691",
+      "reference_ids": [
+        "S",
+        "H",
+        "M"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "H"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-007-01.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-007-02",
+      "episode": "CH003",
+      "panel_id": "PANEL-007-02",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "cc643bd26dda784925477234e5d69bcf8b1f054a60fc30208cbefd8f9d004b50",
+      "reference_ids": [
+        "S",
+        "H",
+        "M"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "H"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-007-02.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-008-01",
+      "episode": "CH003",
+      "panel_id": "PANEL-008-01",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "7c8a8573ee89b8af5fce13c122d4bcc153f7e1430b3aadd93ee03f1e0b1f5f55",
+      "reference_ids": [
+        "S",
+        "H",
+        "M"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "H"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-008-01.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    },
+    {
+      "key": "CH003/PANEL-008-02",
+      "episode": "CH003",
+      "panel_id": "PANEL-008-02",
+      "source": "漫画改编/开篇修订/第003话/漫画分镜.md",
+      "prompt_sha256": "dba3584db37b0c402c582a23dd7d85ba4e6c70ea50d3afc1e16f61159e8a9813",
+      "reference_ids": [
+        "S",
+        "H",
+        "M"
+      ],
+      "cast": [
+        "S",
+        "M",
+        "H"
+      ],
+      "stage": "night",
+      "kind": "generation",
+      "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-008-02.png",
+      "status": "queued_authorized_tool_limit",
+      "source_sha256": "c40a3fd9b7e447e43356dd4d3f7bc9507d92d283481b216cacba0455261853de"
+    }
+  ],
+  "calls": [
+    {
+      "call_id": "ART-FIRST-20261025-001",
+      "job_key": "CH002/PANEL-004-01",
+      "episode": "CH002",
+      "panel_id": "PANEL-004-01",
+      "source_sha256": "46cacd47b5152a95d797df1406bb91073a10f2c41b51e48c32849be6128407ab",
+      "source_prompt_sha256": "b376fc20216cabbe05b8b36a81a6b95a58b842dad5d275ac2a133ef54a22438a",
+      "references_in_order": [
+        {
+          "id": "S",
+          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+          "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+        },
+        {
+          "id": "day_scene",
+          "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-003-02.png",
+          "sha256": "0c874b4adcc8e61fb1d99fece7d4377a53199696f13de31f4b2c9cb933a0a441"
+        }
+      ],
+      "offer_options": false,
+      "tool_status": "success",
+      "status": "selected_pending_creator_review",
+      "raw_cache_file": "/home/user/.cache/drama-tools/bulk-generated/CH002/PANEL-004-01.png",
+      "raw_sha256": "12734302f870303d7b9ec05f045c0f5663e84a8ff3613a2ef023306bbe7abb4d",
+      "raw_bytes": 2734801,
+      "raw_bit_depth": 8,
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-01.png",
+      "sha256": "5095c932588143d70c72c9868b8fb4a27faee85a17680277a09374fe4ef8ffca",
+      "bytes": 1699344,
+      "size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "decoded_pixel_sha256": "5b156ab3bf7ab06d2f80d1fa869a0cb8bcdebf2d99b30e15e1a4535fce358076",
+      "lossless_recompression": true,
+      "model_seed_pricing": "工具未返回实际型号/seed/费用明细，未知",
+      "visual_selfcheck": "已看600px场次接触表；关键男孩初遇/木屋另看原尺寸。角色/现代卫衣/受伤结果/场地自检，不等于独立验收"
+    },
+    {
+      "call_id": "ART-FIRST-20261025-002",
+      "job_key": "CH002/PANEL-005-02",
+      "episode": "CH002",
+      "panel_id": "PANEL-005-02",
+      "source_sha256": "46cacd47b5152a95d797df1406bb91073a10f2c41b51e48c32849be6128407ab",
+      "source_prompt_sha256": "29f286ffd64174bea02fa12415db9c7f042974bda2b14a9cff2993a4b870e6d2",
+      "references_in_order": [
+        {
+          "id": "S",
+          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+          "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+        }
+      ],
+      "offer_options": false,
+      "tool_status": "success",
+      "status": "selected_pending_creator_review",
+      "raw_cache_file": "/home/user/.cache/drama-tools/bulk-generated/CH002/PANEL-005-02.png",
+      "raw_sha256": "a32c6c5554f6510343815e30315369a4dcf45a63e27ad0a1dc1eabd4415163e5",
+      "raw_bytes": 2744325,
+      "raw_bit_depth": 8,
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-005-02.png",
+      "sha256": "a096ae0c3e2d215b6f3e11bf82c1b62dcf09d5ce806cc6ef8b4e6b94d9481932",
+      "bytes": 1706317,
+      "size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "decoded_pixel_sha256": "0fd6c27cebe5c1c811a2bab71286386469cf036558459d5c063ca0ce1aaeed0c",
+      "lossless_recompression": true,
+      "model_seed_pricing": "工具未返回实际型号/seed/费用明细，未知",
+      "visual_selfcheck": "已看600px场次接触表；关键男孩初遇/木屋另看原尺寸。角色/现代卫衣/受伤结果/场地自检，不等于独立验收"
+    },
+    {
+      "call_id": "ART-FIRST-20261025-003",
+      "job_key": "CH002/PANEL-006-01",
+      "episode": "CH002",
+      "panel_id": "PANEL-006-01",
+      "source_sha256": "46cacd47b5152a95d797df1406bb91073a10f2c41b51e48c32849be6128407ab",
+      "source_prompt_sha256": "8937cb883d8d866fcc4355655e6b044522fd08df6004a6a604cf6dacca9f7bb4",
+      "references_in_order": [
+        {
+          "id": "S",
+          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+          "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+        },
+        {
+          "id": "H",
+          "file": "漫画改编/连续童年出图/参考/REF-HUO-CHILD-111.jpg",
+          "sha256": "7d71e5842b48884c1fd7983889a640d7530aab931d3f1d52030a1ce81238cf2c"
+        }
+      ],
+      "offer_options": false,
+      "tool_status": "success",
+      "status": "selected_pending_creator_review",
+      "raw_cache_file": "/home/user/.cache/drama-tools/bulk-generated/CH002/PANEL-006-01.png",
+      "raw_sha256": "a3477b5b3cbe13d854ab432f3d3d2e20ba24c24823cecdc5b31823ab91751faf",
+      "raw_bytes": 2491261,
+      "raw_bit_depth": 8,
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
+      "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
+      "bytes": 1505817,
+      "size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "decoded_pixel_sha256": "4be2292baf29d19eaa0044974cdc6aa91ce47518e1a67650f10fcb33d425d757",
+      "lossless_recompression": true,
+      "model_seed_pricing": "工具未返回实际型号/seed/费用明细，未知",
+      "visual_selfcheck": "已看600px场次接触表；关键男孩初遇/木屋另看原尺寸。角色/现代卫衣/受伤结果/场地自检，不等于独立验收"
+    },
+    {
+      "call_id": "ART-FIRST-20261025-004",
+      "job_key": "CH002/PANEL-008-01",
+      "episode": "CH002",
+      "panel_id": "PANEL-008-01",
+      "source_sha256": "46cacd47b5152a95d797df1406bb91073a10f2c41b51e48c32849be6128407ab",
+      "source_prompt_sha256": "a2eedfcbd8f5a7cc95e189010781286bd7d844bf865474a33f4bff9ccfc8d7af",
+      "references_in_order": [
+        {
+          "id": "S",
+          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+          "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+        },
+        {
+          "id": "H",
+          "file": "漫画改编/连续童年出图/参考/REF-HUO-CHILD-111.jpg",
+          "sha256": "7d71e5842b48884c1fd7983889a640d7530aab931d3f1d52030a1ce81238cf2c"
+        }
+      ],
+      "offer_options": false,
+      "tool_status": "success",
+      "status": "selected_pending_creator_review",
+      "raw_cache_file": "/home/user/.cache/drama-tools/bulk-generated/CH002/PANEL-008-01.png",
+      "raw_sha256": "374a24a1e7771531b941b1cbded8cbcbb56f6250a0ac421d259762d0ae46aef3",
+      "raw_bytes": 2353663,
+      "raw_bit_depth": 8,
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
+      "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+      "bytes": 1456067,
+      "size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "decoded_pixel_sha256": "4f5c5957ab7f7d5a1570f9fac3e5f33284464eb5bf14d5e0d61b9c0285d87cfb",
+      "lossless_recompression": true,
+      "model_seed_pricing": "工具未返回实际型号/seed/费用明细，未知",
+      "visual_selfcheck": "已看600px场次接触表；关键男孩初遇/木屋另看原尺寸。角色/现代卫衣/受伤结果/场地自检，不等于独立验收"
+    },
+    {
+      "call_id": "ART-FIRST-20261025-005",
+      "job_key": "CH002/PANEL-012-02",
+      "episode": "CH002",
+      "panel_id": "PANEL-012-02",
+      "source_sha256": "46cacd47b5152a95d797df1406bb91073a10f2c41b51e48c32849be6128407ab",
+      "source_prompt_sha256": "fca3723b79b12fe59e03424f8c3c3528fc91131f0c5b723c1b24e3149fc21e64",
+      "references_in_order": [
+        {
+          "id": "S",
+          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+          "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+        },
+        {
+          "id": "M",
+          "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
+          "sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff"
+        },
+        {
+          "id": "Q",
+          "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
+          "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+        }
+      ],
+      "offer_options": false,
+      "tool_status": "success",
+      "status": "rejected_wrong_interior",
+      "raw_cache_file": "/home/user/.cache/drama-tools/bulk-generated/CH002/PANEL-012-02.png",
+      "raw_sha256": "046a0edf3cfd4c5358bde18602fdaea032d1e0285741033708afee13e2569b44",
+      "raw_bytes": 2430339,
+      "raw_bit_depth": 8,
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-012-02.png",
+      "sha256": "d2036fb1fb7019680730aeee3bafe973444258eedac212427e9420c205946c0e",
+      "bytes": 1472610,
+      "size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "decoded_pixel_sha256": "5bf6fa6b49c9957777f4ef8e139be8d30d8f1c9c94b8dc3e3733807b8a5b4587",
+      "lossless_recompression": true,
+      "model_seed_pricing": "工具未返回实际型号/seed/费用明细，未知",
+      "reason": "源为破屋外，初稿画在室内；留人物身份作纠正编辑，不用于后续场景锚",
+      "archived_cache": "/home/user/.cache/drama-tools/bulk-rejected/CH002-PANEL-012-02-v1.png",
+      "actual_prompt_snapshot": "One standalone 1376x768 landscape wordless comic panel, one simultaneous moment, NOT a page/collage. Match the references accepted delicate semi-realistic painterly CG, fine hair, softly blended skin, dimensional fabric, muted natural light. Nine-year-old SU LI: same ruby eyes, long wavy silver-grey hair/white flower clip, ivory knit cardigan/cotton dress, dusty-blue ribbon, white socks/Mary Janes. Adult mother JIANG YUEYAN: same grey eyes, half-up silver-grey hair, pearl studs, navy high-neck long-sleeved dress. Twelve-year-old QIN YIN: same grey-blue eyes, long straight SIDE-PARTED black hair, no blunt bangs, plain ivory long-sleeved cotton dress. Attending doctor: adult man, short black hair, rectangular glasses, plain white coat/dark clothes. Same wooden hut/open LEFT door at NIGHT, small warm lamplight/cool dark ambient, no rain/mansion. Girl keeps muddy ivory outfit and oversized dusty-PINK adult wool coat around shoulders, LEFT arm protected. Mothers navy clothes/pearls unchanged, half-up hair slightly loosened from searching. Girl keeps oversized dusty-PINK wool coat on shoulders. SHOT: Mother has just FOUND and securely embraced Su Li, visibly shaken and tearful. Her gaze falls to the girls sore LEFT forearm which is still unbandaged; doctor approaches to inspect, Qin Yin stands a few steps back anxiously. Pink coat remains loosely over girl without hiding the protected arm. No accusation verdict, no fixed splint yet, no adoption cancellation. Preserve faces and key hands/objects. Only named cast, modest nonsexual schoolchildren, no adult redesign. NO text, signs, numbers, logo, watermark, balloon, blank text box, border, physical system/UI, animal ears/tails, gore, injury-causing action or medical tutorial."
+    },
+    {
+      "call_id": "ART-FIRST-20261025-006",
+      "job_key": "CH003/PANEL-004-01",
+      "episode": "CH003",
+      "panel_id": "PANEL-004-01",
+      "source_sha256": "93543384b27605de43d582073288a933d73ad4d5a9a59136e97eaa39438800b2",
+      "source_prompt_sha256": "b8d5e30072504c709aa1b9a9494c865f5ad6810ac3f14b90338c1446f27433c0",
+      "references_in_order": [
+        {
+          "id": "Q",
+          "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
+          "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+        }
+      ],
+      "offer_options": false,
+      "tool_status": "success",
+      "status": "selected_pending_creator_review",
+      "raw_cache_file": "/home/user/.cache/drama-tools/bulk-generated/CH003/PANEL-004-01.png",
+      "raw_sha256": "557b964326650ea86e71fe89b0ebbefed747ca5c71609cda0bda42845c5913d5",
+      "raw_bytes": 2176999,
+      "raw_bit_depth": 8,
+      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-004-01.png",
+      "sha256": "7e76fe807b3387d919a85fc78b32f3b4a97f55e1dacd457e46103a1c7360be01",
+      "bytes": 1269679,
+      "size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "decoded_pixel_sha256": "a8b5cc96c6276ff7dae6f5ba4ee0725ca47d8b8a0e679bc11884f6ac4c04056e",
+      "lossless_recompression": true,
+      "model_seed_pricing": "工具未返回实际型号/seed/费用明细，未知",
+      "visual_selfcheck": "已看600px场次接触表；关键男孩初遇/木屋另看原尺寸。角色/现代卫衣/受伤结果/场地自检，不等于独立验收"
+    },
+    {
+      "call_id": "ART-FIRST-20261025-007",
+      "job_key": "CH002/PANEL-005-01",
+      "episode": "CH002",
+      "panel_id": "PANEL-005-01",
+      "source_sha256": "441e27adf648674b2dca11cde2f689066fb487d0a864fd6f3eaff47fd9d8237b",
+      "source_prompt_sha256": "f71ccf483ab70fd3e629f27161fed1577c3de1a369c1cdae19c05865abfeb04b",
+      "references_in_order": [
+        {
+          "id": "S",
+          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+          "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+        }
+      ],
+      "runtime_reference_files": [],
+      "offer_options": false,
+      "tool_status": "success",
+      "status": "selected_pending_creator_review",
+      "raw_cache_file": "/home/user/.cache/drama-tools/bulk-generated/CH002/PANEL-005-01.png",
+      "raw_sha256": "ed0effcf74ea5b22e8e8ad34db563a3bf192645fa9cd7d55f76257289b1ee0aa",
+      "raw_bytes": 2809910,
+      "raw_bit_depth": 8,
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-005-01.png",
+      "sha256": "ab5bd7a2524c6dfafde16e66d3ca1ddee52fc64b86ab1e5a02df5e4557bb8c8e",
+      "bytes": 1743018,
+      "size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "decoded_pixel_sha256": "51adc1eafe5a4212346b1f5f5372fd7b9b62ca07b57ca8abad183ae769555f25",
+      "lossless_recompression": true,
+      "model_seed_pricing": "工具未返回实际型号/seed/费用明细，未知",
+      "visual_selfcheck": "第二组实图接触表自看；手部/回应两整图错误分区裁用，不把坏整幅当正确"
+    },
+    {
+      "call_id": "ART-FIRST-20261025-008",
+      "job_key": "CH002/PANEL-006-02",
+      "episode": "CH002",
+      "panel_id": "PANEL-006-02",
+      "source_sha256": "441e27adf648674b2dca11cde2f689066fb487d0a864fd6f3eaff47fd9d8237b",
+      "source_prompt_sha256": "5f8e5934e48d5c06227e3dd56f1c81609e110f22ede27ae01465c00efab7f042",
+      "references_in_order": [
+        {
+          "id": "S",
+          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+          "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+        },
+        {
+          "id": "H",
+          "file": "漫画改编/连续童年出图/参考/REF-HUO-CHILD-111.jpg",
+          "sha256": "7d71e5842b48884c1fd7983889a640d7530aab931d3f1d52030a1ce81238cf2c"
+        },
+        {
+          "id": "meet_anchor",
+          "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
+          "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
+          "role": "selected scene continuity; not a replacement identity master"
+        }
+      ],
+      "runtime_reference_files": [],
+      "offer_options": false,
+      "tool_status": "success",
+      "status": "selected_pending_creator_review",
+      "raw_cache_file": "/home/user/.cache/drama-tools/bulk-generated/CH002/PANEL-006-02.png",
+      "raw_sha256": "f0b28854cace203fa6e2ed76f2d63567ab34994dce192535b4b662d7cbbb2c85",
+      "raw_bytes": 2496025,
+      "raw_bit_depth": 8,
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-02.png",
+      "sha256": "10d76fa2611e7621d766dcf8c5a3bd6613ae66f57c3fc4c71303fad55a8b853a",
+      "bytes": 1508039,
+      "size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "decoded_pixel_sha256": "6ac00c2e3598e0c7e4e202dcf22fb403bd2236168cabd60af6ec00bc60c6861a",
+      "lossless_recompression": true,
+      "model_seed_pricing": "工具未返回实际型号/seed/费用明细，未知",
+      "visual_selfcheck": "第二组实图接触表自看；手部/回应两整图错误分区裁用，不把坏整幅当正确"
+    },
+    {
+      "call_id": "ART-FIRST-20261025-009",
+      "job_key": "CH002/PANEL-007-01",
+      "episode": "CH002",
+      "panel_id": "PANEL-007-01",
+      "source_sha256": "441e27adf648674b2dca11cde2f689066fb487d0a864fd6f3eaff47fd9d8237b",
+      "source_prompt_sha256": "b4b76001a474d32b0108278e5ea1fb674c4032aa05da50abd983cc767c67545b",
+      "references_in_order": [
+        {
+          "id": "S",
+          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+          "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+        },
+        {
+          "id": "H",
+          "file": "漫画改编/连续童年出图/参考/REF-HUO-CHILD-111.jpg",
+          "sha256": "7d71e5842b48884c1fd7983889a640d7530aab931d3f1d52030a1ce81238cf2c"
+        },
+        {
+          "id": "meet_anchor",
+          "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
+          "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
+          "role": "selected scene continuity; not a replacement identity master"
+        }
+      ],
+      "runtime_reference_files": [],
+      "offer_options": false,
+      "tool_status": "success",
+      "status": "partially_selected_subject_crop",
+      "raw_cache_file": "/home/user/.cache/drama-tools/bulk-generated/CH002/PANEL-007-01.png",
+      "raw_sha256": "4f3a612297497bfc4beff51673766f1e2933f67efcbbdea735b9faea365140f7",
+      "raw_bytes": 2569092,
+      "raw_bit_depth": 8,
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-007-01.png",
+      "sha256": "c8c7f8043353f7cd383f608da958e68df5d92aca0c021260c3986547d6166fb6",
+      "bytes": 1556961,
+      "size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "decoded_pixel_sha256": "076ae5a22e54fc01e29fc9fca4320e8bb53acbdb7576e6f7f6d79dc2d7358941",
+      "lossless_recompression": true,
+      "model_seed_pricing": "工具未返回实际型号/seed/费用明细，未知",
+      "whole_frame_reason": "full frame duplicated the boy/time states; accurate cloth-contact region retained",
+      "archived_cache": "/home/user/.cache/drama-tools/bulk-rejected/CH002-PANEL-007-01-whole.png",
+      "selected_crop": {
+        "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-007-01-衣角细节.png",
+        "crop_xyxy": [
+          430,
+          270,
+          845,
+          525
+        ],
+        "size": [
+          415,
+          255
+        ],
+        "sha256": "29c1467608480f644ca80f3372b234f87d6927a3152a3e5a4b91f6c5aa403e89",
+        "decoded_pixel_sha256": "b7291623d4289e07d49b82d62217a59dcf4ebfe6ec7c342e6e1a0d4adeed985c",
+        "same_source_pixels": true
+      },
+      "actual_prompt_snapshot": "One standalone 1376x768 landscape wordless comic panel, one simultaneous moment, NOT a page/collage. Match the references accepted delicate semi-realistic painterly CG, fine hair, softly blended skin, dimensional fabric, muted natural light. Nine-year-old SU LI: same ruby eyes, long wavy silver-grey hair/white flower clip, ivory knit cardigan/cotton dress, dusty-blue ribbon, white socks/Mary Janes. Seven/eight-year-old HUO XIESHAN: thin and SMALLER than Su Li, same old-reference face, dark muted red-brown CG eyes, tousled long layered black wolf-cut HAIR, NOT animal tail. Replace reference rag robe/jewellery with an oversized faded charcoal modern HOODIE, rolled cuffs, worn brown trousers/shoes. No hearing aid. Quiet rural tree-lined dirt path, late afternoon. Girl protects mildly swollen LEFT forearm close to body; RIGHT hand usable. No graphic injury. SHOT: Huo has turned slightly as if about to leave; Su Lis usable RIGHT hand gently catches the SIDE HEM of his hoodie. Her LEFT arm stays supported against her body. One clear cloth contact, no force or romantic pose. Basket still on his back, both standing on dry ground. Preserve faces and key hands/objects. Only named cast, modest nonsexual schoolchildren, no adult redesign. NO text, signs, numbers, logo, watermark, balloon, blank text box, border, physical system/UI, animal ears/tails, gore, injury-causing action or medical tutorial."
+    },
+    {
+      "call_id": "ART-FIRST-20261025-010",
+      "job_key": "CH002/PANEL-007-02",
+      "episode": "CH002",
+      "panel_id": "PANEL-007-02",
+      "source_sha256": "441e27adf648674b2dca11cde2f689066fb487d0a864fd6f3eaff47fd9d8237b",
+      "source_prompt_sha256": "d299243dae74a3637b2dddd9185284649024b5f1ef1fd2c3c1f16d943f8010dd",
+      "references_in_order": [
+        {
+          "id": "S",
+          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+          "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+        },
+        {
+          "id": "H",
+          "file": "漫画改编/连续童年出图/参考/REF-HUO-CHILD-111.jpg",
+          "sha256": "7d71e5842b48884c1fd7983889a640d7530aab931d3f1d52030a1ce81238cf2c"
+        },
+        {
+          "id": "meet_anchor",
+          "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
+          "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
+          "role": "selected scene continuity; not a replacement identity master"
+        }
+      ],
+      "runtime_reference_files": [],
+      "offer_options": false,
+      "tool_status": "success",
+      "status": "partially_selected_subject_crop",
+      "raw_cache_file": "/home/user/.cache/drama-tools/bulk-generated/CH002/PANEL-007-02.png",
+      "raw_sha256": "08b998ec34b755abd7ebf34e5d2acd7f0fc8fcce235d50e3b18fe85b23998d5f",
+      "raw_bytes": 2763434,
+      "raw_bit_depth": 8,
+      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-007-02.png",
+      "sha256": "1f42269ddaa3c3ae6f8db448367447f5841acc416808a7546cfb8ad041853f5b",
+      "bytes": 1614284,
+      "size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "decoded_pixel_sha256": "3a4655acea95ca70cd530181279113163922ce83c244c06e8b11e5c38d387ab4",
+      "lossless_recompression": true,
+      "model_seed_pricing": "工具未返回实际型号/seed/费用明细，未知",
+      "whole_frame_reason": "whole-frame contact became a hoodie cord; accurate boy reaction/shoulder/basket retained",
+      "archived_cache": "/home/user/.cache/drama-tools/bulk-rejected/CH002-PANEL-007-02-whole.png",
+      "selected_crop": {
+        "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-007-02-回应近景.png",
+        "crop_xyxy": [
+          760,
+          20,
+          1250,
+          365
+        ],
+        "size": [
+          490,
+          345
+        ],
+        "sha256": "a86419a2ec934cf5155d9cef965bb7a928620d5ce48e9fc2d3ff8b30352dc3d0",
+        "decoded_pixel_sha256": "28fa8a1cc60b1ed3013aa5a9774458bb627901f0b63d7dc6e81b7ed48b6eae74",
+        "same_source_pixels": true
+      },
+      "actual_prompt_snapshot": "One standalone 1376x768 landscape wordless comic panel, one simultaneous moment, NOT a page/collage. Match the references accepted delicate semi-realistic painterly CG, fine hair, softly blended skin, dimensional fabric, muted natural light. Nine-year-old SU LI: same ruby eyes, long wavy silver-grey hair/white flower clip, ivory knit cardigan/cotton dress, dusty-blue ribbon, white socks/Mary Janes. Seven/eight-year-old HUO XIESHAN: thin and SMALLER than Su Li, same old-reference face, dark muted red-brown CG eyes, tousled long layered black wolf-cut HAIR, NOT animal tail. Replace reference rag robe/jewellery with an oversized faded charcoal modern HOODIE, rolled cuffs, worn brown trousers/shoes. No hearing aid. Quiet rural tree-lined dirt path, late afternoon. Girl protects mildly swollen LEFT forearm close to body; RIGHT hand usable. No graphic injury. SHOT: SAME position. Huo stops and turns his head back to answer with a tiny quiet movement; Su Li still lightly holds the hoodie hem with RIGHT hand. He has not promised adoption or lifetime devotion. Preserve basket on his back and the respectful child distance. Preserve faces and key hands/objects. Only named cast, modest nonsexual schoolchildren, no adult redesign. NO text, signs, numbers, logo, watermark, balloon, blank text box, border, physical system/UI, animal ears/tails, gore, injury-causing action or medical tutorial."
+    }
+  ],
+  "normalization": "8bit PNG same mode/size/decoded pixel bytes, Pillow optimize=True; raw/cache and persisted hashes separately recorded",
+  "art_direction_choices": {
+    "injured_side": "本次连续画面选左前臂/右手完好；原著此处未明示侧，不当作原著事实或与后续挡刀伤等同",
+    "doctor_director_chief": "新配角服装/面孔用于本批辨识连续，非原著新增年龄/证据",
+    "huo_clothes": "保旧111脸/眼/黑狼尾身份，服装按原文成年大卫衣改，不抄旧参考破袍或动物尾",
+    "night_coat": "水粉成人毛呢外衣从CH00200802持续夜里，轻裹肩不遮医生检查/固定左臂"
+  },
+  "old_audit": {
+    "source_commit": "cf408fb5a7d573826f0da4e0a3ef4ac51bddb9f1",
+    "downloaded_source_count": 9,
+    "inspected": "男主111原尺寸；另8页420px接触表核衣装/场地/动作，不冒称全分辨脸手审查",
+    "decision": "旧02P3动作/伤势不合；旧02P4破袍不合现代卫衣；旧03P1白天/无伤和雨中驾驶位不合夜里当前镜头；旧03P2暴力/成年视角、旧04多有黑礼服/豪宅/假UI，不直接绑定新稿",
+    "scope": "仅这8旧页，未宣称遍查全库",
+    "files": [
+      {
+        "path": "漫画改编/参考画风111/男主幼年.png",
+        "git_blob": "db2ea74c1a00e21e8bbd1a42610ec8c13a66c02a",
+        "sha256": "e391a17c67fc9633fd0efa442f08aea140db193eefb721f897c72455897ef053"
+      },
+      {
+        "path": "漫画改编/第02话/P3-设局.png",
+        "git_blob": "dca1624b5ece6966819e6dbd78063c6c8ebe7aad",
+        "sha256": "45ab6bf0f51227f6508f87554c84fca129d02089051ae4164ee95a791d088c20"
+      },
+      {
+        "path": "漫画改编/第02话/P4-初遇.png",
+        "git_blob": "cfa6ea465fbdbe89c108cbc16dff3993764982dc",
+        "sha256": "9c22f2795d3e2615e89f033e73459ec9f749e7ce50318c8656c27ac8ec3420d3"
+      },
+      {
+        "path": "漫画改编/第03话/P1-身世.png",
+        "git_blob": "d09ca1c835512e08a06e0b662a61b3ee98a1b4ff",
+        "sha256": "00d92ac10791f01d4e9a7346e615cc56f47b72a6ce653212e12a7b53a0fb1d32"
+      },
+      {
+        "path": "漫画改编/第03话/P2-要乖.png",
+        "git_blob": "c92af6860b6a2d8c678e36a0aeccfdf475344752",
+        "sha256": "48931b33b313225d8c24ab5c938ce11f8b88739135c1719fcd57b1c762863ab2"
+      },
+      {
+        "path": "漫画改编/第04话/P1-剧本破产.png",
+        "git_blob": "3219fa11629f0ee6ea3bd381796c76ede308a763",
+        "sha256": "2ddae32d0d93d7fa41a8ad592dac42d4bc65e5f8c11a8a041c72fc68dd87a98f"
+      },
+      {
+        "path": "漫画改编/第04话/P2-定性.png",
+        "git_blob": "7840f4006a228396f9af26b939053b9ab16542a6",
+        "sha256": "7492c5d38f41db3f407e5a266fbead5e774eddf6c8f7d30290b0b44a25eccfef"
+      },
+      {
+        "path": "漫画改编/第04话/P3-钉死.png",
+        "git_blob": "cd2fdcf85c72fd71426c18978144912d3742cbf9",
+        "sha256": "e59c6d364f4fb3039e86a1740e2b850e6c4aff987ac1de39984fbd17f544848e"
+      },
+      {
+        "path": "漫画改编/第04话/P4-光环碎裂.png",
+        "git_blob": "c9f406682d450d45c6c063d280646ff5bea53c9a",
+        "sha256": "338bd188a7e5ebc1369d018cb3059a824e86be42a61e5d59aeb1d489d10d0e5d"
+      }
+    ]
+  },
+  "limits": [
+    "无字图齐不等于字框/页面/手机/平台或独立验收",
+    "本轮暂停逐页排字；旧成页/历史收据不重写",
+    "工具型号/seed/报价/账单未知，不虚报免费或一次必成"
+  ],
+  "export": {
+    "file": "漫画改编/连续童年出图/完整提示词.txt",
+    "sha256": "81d0ce45a29418177f098270fd2aa1eae48a5089929687f83010088ccf7110bb"
+  },
+  "statistics": {
+    "completed_jobs": 10,
+    "total_jobs": 41,
+    "remaining_jobs": 31,
+    "successful_image_tool_calls": 10,
+    "full_frame_selected_calls": 7,
+    "partially_selected_calls": 2,
+    "unused_calls": 1,
+    "blocked_before_generation": 3,
+    "phase": "art_first_no_lettering",
+    "reason_paused": "per-turn image generation limit reached; no more image calls attempted",
+    "delivered_asset_bytes": 11518053,
+    "successful_model_requests": 10,
+    "tool_requests_including_limit_refusals": 13,
+    "same_moment_extra_crops": 1,
+    "generated_source_crops": 2,
+    "new_lettered_pages": 0,
+    "cumulative_visible_image_calls": 20,
+    "cumulative_full_frame_selected": 14,
+    "cumulative_partial_source_used": 2,
+    "cumulative_unused": 4
+  },
+  "blocked_tool_attempts": [
+    {
+      "job_key": "CH002/PANEL-012-02",
+      "status": "blocked_turn_image_limit",
+      "error": "Image generation limit of 10 reached for this turn",
+      "generated_file": false,
+      "count_as_successful_model_call": false,
+      "requested_prompt_sha256": "1b030ca327a85abaf6fb7f6d11f10867f89cbc079de7515b20e09dbe66a1377e",
+      "note": "工具未产图，不计成功模型调用；未提供账单，不能推断费用"
+    },
+    {
+      "job_key": "CH002/PANEL-004-02",
+      "status": "blocked_turn_image_limit",
+      "error": "Image generation limit of 10 reached for this turn",
+      "generated_file": false,
+      "count_as_successful_model_call": false,
+      "requested_prompt_sha256": "15db4f6f6c334d913979f808640451112796bd382f7dbe34206d155202e35e8b",
+      "note": "工具未产图，不计成功模型调用；未提供账单，不能推断费用"
+    },
+    {
+      "job_key": "CH002/PANEL-004-03",
+      "status": "blocked_turn_image_limit",
+      "error": "Image generation limit of 10 reached for this turn",
+      "generated_file": false,
+      "count_as_successful_model_call": false,
+      "requested_prompt_sha256": "28959f9ec71265fbebc9aa9ccba667cd0d57f4f1e4db273a857961751cc96387",
+      "note": "工具未产图，不计成功模型调用；未提供账单，不能推断费用"
+    }
+  ],
+  "next_batch_keys": [
+    "CH002/PANEL-012-02",
+    "CH002/PANEL-004-02",
+    "CH002/PANEL-004-03",
+    "CH002/PANEL-008-02",
+    "CH002/PANEL-008-03",
+    "CH002/PANEL-009-01",
+    "CH002/PANEL-009-02",
+    "CH002/PANEL-010-01",
+    "CH002/PANEL-010-02",
+    "CH002/PANEL-011-01"
+  ],
+  "execution_policy": {
+    "image_calls_per_turn_max_observed": 10,
+    "resume_without_reapproval": true,
+    "resume_requires_new_conversation_turn_for_tool_capacity": true,
+    "next_phase": "continue_ready_source_jobs_no_lettering",
+    "do_not_retry_limit_in_same_turn": true
+  },
+  "normalization_implementation": {
+    "file": "漫画改编/工具/归档无字底图.py",
+    "sha256": "4df37dda3d63414b768f09fed6bbb0e7bdcc58a320b632f5c24dcb8e52f8fe29",
+    "python": "3.11.2",
+    "pillow": "11.3.0",
+    "verification": "原缓存由当前工具重压缩，完整采用7图SHA相同；本地归档不自动计一次生成"
+  }
+}

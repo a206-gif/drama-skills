@@ -11,7 +11,7 @@
   },
   "source": {
     "file": "漫画改编/开篇修订/第002话/漫画分镜.md",
-    "sha256": "ec25c4f892d32c1c599fc572bbce0ce177b0ff90b601e9463bab0592b15f6047",
+    "sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9",
     "counts": {
       "pages": 12,
       "panels": 27,
@@ -124,7 +124,7 @@
   ],
   "export": {
     "file": "漫画改编/开篇修订/第002话/出图交接/第三页童年两格/童年两格完整提示词.txt",
-    "sha256": "f380947b81c219cfc3f6091e579aea85f7b10ef56583ae4553442e10d90d3b87"
+    "sha256": "3d1d3d030df6b1b59f11005c403dac35fceb4ede36647844f34421038a146928"
   },
   "current_lettered_preview": {
     "file": "漫画改编/开篇修订/第002话/制作成果/第三页-v5/PAGE-003.png",
@@ -137,5 +137,6 @@
     "layout_sha256": "31a9fdef07ad3eb7206ebe656e725534c96c78ba4baf0f5dd48a7273e144162b",
     "storyboard_sha256": "ec25c4f892d32c1c599fc572bbce0ce177b0ff90b601e9463bab0592b15f6047",
     "not_complete_episode": true
-  }
+  },
+  "current_source_refresh_note": "后续无字底图提示词完善，当前源指针更新；原生成时SHA/调用/图片/已出页快照冻结"
 }

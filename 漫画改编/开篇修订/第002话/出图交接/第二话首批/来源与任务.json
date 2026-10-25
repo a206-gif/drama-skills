@@ -5,7 +5,7 @@
   "status": "three_assets_generated_page2_preview_complete_page1_deferred",
   "source": {
     "file": "漫画改编/开篇修订/第002话/漫画分镜.md",
-    "sha256": "ec25c4f892d32c1c599fc572bbce0ce177b0ff90b601e9463bab0592b15f6047",
+    "sha256": "c30ebc75a57ab424d11d662ccde75dc3373009f4586b2eeee77d62ef2d40e4b9",
     "counts": {
       "pages": 12,
       "panels": 27,
@@ -185,7 +185,7 @@
   ],
   "export": {
     "file": "漫画改编/开篇修订/第002话/出图交接/第二话首批/童年三格完整提示词.txt",
-    "sha256": "32e63384aee972ce38dcffb11ed8e0cfd16262511062be1df800c22ea1155725"
+    "sha256": "3c4f1ee24059910ad7484c9bd2246459655194add44fa332a46863976dd9c431"
   },
   "generation_this_round": {
     "actual_model_calls": 3,
@@ -241,5 +241,6 @@
     "reason": "第3页续写画面/提示词使整话源SHA变化，旧三项提示词/正文/图片均未改",
     "original_generation_storyboard_sha256": "70bceabccd643253bfa8f7fc38c3c15b7c3f4a990f11bf57a69afe5c292cd586",
     "old_preview_receipts_frozen": true
-  }
+  },
+  "current_source_refresh_note": "后续无字底图提示词完善，当前源指针更新；原生成时SHA/调用/图片/已出页快照冻结"
 }
