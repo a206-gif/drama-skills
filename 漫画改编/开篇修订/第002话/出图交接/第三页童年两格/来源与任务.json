@@ -11,7 +11,7 @@
   },
   "source": {
     "file": "漫画改编/开篇修订/第002话/漫画分镜.md",
-    "sha256": "3356bcf434704c2085c39bacb540fc0097043faf8c5392522ab5252acaa2009b",
+    "sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
     "counts": {
       "pages": 12,
       "panels": 27,
@@ -124,7 +124,7 @@
   ],
   "export": {
     "file": "漫画改编/开篇修订/第002话/出图交接/第三页童年两格/童年两格完整提示词.txt",
-    "sha256": "ceef289073f48c19a538d22acf32ea867aa7b9151cc83ce1db30700473bcd83b"
+    "sha256": "d673f40715d7fccf5ba3888497116b74e12e9390c1a0c45bc06be1ad1115fe4c"
   },
   "current_lettered_preview": {
     "file": "漫画改编/开篇修订/第002话/制作成果/第三页-v5/PAGE-003.png",

@@ -11,7 +11,7 @@
     "scope": "CH002 PAGE-003 two panels only"
   },
   "generation_storyboard_sha256": "ec25c4f892d32c1c599fc572bbce0ce177b0ff90b601e9463bab0592b15f6047",
-  "current_storyboard_sha256": "3356bcf434704c2085c39bacb540fc0097043faf8c5392522ab5252acaa2009b",
+  "current_storyboard_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
   "previous_storyboard_sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
   "actual_image_calls": 2,
   "parallel_submission": true,

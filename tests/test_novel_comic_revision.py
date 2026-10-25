@@ -275,6 +275,30 @@ class NovelComicRevisionTests(unittest.TestCase):
         self.assertTrue(params["outside_mask_unchanged"])
         self.assertEqual(params["result_sha256"], hashlib.sha256((ROOT / correction["output"]).read_bytes()).hexdigest())
 
+    def test_complete_media_queue_keeps_original_block_and_uses_independent_allowed_pixels(self) -> None:
+        folder = BASE / "连续童年出图"
+        manifest = json.loads((folder / "来源与任务.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["statistics"]["completed_jobs"], 41)
+        self.assertEqual(manifest["statistics"]["remaining_jobs"], 0)
+        self.assertFalse(manifest["next_batch_keys"])
+        original = next(row for row in manifest["blocked_tool_attempts"]
+                        if row["job_key"] == "CH002/PANEL-011-01" and row["status"] == "blocked_content_moderation_no_file")
+        self.assertFalse(original["generated_file"])
+        self.assertFalse(original["count_as_successful_model_call"])
+        replacement = next(job for job in manifest["jobs"] if job["key"] == "CH002/PANEL-011-01")
+        self.assertEqual(replacement["kind"], "same_moment_crop")
+        self.assertTrue(replacement["not_from_blocked_output"])
+        self.assertTrue(replacement["no_model_resubmission_for_blocked_key"])
+        accepted_source = next(call for call in manifest["calls"] if call["call_id"] == replacement["crop_source_call_id"])
+        self.assertEqual(accepted_source["tool_status"], "success")
+        self.assertEqual(accepted_source["job_key"], "CH002/PANEL-011-02")
+        self.assertEqual(accepted_source["raw_sha256"], replacement["crop_source_raw_sha256"])
+        self.assertFalse(any(call["job_key"] == replacement["key"] for call in manifest["calls"]))
+        third = comic.load_project(STORIES[2].with_name("排版.json"), previous=STORIES[1], media=True)
+        self.assertEqual(comic.summary(third, True)["episode"], "CH003")
+        with self.assertRaisesRegex(comic.ComicError, "PANEL-001-02"):
+            comic.load_project(STORIES[1].with_name("排版.json"), previous=STORIES[0], media=True)
+
     def test_real_sequel_cli_refuses_missing_previous_without_generating_media(self) -> None:
         before = {str(path) for story in STORIES for path in (story.parent / "制作成果").glob("**/*")}
         command = [sys.executable, "-O", str(TOOL), "check", str(STORIES[1].with_name("排版.json"))]

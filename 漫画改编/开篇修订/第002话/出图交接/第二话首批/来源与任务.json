@@ -5,7 +5,7 @@
   "status": "three_assets_generated_page2_preview_complete_page1_deferred",
   "source": {
     "file": "漫画改编/开篇修订/第002话/漫画分镜.md",
-    "sha256": "3356bcf434704c2085c39bacb540fc0097043faf8c5392522ab5252acaa2009b",
+    "sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
     "counts": {
       "pages": 12,
       "panels": 27,
@@ -185,7 +185,7 @@
   ],
   "export": {
     "file": "漫画改编/开篇修订/第002话/出图交接/第二话首批/童年三格完整提示词.txt",
-    "sha256": "27b39e687dd497ca49d2d10f2e046e269b13a730915c0fdff71d7d54b59469d7"
+    "sha256": "61111608790eec9f4c14d9f7f6674cbcb73d9429f57ddc85fd6c98f9e3328b05"
   },
   "generation_this_round": {
     "actual_model_calls": 3,
