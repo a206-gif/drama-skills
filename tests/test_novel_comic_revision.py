@@ -146,19 +146,62 @@ class NovelComicRevisionTests(unittest.TestCase):
                 self.assertEqual(supplied["file"], refs[supplied["id"]]["file"])
                 self.assertEqual(supplied["sha256"], refs[supplied["id"]]["sha256"])
 
-    def test_only_ready_second_page_previews_and_deferred_first_page_still_fails(self) -> None:
+    def test_ready_pages_keep_actual_predecessor_but_deferred_first_page_still_fails(self) -> None:
         plan = comic.load_project(STORIES[1].with_name("排版.json"), previous=STORIES[0])
-        preview = comic.preview_plan(plan, ["PAGE-002"])
-        self.assertEqual(preview["preview_scope"], {"selected_pages": ["PAGE-002"], "episode_pages": 12})
+        preview = comic.preview_plan(plan, ["PAGE-002", "PAGE-003"])
+        self.assertEqual(preview["preview_scope"], {"selected_pages": ["PAGE-002", "PAGE-003"], "episode_pages": 12})
         self.assertEqual(preview["continuity"]["checked_previous"], "CH001")
-        self.assertEqual([panel["id"] for panel in preview["layout"]["pages"][0]["panels"]],
-                         ["PANEL-002-01", "PANEL-002-02", "PANEL-002-03"])
-        for panel in preview["layout"]["pages"][0]["panels"]:
-            self.assertTrue((STORIES[1].parent / panel["image"]).is_file())
+        self.assertEqual([panel["id"] for page in preview["layout"]["pages"] for panel in page["panels"]],
+                         ["PANEL-002-01", "PANEL-002-02", "PANEL-002-03", "PANEL-003-01", "PANEL-003-02"])
+        for page in preview["layout"]["pages"]:
+            for panel in page["panels"]:
+                self.assertTrue((STORIES[1].parent / panel["image"]).is_file())
         with self.assertRaisesRegex(comic.ComicError, "PANEL-001-02"):
             comic.preview_plan(plan, ["PAGE-001"])
         with self.assertRaisesRegex(comic.ComicError, "PANEL-001-02"):
             comic.load_project(STORIES[1].with_name("排版.json"), previous=STORIES[0], media=True)
+
+    def test_page3_batch_matches_source_real_assets_and_distinct_text_font_routes(self) -> None:
+        episode = STORIES[1].parent
+        batch = episode / "出图交接" / "第三页童年两格"
+        manifest = json.loads((batch / "来源与任务.json").read_text(encoding="utf-8"))
+        generated = json.loads((batch / "生成来源.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["source"]["sha256"], hashlib.sha256(STORIES[1].read_bytes()).hexdigest())
+        self.assertTrue(manifest["generation_this_round"]["new_batch_authorized"])
+        self.assertEqual(manifest["scope"]["panel_ids"], ["PANEL-003-01", "PANEL-003-02"])
+        self.assertEqual(manifest["scope"]["checked_previous"], "CH001")
+        self.assertFalse(manifest["scope"]["episode_media_checked"])
+        self.assertEqual(generated["actual_image_calls"], len(generated["calls"]))
+        selected = [call for call in generated["calls"] if call["status"] == "selected_pending_creator_review"]
+        self.assertEqual({call["panel_id"] for call in selected}, {"PANEL-003-01", "PANEL-003-02"})
+        self.assertEqual(len({call["sha256"] for call in selected}), 2)
+        pages = comic.read_script(STORIES[1])
+        by_id = {panel["id"]: panel for page in pages for panel in page["panels"]}
+        exported = (ROOT / manifest["export"]["file"]).read_text(encoding="utf-8")
+        self.assertEqual(hashlib.sha256(exported.encode()).hexdigest(), manifest["export"]["sha256"])
+        prompt_blocks = {block.splitlines()[0]: block.split("\n提示词：\n", 1)[1].strip()
+                         for block in exported.split("\n## ")[1:]}
+        refs = {row["id"]: row for row in manifest["references"]}
+        for call in selected:
+            raw = (episode / call["file"]).read_bytes()
+            self.assertEqual(raw[:8], b"\x89PNG\r\n\x1a\n")
+            self.assertEqual(list(struct.unpack(">II", raw[16:24])), call["actual_size"])
+            self.assertEqual(raw[25], 2)
+            self.assertEqual(hashlib.sha256(raw).hexdigest(), call["sha256"])
+            prompt = by_id[call["panel_id"]]["fields"]["提示词"]
+            self.assertEqual(prompt_blocks[call["panel_id"]], prompt)
+            self.assertEqual(hashlib.sha256(prompt.encode()).hexdigest(), call["source_prompt_sha256"])
+            for supplied in call["references_in_order"]:
+                self.assertEqual(supplied, refs[supplied["id"]])
+                self.assertEqual(hashlib.sha256((ROOT / supplied["file"]).read_bytes()).hexdigest(), supplied["sha256"])
+        receipt = json.loads((episode / "制作成果/第三页-v5/试排来源.json").read_text(encoding="utf-8"))
+        self.assertEqual([(row["id"], row["kind"], row["font_file"]) for row in receipt["text_bindings"]],
+                         [("TEXT-003-01", "dialogue", "LXGWWenKai-Medium.ttf"),
+                          ("TEXT-003-02", "narration", "NotoSansCJKsc-Regular.otf")])
+        output = receipt["outputs"][0]
+        raw = (episode / "制作成果/第三页-v5" / output["file"]).read_bytes()
+        self.assertEqual(struct.unpack(">II", raw[16:24]), (1080, 1440))
+        self.assertEqual(hashlib.sha256(raw).hexdigest(), output["sha256"])
 
     def test_real_sequel_cli_refuses_missing_previous_without_generating_media(self) -> None:
         before = {str(path) for story in STORIES for path in (story.parent / "制作成果").glob("**/*")}

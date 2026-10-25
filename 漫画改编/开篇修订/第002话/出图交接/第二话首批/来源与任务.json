@@ -5,7 +5,7 @@
   "status": "three_assets_generated_page2_preview_complete_page1_deferred",
   "source": {
     "file": "漫画改编/开篇修订/第002话/漫画分镜.md",
-    "sha256": "70bceabccd643253bfa8f7fc38c3c15b7c3f4a990f11bf57a69afe5c292cd586",
+    "sha256": "ec25c4f892d32c1c599fc572bbce0ce177b0ff90b601e9463bab0592b15f6047",
     "counts": {
       "pages": 12,
       "panels": 27,
@@ -185,7 +185,7 @@
   ],
   "export": {
     "file": "漫画改编/开篇修订/第002话/出图交接/第二话首批/童年三格完整提示词.txt",
-    "sha256": "7d67f0d99eecee23f70e012602952c801e90ec89f625168420538637a41e7809"
+    "sha256": "32e63384aee972ce38dcffb11ed8e0cfd16262511062be1df800c22ea1155725"
   },
   "generation_this_round": {
     "actual_model_calls": 3,
@@ -236,5 +236,10 @@
     "page_sha256": "7913a323f1dac63aa94936ae4a605380b8c09546ae5e156d763e9bf634b12cf2",
     "single_panel_sha256": "4883e8763a8eed7c2b02cc7864ab9caf42e7dab7fede2aa34f066ed4cbc5e7ce",
     "episode_media_checked": false
+  },
+  "current_source_refresh": {
+    "reason": "第3页续写画面/提示词使整话源SHA变化，旧三项提示词/正文/图片均未改",
+    "original_generation_storyboard_sha256": "70bceabccd643253bfa8f7fc38c3c15b7c3f4a990f11bf57a69afe5c292cd586",
+    "old_preview_receipts_frozen": true
   }
 }

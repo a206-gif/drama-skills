@@ -139,7 +139,7 @@
   "selected_generated_assets": 3,
   "parallel_submission": true,
   "call_id_note": "逻辑编号按任务顺序；三请求并行，不代表返回先后",
-  "current_storyboard_sha256": "70bceabccd643253bfa8f7fc38c3c15b7c3f4a990f11bf57a69afe5c292cd586",
+  "current_storyboard_sha256": "ec25c4f892d32c1c599fc572bbce0ce177b0ff90b601e9463bab0592b15f6047",
   "status": "three_generated_assets_selfchecked_pending_creator_review",
   "cumulative_childhood_calls": {
     "previous_batch": 5,
@@ -148,5 +148,6 @@
     "selected_generated_images": 5,
     "previous_unused": 3,
     "this_batch_unused": 0
-  }
+  },
+  "source_refresh_note": "当前源追加第3页细化；generation_storyboard_sha256与旧调用/输出保历史不改"
 }
