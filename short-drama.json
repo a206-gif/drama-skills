@@ -20,13 +20,13 @@
       "status": "accepted",
       "choices": {
         "look_development": null,
-        "direction": "高品质二次元角色插画，精致日系动漫画风，乙女游戏角色美术风格，韩系细腻厚涂，半写实动漫人物设计，专业游戏角色原画，精致唯美的角色定妆立绘"
+        "direction": "乙女游戏《恋与深空》路线的高品质写实3D美术：次世代PBR 3D渲染取代卡通平涂，东亚精致审美与偏动画化理想五官比例，真实SSS次表面散射皮肤（细微毛孔、自然泛红），数十层面片堆叠的光泽立体发丝与发梢半透明，物理布料模拟与真丝光泽，影视级动态灯光、柔和轮廓光、体积光与景深，主机级游戏CG定妆质感"
       }
     },
     "production_profile": {
       "status": "candidate",
       "choices": {
-        "form": "anime_illustration",
+        "form": "otome_3d_realistic",
         "camera": "角色板中性全身与头肩细节视图；场景板空场地理参考",
         "target_video_model": "gemini-omni-flash-1.1",
         "video_prompt_dialect": "generic",
