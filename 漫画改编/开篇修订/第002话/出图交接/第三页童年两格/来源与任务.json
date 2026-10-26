@@ -1,142 +1,142 @@
 {
-  "schema_version": 1,
-  "date": "2026-10-25",
-  "status": "page3_two_assets_generated_and_lettered",
-  "path_base": "repository_root_except_output_targets_relative_to_episode",
-  "authorization": {
-    "user_reply": "A",
-    "selected_option": "继续第3页两格——请求同行、放下后牵走，先写准再直接出图",
-    "standing_instruction": "童年剧本相关写好了直接出图，不重复问同批开工",
-    "scope": "CH002 PAGE-003 two panels only"
-  },
-  "source": {
-    "file": "漫画改编/开篇修订/第002话/漫画分镜.md",
-    "sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
-    "counts": {
-      "pages": 12,
-      "panels": 27,
-      "texts": 31
-    }
-  },
-  "previous_source": {
-    "file": "漫画改编/开篇修订/第001话/漫画分镜.md",
-    "sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
-    "episode": "CH001"
-  },
-  "novel": {
-    "file": "阴湿小狗不语，只一味装乖绿茶 - 三月清梦.txt",
-    "git_blob": "c3e238ef89050c0a715d508f56d65f5e813bdebf",
-    "reviewed_lines": [
-      236,
-      264
-    ],
-    "core_lines": [
-      246,
-      250
-    ]
-  },
-  "scope": {
-    "episode": "CH002",
-    "page_ids": [
-      "PAGE-003"
-    ],
-    "panel_ids": [
-      "PANEL-003-01",
-      "PANEL-003-02"
-    ],
-    "checked_previous": "CH001",
-    "episode_media_checked": false,
-    "page_rendered": true
-  },
-  "references": [
-    {
-      "id": "primary",
-      "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
-      "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
-    },
-    {
-      "id": "mother_held",
-      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
-      "sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff"
-    },
-    {
-      "id": "recent_scene",
-      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-01.png",
-      "sha256": "5a6ed8326c44a4026bdc3238e6f7f82a51289433364dfad7a2f10acc69f8970e"
-    }
+ "schema_version": 1,
+ "date": "2026-10-25",
+ "status": "page3_two_assets_generated_and_lettered",
+ "path_base": "repository_root_except_output_targets_relative_to_episode",
+ "authorization": {
+  "user_reply": "A",
+  "selected_option": "继续第3页两格——请求同行、放下后牵走，先写准再直接出图",
+  "standing_instruction": "童年剧本相关写好了直接出图，不重复问同批开工",
+  "scope": "CH002 PAGE-003 two panels only"
+ },
+ "source": {
+  "file": "漫画改编/开篇修订/第002话/漫画分镜.md",
+  "sha256": "586abfc426612c456ec08f06bdb1fb08a9ea4fb8accc5ffd67ec84f649f6768b",
+  "counts": {
+   "pages": 12,
+   "panels": 27,
+   "texts": 31
+  }
+ },
+ "previous_source": {
+  "file": "漫画改编/开篇修订/第001话/漫画分镜.md",
+  "sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
+  "episode": "CH001"
+ },
+ "novel": {
+  "file": "阴湿小狗不语，只一味装乖绿茶 - 三月清梦.txt",
+  "git_blob": "c3e238ef89050c0a715d508f56d65f5e813bdebf",
+  "reviewed_lines": [
+   236,
+   264
   ],
-  "planned_generation": [
-    {
-      "panel_id": "PANEL-003-01",
-      "mode": "new_single_panel",
-      "owner": "assistant_childhood",
-      "narrative_time": "current_orphanage_visit",
-      "state": "generated_selected_pending_creator_review",
-      "reference_ids_in_order": [
-        "primary",
-        "mother_held",
-        "recent_scene"
-      ],
-      "source_prompt_sha256": "e5a7354bccb37f24b233e64139d79835eadbd2f2d48c581f455a5ccc08fb153b",
-      "output_target": "制作成果/格图/PANEL-003-01.png",
-      "text_ids": [
-        "TEXT-003-01"
-      ],
-      "output_sha256": "32937cd8bce9331b2b72dd2ade860f6e258b33f51447034c24c71921109e98a0"
-    },
-    {
-      "panel_id": "PANEL-003-02",
-      "mode": "new_single_panel",
-      "owner": "assistant_childhood",
-      "narrative_time": "current_orphanage_visit",
-      "state": "generated_selected_pending_creator_review",
-      "reference_ids_in_order": [
-        "primary",
-        "recent_scene",
-        "mother_held"
-      ],
-      "source_prompt_sha256": "2dfe808b63bac375f195993413edf7733455623ecdec18b0b3d52ec238953ba4",
-      "output_target": "制作成果/格图/PANEL-003-02.png",
-      "text_ids": [
-        "TEXT-003-02"
-      ],
-      "output_sha256": "0c874b4adcc8e61fb1d99fece7d4377a53199696f13de31f4b2c9cb933a0a441"
-    }
+  "core_lines": [
+   246,
+   250
+  ]
+ },
+ "scope": {
+  "episode": "CH002",
+  "page_ids": [
+   "PAGE-003"
   ],
-  "generation_this_round": {
-    "actual_image_calls": 2,
-    "proposed_asset_count": 2,
-    "new_batch_authorized": true,
-    "offer_options": false,
-    "reason": "已锁画风的漫画内素材，用户已选定具体两项直接执行",
-    "requested_format": "one wordless landscape approximately 16:9 static PNG per task",
-    "pricing": "工具没有报价/明细，未知，不虚报免费或总账单",
-    "model_and_seed": "工具无指定实际底层型号/seed接口，不冒称同旧型号",
-    "retakes": 0,
-    "unused_outputs": 0,
-    "selected_assets": 2
-  },
-  "deferred": [
-    {
-      "panel_id": "PANEL-001-02",
-      "reason": "前世回忆造型阶段/责任仍未定，不套当前童年年龄或代生成年"
-    }
+  "panel_ids": [
+   "PANEL-003-01",
+   "PANEL-003-02"
   ],
-  "export": {
-    "file": "漫画改编/开篇修订/第002话/出图交接/第三页童年两格/童年两格完整提示词.txt",
-    "sha256": "d673f40715d7fccf5ba3888497116b74e12e9390c1a0c45bc06be1ad1115fe4c"
+  "checked_previous": "CH001",
+  "episode_media_checked": false,
+  "page_rendered": true
+ },
+ "references": [
+  {
+   "id": "primary",
+   "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+   "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
   },
-  "current_lettered_preview": {
-    "file": "漫画改编/开篇修订/第002话/制作成果/第三页-v5/PAGE-003.png",
-    "receipt": "漫画改编/开篇修订/第002话/制作成果/第三页-v5/试排来源.json",
-    "sha256": "8e1e7a18a818ae94d5f1ace30056f38fca22cb79b3ea0ff4baa89ea670b0d521",
-    "size": [
-      1080,
-      1440
-    ],
-    "layout_sha256": "31a9fdef07ad3eb7206ebe656e725534c96c78ba4baf0f5dd48a7273e144162b",
-    "storyboard_sha256": "ec25c4f892d32c1c599fc572bbce0ce177b0ff90b601e9463bab0592b15f6047",
-    "not_complete_episode": true
+  {
+   "id": "mother_held",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
+   "sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff"
   },
-  "current_source_refresh_note": "后续无字底图提示词完善，当前源指针更新；原生成时SHA/调用/图片/已出页快照冻结"
+  {
+   "id": "recent_scene",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-01.png",
+   "sha256": "5a6ed8326c44a4026bdc3238e6f7f82a51289433364dfad7a2f10acc69f8970e"
+  }
+ ],
+ "planned_generation": [
+  {
+   "panel_id": "PANEL-003-01",
+   "mode": "new_single_panel",
+   "owner": "assistant_childhood",
+   "narrative_time": "current_orphanage_visit",
+   "state": "generated_selected_pending_creator_review",
+   "reference_ids_in_order": [
+    "primary",
+    "mother_held",
+    "recent_scene"
+   ],
+   "source_prompt_sha256": "e5a7354bccb37f24b233e64139d79835eadbd2f2d48c581f455a5ccc08fb153b",
+   "output_target": "制作成果/格图/PANEL-003-01.png",
+   "text_ids": [
+    "TEXT-003-01"
+   ],
+   "output_sha256": "32937cd8bce9331b2b72dd2ade860f6e258b33f51447034c24c71921109e98a0"
+  },
+  {
+   "panel_id": "PANEL-003-02",
+   "mode": "new_single_panel",
+   "owner": "assistant_childhood",
+   "narrative_time": "current_orphanage_visit",
+   "state": "generated_selected_pending_creator_review",
+   "reference_ids_in_order": [
+    "primary",
+    "recent_scene",
+    "mother_held"
+   ],
+   "source_prompt_sha256": "2dfe808b63bac375f195993413edf7733455623ecdec18b0b3d52ec238953ba4",
+   "output_target": "制作成果/格图/PANEL-003-02.png",
+   "text_ids": [
+    "TEXT-003-02"
+   ],
+   "output_sha256": "0c874b4adcc8e61fb1d99fece7d4377a53199696f13de31f4b2c9cb933a0a441"
+  }
+ ],
+ "generation_this_round": {
+  "actual_image_calls": 2,
+  "proposed_asset_count": 2,
+  "new_batch_authorized": true,
+  "offer_options": false,
+  "reason": "已锁画风的漫画内素材，用户已选定具体两项直接执行",
+  "requested_format": "one wordless landscape approximately 16:9 static PNG per task",
+  "pricing": "工具没有报价/明细，未知，不虚报免费或总账单",
+  "model_and_seed": "工具无指定实际底层型号/seed接口，不冒称同旧型号",
+  "retakes": 0,
+  "unused_outputs": 0,
+  "selected_assets": 2
+ },
+ "deferred": [
+  {
+   "panel_id": "PANEL-001-02",
+   "reason": "前世回忆造型阶段/责任仍未定，不套当前童年年龄或代生成年"
+  }
+ ],
+ "export": {
+  "file": "漫画改编/开篇修订/第002话/出图交接/第三页童年两格/童年两格完整提示词.txt",
+  "sha256": "d673f40715d7fccf5ba3888497116b74e12e9390c1a0c45bc06be1ad1115fe4c"
+ },
+ "current_lettered_preview": {
+  "file": "漫画改编/开篇修订/第002话/制作成果/第三页-v5/PAGE-003.png",
+  "receipt": "漫画改编/开篇修订/第002话/制作成果/第三页-v5/试排来源.json",
+  "sha256": "8e1e7a18a818ae94d5f1ace30056f38fca22cb79b3ea0ff4baa89ea670b0d521",
+  "size": [
+   1080,
+   1440
+  ],
+  "layout_sha256": "31a9fdef07ad3eb7206ebe656e725534c96c78ba4baf0f5dd48a7273e144162b",
+  "storyboard_sha256": "ec25c4f892d32c1c599fc572bbce0ce177b0ff90b601e9463bab0592b15f6047",
+  "not_complete_episode": true
+ },
+ "current_source_refresh_note": "后续无字底图提示词完善，当前源指针更新；原生成时SHA/调用/图片/已出页快照冻结"
 }

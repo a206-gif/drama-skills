@@ -1,0 +1,139 @@
+{
+ "schema_version": 1,
+ "date": "2026-10-27",
+ "kind": "copy_package_no_rerender",
+ "episode": "CH002",
+ "authorization": "创作者聊天回复\"1\"（2026-10-27）确认组装整话连续读预览包",
+ "new_model_calls": 0,
+ "rerendered": false,
+ "published": false,
+ "note": "12页均为已冻结贴字页的逐字节复制（sha对冻结回执）；供创作者手机实看与三连读/平台包装准备；非平台/手机验收，未发布",
+ "pages": [
+  {
+   "page": "PAGE-001",
+   "file": "PAGE-001.jpg",
+   "source_folder": "画内贴字-v5-第1页",
+   "source_file": "PAGE-001.jpg",
+   "sha256": "b6ebd7b602f56d5b904a5942902b31be8b4b9da164f892e7361c849cb59ffc45",
+   "frozen_receipt": "画内贴字-v5-第1页/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "页1回执creator_acceptance（2026-10-27通过冻结）"
+  },
+  {
+   "page": "PAGE-002",
+   "file": "PAGE-002.png",
+   "source_folder": "画内贴字-v5",
+   "source_file": "PAGE-002.png",
+   "sha256": "7913a323f1dac63aa94936ae4a605380b8c09546ae5e156d763e9bf634b12cf2",
+   "frozen_receipt": "画内贴字-v5/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "第七轮创作者确认冻结（存档登记；v5-续回执frozen_pages_intact钉住）"
+  },
+  {
+   "page": "PAGE-003",
+   "file": "PAGE-003.png",
+   "source_folder": "第三页-v5",
+   "source_file": "PAGE-003.png",
+   "sha256": "8e1e7a18a818ae94d5f1ace30056f38fca22cb79b3ea0ff4baa89ea670b0d521",
+   "frozen_receipt": "第三页-v5/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "第七轮创作者确认冻结（存档登记；v5-续回执frozen_pages_intact钉住）"
+  },
+  {
+   "page": "PAGE-004",
+   "file": "PAGE-004.jpg",
+   "source_folder": "画内贴字-v5-续",
+   "source_file": "PAGE-004.jpg",
+   "sha256": "6dcd6678dbd0e53d3654eafaee9ee7ed278063e2e22502cf3242bc0735e49b1b",
+   "frozen_receipt": "画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "page": "PAGE-005",
+   "file": "PAGE-005.jpg",
+   "source_folder": "画内贴字-v5-续",
+   "source_file": "PAGE-005.jpg",
+   "sha256": "d08b2bc833ffa9d80447e924e117161b8f7b8e61abac56a0f4b374f17a4bb533",
+   "frozen_receipt": "画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "page": "PAGE-006",
+   "file": "PAGE-006.jpg",
+   "source_folder": "画内贴字-v5-续",
+   "source_file": "PAGE-006.jpg",
+   "sha256": "6964aceb44cd506913508fd16ba1c030f854dd9e1b8f81d5daa6b093415e5b69",
+   "frozen_receipt": "画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "page": "PAGE-007",
+   "file": "PAGE-007.jpg",
+   "source_folder": "画内贴字-v5-续",
+   "source_file": "PAGE-007.jpg",
+   "sha256": "af18aa58abb04dd162646c24b699b45734314a8bd7d036ebae32f9350c66b37c",
+   "frozen_receipt": "画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "page": "PAGE-008",
+   "file": "PAGE-008.jpg",
+   "source_folder": "画内贴字-v5-续",
+   "source_file": "PAGE-008.jpg",
+   "sha256": "40c28bc6015887f361f75694cbce23f0ae5bb56f3c0d92425693d55e464cf2c9",
+   "frozen_receipt": "画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "page": "PAGE-009",
+   "file": "PAGE-009.jpg",
+   "source_folder": "画内贴字-v5-续",
+   "source_file": "PAGE-009.jpg",
+   "sha256": "bb0c2dc1a78d0b067d08474a92147d8a1adbec6943210b9b1b7fc81d75282bdc",
+   "frozen_receipt": "画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "page": "PAGE-010",
+   "file": "PAGE-010.jpg",
+   "source_folder": "画内贴字-v5-续",
+   "source_file": "PAGE-010.jpg",
+   "sha256": "514ccb601bf86f73e4b051cb2c12d60af6ab2da95403a560b6b5b75e2295a144",
+   "frozen_receipt": "画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "page": "PAGE-011",
+   "file": "PAGE-011.jpg",
+   "source_folder": "画内贴字-v5-续",
+   "source_file": "PAGE-011.jpg",
+   "sha256": "2178722a4162a8471166f015995beb71e8065166b1d90e961d18e483a3d77d33",
+   "frozen_receipt": "画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "page": "PAGE-012",
+   "file": "PAGE-012.jpg",
+   "source_folder": "画内贴字-v5-续",
+   "source_file": "PAGE-012.jpg",
+   "sha256": "f6a0258e94c971eb99b36d0257c87596445e70ab76d51f03ca8e87e70084e587",
+   "frozen_receipt": "画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  }
+ ],
+ "creator_acceptance": {
+  "date": "2026-10-27",
+  "mobile_viewed": true,
+  "passed": true,
+  "note": "创作者聊天回复\"1通过\"：整话包手机实看通过；复制件与冻结页一致，验收不改变冻结件"
+ }
+}
