@@ -168,7 +168,9 @@ class RepositoryReviewTests(unittest.TestCase):
         self.assertTrue(receipt["pixel_checks"]["text_rects_clear_of_protected"])
         self.assertTrue(receipt["frozen_pages_intact"])
         self.assertEqual(receipt["new_model_calls_this_round"], 0)
-        self.assertIsNone(receipt["creator_acceptance"])
+        self.assertTrue(receipt["creator_acceptance"]["frozen"])
+        self.assertTrue(receipt["creator_acceptance"]["not_drawn_carrier_accepted"])
+        self.assertEqual(receipt["creator_acceptance"]["scope"], "PAGE-001")
         self.assertEqual(len(receipt["outputs"]), 1)
         self.assertTrue(receipt["scope"]["episode_media_checked"])
         scales = receipt["pixel_checks"]["upscale_scales"]
