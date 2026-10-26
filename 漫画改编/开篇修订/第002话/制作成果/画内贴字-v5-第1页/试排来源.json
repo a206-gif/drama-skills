@@ -1,0 +1,252 @@
+{
+ "schema_version": 3,
+ "date": "2026-10-27",
+ "episode": "CH002",
+ "based_on_commit": "round-11-worktree",
+ "scope": {
+  "selected_pages": [
+   "PAGE-001"
+  ],
+  "episode_pages": 12,
+  "checked_previous": "CH001",
+  "page1_complete": true,
+  "episode_media_checked": true
+ },
+ "render_report": "preview_rendered",
+ "storyboard_sha256": "586abfc426612c456ec08f06bdb1fb08a9ea4fb8accc5ffd67ec84f649f6768b",
+ "layout_sha256": "8b955245c64cbced66d691906e83fb88e4d8046f469188bbe6119fff4b85d2fa",
+ "frozen_pages_intact": true,
+ "frozen_receipt": {
+  "checked_outputs": 12,
+  "mismatched": []
+ },
+ "renderer_sha256": "f8e2c5749ed9774c740b0227995de214729a50d906f339d5fdba9a402ea48b86",
+ "runtime": {
+  "python": "3.11.2",
+  "pillow": "11.3.0"
+ },
+ "new_model_calls_this_round": 0,
+ "not_drawn_decision": "创作者2026-10-27聊天回复\"不画\"：PANEL-001-02前世回忆不出任何画面；第2行为已采用001-01交付稿本地近景裁切（0调用），回忆仅文字标记",
+ "text_bindings": [
+  {
+   "id": "TEXT-001-01",
+   "kind": "dialogue",
+   "speaker": "苏梨",
+   "font_file": "LXGWWenKai-Medium.ttf",
+   "font_sha256": "f4b8a34d1f838fe411540cb7c97b1c384ac9738a876c4104500bc42508b2312a",
+   "font_size": 36,
+   "padding": 10,
+   "style": {
+    "mode": "embedded",
+    "shape": "oval",
+    "opacity": 88,
+    "stroke_width": 1,
+    "outline_color": "#FFFFFF"
+   },
+   "rect_abs": [
+    150,
+    180,
+    290,
+    110
+   ],
+   "tail": [
+    472,
+    262
+   ]
+  },
+  {
+   "id": "TEXT-001-02",
+   "kind": "thought",
+   "speaker": "苏梨",
+   "font_file": "NotoSansCJKsc-Regular.otf",
+   "font_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+   "font_size": 34,
+   "padding": 6,
+   "style": {
+    "mode": "embedded",
+    "shape": "rect",
+    "opacity": 88,
+    "stroke_width": 0,
+    "outline_color": "#FFFFFF"
+   },
+   "rect_abs": [
+    20,
+    524,
+    352,
+    168
+   ]
+  },
+  {
+   "id": "TEXT-001-03",
+   "kind": "narration",
+   "speaker": "无",
+   "font_file": "NotoSansCJKsc-Regular.otf",
+   "font_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+   "font_size": 34,
+   "padding": 6,
+   "style": {
+    "mode": "embedded",
+    "shape": "rect",
+    "opacity": 88,
+    "stroke_width": 0,
+    "outline_color": "#FFFFFF"
+   },
+   "rect_abs": [
+    16,
+    738,
+    660,
+    120
+   ]
+  },
+  {
+   "id": "TEXT-001-04",
+   "kind": "dialogue",
+   "speaker": "苏澄（回忆中）",
+   "font_file": "NotoSansCJKsc-Regular.otf",
+   "font_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+   "font_size": 40,
+   "padding": 16,
+   "style": {
+    "mode": "embedded",
+    "shape": "oval",
+    "opacity": 88,
+    "stroke_width": 1,
+    "outline_color": "#FFFFFF"
+   },
+   "rect_abs": [
+    24,
+    1278,
+    270,
+    120
+   ]
+  }
+ ],
+ "body_policy": "正文唯一来源=漫画分镜.md（e4d34f5冻结串未改）；本页4块正文逐字未动",
+ "actual_geometry": {
+  "PAGE-001": {
+   "PANEL-001-01": {
+    "rect": [
+     0,
+     0,
+     1080,
+     719
+    ],
+    "image": "制作成果/格图/PANEL-001-01.png",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "PANEL-001-02": {
+    "rect": [
+     0,
+     722,
+     1080,
+     718
+    ],
+    "image": "制作成果/格图/PANEL-001-02-回忆文字承载近景.png",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   }
+  }
+ },
+ "outputs": [
+  {
+   "file": "漫画改编/开篇修订/第002话/制作成果/画内贴字-v5-第1页/PAGE-001.jpg",
+   "sha256": "b6ebd7b602f56d5b904a5942902b31be8b4b9da164f892e7361c849cb59ffc45",
+   "size": [
+    1080,
+    1440
+   ]
+  }
+ ],
+ "visual_review": "第十一轮全分辨率实看2轮：第1轮尾尖触太阳穴皮肤→泡下移尾停发缘；第2轮通过：脸/手/花夹无遮挡，近景1.543×画家风清晰度可接受",
+ "limits": [
+  "preview_rendered：非平台/手机验收",
+  "回忆无视觉标记，仅narration正文自担时间身份（创作者定不画）",
+  "1.543×放大清晰度仅在本画家风素材验证",
+  "未上传/发布/视频"
+ ],
+ "pixel_checks": {
+  "method": "近白行带>=8px计留白；保护区=实看脸/手框；text/tail与保护区相交计violations",
+  "protected_regions": [
+   {
+    "name": "row1-girl-face",
+    "rect": [
+     476,
+     154,
+     145,
+     160
+    ]
+   },
+   {
+    "name": "row1-mother-face",
+    "rect": [
+     621,
+     51,
+     178,
+     216
+    ]
+   },
+   {
+    "name": "row1-girl-hand-grip",
+    "rect": [
+     692,
+     346,
+     66,
+     58
+    ]
+   },
+   {
+    "name": "row1-mother-hand-back",
+    "rect": [
+     405,
+     426,
+     72,
+     85
+    ]
+   },
+   {
+    "name": "row2-girl-face",
+    "rect": [
+     432,
+     964,
+     239,
+     262
+    ]
+   },
+   {
+    "name": "row2-mother-face",
+    "rect": [
+     700,
+     842,
+     264,
+     307
+    ]
+   },
+   {
+    "name": "row2-girl-hand-grip",
+    "rect": [
+     787,
+     1281,
+     108,
+     92
+    ]
+   }
+  ],
+  "text_rects_clear_of_protected": true,
+  "violations": [],
+  "white_rows": {},
+  "full_bleed_pages": [
+   "PAGE-001"
+  ],
+  "upscale_scales": {
+   "PANEL-001-01": 0.9362,
+   "PANEL-001-02": 1.5429
+  },
+  "aa_margin_px": 3
+ },
+ "creator_acceptance": null
+}

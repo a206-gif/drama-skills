@@ -5,9 +5,11 @@ without pretending to judge faces, hands or story accuracy by itself.
 """
 from __future__ import annotations
 
+import hashlib
 import importlib.util
 import json
 import os
+import struct
 import tempfile
 import unittest
 from pathlib import Path
@@ -85,8 +87,8 @@ class RepositoryReviewTests(unittest.TestCase):
         cls.report = review_tool.review()
 
     def test_all_queued_jobs_are_bound_and_hash_verified(self) -> None:
-        self.assertEqual(self.report["jobs"], 41)
-        self.assertEqual(self.report["ready_and_bound"], 41)
+        self.assertEqual(self.report["jobs"], 42)
+        self.assertEqual(self.report["ready_and_bound"], 42)
         for row in self.report["panels"]:
             with self.subTest(key=row["key"]):
                 self.assertTrue(row["media_present"])
@@ -96,10 +98,21 @@ class RepositoryReviewTests(unittest.TestCase):
                 self.assertTrue(row["bound_in_layout"])
                 self.assertTrue(row["bound_file_matches_manifest"])
 
-    def test_only_the_known_deferred_recall_panel_lacks_media(self) -> None:
-        missing = self.report["missing_media"]
-        self.assertEqual([(row["episode"], row["panel_id"]) for row in missing],
-                         [("CH002", "PANEL-001-02")])
+    def test_not_drawn_recall_panel_is_bound_via_zero_call_carrier_crop(self) -> None:
+        # Round 11: creator decided the recall panel is NOT drawn; its frozen bodies ride a
+        # local close-up crop of the adopted PANEL-001-01 delivery (0 model calls).
+        self.assertEqual(self.report["missing_media"], [])
+        manifest = json.loads((ROOT / "漫画改编/连续童年出图/来源与任务.json").read_text(encoding="utf-8"))
+        job = next(row for row in manifest["jobs"] if row["key"] == "CH002/PANEL-001-02")
+        self.assertEqual(job["kind"], "not_drawn_recall_text_carrier_crop")
+        self.assertEqual(job["model_calls"], 0)
+        self.assertFalse(any(call["job_key"] == job["key"] for call in manifest["calls"]))
+        self.assertTrue(job["not_from_blocked_output"])
+        raw = (ROOT / job["output"]).read_bytes()
+        self.assertEqual(job["output_sha256"], hashlib.sha256(raw).hexdigest())
+        self.assertEqual(job["size"], list(struct.unpack(">II", raw[16:24])))
+        source = (ROOT / job["crop_of_file"]).read_bytes()
+        self.assertEqual(job["crop_of_sha256"], hashlib.sha256(source).hexdigest())
         outside = self.report["layout_panels_outside_queue"]
         earlier = [row for row in outside if row["classification"] == "media_from_earlier_batch"]
         self.assertTrue(earlier)
@@ -121,12 +134,10 @@ class RepositoryReviewTests(unittest.TestCase):
                     self.assertLessEqual(row["fit"]["hidden_fraction"], 0.25 + 1e-6)
 
     def test_current_ch002_selected_geometry_meets_craft_bounds(self) -> None:
-        # Round-7 geometry for pages 4-12: inserts display at <=1.6x, strips hide <=25%.
-        # PANEL-001-01/02 keep pre-round-5 geometry by declared deferral (001-02 art undecided).
-        deferred = {"CH002/PANEL-001-01", "CH002/PANEL-001-02"}
+        # Round-7 geometry for pages 4-12 plus round-11 PAGE-001: inserts display at
+        # <=1.6x, full-bleed strips hide <=25% (001-02 carrier crop counts as a strip).
         rows = [row for row in self.report["panels"]
-                if row["bound_in_layout"] and row["episode"] == "CH002"
-                and row["key"] not in deferred]
+                if row["bound_in_layout"] and row["episode"] == "CH002"]
         self.assertTrue(rows)
         for row in rows:
             with self.subTest(key=row["key"]):
@@ -147,6 +158,25 @@ class RepositoryReviewTests(unittest.TestCase):
         self.assertTrue(receipt["frozen_pages_intact"])
         self.assertTrue(receipt["creator_acceptance"]["frozen"])
         self.assertEqual(len(receipt["outputs"]), 9)
+
+    def test_ch002_page1_not_drawn_carrier_receipt_is_clean_and_zero_call(self) -> None:
+        receipt = json.loads((ROOT / "漫画改编/开篇修订/第002话/制作成果/画内贴字-v5-第1页/试排来源.json")
+                             .read_text(encoding="utf-8"))
+        self.assertEqual(receipt["render_report"], "preview_rendered")
+        self.assertEqual(receipt["pixel_checks"]["white_rows"], {})
+        self.assertEqual(receipt["pixel_checks"]["violations"], [])
+        self.assertTrue(receipt["pixel_checks"]["text_rects_clear_of_protected"])
+        self.assertTrue(receipt["frozen_pages_intact"])
+        self.assertEqual(receipt["new_model_calls_this_round"], 0)
+        self.assertIsNone(receipt["creator_acceptance"])
+        self.assertEqual(len(receipt["outputs"]), 1)
+        self.assertTrue(receipt["scope"]["episode_media_checked"])
+        scales = receipt["pixel_checks"]["upscale_scales"]
+        self.assertLessEqual(scales["PANEL-001-02"], 1.6 + 1e-6)
+        self.assertLessEqual(scales["PANEL-001-01"], 1.0)
+        bodies = {binding["id"]: binding["kind"] for binding in receipt["text_bindings"]}
+        self.assertEqual(bodies, {"TEXT-001-01": "dialogue", "TEXT-001-02": "thought",
+                                  "TEXT-001-03": "narration", "TEXT-001-04": "dialogue"})
 
     def test_old_round5_geometry_is_still_measured_as_unusable(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
@@ -213,7 +243,7 @@ class PreviewOutputTests(unittest.TestCase):
                                               allowed_root=root)
             sheets = sorted((Path(out["directory"]) / "页接触表").glob("*.jpg"))
             self.assertTrue(sheets)
-            self.assertEqual(out["panel_previews"], 41)
+            self.assertEqual(out["panel_previews"], 42)
 
 
 if __name__ == "__main__":

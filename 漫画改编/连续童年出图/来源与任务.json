@@ -14,7 +14,7 @@
   ]
  },
  "source_sha256": {
-  "CH002": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
+  "CH002": "586abfc426612c456ec08f06bdb1fb08a9ea4fb8accc5ffd67ec84f649f6768b",
   "CH003": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b"
  },
  "source_previous_sha256": {
@@ -1453,6 +1453,38 @@
     1376,
     768
    ]
+  },
+  {
+   "key": "CH002/PANEL-001-02",
+   "episode": "CH002",
+   "panel_id": "PANEL-001-02",
+   "source": "漫画改编/开篇修订/第002话/漫画分镜.md",
+   "prompt_sha256": "50d27f7a495b585f95f1703320e67e1370da20a9e31eea6c10e84fb20eac25f8",
+   "reference_ids": [],
+   "cast": [],
+   "stage": "day",
+   "kind": "not_drawn_recall_text_carrier_crop",
+   "status": "ready_local_crop",
+   "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-02-回忆文字承载近景.png",
+   "output_sha256": "23137f03a2cb8da3896764a7e27c348a7fcab97a3696b18d6bf28a046871194c",
+   "size": [
+    700,
+    466
+   ],
+   "crop_of_file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
+   "crop_of_sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff",
+   "crop_xyxy": [
+    340,
+    8,
+    1040,
+    474
+   ],
+   "same_source_pixels": true,
+   "creator_decision": "创作者2026-10-27聊天回复\"不画\"：前世回忆不出任何画面（含间接镜别）；本格以已采用001-01交付稿的本地近景裁切承载冻结正文，仅文字标记回忆",
+   "model_calls": 0,
+   "count_as_successful_model_call": false,
+   "not_from_blocked_output": true,
+   "no_model_resubmission": true
   }
  ],
  "calls": [
@@ -3916,16 +3948,16 @@
   "sha256": "020605128773052ab0256ccba97d05ab4ab33b15b8f0afde9f8f9302fa89288f"
  },
  "statistics": {
-  "completed_jobs": 41,
-  "total_jobs": 41,
+  "completed_jobs": 42,
+  "total_jobs": 42,
   "remaining_jobs": 0,
   "successful_image_tool_calls": 47,
   "full_frame_selected_calls": 28,
   "partially_selected_calls": 10,
   "unused_calls": 1,
   "blocked_before_generation": 3,
-  "phase": "art_first_no_lettering",
-  "reason_paused": "original 41-task art queue now has actual media; await unified layout/content review, not a model-limit pause",
+  "phase": "art_queue_complete_recall_not_drawn",
+  "reason_paused": "41生成队列＋1不画承载裁切全部绑定；等待创作者对CH002第1页贴字页的验收，非模型限制暂停",
   "delivered_asset_bytes": 46079301,
   "successful_model_requests": 47,
   "tool_requests_including_limit_refusals": 50,
@@ -3940,7 +3972,8 @@
   "tool_requests_including_all_non_delivery": 51,
   "postprocessed_material_frames": 1,
   "cumulative_successful_visible_png_requests": 57,
-  "moderation_backend_execution_not_inferred": true
+  "moderation_backend_execution_not_inferred": true,
+  "not_drawn_text_carrier_crops": 1
  },
  "blocked_tool_attempts": [
   {
@@ -4126,6 +4159,23 @@
    ],
    "moderation_no_file": 0,
    "capacity_refusals": 0
+  },
+  {
+   "round_id": "ART-FIRST-ROUND-11",
+   "date": "2026-10-27",
+   "authorization": "创作者聊天回复\"不画\"（2026-10-27）＝PANEL-001-02前世回忆不出画面；零生成调用",
+   "adopted": 0,
+   "unused_drafts": [],
+   "adopted_outputs": {},
+   "local_derivatives": {
+    "CH002/PANEL-001-02": "开篇修订/第002话/制作成果/格图/PANEL-001-02-回忆文字承载近景.png（已采用001-01交付稿本地近景裁切，承载前世回忆冻结正文，0调用）"
+   },
+   "moderation": "无新提交；被拦历史键011-01未触碰",
+   "actual_successful_calls": 0,
+   "tool_requests": 0,
+   "call_budget_observed": 0,
+   "next_turn_not_new_approval": true,
+   "calls": []
   }
  ],
  "moderation_unresolved_keys": [],
