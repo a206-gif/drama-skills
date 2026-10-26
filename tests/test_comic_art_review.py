@@ -180,6 +180,28 @@ class RepositoryReviewTests(unittest.TestCase):
         self.assertEqual(bodies, {"TEXT-001-01": "dialogue", "TEXT-001-02": "thought",
                                   "TEXT-001-03": "narration", "TEXT-001-04": "dialogue"})
 
+    def test_ch002_episode_preview_package_is_byte_identical_to_frozen_pages(self) -> None:
+        # Round 13: the continuous-read package copies frozen lettered pages verbatim.
+        package = ROOT / "漫画改编/开篇修订/第002话/制作成果/整话预览-CH002"
+        manifest = json.loads((package / "来源.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["new_model_calls"], 0)
+        self.assertFalse(manifest["rerendered"])
+        self.assertFalse(manifest["published"])
+        self.assertEqual([row["page"] for row in manifest["pages"]],
+                         [f"PAGE-{i:03d}" for i in range(1, 13)])
+        for row in manifest["pages"]:
+            with self.subTest(page=row["page"]):
+                copy = package / row["file"]
+                self.assertEqual(hashlib.sha256(copy.read_bytes()).hexdigest(), row["sha256"])
+                source = ROOT / "漫画改编/开篇修订/第002话/制作成果" / row["source_folder"] / row["source_file"]
+                self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(), row["sha256"])
+                receipt = json.loads((ROOT / "漫画改编/开篇修订/第002话/制作成果" / row["frozen_receipt"])
+                                     .read_text(encoding="utf-8"))
+                frozen = next(r for r in receipt["outputs"] if Path(r["file"]).name == row["source_file"])
+                self.assertEqual(frozen["sha256"], row["sha256"])
+                self.assertTrue(row["frozen"])
+                self.assertTrue(row["frozen_basis"])
+
     def test_old_round5_geometry_is_still_measured_as_unusable(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
