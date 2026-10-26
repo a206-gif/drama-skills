@@ -234,6 +234,28 @@ class RepositoryReviewTests(unittest.TestCase):
         self.assertTrue(whole["creator_acceptance"]["mobile_viewed"])
         self.assertTrue(whole["creator_acceptance"]["passed"])
 
+    def test_ch001_adult_panel_media_gap_stays_declared_and_unbound(self) -> None:
+        # Round 15: CH001 pages 1-7 are past-life adult/youth panels (creator-side generation
+        # by the production brief). Their media must stay absent rather than silently bound.
+        episode = ROOT / "漫画改编/开篇修订/第001话"
+        layout = json.loads((episode / "排版.json").read_text(encoding="utf-8"))
+        missing, present = [], []
+        for page in layout["pages"]:
+            if page["id"] in [f"PAGE-{i:03d}" for i in range(1, 8)]:
+                for panel in page["panels"]:
+                    target = episode / panel["image"]
+                    (present if target.is_file() else missing).append(panel["id"])
+        self.assertEqual(present, ["PANEL-001-01"])
+        self.assertEqual(len(missing), 15)
+        handover = episode / "出图交接/给创作者的十一格提示词-第3至7页.txt"
+        sheet = handover.read_text(encoding="utf-8")
+        for panel_id in ["PANEL-003-01", "PANEL-007-02"]:
+            self.assertIn(panel_id, sheet)
+        for page in layout["pages"]:
+            if page["id"] in ("PAGE-008", "PAGE-009"):
+                for panel in page["panels"]:
+                    self.assertTrue((episode / panel["image"]).is_file())
+
     def test_old_round5_geometry_is_still_measured_as_unusable(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
