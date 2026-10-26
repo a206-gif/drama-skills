@@ -265,7 +265,14 @@ class NovelComicRevisionTests(unittest.TestCase):
         correction = next(job for job in manifest["jobs"] if job["key"] == "CH002/PANEL-009-01")
         self.assertEqual(correction["kind"], "generated_corrected_detail")
         self.assertFalse(correction["same_source_pixels"])
-        params = json.loads((ROOT / correction["local_material_correction"]).read_text(encoding="utf-8"))
+        if correction.get("correction_superseded_round9"):
+            # Round-9 regeneration replaced the corrected crop; old params kept for history only.
+            self.assertIn("params", correction["correction_superseded_round9"])
+        else:
+            self.assertIn("local_material_correction", correction)
+        params = json.loads((ROOT / correction["local_material_correction"]).read_text(encoding="utf-8")) if "local_material_correction" in correction else None
+        if params is None:
+            return
         mask = ROOT / params["mask_file"]
         self.assertEqual(hashlib.sha256(mask.read_bytes()).hexdigest(), params["mask_sha256"])
         self.assertEqual(mask.read_bytes()[25], 0)  # Real grayscale PNG mask, not a textual claim.

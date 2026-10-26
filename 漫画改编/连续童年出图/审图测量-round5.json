@@ -1,0 +1,2721 @@
+{
+ "status": "measured",
+ "jobs": 41,
+ "ready_and_bound": 41,
+ "layout_files": {
+  "CH002": "/home/user/drama-skills/漫画改编/开篇修订/第002话/排版.json",
+  "CH003": "/home/user/drama-skills/漫画改编/开篇修订/第003话/排版.json"
+ },
+ "layout_panels_outside_queue": [
+  {
+   "episode": "CH002",
+   "panel_id": "PANEL-001-01",
+   "page_id": "PAGE-001",
+   "image": "制作成果/格图/PANEL-001-01.png",
+   "media_present": true,
+   "classification": "media_from_earlier_batch",
+   "note": "本队列外的排版格；整话媒体闸门只看文件是否真的就位"
+  },
+  {
+   "episode": "CH002",
+   "panel_id": "PANEL-001-02",
+   "page_id": "PAGE-001",
+   "image": "制作成果/格图/PANEL-001-02.png",
+   "media_present": false,
+   "classification": "missing_media",
+   "note": "本队列外的排版格；整话媒体闸门只看文件是否真的就位"
+  },
+  {
+   "episode": "CH002",
+   "panel_id": "PANEL-002-01",
+   "page_id": "PAGE-002",
+   "image": "制作成果/格图/PANEL-002-01.png",
+   "media_present": true,
+   "classification": "media_from_earlier_batch",
+   "note": "本队列外的排版格；整话媒体闸门只看文件是否真的就位"
+  },
+  {
+   "episode": "CH002",
+   "panel_id": "PANEL-002-02",
+   "page_id": "PAGE-002",
+   "image": "制作成果/格图/PANEL-002-02.png",
+   "media_present": true,
+   "classification": "media_from_earlier_batch",
+   "note": "本队列外的排版格；整话媒体闸门只看文件是否真的就位"
+  },
+  {
+   "episode": "CH002",
+   "panel_id": "PANEL-002-03",
+   "page_id": "PAGE-002",
+   "image": "出图交接/第二话首批/候选复用/CH002-PANEL-002-03-去界面近景-v2.png",
+   "media_present": true,
+   "classification": "media_from_earlier_batch",
+   "note": "本队列外的排版格；整话媒体闸门只看文件是否真的就位"
+  },
+  {
+   "episode": "CH002",
+   "panel_id": "PANEL-003-01",
+   "page_id": "PAGE-003",
+   "image": "制作成果/格图/PANEL-003-01.png",
+   "media_present": true,
+   "classification": "media_from_earlier_batch",
+   "note": "本队列外的排版格；整话媒体闸门只看文件是否真的就位"
+  },
+  {
+   "episode": "CH002",
+   "panel_id": "PANEL-003-02",
+   "page_id": "PAGE-003",
+   "image": "制作成果/格图/PANEL-003-02.png",
+   "media_present": true,
+   "classification": "media_from_earlier_batch",
+   "note": "本队列外的排版格；整话媒体闸门只看文件是否真的就位"
+  }
+ ],
+ "missing_media": [
+  {
+   "episode": "CH002",
+   "panel_id": "PANEL-001-02",
+   "page_id": "PAGE-001",
+   "image": "制作成果/格图/PANEL-001-02.png",
+   "media_present": false,
+   "classification": "missing_media",
+   "note": "本队列外的排版格；整话媒体闸门只看文件是否真的就位"
+  }
+ ],
+ "clarity_grades": {
+  "原生或缩小_清晰＋裁掉源画面": 25,
+  "过度放大_发软需改几何": 3,
+  "过度放大_发软需改几何＋裁掉源画面": 8,
+  "原生或缩小_清晰": 3,
+  "明显放大_需按真实画面调格＋裁掉源画面": 2
+ },
+ "max_scale_policy": 2.0,
+ "crop_loss_limit": 0.1,
+ "panels": [
+  {
+   "key": "CH002/PANEL-004-01",
+   "episode": "CH002",
+   "panel_id": "PANEL-004-01",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-01.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1699344,
+    "sha256": "5095c932588143d70c72c9868b8fb4a27faee85a17680277a09374fe4ef8ffca",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-004",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-004-02",
+   "episode": "CH002",
+   "panel_id": "PANEL-004-02",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-02.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1683565,
+    "sha256": "f582a909a297e223057fbbd6c11b4a3f1f3696831c385fef0875702c28ab0d3a",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-004",
+   "panel_rect": [
+    48,
+    504,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-004-03",
+   "episode": "CH002",
+   "panel_id": "PANEL-004-03",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-03.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1685072,
+    "sha256": "f2cfb37c97b84adb043831f0033b2acdbbb867f6005045443ccf809e82f96a39",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-004",
+   "panel_rect": [
+    48,
+    960,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-005-01",
+   "episode": "CH002",
+   "panel_id": "PANEL-005-01",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-005-01.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1743018,
+    "sha256": "ab5bd7a2524c6dfafde16e66d3ca1ddee52fc64b86ab1e5a02df5e4557bb8c8e",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-005",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.8594,
+    "upscale": false,
+    "visible_source_box": [
+     115,
+     0,
+     1145,
+     768
+    ],
+    "hidden_fraction": 0.1679,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-005-02",
+   "episode": "CH002",
+   "panel_id": "PANEL-005-02",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-005-02.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1706317,
+    "sha256": "a096ae0c3e2d215b6f3e11bf82c1b62dcf09d5ce806cc6ef8b4e6b94d9481932",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-005",
+   "panel_rect": [
+    48,
+    732,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.8594,
+    "upscale": false,
+    "visible_source_box": [
+     115,
+     0,
+     1145,
+     768
+    ],
+    "hidden_fraction": 0.1679,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-006-01",
+   "episode": "CH002",
+   "panel_id": "PANEL-006-01",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1505817,
+    "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-006",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.8594,
+    "upscale": false,
+    "visible_source_box": [
+     115,
+     0,
+     1145,
+     768
+    ],
+    "hidden_fraction": 0.1679,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-006-02",
+   "episode": "CH002",
+   "panel_id": "PANEL-006-02",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-02.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1508039,
+    "sha256": "10d76fa2611e7621d766dcf8c5a3bd6613ae66f57c3fc4c71303fad55a8b853a",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-006",
+   "panel_rect": [
+    48,
+    732,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.8594,
+    "upscale": false,
+    "visible_source_box": [
+     115,
+     0,
+     1145,
+     768
+    ],
+    "hidden_fraction": 0.1679,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-007-01",
+   "episode": "CH002",
+   "panel_id": "PANEL-007-01",
+   "kind": "generated_subject_crop",
+   "status": "ready_local_crop",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-007-01-衣角细节.png",
+   "manifest_size": [
+    415,
+    255
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 169044,
+    "sha256": "29c1467608480f644ca80f3372b234f87d6927a3152a3e5a4b91f6c5aa403e89",
+    "size": [
+     415,
+     255
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-007",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 2.5882,
+    "upscale": true,
+    "visible_source_box": [
+     17,
+     0,
+     380,
+     255
+    ],
+    "hidden_fraction": 0.0839,
+    "clarity_grade": "过度放大_发软需改几何"
+   },
+   "recommendation": {
+    "target_scale": 2.0,
+    "display_size": [
+     830,
+     510
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-007-02",
+   "episode": "CH002",
+   "panel_id": "PANEL-007-02",
+   "kind": "generated_subject_crop",
+   "status": "ready_local_crop",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-007-02-回应近景.png",
+   "manifest_size": [
+    490,
+    345
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 266023,
+    "sha256": "a86419a2ec934cf5155d9cef965bb7a928620d5ce48e9fc2d3ff8b30352dc3d0",
+    "size": [
+     490,
+     345
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-007",
+   "panel_rect": [
+    48,
+    732,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 2.0082,
+    "upscale": true,
+    "visible_source_box": [
+     0,
+     8,
+     490,
+     329
+    ],
+    "hidden_fraction": 0.0474,
+    "clarity_grade": "过度放大_发软需改几何"
+   },
+   "recommendation": {
+    "target_scale": 2.0,
+    "display_size": [
+     980,
+     690
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-008-01",
+   "episode": "CH002",
+   "panel_id": "PANEL-008-01",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1456067,
+    "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-008",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-008-02",
+   "episode": "CH002",
+   "panel_id": "PANEL-008-02",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1535280,
+    "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-008",
+   "panel_rect": [
+    48,
+    504,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-008-03",
+   "episode": "CH002",
+   "panel_id": "PANEL-008-03",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-03.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1519810,
+    "sha256": "77d78996bc31297511be0e82995b0942bdb3beb38e14fc81b4352f15a62f421c",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-008",
+   "panel_rect": [
+    48,
+    960,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-009-01",
+   "episode": "CH002",
+   "panel_id": "PANEL-009-01",
+   "kind": "generated_corrected_detail",
+   "status": "ready_local_crop",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-009-01-软芯递交.png",
+   "manifest_size": [
+    380,
+    185
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 111126,
+    "sha256": "ee18c41bcb64c899f9d5eeec1a7c1fec89ebf9890b5570496d83c2035af4cf01",
+    "size": [
+     380,
+     185
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-009",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 3.5676,
+    "upscale": true,
+    "visible_source_box": [
+     52,
+     0,
+     276,
+     185
+    ],
+    "hidden_fraction": 0.2742,
+    "clarity_grade": "过度放大_发软需改几何＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 2.0,
+    "display_size": [
+     760,
+     370
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-009-02",
+   "episode": "CH002",
+   "panel_id": "PANEL-009-02",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-009-02.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1486365,
+    "sha256": "206f949b22ee26986742727058fffb89deb58dce33f7c807067aa70a9ea3b8c4",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-009",
+   "panel_rect": [
+    48,
+    732,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.8594,
+    "upscale": false,
+    "visible_source_box": [
+     115,
+     0,
+     1145,
+     768
+    ],
+    "hidden_fraction": 0.1679,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-010-01",
+   "episode": "CH002",
+   "panel_id": "PANEL-010-01",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-010-01.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1511521,
+    "sha256": "11e00761412b8e1d66bdfbdef446111b2308d529fa1a8a2baa4c2a46ed6032c8",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-010",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.8594,
+    "upscale": false,
+    "visible_source_box": [
+     115,
+     0,
+     1145,
+     768
+    ],
+    "hidden_fraction": 0.1679,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-010-02",
+   "episode": "CH002",
+   "panel_id": "PANEL-010-02",
+   "kind": "generated_subject_crop",
+   "status": "ready_local_crop",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-010-02-触头近景.png",
+   "manifest_size": [
+    360,
+    280
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 162528,
+    "sha256": "ad3919acfc399f45d148d5d6f25949b3a346e2b3c8043964a6b0a179d7894f91",
+    "size": [
+     360,
+     280
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-010",
+   "panel_rect": [
+    48,
+    732,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 2.7333,
+    "upscale": true,
+    "visible_source_box": [
+     0,
+     19,
+     360,
+     241
+    ],
+    "hidden_fraction": 0.1376,
+    "clarity_grade": "过度放大_发软需改几何＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 2.0,
+    "display_size": [
+     720,
+     560
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-011-01",
+   "episode": "CH002",
+   "panel_id": "PANEL-011-01",
+   "kind": "same_moment_crop",
+   "status": "ready_local_crop",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-011-01-守候反应近景.png",
+   "manifest_size": [
+    320,
+    240
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 129573,
+    "sha256": "2286040f362998e535b5a1e68790a66c37d1c0e4ad1bac57615c33b3e23ac5ca",
+    "size": [
+     320,
+     240
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-011",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 3.075,
+    "upscale": true,
+    "visible_source_box": [
+     0,
+     13,
+     320,
+     215
+    ],
+    "hidden_fraction": 0.1057,
+    "clarity_grade": "过度放大_发软需改几何＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 2.0,
+    "display_size": [
+     640,
+     480
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-011-02",
+   "episode": "CH002",
+   "panel_id": "PANEL-011-02",
+   "kind": "generated_subject_crop",
+   "status": "ready_local_crop",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-011-02-床边回应近景.png",
+   "manifest_size": [
+    330,
+    300
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 156188,
+    "sha256": "de5091fd79d95421a1e227669226e9640a868c5db245875e3dec4ce8b1343589",
+    "size": [
+     330,
+     300
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-011",
+   "panel_rect": [
+    48,
+    732,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 2.9818,
+    "upscale": true,
+    "visible_source_box": [
+     0,
+     39,
+     330,
+     221
+    ],
+    "hidden_fraction": 0.2622,
+    "clarity_grade": "过度放大_发软需改几何＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 2.0,
+    "display_size": [
+     660,
+     600
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-012-01",
+   "episode": "CH002",
+   "panel_id": "PANEL-012-01",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-012-01.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1496069,
+    "sha256": "139811d577c43121357d9f364d4b9adee3b4abf0e2a188e3f8f973f8679f680e",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-012",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    552
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    552
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7188,
+    "upscale": false,
+    "visible_source_box": [
+     3,
+     0,
+     1369,
+     768
+    ],
+    "hidden_fraction": 0.0051,
+    "clarity_grade": "原生或缩小_清晰"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH002/PANEL-012-02",
+   "episode": "CH002",
+   "panel_id": "PANEL-012-02",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-012-02-v2.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1454004,
+    "sha256": "d4672a6440b8d0f63c22799a307201d683f4ae40cb49869be13032099a61d1ad",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-012",
+   "panel_rect": [
+    48,
+    624,
+    984,
+    552
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    552
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7188,
+    "upscale": false,
+    "visible_source_box": [
+     3,
+     0,
+     1369,
+     768
+    ],
+    "hidden_fraction": 0.0051,
+    "clarity_grade": "原生或缩小_清晰"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-001-01",
+   "episode": "CH003",
+   "panel_id": "PANEL-001-01",
+   "kind": "generated_subject_crop",
+   "status": "ready_local_crop",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-001-01-母女指控近景.png",
+   "manifest_size": [
+    345,
+    590
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 347664,
+    "sha256": "7300c13f52ff3b8e66b468925b7a52a07018a99a39cd41d71d096a0aa01b7e02",
+    "size": [
+     345,
+     590
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-001",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 2.8522,
+    "upscale": true,
+    "visible_source_box": [
+     0,
+     219,
+     345,
+     151
+    ],
+    "hidden_fraction": 0.7433,
+    "clarity_grade": "过度放大_发软需改几何＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 2.0,
+    "display_size": [
+     690,
+     1180
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-001-02",
+   "episode": "CH003",
+   "panel_id": "PANEL-001-02",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-001-02.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1484403,
+    "sha256": "46ec11d64700157c5a2798d8056bd1b46de4d4ec89e31e3395426f35df12cdc8",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-001",
+   "panel_rect": [
+    48,
+    504,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-001-03",
+   "episode": "CH003",
+   "panel_id": "PANEL-001-03",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-001-03.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1468565,
+    "sha256": "3f358f8d82b00f07a7bb312d0b97383db783f6929781ae9e70b489c489896123",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-001",
+   "panel_rect": [
+    48,
+    960,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-002-01",
+   "episode": "CH003",
+   "panel_id": "PANEL-002-01",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-01.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1466403,
+    "sha256": "6c400390730aad995065bf98da61157f9b725650177d4a865de42ca5bc754aa6",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-002",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-002-02",
+   "episode": "CH003",
+   "panel_id": "PANEL-002-02",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-02.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1517986,
+    "sha256": "a56beb435071409b93c2d4cb2584ab5763c19d4ca372bd9654bba574ad073174",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-002",
+   "panel_rect": [
+    48,
+    504,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-002-03",
+   "episode": "CH003",
+   "panel_id": "PANEL-002-03",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-03.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1511814,
+    "sha256": "9e0ce624e78d24578c397fa4f6b2bda1de7f85c784695c3a2b7331be665fc99e",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-002",
+   "panel_rect": [
+    48,
+    960,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-003-01",
+   "episode": "CH003",
+   "panel_id": "PANEL-003-01",
+   "kind": "generated_subject_crop",
+   "status": "ready_local_crop",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-003-01-袖口未接触细节.png",
+   "manifest_size": [
+    375,
+    160
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 91588,
+    "sha256": "7542edc021dda1ad6fbe4e66874f1d513d718c8e790a6f8026139811fe76d08c",
+    "size": [
+     375,
+     160
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-003",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 2.7,
+    "upscale": true,
+    "visible_source_box": [
+     5,
+     0,
+     364,
+     160
+    ],
+    "hidden_fraction": 0.0281,
+    "clarity_grade": "过度放大_发软需改几何"
+   },
+   "recommendation": {
+    "target_scale": 2.0,
+    "display_size": [
+     750,
+     320
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-003-02",
+   "episode": "CH003",
+   "panel_id": "PANEL-003-02",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-003-02.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1510676,
+    "sha256": "a1283f9bb1841b593294ceb2765789ab7040495817bcf3481ab729f3ca2bc576",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-003",
+   "panel_rect": [
+    48,
+    504,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-003-03",
+   "episode": "CH003",
+   "panel_id": "PANEL-003-03",
+   "kind": "same_moment_crop",
+   "status": "ready_local_crop",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-003-03-计划反应近景.png",
+   "manifest_size": [
+    300,
+    295
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 169074,
+    "sha256": "2bb00308f2332e44d37377bde91485b6e23ff8701c21d80e8b06aa4effd36d97",
+    "size": [
+     300,
+     295
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-003",
+   "panel_rect": [
+    48,
+    960,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 3.28,
+    "upscale": true,
+    "visible_source_box": [
+     0,
+     82,
+     300,
+     132
+    ],
+    "hidden_fraction": 0.5535,
+    "clarity_grade": "过度放大_发软需改几何＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 2.0,
+    "display_size": [
+     600,
+     590
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-004-01",
+   "episode": "CH003",
+   "panel_id": "PANEL-004-01",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-004-01.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1269679,
+    "sha256": "7e76fe807b3387d919a85fc78b32f3b4a97f55e1dacd457e46103a1c7360be01",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-004",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-004-02",
+   "episode": "CH003",
+   "panel_id": "PANEL-004-02",
+   "kind": "same_moment_crop",
+   "status": "ready_local_crop",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-004-02.png",
+   "manifest_size": [
+    350,
+    395
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 194705,
+    "sha256": "edc3371b19c89bd405f5ff6874cedd59a6e0ae1d1baff891c8e0fef7a419f91b",
+    "size": [
+     350,
+     395
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-004",
+   "panel_rect": [
+    48,
+    504,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 2.8114,
+    "upscale": true,
+    "visible_source_box": [
+     0,
+     121,
+     350,
+     154
+    ],
+    "hidden_fraction": 0.611,
+    "clarity_grade": "过度放大_发软需改几何＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 2.0,
+    "display_size": [
+     700,
+     790
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-004-03",
+   "episode": "CH003",
+   "panel_id": "PANEL-004-03",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-004-03.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1510611,
+    "sha256": "7c09ce943314e50f07de6ec74e8a9068c63f5029aa616b6bd8fc5b5bed0718ea",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-004",
+   "panel_rect": [
+    48,
+    960,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-005-01",
+   "episode": "CH003",
+   "panel_id": "PANEL-005-01",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-005-01.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1549134,
+    "sha256": "a89a87fc76cf8011d78b5af6cea4779589455ef2fd96d8e73e1def880157ded8",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-005",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-005-02",
+   "episode": "CH003",
+   "panel_id": "PANEL-005-02",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-005-02.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1534820,
+    "sha256": "2781b8c0c94c21f68608245e24358d70486e9e7730e318bd99b3d25c74468fb9",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-005",
+   "panel_rect": [
+    48,
+    504,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7151,
+    "upscale": false,
+    "visible_source_box": [
+     0,
+     82,
+     1376,
+     604
+    ],
+    "hidden_fraction": 0.2134,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-005-03",
+   "episode": "CH003",
+   "panel_id": "PANEL-005-03",
+   "kind": "generated_subject_crop",
+   "status": "ready_local_crop",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-005-03-院长带离近景.png",
+   "manifest_size": [
+    560,
+    665
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 552600,
+    "sha256": "77fd0ac04f0bf30805f61ecb94a9d6d7e93728cf9dcfbe3c714c4d7233483ae1",
+    "size": [
+     560,
+     665
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-005",
+   "panel_rect": [
+    48,
+    960,
+    984,
+    432
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    432
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 1.7571,
+    "upscale": true,
+    "visible_source_box": [
+     0,
+     210,
+     560,
+     246
+    ],
+    "hidden_fraction": 0.6303,
+    "clarity_grade": "明显放大_需按真实画面调格＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 1.7571,
+    "display_size": [
+     984,
+     1168
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-006-01",
+   "episode": "CH003",
+   "panel_id": "PANEL-006-01",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-006-01.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1517232,
+    "sha256": "4646164a61fc543d3f662d4c8e36e9987899994d9dd583be3c6ec0183ab67af3",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-006",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.8594,
+    "upscale": false,
+    "visible_source_box": [
+     115,
+     0,
+     1145,
+     768
+    ],
+    "hidden_fraction": 0.1679,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-006-02",
+   "episode": "CH003",
+   "panel_id": "PANEL-006-02",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-006-02.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1542899,
+    "sha256": "7b8302f9cfc3483e0c68f27149df12968cc50e75d3292792653931250d9f1259",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-006",
+   "panel_rect": [
+    48,
+    732,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.8594,
+    "upscale": false,
+    "visible_source_box": [
+     115,
+     0,
+     1145,
+     768
+    ],
+    "hidden_fraction": 0.1679,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-007-01",
+   "episode": "CH003",
+   "panel_id": "PANEL-007-01",
+   "kind": "generated_subject_crop",
+   "status": "ready_local_crop",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-007-01-递卡未接细节.png",
+   "manifest_size": [
+    205,
+    115
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 38270,
+    "sha256": "ad5c2d865112b565a68e32840a01fcd72a7e2916df2b7b28497610e7c7be77d3",
+    "size": [
+     205,
+     115
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-007",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 5.7391,
+    "upscale": true,
+    "visible_source_box": [
+     17,
+     0,
+     171,
+     115
+    ],
+    "hidden_fraction": 0.1636,
+    "clarity_grade": "过度放大_发软需改几何＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 2.0,
+    "display_size": [
+     410,
+     230
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-007-02",
+   "episode": "CH003",
+   "panel_id": "PANEL-007-02",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-007-02.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1529433,
+    "sha256": "f2b2721edfef6547db35101954bd440da3724eeb3cc91ed25907437f6cfe11fd",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-007",
+   "panel_rect": [
+    48,
+    732,
+    984,
+    660
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    660
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.8594,
+    "upscale": false,
+    "visible_source_box": [
+     115,
+     0,
+     1145,
+     768
+    ],
+    "hidden_fraction": 0.1679,
+    "clarity_grade": "原生或缩小_清晰＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-008-01",
+   "episode": "CH003",
+   "panel_id": "PANEL-008-01",
+   "kind": "generated_subject_crop",
+   "status": "ready_local_crop",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-008-01-资助交代近景.png",
+   "manifest_size": [
+    666,
+    740
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 717736,
+    "sha256": "4c54dfa5c7366c3952cd0e909a39617d66fc0f139b11fc079cbc93fd77342676",
+    "size": [
+     666,
+     740
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-008",
+   "panel_rect": [
+    48,
+    48,
+    984,
+    552
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    552
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 1.4775,
+    "upscale": true,
+    "visible_source_box": [
+     0,
+     183,
+     666,
+     374
+    ],
+    "hidden_fraction": 0.4951,
+    "clarity_grade": "明显放大_需按真实画面调格＋裁掉源画面"
+   },
+   "recommendation": {
+    "target_scale": 1.4775,
+    "display_size": [
+     984,
+     1093
+    ]
+   }
+  },
+  {
+   "key": "CH003/PANEL-008-02",
+   "episode": "CH003",
+   "panel_id": "PANEL-008-02",
+   "kind": "generation",
+   "status": "ready_generated_selfchecked",
+   "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-008-02.png",
+   "manifest_size": [
+    1376,
+    768
+   ],
+   "media_present": true,
+   "actual": {
+    "bytes": 1569239,
+    "sha256": "a3683321e15dddbcf75c439daeacfdfd26af8f6aebe8485ce65019decadd36bd",
+    "size": [
+     1376,
+     768
+    ],
+    "bit_depth": 8,
+    "color_type": 2
+   },
+   "size_matches_manifest": true,
+   "sha_matches_manifest": true,
+   "bit_depth_8": true,
+   "bound_in_layout": true,
+   "page_id": "PAGE-008",
+   "panel_rect": [
+    48,
+    624,
+    984,
+    552
+   ],
+   "image_target": [
+    0,
+    0,
+    984,
+    552
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "bound_file_matches_manifest": false,
+   "fit": {
+    "scale": 0.7188,
+    "upscale": false,
+    "visible_source_box": [
+     3,
+     0,
+     1369,
+     768
+    ],
+    "hidden_fraction": 0.0051,
+    "clarity_grade": "原生或缩小_清晰"
+   },
+   "recommendation": {
+    "target_scale": 0.7151,
+    "display_size": [
+     984,
+     549
+    ]
+   }
+  }
+ ],
+ "note": "仅真实文件与几何测量；不证明人物/手/持物/镜别正确，也不代替实看与创作者验收"
+}
