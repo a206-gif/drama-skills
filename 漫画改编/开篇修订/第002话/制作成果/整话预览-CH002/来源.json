@@ -129,5 +129,11 @@
    "frozen": true,
    "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
   }
- ]
+ ],
+ "creator_acceptance": {
+  "date": "2026-10-27",
+  "mobile_viewed": true,
+  "passed": true,
+  "note": "创作者聊天回复\"1通过\"：整话包手机实看通过；复制件与冻结页一致，验收不改变冻结件"
+ }
 }

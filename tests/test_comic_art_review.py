@@ -202,6 +202,38 @@ class RepositoryReviewTests(unittest.TestCase):
                 self.assertTrue(row["frozen"])
                 self.assertTrue(row["frozen_basis"])
 
+    def test_opening_three_read_package_is_copy_only_and_labels_unfrozen_ch001(self) -> None:
+        # Round 14: three-episode continuous-read package; CH001 contributes only its two
+        # unfrozen preview pages and must be labelled as such.
+        package = ROOT / "漫画改编/开篇修订/三连读预览-开篇三话"
+        manifest = json.loads((package / "来源.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["new_model_calls"], 0)
+        self.assertFalse(manifest["rerendered"])
+        self.assertFalse(manifest["published"])
+        counts = {}
+        for row in manifest["pages"]:
+            counts[row["episode"]] = counts.get(row["episode"], 0) + 1
+        self.assertEqual(counts, {"CH001": 2, "CH002": 12, "CH003": 8})
+        for row in manifest["pages"]:
+            with self.subTest(file=row["file"]):
+                copy = package / row["file"]
+                self.assertEqual(hashlib.sha256(copy.read_bytes()).hexdigest(), row["sha256"])
+                source = ROOT / "漫画改编/开篇修订" / row["source_folder"] / Path(row["file"]).name
+                self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(), row["sha256"])
+                receipt = json.loads((ROOT / "漫画改编/开篇修订" / row["frozen_receipt"]).read_text(encoding="utf-8"))
+                frozen = next(r for r in receipt["outputs"] if Path(r["file"]).name == Path(row["file"]).name)
+                self.assertEqual(frozen["sha256"], row["sha256"])
+                if row["episode"] == "CH001":
+                    self.assertFalse(row["frozen"])
+                    self.assertTrue(row["status_note"])
+                else:
+                    self.assertTrue(row["frozen"])
+                    self.assertTrue(row["frozen_basis"])
+        whole = json.loads((ROOT / "漫画改编/开篇修订/第002话/制作成果/整话预览-CH002/来源.json")
+                           .read_text(encoding="utf-8"))
+        self.assertTrue(whole["creator_acceptance"]["mobile_viewed"])
+        self.assertTrue(whole["creator_acceptance"]["passed"])
+
     def test_old_round5_geometry_is_still_measured_as_unusable(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

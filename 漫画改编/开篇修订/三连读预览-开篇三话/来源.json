@@ -1,0 +1,236 @@
+{
+ "schema_version": 1,
+ "date": "2026-10-27",
+ "kind": "copy_package_no_rerender",
+ "scope": "开篇三连读预览（CH001+CH002+CH003）",
+ "authorization": "创作者聊天回复\"1通过\"（2026-10-27）：CH002整话包手机实看通过并确认组装三连读包",
+ "new_model_calls": 0,
+ "rerendered": false,
+ "published": false,
+ "completeness": "CH002 12/12冻结、CH003 8/8冻结、CH001 2/9（仅未冻结预览两页；第1–7页无贴字页，三连读暂不完整）",
+ "note": "全部为既有件逐字节复制（sha对各自冻结回执/预览回执）；非平台/手机验收、未发布",
+ "pages": [
+  {
+   "episode": "CH001",
+   "page": "PAGE-008",
+   "file": "CH001/PAGE-008.png",
+   "source_folder": "第001话/制作成果/画内贴字-v5",
+   "sha256": "8829666cbf4e7b34b1cb16c429c68ee1464d2b78d1c708c31b7aba0c26ef7ac5",
+   "frozen_receipt": "第001话/制作成果/画内贴字-v5/试排来源.json",
+   "frozen": false,
+   "frozen_basis": "无（未冻结）",
+   "status_note": "v5回执status=reference_format_partial_preview_pending_creator_review：两页实图局部试排待看图反馈；CH001第1–7页尚无贴字页"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-009",
+   "file": "CH001/PAGE-009.png",
+   "source_folder": "第001话/制作成果/画内贴字-v5",
+   "sha256": "f53f9d4e7b3008cc4e1c2c9b215cc9f3683eea68475d37a16fd01150fc4880bf",
+   "frozen_receipt": "第001话/制作成果/画内贴字-v5/试排来源.json",
+   "frozen": false,
+   "frozen_basis": "无（未冻结）",
+   "status_note": "v5回执status=reference_format_partial_preview_pending_creator_review：两页实图局部试排待看图反馈；CH001第1–7页尚无贴字页"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-001",
+   "file": "CH002/PAGE-001.jpg",
+   "source_folder": "第002话/制作成果/整话预览-CH002",
+   "sha256": "b6ebd7b602f56d5b904a5942902b31be8b4b9da164f892e7361c849cb59ffc45",
+   "frozen_receipt": "第002话/制作成果/画内贴字-v5-第1页/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "页1回执creator_acceptance（2026-10-27通过冻结）"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-002",
+   "file": "CH002/PAGE-002.png",
+   "source_folder": "第002话/制作成果/整话预览-CH002",
+   "sha256": "7913a323f1dac63aa94936ae4a605380b8c09546ae5e156d763e9bf634b12cf2",
+   "frozen_receipt": "第002话/制作成果/画内贴字-v5/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "第七轮创作者确认冻结（存档登记；v5-续回执frozen_pages_intact钉住）"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-003",
+   "file": "CH002/PAGE-003.png",
+   "source_folder": "第002话/制作成果/整话预览-CH002",
+   "sha256": "8e1e7a18a818ae94d5f1ace30056f38fca22cb79b3ea0ff4baa89ea670b0d521",
+   "frozen_receipt": "第002话/制作成果/第三页-v5/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "第七轮创作者确认冻结（存档登记；v5-续回执frozen_pages_intact钉住）"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-004",
+   "file": "CH002/PAGE-004.jpg",
+   "source_folder": "第002话/制作成果/整话预览-CH002",
+   "sha256": "6dcd6678dbd0e53d3654eafaee9ee7ed278063e2e22502cf3242bc0735e49b1b",
+   "frozen_receipt": "第002话/制作成果/画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-005",
+   "file": "CH002/PAGE-005.jpg",
+   "source_folder": "第002话/制作成果/整话预览-CH002",
+   "sha256": "d08b2bc833ffa9d80447e924e117161b8f7b8e61abac56a0f4b374f17a4bb533",
+   "frozen_receipt": "第002话/制作成果/画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-006",
+   "file": "CH002/PAGE-006.jpg",
+   "source_folder": "第002话/制作成果/整话预览-CH002",
+   "sha256": "6964aceb44cd506913508fd16ba1c030f854dd9e1b8f81d5daa6b093415e5b69",
+   "frozen_receipt": "第002话/制作成果/画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-007",
+   "file": "CH002/PAGE-007.jpg",
+   "source_folder": "第002话/制作成果/整话预览-CH002",
+   "sha256": "af18aa58abb04dd162646c24b699b45734314a8bd7d036ebae32f9350c66b37c",
+   "frozen_receipt": "第002话/制作成果/画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-008",
+   "file": "CH002/PAGE-008.jpg",
+   "source_folder": "第002话/制作成果/整话预览-CH002",
+   "sha256": "40c28bc6015887f361f75694cbce23f0ae5bb56f3c0d92425693d55e464cf2c9",
+   "frozen_receipt": "第002话/制作成果/画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-009",
+   "file": "CH002/PAGE-009.jpg",
+   "source_folder": "第002话/制作成果/整话预览-CH002",
+   "sha256": "bb0c2dc1a78d0b067d08474a92147d8a1adbec6943210b9b1b7fc81d75282bdc",
+   "frozen_receipt": "第002话/制作成果/画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-010",
+   "file": "CH002/PAGE-010.jpg",
+   "source_folder": "第002话/制作成果/整话预览-CH002",
+   "sha256": "514ccb601bf86f73e4b051cb2c12d60af6ab2da95403a560b6b5b75e2295a144",
+   "frozen_receipt": "第002话/制作成果/画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-011",
+   "file": "CH002/PAGE-011.jpg",
+   "source_folder": "第002话/制作成果/整话预览-CH002",
+   "sha256": "2178722a4162a8471166f015995beb71e8065166b1d90e961d18e483a3d77d33",
+   "frozen_receipt": "第002话/制作成果/画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-012",
+   "file": "CH002/PAGE-012.jpg",
+   "source_folder": "第002话/制作成果/整话预览-CH002",
+   "sha256": "f6a0258e94c971eb99b36d0257c87596445e70ab76d51f03ca8e87e70084e587",
+   "frozen_receipt": "第002话/制作成果/画内贴字-v5-续/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "v5-续回执creator_acceptance（2026-10-27第十轮通过冻结）"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-001",
+   "file": "CH003/PAGE-001.jpg",
+   "source_folder": "第003话/制作成果/画内贴字-v5",
+   "sha256": "5982c296657782b7f200833a92324596b569155b42e85eb1ed31bbbe6fe14a4f",
+   "frozen_receipt": "第003话/制作成果/画内贴字-v5/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "第七轮创作者聊天确认冻结（存档登记；CH003八页回执与几何不再改）"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-002",
+   "file": "CH003/PAGE-002.jpg",
+   "source_folder": "第003话/制作成果/画内贴字-v5",
+   "sha256": "356f2d06930826a3e304b25311c61935e5afc6de7ff3d6c4b1f31318aae3600d",
+   "frozen_receipt": "第003话/制作成果/画内贴字-v5/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "第七轮创作者聊天确认冻结（存档登记；CH003八页回执与几何不再改）"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-003",
+   "file": "CH003/PAGE-003.jpg",
+   "source_folder": "第003话/制作成果/画内贴字-v5",
+   "sha256": "039f488fcd58068ffd9a0ee8607f5c540f793b3222ca98758a0abbd6bee0292e",
+   "frozen_receipt": "第003话/制作成果/画内贴字-v5/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "第七轮创作者聊天确认冻结（存档登记；CH003八页回执与几何不再改）"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-004",
+   "file": "CH003/PAGE-004.jpg",
+   "source_folder": "第003话/制作成果/画内贴字-v5",
+   "sha256": "8db2e43b05771e69c58d49b7b2cb2c619f527a19a5030a9c3c643c7139db9990",
+   "frozen_receipt": "第003话/制作成果/画内贴字-v5/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "第七轮创作者聊天确认冻结（存档登记；CH003八页回执与几何不再改）"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-005",
+   "file": "CH003/PAGE-005.jpg",
+   "source_folder": "第003话/制作成果/画内贴字-v5",
+   "sha256": "536399e35c330c0423cf4a4d163ceec3f752e088ea5030a58f32b588aca9b2b9",
+   "frozen_receipt": "第003话/制作成果/画内贴字-v5/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "第七轮创作者聊天确认冻结（存档登记；CH003八页回执与几何不再改）"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-006",
+   "file": "CH003/PAGE-006.jpg",
+   "source_folder": "第003话/制作成果/画内贴字-v5",
+   "sha256": "8c3b8812735a3987ec199e2a044ed60f3ef965bc08d1430e898a611cd98a87f5",
+   "frozen_receipt": "第003话/制作成果/画内贴字-v5/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "第七轮创作者聊天确认冻结（存档登记；CH003八页回执与几何不再改）"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-007",
+   "file": "CH003/PAGE-007.jpg",
+   "source_folder": "第003话/制作成果/画内贴字-v5",
+   "sha256": "2ab6f9f0ec25d48202ce8e4025f91cb3b05c0e82324efdc2dfaf058add018750",
+   "frozen_receipt": "第003话/制作成果/画内贴字-v5/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "第七轮创作者聊天确认冻结（存档登记；CH003八页回执与几何不再改）"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-008",
+   "file": "CH003/PAGE-008.jpg",
+   "source_folder": "第003话/制作成果/画内贴字-v5",
+   "sha256": "43ce793eae337cd075b6c541ed22deb4e5469bc07abc35c35d69cf393e70dc4d",
+   "frozen_receipt": "第003话/制作成果/画内贴字-v5/试排来源.json",
+   "frozen": true,
+   "frozen_basis": "第七轮创作者聊天确认冻结（存档登记；CH003八页回执与几何不再改）"
+  }
+ ]
+}
