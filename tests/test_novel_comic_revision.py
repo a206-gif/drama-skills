@@ -146,7 +146,7 @@ class NovelComicRevisionTests(unittest.TestCase):
                 self.assertEqual(supplied["file"], refs[supplied["id"]]["file"])
                 self.assertEqual(supplied["sha256"], refs[supplied["id"]]["sha256"])
 
-    def test_ready_pages_keep_actual_predecessor_but_deferred_first_page_still_fails(self) -> None:
+    def test_ready_pages_keep_actual_predecessor_and_not_drawn_first_page_now_previews(self) -> None:
         plan = comic.load_project(STORIES[1].with_name("排版.json"), previous=STORIES[0])
         preview = comic.preview_plan(plan, ["PAGE-002", "PAGE-003"])
         self.assertEqual(preview["preview_scope"], {"selected_pages": ["PAGE-002", "PAGE-003"], "episode_pages": 12})
@@ -156,10 +156,14 @@ class NovelComicRevisionTests(unittest.TestCase):
         for page in preview["layout"]["pages"]:
             for panel in page["panels"]:
                 self.assertTrue((STORIES[1].parent / panel["image"]).is_file())
-        with self.assertRaisesRegex(comic.ComicError, "PANEL-001-02"):
-            comic.preview_plan(plan, ["PAGE-001"])
-        with self.assertRaisesRegex(comic.ComicError, "PANEL-001-02"):
-            comic.load_project(STORIES[1].with_name("排版.json"), previous=STORIES[0], media=True)
+        first = comic.preview_plan(plan, ["PAGE-001"])
+        self.assertEqual([panel["id"] for page in first["layout"]["pages"] for panel in page["panels"]],
+                         ["PANEL-001-01", "PANEL-001-02"])
+        for page in first["layout"]["pages"]:
+            for panel in page["panels"]:
+                self.assertTrue((STORIES[1].parent / panel["image"]).is_file())
+        full = comic.load_project(STORIES[1].with_name("排版.json"), previous=STORIES[0], media=True)
+        self.assertEqual(comic.summary(full, True)["episode"], "CH002")
 
     def test_page3_batch_matches_source_real_assets_and_distinct_text_font_routes(self) -> None:
         episode = STORIES[1].parent
@@ -207,8 +211,8 @@ class NovelComicRevisionTests(unittest.TestCase):
         folder = BASE / "连续童年出图"
         manifest = json.loads((folder / "来源与任务.json").read_text(encoding="utf-8"))
         jobs = manifest["jobs"]
-        self.assertEqual(len(jobs), 41)
-        self.assertEqual(len({job["key"] for job in jobs}), 41)
+        self.assertEqual(len(jobs), 42)
+        self.assertEqual(len({job["key"] for job in jobs}), 42)
         source_panels = {}
         for episode in ["CH002", "CH003"]:
             story = STORIES[int(episode[-1]) - 1]
@@ -265,7 +269,14 @@ class NovelComicRevisionTests(unittest.TestCase):
         correction = next(job for job in manifest["jobs"] if job["key"] == "CH002/PANEL-009-01")
         self.assertEqual(correction["kind"], "generated_corrected_detail")
         self.assertFalse(correction["same_source_pixels"])
-        params = json.loads((ROOT / correction["local_material_correction"]).read_text(encoding="utf-8"))
+        if correction.get("correction_superseded_round9"):
+            # Round-9 regeneration replaced the corrected crop; old params kept for history only.
+            self.assertIn("params", correction["correction_superseded_round9"])
+        else:
+            self.assertIn("local_material_correction", correction)
+        params = json.loads((ROOT / correction["local_material_correction"]).read_text(encoding="utf-8")) if "local_material_correction" in correction else None
+        if params is None:
+            return
         mask = ROOT / params["mask_file"]
         self.assertEqual(hashlib.sha256(mask.read_bytes()).hexdigest(), params["mask_sha256"])
         self.assertEqual(mask.read_bytes()[25], 0)  # Real grayscale PNG mask, not a textual claim.
@@ -278,7 +289,7 @@ class NovelComicRevisionTests(unittest.TestCase):
     def test_complete_media_queue_keeps_original_block_and_uses_independent_allowed_pixels(self) -> None:
         folder = BASE / "连续童年出图"
         manifest = json.loads((folder / "来源与任务.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["statistics"]["completed_jobs"], 41)
+        self.assertEqual(manifest["statistics"]["completed_jobs"], 42)
         self.assertEqual(manifest["statistics"]["remaining_jobs"], 0)
         self.assertFalse(manifest["next_batch_keys"])
         original = next(row for row in manifest["blocked_tool_attempts"]
@@ -296,8 +307,8 @@ class NovelComicRevisionTests(unittest.TestCase):
         self.assertFalse(any(call["job_key"] == replacement["key"] for call in manifest["calls"]))
         third = comic.load_project(STORIES[2].with_name("排版.json"), previous=STORIES[1], media=True)
         self.assertEqual(comic.summary(third, True)["episode"], "CH003")
-        with self.assertRaisesRegex(comic.ComicError, "PANEL-001-02"):
-            comic.load_project(STORIES[1].with_name("排版.json"), previous=STORIES[0], media=True)
+        second = comic.load_project(STORIES[1].with_name("排版.json"), previous=STORIES[0], media=True)
+        self.assertEqual(comic.summary(second, True)["episode"], "CH002")
 
     def test_real_sequel_cli_refuses_missing_previous_without_generating_media(self) -> None:
         before = {str(path) for story in STORIES for path in (story.parent / "制作成果").glob("**/*")}
