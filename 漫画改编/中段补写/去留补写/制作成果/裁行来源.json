@@ -309,81 +309,70 @@
    "sheet": "SHEET-PAGE-010.png",
    "panel": "PANEL-010-01.png",
    "box": [
-    27,
-    23,
-    425,
-    431
+    0,
+    0,
+    848,
+    418
    ],
-   "style": "初版线稿平涂（待风格锁重出）"
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-010.png",
    "panel": "PANEL-010-02.png",
    "box": [
-    425,
-    23,
-    820,
-    431
+    0,
+    418,
+    848,
+    842
    ],
-   "style": "初版线稿平涂（待风格锁重出）"
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-010.png",
    "panel": "PANEL-010-03.png",
    "box": [
-    28,
-    431,
-    820,
-    833
+    0,
+    842,
+    848,
+    1264
    ],
-   "style": "初版线稿平涂（待风格锁重出）"
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-010.png",
-   "panel": "PANEL-010-04.png",
-   "box": [
-    27,
-    833,
-    820,
-    1238
-   ],
-   "style": "初版线稿平涂（待风格锁重出）"
-  },
-  {
-   "sheet": "SHEET-PAGE-010.png",
-   "hidden_pct": 10.1,
+   "hidden_pct": 0.0,
    "rows": 3,
-   "cells": 4,
-   "style": "初版线稿平涂（待风格锁重出）"
+   "cells": 3,
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-011.png",
    "panel": "PANEL-011-01.png",
    "box": [
-    14,
-    14,
-    835,
-    629
+    0,
+    0,
+    848,
+    632
    ],
-   "style": "初版线稿平涂（待风格锁重出）"
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-011.png",
    "panel": "PANEL-011-02.png",
    "box": [
-    14,
-    629,
-    835,
-    1248
+    0,
+    632,
+    848,
+    1264
    ],
-   "style": "初版线稿平涂（待风格锁重出）"
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-011.png",
-   "hidden_pct": 5.5,
+   "hidden_pct": 0.0,
    "rows": 2,
    "cells": 2,
-   "style": "初版线稿平涂（待风格锁重出）"
+   "style": "风格锁厚涂"
   }
  ]
 }
