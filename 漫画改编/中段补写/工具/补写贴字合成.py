@@ -139,7 +139,6 @@ def compose(unit: str, pages: dict[str, list[dict]], cells: list[dict], sheet_di
                 rects.append((dx, dy, dx + w, dy + hh))
                 dx += w
             dy += hh + SEAM
-        draw = ImageDraw.Draw(page_img)
         odraw = ImageDraw.Draw(overlay)
         boxes: list[dict] = []
         for (px0, py0, px1, py1), panel in zip(rects, panels):
