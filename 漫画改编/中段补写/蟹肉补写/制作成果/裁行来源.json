@@ -4,30 +4,30 @@
    "sheet": "SHEET-PAGE-001.png",
    "panel": "PANEL-001-01.png",
    "box": [
-    14,
-    12,
-    834,
-    630
+    0,
+    0,
+    848,
+    628
    ],
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-001.png",
    "panel": "PANEL-001-02.png",
    "box": [
-    14,
-    630,
-    834,
-    1251
+    0,
+    636,
+    848,
+    1264
    ],
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-001.png",
-   "hidden_pct": 5.2,
+   "hidden_pct": 0.0,
    "rows": 2,
    "cells": 2,
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-002.png",
@@ -36,379 +36,96 @@
     0,
     0,
     848,
-    629
+    627
    ],
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-002.png",
    "panel": "PANEL-002-02.png",
    "box": [
     0,
-    629,
+    637,
     848,
     1264
    ],
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-002.png",
    "hidden_pct": 0.0,
    "rows": 2,
    "cells": 2,
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-003.png",
    "panel": "PANEL-003-01.png",
    "box": [
-    6,
-    4,
-    842,
-    422
+    0,
+    0,
+    848,
+    417
    ],
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-003.png",
    "panel": "PANEL-003-02.png",
    "box": [
-    6,
-    422,
-    842,
-    840
+    0,
+    421,
+    848,
+    843
    ],
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-003.png",
    "panel": "PANEL-003-03.png",
    "box": [
-    6,
-    840,
-    842,
-    1259
+    0,
+    847,
+    848,
+    1264
    ],
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-003.png",
-   "hidden_pct": 2.1,
+   "hidden_pct": 0.0,
    "rows": 3,
    "cells": 3,
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-004.png",
    "panel": "PANEL-004-01.png",
    "box": [
-    6,
-    5,
-    841,
-    631
+    0,
+    0,
+    848,
+    626
    ],
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-004.png",
    "panel": "PANEL-004-02.png",
    "box": [
-    6,
-    631,
-    841,
-    1258
+    0,
+    636,
+    848,
+    1264
    ],
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-004.png",
-   "hidden_pct": 2.4,
-   "rows": 2,
-   "cells": 2,
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-006.png",
-   "panel": "PANEL-006-01.png",
-   "box": [
-    6,
-    4,
-    841,
-    632
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-006.png",
-   "panel": "PANEL-006-02.png",
-   "box": [
-    6,
-    632,
-    841,
-    1259
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-006.png",
-   "hidden_pct": 2.2,
-   "rows": 2,
-   "cells": 2,
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-008.png",
-   "panel": "PANEL-008-01.png",
-   "box": [
-    20,
-    26,
-    829,
-    629
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-008.png",
-   "panel": "PANEL-008-02.png",
-   "box": [
-    20,
-    629,
-    829,
-    1241
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-008.png",
-   "hidden_pct": 8.3,
-   "rows": 2,
-   "cells": 2,
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-007.png",
-   "panel": "PANEL-007-01.png",
-   "box": [
-    8,
-    6,
-    840,
-    422
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-007.png",
-   "panel": "PANEL-007-02.png",
-   "box": [
-    8,
-    422,
-    840,
-    841
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-007.png",
-   "panel": "PANEL-007-03.png",
-   "box": [
-    8,
-    841,
-    840,
-    1258
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-007.png",
-   "hidden_pct": 2.8,
-   "rows": 3,
-   "cells": 3,
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-009.png",
-   "panel": "PANEL-009-01.png",
-   "box": [
-    0,
-    0,
-    848,
-    630
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-009.png",
-   "panel": "PANEL-009-02.png",
-   "box": [
-    0,
-    630,
-    848,
-    1264
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-009.png",
    "hidden_pct": 0.0,
    "rows": 2,
    "cells": 2,
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-010.png",
-   "panel": "PANEL-010-01.png",
-   "box": [
-    0,
-    0,
-    848,
-    632
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-010.png",
-   "panel": "PANEL-010-02.png",
-   "box": [
-    0,
-    632,
-    848,
-    1264
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-010.png",
-   "hidden_pct": 0.0,
-   "rows": 2,
-   "cells": 2,
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-011.png",
-   "panel": "PANEL-011-01.png",
-   "box": [
-    0,
-    0,
-    848,
-    632
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-011.png",
-   "panel": "PANEL-011-02.png",
-   "box": [
-    0,
-    632,
-    848,
-    1264
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-011.png",
-   "hidden_pct": 0.0,
-   "rows": 2,
-   "cells": 2,
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-012.png",
-   "panel": "PANEL-012-01.png",
-   "box": [
-    9,
-    8,
-    839,
-    420
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-012.png",
-   "panel": "PANEL-012-02.png",
-   "box": [
-    9,
-    420,
-    839,
-    839
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-012.png",
-   "panel": "PANEL-012-03.png",
-   "box": [
-    9,
-    839,
-    839,
-    1253
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-012.png",
-   "hidden_pct": 3.6,
-   "rows": 3,
-   "cells": 3,
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-013.png",
-   "panel": "PANEL-013-01.png",
-   "box": [
-    0,
-    0,
-    848,
-    630
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-013.png",
-   "panel": "PANEL-013-02.png",
-   "box": [
-    0,
-    630,
-    848,
-    1251
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-013.png",
-   "hidden_pct": 1.0,
-   "rows": 2,
-   "cells": 2,
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-014.png",
-   "panel": "PANEL-014-01.png",
-   "box": [
-    0,
-    0,
-    848,
-    631
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-014.png",
-   "panel": "PANEL-014-02.png",
-   "box": [
-    0,
-    631,
-    848,
-    1245
-   ],
-   "style": "风格锁厚涂"
-  },
-  {
-   "sheet": "SHEET-PAGE-014.png",
-   "hidden_pct": 1.5,
-   "rows": 2,
-   "cells": 2,
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-005.png",
@@ -419,37 +136,319 @@
     848,
     417
    ],
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-005.png",
    "panel": "PANEL-005-02.png",
    "box": [
     0,
-    417,
+    421,
     848,
-    845
+    842
    ],
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-005.png",
    "panel": "PANEL-005-03.png",
    "box": [
     0,
-    845,
+    846,
     848,
     1264
    ],
-   "style": "风格锁厚涂"
+   "style": "v3厚涂"
   },
   {
    "sheet": "SHEET-PAGE-005.png",
    "hidden_pct": 0.0,
    "rows": 3,
    "cells": 3,
-   "style": "风格锁厚涂",
-   "note": "年龄锚违规重出（r37）"
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-006.png",
+   "panel": "PANEL-006-01.png",
+   "box": [
+    0,
+    13,
+    848,
+    628
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-006.png",
+   "panel": "PANEL-006-02.png",
+   "box": [
+    0,
+    636,
+    848,
+    1252
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-006.png",
+   "hidden_pct": 0.0,
+   "rows": 2,
+   "cells": 2,
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-007.png",
+   "panel": "PANEL-007-01.png",
+   "box": [
+    0,
+    0,
+    848,
+    467
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-007.png",
+   "panel": "PANEL-007-02.png",
+   "box": [
+    0,
+    470,
+    848,
+    850
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-007.png",
+   "panel": "PANEL-007-03.png",
+   "box": [
+    0,
+    854,
+    848,
+    1264
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-007.png",
+   "hidden_pct": 0.0,
+   "rows": 3,
+   "cells": 3,
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-008.png",
+   "panel": "PANEL-008-01.png",
+   "box": [
+    0,
+    0,
+    848,
+    695
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-008.png",
+   "panel": "PANEL-008-02.png",
+   "box": [
+    0,
+    700,
+    848,
+    1264
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-008.png",
+   "hidden_pct": 0.0,
+   "rows": 2,
+   "cells": 2,
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-009.png",
+   "panel": "PANEL-009-01.png",
+   "box": [
+    0,
+    0,
+    848,
+    753
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-009.png",
+   "panel": "PANEL-009-02.png",
+   "box": [
+    0,
+    758,
+    848,
+    1264
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-009.png",
+   "hidden_pct": 0.0,
+   "rows": 2,
+   "cells": 2,
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-010.png",
+   "panel": "PANEL-010-01.png",
+   "box": [
+    0,
+    0,
+    848,
+    627
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-010.png",
+   "panel": "PANEL-010-02.png",
+   "box": [
+    0,
+    637,
+    848,
+    1264
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-010.png",
+   "hidden_pct": 0.0,
+   "rows": 2,
+   "cells": 2,
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-011.png",
+   "panel": "PANEL-011-01.png",
+   "box": [
+    0,
+    0,
+    848,
+    630
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-011.png",
+   "panel": "PANEL-011-02.png",
+   "box": [
+    0,
+    634,
+    848,
+    1264
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-011.png",
+   "hidden_pct": 0.0,
+   "rows": 2,
+   "cells": 2,
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-012.png",
+   "panel": "PANEL-012-01.png",
+   "box": [
+    0,
+    0,
+    848,
+    417
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-012.png",
+   "panel": "PANEL-012-02.png",
+   "box": [
+    0,
+    421,
+    848,
+    843
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-012.png",
+   "panel": "PANEL-012-03.png",
+   "box": [
+    0,
+    847,
+    848,
+    1264
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-012.png",
+   "hidden_pct": 0.0,
+   "rows": 3,
+   "cells": 3,
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-013.png",
+   "panel": "PANEL-013-01.png",
+   "box": [
+    0,
+    0,
+    848,
+    630
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-013.png",
+   "panel": "PANEL-013-02.png",
+   "box": [
+    0,
+    634,
+    848,
+    1264
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-013.png",
+   "hidden_pct": 0.0,
+   "rows": 2,
+   "cells": 2,
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-014.png",
+   "panel": "PANEL-014-01.png",
+   "box": [
+    0,
+    0,
+    848,
+    628
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-014.png",
+   "panel": "PANEL-014-02.png",
+   "box": [
+    0,
+    636,
+    848,
+    1264
+   ],
+   "style": "v3厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-014.png",
+   "hidden_pct": 0.0,
+   "rows": 2,
+   "cells": 2,
+   "style": "v3厚涂"
   }
  ]
 }
