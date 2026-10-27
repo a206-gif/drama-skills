@@ -116,7 +116,8 @@
     21,
     828,
     429
-   ]
+   ],
+   "adopted": "创作者2026-10-30采用候选安全版为P4正式版；原刀刃构图审核拦截不重发"
   },
   {
    "sheet": "SHEET-PAGE-004-候选安全版.png",
@@ -126,7 +127,8 @@
     429,
     828,
     836
-   ]
+   ],
+   "adopted": "创作者2026-10-30采用候选安全版为P4正式版；原刀刃构图审核拦截不重发"
   },
   {
    "sheet": "SHEET-PAGE-004-候选安全版.png",
@@ -136,13 +138,15 @@
     836,
     828,
     1242
-   ]
+   ],
+   "adopted": "创作者2026-10-30采用候选安全版为P4正式版；原刀刃构图审核拦截不重发"
   },
   {
    "sheet": "SHEET-PAGE-004-候选安全版.png",
    "hidden_pct": 8.0,
    "rows": 3,
-   "cells": 3
+   "cells": 3,
+   "adopted": "创作者2026-10-30采用候选安全版为P4正式版；原刀刃构图审核拦截不重发"
   },
   {
    "sheet": "SHEET-PAGE-005.png",
@@ -281,6 +285,78 @@
   {
    "sheet": "SHEET-PAGE-009.png",
    "hidden_pct": 0.0,
+   "rows": 2,
+   "cells": 2
+  },
+  {
+   "sheet": "SHEET-PAGE-010.png",
+   "panel": "PANEL-010-01.png",
+   "box": [
+    27,
+    23,
+    425,
+    431
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-010.png",
+   "panel": "PANEL-010-02.png",
+   "box": [
+    425,
+    23,
+    820,
+    431
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-010.png",
+   "panel": "PANEL-010-03.png",
+   "box": [
+    28,
+    431,
+    820,
+    833
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-010.png",
+   "panel": "PANEL-010-04.png",
+   "box": [
+    27,
+    833,
+    820,
+    1238
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-010.png",
+   "hidden_pct": 10.1,
+   "rows": 3,
+   "cells": 4
+  },
+  {
+   "sheet": "SHEET-PAGE-011.png",
+   "panel": "PANEL-011-01.png",
+   "box": [
+    14,
+    14,
+    835,
+    629
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-011.png",
+   "panel": "PANEL-011-02.png",
+   "box": [
+    14,
+    629,
+    835,
+    1248
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-011.png",
+   "hidden_pct": 5.5,
    "rows": 2,
    "cells": 2
   }
