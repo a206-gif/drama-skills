@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """只读预检：冻结+裁决+整合执行前的齐套校验（不改任何文件）。"""
-import hashlib, json, sys
+import hashlib
+import json
+import sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 def sha(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
