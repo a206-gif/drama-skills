@@ -278,7 +278,7 @@ class RepositoryReviewTests(unittest.TestCase):
             # image_rect 高420 < 格高480 违反填框规则（白腰带），且对行图仍有可见裁切；
             # 旧小图时代的放大倍率>5 前提随资产替换失效，不再使用。
             self.assertLess(row["image_target"][3], row["panel_rect"][3])
-            self.assertGreater(row["fit"]["hidden_fraction"], 0.05)
+            self.assertGreater((row["panel_rect"][3] - row["image_target"][3]) / row["panel_rect"][3], 0.05)
 
     def test_report_carries_no_story_text_fields(self) -> None:
         rendered = json.dumps(self.report, ensure_ascii=False)
