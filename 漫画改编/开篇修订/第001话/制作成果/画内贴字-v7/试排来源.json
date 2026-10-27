@@ -1,0 +1,52 @@
+{
+ "schema_version": 1,
+ "date": "2026-10-27",
+ "tool": "skills/static-comic/scripts/comic_tool.py preview",
+ "layout_sha256": "d4235cb4eb1a426db04e5224575a43bd27ce526e427c59acb9d41f2ea1e411ad",
+ "storyboard_sha256": "02ac31f56d8c0c56526282795c4d8f96b40f1177daf0e796661950775be092ee",
+ "fonts": {
+  "NotoSansCJKsc-Regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+  "LXGWWenKai-Medium.ttf": "f4b8a34d1f838fe411540cb7c97b1c384ac9738a876c4104500bc42508b2312a",
+  "NotoSerifCJKsc-Bold.otf": "8af07d4b6c2e"
+ },
+ "new_model_calls": 0,
+ "scope": "PAGE-001..007（CH001第1–7页满幅贴字试排）",
+ "status": "preview_pending_creator_review",
+ "supersedes": "画内贴字-v6（压脸/压手框位，已删）",
+ "outputs": [
+  {
+   "file": "PAGE-001.png",
+   "sha256": "4eb6fa8c9d4b119a4cd3b10f804115ea5d03b62b345acb86dc208851266a2946"
+  },
+  {
+   "file": "PAGE-002.png",
+   "sha256": "83a779645458a27af0b9027a05cb24de9e62826dce5d325f3725aaa3fab28de5"
+  },
+  {
+   "file": "PAGE-003.png",
+   "sha256": "335a2b6a1b8a28ebd6a5dc586538effe483099dceeb5e9e811fc3b41c982989d"
+  },
+  {
+   "file": "PAGE-004.png",
+   "sha256": "fdb6c9ed1c46e43b4490c09dbc0072d3ba198f2745229d7f756c63c7c22fa530"
+  },
+  {
+   "file": "PAGE-005.png",
+   "sha256": "f8b1aa9a88ff2a8e059a5b03392d9796367ebab6d442eb7a0b8c5c142ffe0899"
+  },
+  {
+   "file": "PAGE-006.png",
+   "sha256": "7475eac99d2573ef3cd9aedde93dd0116d3a9ea48e8d8f7d87d4b0b0e7a4e488"
+  },
+  {
+   "file": "PAGE-007.png",
+   "sha256": "0acd8a6c905654fa5a651858a8af1100354daf22749dbe1a8bf9f7703444441e"
+  }
+ ],
+ "creator_acceptance": {
+  "mobile_viewed": false,
+  "passed": false,
+  "scope": "PAGE-001..007"
+ },
+ "note": "逐页目检：文本不压脸/手/关键道具、可读；p1行1旧图cover裁22.4%、行2/3偏置裁36%已披露；不是冻结/发布"
+}

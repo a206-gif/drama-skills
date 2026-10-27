@@ -1,0 +1,100 @@
+{
+ "schema_version": 1,
+ "date": "2026-10-27",
+ "kind": "sheet_row_crop_provenance",
+ "generator": "创作者 gpt-image-2.5（7次调用，创作者侧）",
+ "crop_calls_by_assistant": 0,
+ "sheets": {
+  "SHEET-PAGE-001.png": "74de1054140054ad329cf9cf3756f19677206535305e91741e79a245e202bd71",
+  "SHEET-PAGE-002.png": "c5fc5489ed46509995407723c8c52dd44ece81735792bb427a51996145ca53bd",
+  "SHEET-PAGE-003.png": "fd9817816f7a24f7a260508b4a200361d9e883fd15beed6a4b5303b429b9beb5",
+  "SHEET-PAGE-004.png": "6c00a99ecba69c5f037418789f08294e33d36bfbab825a9af8efa05a77067d4b",
+  "SHEET-PAGE-005.png": "a7bd819828ee64dfc5d421e2f6a5c93cbf6dd902bdcbc93ab1465aa7a05e4d79",
+  "SHEET-PAGE-006.png": "21036fa127571b875cdf3148160d4194b218fddded17d55b2eeecf8057dad82b",
+  "SHEET-PAGE-007.png": "a9598b913fc1b95e7835d65f58cff4565243c2f27e853f9a991d77f8de87cefb"
+ },
+ "crops": {
+  "PANEL-001-01": {
+   "source": "旧已采用图 PANEL-001-01.png（cover-fit）",
+   "hidden": 0.224,
+   "note": "排版行412 cover裁切，focus[0.5,0.45]"
+  },
+  "PANEL-001-02": {
+   "source": "SHEET-PAGE-001.png 行1",
+   "row": [
+    0,
+    761
+   ],
+   "crop_h": 484,
+   "top_bias": 140,
+   "hidden": 0.364
+  },
+  "PANEL-001-03": {
+   "source": "SHEET-PAGE-001.png 行2",
+   "row": [
+    769,
+    1536
+   ],
+   "crop_h": 484,
+   "top_bias": 120,
+   "hidden": 0.369
+  },
+  "PANEL-002-01": {
+   "source": "SHEET-PAGE-002.png 行1",
+   "hidden": 0.108
+  },
+  "PANEL-002-02": {
+   "source": "SHEET-PAGE-002.png 行2",
+   "hidden": 0.107
+  },
+  "PANEL-003-01": {
+   "source": "SHEET-PAGE-003.png 行1",
+   "hidden": 0.108
+  },
+  "PANEL-003-02": {
+   "source": "SHEET-PAGE-003.png 行2",
+   "hidden": 0.107
+  },
+  "PANEL-004-01": {
+   "source": "SHEET-PAGE-004.png 行1",
+   "hidden": 0.107
+  },
+  "PANEL-004-02": {
+   "source": "SHEET-PAGE-004.png 行2",
+   "hidden": 0.106
+  },
+  "PANEL-004-03": {
+   "source": "SHEET-PAGE-004.png 行3",
+   "hidden": 0.107
+  },
+  "PANEL-005-01": {
+   "source": "SHEET-PAGE-005.png 行1",
+   "hidden": 0.11
+  },
+  "PANEL-005-02": {
+   "source": "SHEET-PAGE-005.png 行2",
+   "hidden": 0.109
+  },
+  "PANEL-006-01": {
+   "source": "SHEET-PAGE-006.png 行1",
+   "hidden": 0.109
+  },
+  "PANEL-006-02": {
+   "source": "SHEET-PAGE-006.png 行2",
+   "hidden": 0.109
+  },
+  "PANEL-007-01": {
+   "source": "SHEET-PAGE-007.png 行1",
+   "hidden": 0.109
+  },
+  "PANEL-007-02": {
+   "source": "SHEET-PAGE-007.png 行2",
+   "hidden": 0.109
+  }
+ },
+ "disclosed_over_guard": [
+  "PANEL-001-02",
+  "PANEL-001-03"
+ ],
+ "note": "行高按各行原生宽高比推导（页几何随回图实测）；p1行2/3为三行页容量做偏置竖裁36%（护脸/手、弃花与下摆），已向创作者披露并可凭4:3重出sheet1清零；hidden≤25%为自检界非创作者硬规则"
+}
