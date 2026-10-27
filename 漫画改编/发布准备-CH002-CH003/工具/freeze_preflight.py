@@ -24,9 +24,10 @@ for o in rec["outputs"]:
     copy = ROOT / "漫画改编/开篇修订/三连读预览-开篇三话" / r["file"]
     check(sha(copy) == o["sha256"], f"三连读副本sha {r['file']}")
     check(r["frozen"] is False, f"三连读行未冻结 {r['file']}")
+# 2026-10-27 创作者撤销安全区裁决：A件仅作历史归档，降为提示项不阻断。
 for key, want in (("adjudication_imgs", 15), ("A_formal_CH002", 12), ("A_formal_CH003", 8)):
     files = plan["preflight"][key]
-    check(len(files) == want and all((ROOT / f).is_file() for f in files), f"{key} 齐套({want})")
+    print(f"INFO {key} 归档件 {sum((ROOT / f).is_file() for f in files)}/{want}（裁决已撤销，不阻断）")
 for f in plan["preflight"]["A_layouts"] + [plan["preflight"]["runbook"], plan["preflight"]["feedback_template"]]:
     check((ROOT / f).is_file(), f"存在 {Path(f).name}")
 print("PREFLIGHT", "OK" if ok else "INCOMPLETE")
