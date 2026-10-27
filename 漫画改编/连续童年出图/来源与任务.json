@@ -30,12 +30,12 @@
   {
    "id": "Q",
    "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-   "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+   "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
   },
   {
    "id": "M",
    "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
-   "sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff"
+   "sha256": "bdb061044853c944b43d119703d48f5c47d582479083ea426b3be00d22c7d5bd"
   },
   {
    "id": "H",
@@ -53,24 +53,24 @@
   {
    "id": "day_scene",
    "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-003-02.png",
-   "sha256": "0c874b4adcc8e61fb1d99fece7d4377a53199696f13de31f4b2c9cb933a0a441"
+   "sha256": "94adf344fbf19d5f4e68965ba8cdd31d9cc58a6ad0bfd6279200096f492c700f"
   },
   {
    "id": "pond_anchor",
    "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-01.png",
-   "sha256": "5095c932588143d70c72c9868b8fb4a27faee85a17680277a09374fe4ef8ffca",
+   "sha256": "457fd432f3527b5903ea6fda7bf8e69e9d6a65533b0d5714b40be640e5bbf8f1",
    "role": "selected scene continuity; not a replacement identity master"
   },
   {
    "id": "meet_anchor",
    "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
-   "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
+   "sha256": "f19632f45aecd3969f149b059dcc6249ad483677aee254f139442633635832dc",
    "role": "selected scene continuity; not a replacement identity master"
   },
   {
    "id": "hut_anchor",
    "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-   "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+   "sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581",
    "role": "selected scene continuity; not a replacement identity master"
   },
   {
@@ -82,25 +82,25 @@
   {
    "id": "coat_anchor",
    "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
-   "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700",
+   "sha256": "8ad6807cbd23dd5df53233b833d92ad7df609a0b8d520461ebff9837e7b6d3cd",
    "role": "仅pink成人大衣/披持和木屋状态，领口小蓝结以S主锚为准，不复制长腰带"
   },
   {
    "id": "night_exterior_anchor",
    "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-012-02-v2.png",
-   "sha256": "d4672a6440b8d0f63c22799a307201d683f4ae40cb49869be13032099a61d1ad",
+   "sha256": "84aa4eef29a37ac8c94adc556dfe287de6c5efb04c2e18d9514bf6f25dc7bace",
    "role": "已修正破屋外夜色/母女衣装/医生服装锚，不照抄多余角色或这一格抱姿"
   },
   {
    "id": "unfixed_mother_child_anchor",
    "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-001-01-母女指控近景.png",
-   "sha256": "7300c13f52ff3b8e66b468925b7a52a07018a99a39cd41d71d096a0aa01b7e02",
+   "sha256": "45e52641018514ebd9c6fc8ce8df766ae56578450c3e655cc9f7a7fc4ab6e584",
    "role": "同一母女/外衣/伤臂阶段限用途锚；固定前后严格分开，不继承额外人物或姿态"
   },
   {
    "id": "fixed_mother_child_anchor",
    "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-02.png",
-   "sha256": "a56beb435071409b93c2d4cb2584ab5763c19d4ca372bd9654bba574ad073174",
+   "sha256": "88afcba9a066e61895cffb9b3dc85dca40d4bfc2c722f84215343e0d40410d0c",
    "role": "同一母女/外衣/伤臂阶段限用途锚；固定前后严格分开，不继承额外人物或姿态"
   },
   {
@@ -136,13 +136,13 @@
   {
    "id": "card_shape_anchor",
    "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-007-01-递卡未接细节.png",
-   "sha256": "ad5c2d865112b565a68e32840a01fcd72a7e2916df2b7b28497610e7c7be77d3",
+   "sha256": "9fc0e455abc79d607866a07a08885248e1fee451ed67004478651ddba2c68af8",
    "role": "只锁深色无字卡/未接触状态，不锁错误原图演员"
   },
   {
    "id": "mother_child_only",
    "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-03.png",
-   "sha256": "9e0ce624e78d24578c397fa4f6b2bda1de7f85c784695c3a2b7331be665fc99e",
+   "sha256": "80c5695f58d319814a33747622317219260a0f7da63188686a77d480fed620b7",
    "role": "只母女身份/粉衣/白色支撑，不复制表情/抱姿，避免多余秦音"
   },
   {
@@ -172,10 +172,10 @@
    "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-01.png",
    "status": "ready_generated_selfchecked",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
-   "output_sha256": "5095c932588143d70c72c9868b8fb4a27faee85a17680277a09374fe4ef8ffca",
+   "output_sha256": "457fd432f3527b5903ea6fda7bf8e69e9d6a65533b0d5714b40be640e5bbf8f1",
    "size": [
-    1376,
-    768
+    848,
+    417
    ]
   },
   {
@@ -199,10 +199,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round2-generated/CH002/PANEL-004-02.png",
-   "output_sha256": "f582a909a297e223057fbbd6c11b4a3f1f3696831c385fef0875702c28ab0d3a",
+   "output_sha256": "93c42bb49aae7237de003197f333898a19effcabcffb091fd745ba12e42b5186",
    "size": [
-    1376,
-    768
+    848,
+    422
    ]
   },
   {
@@ -226,10 +226,10 @@
    "status": "ready_round9_regen",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round2-generated/CH002/PANEL-004-03.png",
-   "output_sha256": "10c1ea11e37fa15f6a6388b657b64a7bf044adb75e6bb0eec68ab3e27f8ae528",
+   "output_sha256": "4d63c12628939d3c6e915a596cdcb643c98764c87930d3edfae6747d90f95d17",
    "size": [
-    1376,
-    768
+    848,
+    417
    ],
    "superseded_round9": {
     "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-03.png",
@@ -257,10 +257,10 @@
    "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-005-01.png",
    "status": "ready_generated_selfchecked",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
-   "output_sha256": "ab5bd7a2524c6dfafde16e66d3ca1ddee52fc64b86ab1e5a02df5e4557bb8c8e",
+   "output_sha256": "3afef5dcdc72f9f28b427ea9b2f2bcdf551850ed24ce0143b825547f249d5de9",
    "size": [
-    1376,
-    768
+    848,
+    627
    ]
   },
   {
@@ -280,10 +280,10 @@
    "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-005-02.png",
    "status": "ready_generated_selfchecked",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
-   "output_sha256": "a096ae0c3e2d215b6f3e11bf82c1b62dcf09d5ce806cc6ef8b4e6b94d9481932",
+   "output_sha256": "8195f3b8465445b6050698816852c12bef685afa94755404cd45265beb84655b",
    "size": [
-    1376,
-    768
+    848,
+    627
    ]
   },
   {
@@ -305,10 +305,10 @@
    "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
    "status": "ready_generated_selfchecked",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
-   "output_sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
+   "output_sha256": "f19632f45aecd3969f149b059dcc6249ad483677aee254f139442633635832dc",
    "size": [
-    1376,
-    768
+    848,
+    629
    ]
   },
   {
@@ -331,10 +331,10 @@
    "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-02.png",
    "status": "ready_generated_selfchecked",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
-   "output_sha256": "10d76fa2611e7621d766dcf8c5a3bd6613ae66f57c3fc4c71303fad55a8b853a",
+   "output_sha256": "01e9f7ba88655c08a5a0fdb02cfd4fd3945deec3fd2e00189911737ceff8d6f7",
    "size": [
-    1376,
-    768
+    848,
+    629
    ]
   },
   {
@@ -357,10 +357,10 @@
    "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-007-01-v2.png",
    "status": "ready_round9_regen",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
-   "output_sha256": "a8395f4013fcaafaa40f51b17540f7b58e42b943e66537c1f382ff20d030cb49",
+   "output_sha256": "e3477180f0608d50d2476ecf2d01094b9171c7257eb5d38034a09c292c38545e",
    "size": [
-    1376,
-    768
+    848,
+    545
    ],
    "crop_source_call_id": "ART-FIRST-20261025-009",
    "crop_xyxy": [
@@ -398,10 +398,10 @@
    "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-007-02-回应近景-v2.png",
    "status": "ready_round9_local_crop",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
-   "output_sha256": "211ee11c61a8b87d379ac06a10bd6bb6532544d16b44b75adda065d304e6d5c8",
+   "output_sha256": "224d5f58728335fd08a74380b3d7165f810afac3740f471ebe8fdcacb61a3f75",
    "size": [
-    700,
-    620
+    848,
+    713
    ],
    "crop_source_call_id": "ART-FIRST-20261025-010",
    "crop_xyxy": [
@@ -438,10 +438,10 @@
    "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
    "status": "ready_generated_selfchecked",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
-   "output_sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+   "output_sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581",
    "size": [
-    1376,
-    768
+    848,
+    418
    ]
   },
   {
@@ -465,10 +465,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round2-generated/CH002/PANEL-008-02.png",
-   "output_sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700",
+   "output_sha256": "8ad6807cbd23dd5df53233b833d92ad7df609a0b8d520461ebff9837e7b6d3cd",
    "size": [
-    1376,
-    768
+    848,
+    416
    ]
   },
   {
@@ -493,10 +493,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round2-generated/CH002/PANEL-008-03.png",
-   "output_sha256": "77d78996bc31297511be0e82995b0942bdb3beb38e14fc81b4352f15a62f421c",
+   "output_sha256": "a04b7c82c79a0f91bae19a8734343834dfa69fed2cf79288afc816d88047c943",
    "size": [
-    1376,
-    768
+    848,
+    419
    ]
   },
   {
@@ -521,10 +521,10 @@
    "status": "ready_round9_regen",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round2-generated/CH002/PANEL-009-01.png",
-   "output_sha256": "d1f1218754f3bef3323a35cc37e2d841022a4b0d071637b8465fa3dfbc5b9a60",
+   "output_sha256": "68c6d9118886408e5f8563c4e902369114f8ee9ed308171c68fd5b62435b66e1",
    "size": [
-    1376,
-    768
+    848,
+    492
    ],
    "crop_xyxy": [
     565,
@@ -570,10 +570,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round2-generated/CH002/PANEL-009-02.png",
-   "output_sha256": "206f949b22ee26986742727058fffb89deb58dce33f7c807067aa70a9ea3b8c4",
+   "output_sha256": "ee2ee0d6548f44291902f56680a389295df0fcfa7ab2eced2aa004823a89fe0a",
    "size": [
-    1376,
-    768
+    848,
+    752
    ]
   },
   {
@@ -598,10 +598,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round2-generated/CH002/PANEL-010-01.png",
-   "output_sha256": "11e00761412b8e1d66bdfbdef446111b2308d529fa1a8a2baa4c2a46ed6032c8",
+   "output_sha256": "7d84491b29544b38094c6f205c08acdf02deb7f6ea6be3798c9035a71cef1104",
    "size": [
-    1376,
-    768
+    848,
+    673
    ]
   },
   {
@@ -626,10 +626,10 @@
    "status": "ready_round9_regen",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round2-generated/CH002/PANEL-010-02.png",
-   "output_sha256": "956def4ef30ac89e1bc6cd2737816b191a126c6813a84be641bee4e97bec6712",
+   "output_sha256": "305314aa1e8e8f1dc69d96e58673c17381c52c710569c20104b4dd968f5132b9",
    "size": [
-    1376,
-    768
+    848,
+    586
    ],
    "crop_xyxy": [
     750,
@@ -680,10 +680,10 @@
     305
    ],
    "size": [
-    680,
-    602
+    848,
+    627
    ],
-   "output_sha256": "604764941d02af64cd82407aa07b8ce1ecd2f83c2aa68cdace7330718c000b32",
+   "output_sha256": "8bcc95b92b61715d7ccc6c69e7ebe61f22f4a24f29e34b81bc011466ea3e0a39",
    "decoded_pixel_sha256": "f8aac95b46cbbb1aab500e9303f6cc9da271227e1214a8d380bfebe0bf5e804a",
    "same_source_pixels": true,
    "alternative_to_undelivered_request": true,
@@ -720,10 +720,10 @@
    "status": "ready_round9_regen",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round3-generated/CH002/PANEL-011-02.png",
-   "output_sha256": "954aa855deaaeadfe59d017498c94cb91d3bcc7a748d74a070e8bd8ff913a71b",
+   "output_sha256": "b3ddc577d1f9c9967222bc370a6596ed43af8baefc896dd7e4d8e0d4bcdb3d3c",
    "size": [
-    676,
-    599
+    848,
+    629
    ],
    "crop_source_call_id": "ART-FIRST-20261025-020",
    "crop_xyxy": [
@@ -766,10 +766,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round3-generated/CH002/PANEL-012-01.png",
-   "output_sha256": "139811d577c43121357d9f364d4b9adee3b4abf0e2a188e3f8f973f8679f680e",
+   "output_sha256": "bc5ea3bc73cd73bbd26dd2c5af12a6d1f41696210572a44326db72dcacf46b95",
    "size": [
-    1376,
-    768
+    848,
+    627
    ]
   },
   {
@@ -794,10 +794,10 @@
    "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-012-02-v2.png",
    "status": "ready_generated_selfchecked",
    "source_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
-   "output_sha256": "d4672a6440b8d0f63c22799a307201d683f4ae40cb49869be13032099a61d1ad",
+   "output_sha256": "84aa4eef29a37ac8c94adc556dfe287de6c5efb04c2e18d9514bf6f25dc7bace",
    "size": [
-    1376,
-    768
+    848,
+    627
    ],
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round2-generated/CH002/PANEL-012-02-v2.png",
    "runtime_reference_files": [],
@@ -827,10 +827,10 @@
    "status": "ready_local_crop",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round3-generated/CH003/PANEL-001-01.png",
-   "output_sha256": "7300c13f52ff3b8e66b468925b7a52a07018a99a39cd41d71d096a0aa01b7e02",
+   "output_sha256": "45e52641018514ebd9c6fc8ce8df766ae56578450c3e655cc9f7a7fc4ab6e584",
    "size": [
-    345,
-    590
+    848,
+    418
    ],
    "crop_source_call_id": "ART-FIRST-20261025-022",
    "crop_xyxy": [
@@ -863,10 +863,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round3-generated/CH003/PANEL-001-02.png",
-   "output_sha256": "46ec11d64700157c5a2798d8056bd1b46de4d4ec89e31e3395426f35df12cdc8",
+   "output_sha256": "82832994848086428a3c1747c12178d1bfe76f30567c84a525c324741e86e936",
    "size": [
-    1376,
-    768
+    848,
+    421
    ]
   },
   {
@@ -891,10 +891,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round3-generated/CH003/PANEL-001-03.png",
-   "output_sha256": "3f358f8d82b00f07a7bb312d0b97383db783f6929781ae9e70b489c489896123",
+   "output_sha256": "cae0cc40117c982fc5d88a13b29eb2e3f479914ab97d17902aa83f3b4f8d6412",
    "size": [
-    1376,
-    768
+    848,
+    418
    ]
   },
   {
@@ -919,10 +919,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round3-generated/CH003/PANEL-002-01.png",
-   "output_sha256": "6c400390730aad995065bf98da61157f9b725650177d4a865de42ca5bc754aa6",
+   "output_sha256": "c92c80b8d150a93cbc9d5046659b63fcdbe3c880c55b8e72aecfe6797b1eef12",
    "size": [
-    1376,
-    768
+    848,
+    420
    ]
   },
   {
@@ -948,10 +948,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round3-generated/CH003/PANEL-002-02.png",
-   "output_sha256": "a56beb435071409b93c2d4cb2584ab5763c19d4ca372bd9654bba574ad073174",
+   "output_sha256": "88afcba9a066e61895cffb9b3dc85dca40d4bfc2c722f84215343e0d40410d0c",
    "size": [
-    1376,
-    768
+    848,
+    416
    ]
   },
   {
@@ -975,10 +975,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round3-generated/CH003/PANEL-002-03.png",
-   "output_sha256": "9e0ce624e78d24578c397fa4f6b2bda1de7f85c784695c3a2b7331be665fc99e",
+   "output_sha256": "80c5695f58d319814a33747622317219260a0f7da63188686a77d480fed620b7",
    "size": [
-    1376,
-    768
+    848,
+    421
    ]
   },
   {
@@ -1003,10 +1003,10 @@
    "status": "ready_local_crop",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round3-generated/CH003/PANEL-003-01.png",
-   "output_sha256": "7542edc021dda1ad6fbe4e66874f1d513d718c8e790a6f8026139811fe76d08c",
+   "output_sha256": "c421a4827fd9e2b14ff98eb9d2290425640f10bb17cfaebcb1460c01d37dd55c",
    "size": [
-    375,
-    160
+    848,
+    417
    ],
    "crop_source_call_id": "ART-FIRST-20261025-028",
    "crop_xyxy": [
@@ -1039,10 +1039,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round3-generated/CH003/PANEL-003-02.png",
-   "output_sha256": "a1283f9bb1841b593294ceb2765789ab7040495817bcf3481ab729f3ca2bc576",
+   "output_sha256": "d4310c45691ec82beadd70063fcac6bf6d6c84cf90f892fb64d6337e0ce1de93",
    "size": [
-    1376,
-    768
+    848,
+    422
    ]
   },
   {
@@ -1068,7 +1068,7 @@
    "status": "ready_local_crop",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "crop_source_job": "CH003/PANEL-002-03",
-   "crop_source_sha256": "9e0ce624e78d24578c397fa4f6b2bda1de7f85c784695c3a2b7331be665fc99e",
+   "crop_source_sha256": "80c5695f58d319814a33747622317219260a0f7da63188686a77d480fed620b7",
    "crop_xyxy": [
     530,
     170,
@@ -1076,10 +1076,10 @@
     465
    ],
    "size": [
-    300,
-    295
+    848,
+    417
    ],
-   "output_sha256": "2bb00308f2332e44d37377bde91485b6e23ff8701c21d80e8b06aa4effd36d97",
+   "output_sha256": "d99a98d6e5a663cb307270d6449135492767b8e1689db5e8f628bbd4cb4938ac",
    "same_source_pixels": true
   },
   {
@@ -1099,10 +1099,10 @@
    "output": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-004-01.png",
    "status": "ready_generated_selfchecked",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
-   "output_sha256": "7e76fe807b3387d919a85fc78b32f3b4a97f55e1dacd457e46103a1c7360be01",
+   "output_sha256": "02fa73eafdf7d838491b0b78257fdc4efddf3f4c552841d26c23f08cde2e35eb",
    "size": [
-    1376,
-    768
+    848,
+    455
    ]
   },
   {
@@ -1123,7 +1123,7 @@
    "status": "ready_local_crop",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "crop_source_job": "CH003/PANEL-004-01",
-   "crop_source_sha256": "7e76fe807b3387d919a85fc78b32f3b4a97f55e1dacd457e46103a1c7360be01",
+   "crop_source_sha256": "02fa73eafdf7d838491b0b78257fdc4efddf3f4c552841d26c23f08cde2e35eb",
    "crop_xyxy": [
     750,
     55,
@@ -1131,10 +1131,10 @@
     450
    ],
    "size": [
-    350,
-    395
+    848,
+    376
    ],
-   "output_sha256": "edc3371b19c89bd405f5ff6874cedd59a6e0ae1d1baff891c8e0fef7a419f91b",
+   "output_sha256": "9bafb01f57c09b232d4a87052505695ffeeb4b50cb7d8ea20b55ceb757c521ae",
    "same_source_pixels": true
   },
   {
@@ -1160,10 +1160,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round4-generated/CH003/PANEL-004-03.png",
-   "output_sha256": "7c09ce943314e50f07de6ec74e8a9068c63f5029aa616b6bd8fc5b5bed0718ea",
+   "output_sha256": "021cbb520f921a008a1ab691b0d2a143f55a747004bfe371aec1eba70fdd2e39",
    "size": [
-    1376,
-    768
+    848,
+    424
    ]
   },
   {
@@ -1190,10 +1190,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round4-generated/CH003/PANEL-005-01.png",
-   "output_sha256": "a89a87fc76cf8011d78b5af6cea4779589455ef2fd96d8e73e1def880157ded8",
+   "output_sha256": "86bdfd0cf9ca8228dfb6d9a4f6f2da8787e35c9cf3c8b8ad96fcc89a3336b4fa",
    "size": [
-    1376,
-    768
+    848,
+    468
    ]
   },
   {
@@ -1220,10 +1220,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round4-generated/CH003/PANEL-005-02.png",
-   "output_sha256": "2781b8c0c94c21f68608245e24358d70486e9e7730e318bd99b3d25c74468fb9",
+   "output_sha256": "9b186c33d04b52915b7084716b452f9b8235858b636d78e01aa6c0f1e0f1ec83",
    "size": [
-    1376,
-    768
+    848,
+    383
    ]
   },
   {
@@ -1250,10 +1250,10 @@
    "status": "ready_local_crop",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round4-generated/CH003/PANEL-005-03.png",
-   "output_sha256": "77fd0ac04f0bf30805f61ecb94a9d6d7e93728cf9dcfbe3c714c4d7233483ae1",
+   "output_sha256": "8a1beb64a41e841ac9e801a193e844805a112c586eed20f41f470ebc4e3e88f5",
    "size": [
-    560,
-    665
+    848,
+    403
    ],
    "crop_source_call_id": "ART-FIRST-20261025-035",
    "crop_xyxy": [
@@ -1286,10 +1286,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round4-generated/CH003/PANEL-006-01.png",
-   "output_sha256": "4646164a61fc543d3f662d4c8e36e9987899994d9dd583be3c6ec0183ab67af3",
+   "output_sha256": "8cdb220128614a6390e51850b51fd6d15a56dfb528facabb1b9c4a296c05c867",
    "size": [
-    1376,
-    768
+    848,
+    627
    ]
   },
   {
@@ -1316,10 +1316,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round4-generated/CH003/PANEL-006-02.png",
-   "output_sha256": "7b8302f9cfc3483e0c68f27149df12968cc50e75d3292792653931250d9f1259",
+   "output_sha256": "4c77364d5a514b405c281d00891161232788ff0d652533f2a2305da69110593f",
    "size": [
-    1376,
-    768
+    848,
+    627
    ]
   },
   {
@@ -1345,10 +1345,10 @@
    "status": "ready_local_crop",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round4-generated/CH003/PANEL-007-01.png",
-   "output_sha256": "ad5c2d865112b565a68e32840a01fcd72a7e2916df2b7b28497610e7c7be77d3",
+   "output_sha256": "9fc0e455abc79d607866a07a08885248e1fee451ed67004478651ddba2c68af8",
    "size": [
-    205,
-    115
+    848,
+    326
    ],
    "crop_source_call_id": "ART-FIRST-20261025-032",
    "crop_xyxy": [
@@ -1382,10 +1382,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round4-generated/CH003/PANEL-007-02.png",
-   "output_sha256": "f2b2721edfef6547db35101954bd440da3724eeb3cc91ed25907437f6cfe11fd",
+   "output_sha256": "a16913efd6095df3f0c8662b8384fa4c60b8b0e455a89d9ab577cfe7583778ba",
    "size": [
-    1376,
-    768
+    848,
+    930
    ]
   },
   {
@@ -1411,10 +1411,10 @@
    "status": "ready_local_crop",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round4-generated/CH003/PANEL-008-01.png",
-   "output_sha256": "4c54dfa5c7366c3952cd0e909a39617d66fc0f139b11fc079cbc93fd77342676",
+   "output_sha256": "0b3a5edeb1225d9a96cef0725edc02b33b782bf45ef15c2092ce962ceac182b5",
    "size": [
-    666,
-    740
+    848,
+    629
    ],
    "crop_source_call_id": "ART-FIRST-20261025-038",
    "crop_xyxy": [
@@ -1448,10 +1448,10 @@
    "status": "ready_generated_selfchecked",
    "source_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
    "raw_input_file": "/home/user/.cache/drama-tools/art-first-round4-generated/CH003/PANEL-008-02.png",
-   "output_sha256": "a3683321e15dddbcf75c439daeacfdfd26af8f6aebe8485ce65019decadd36bd",
+   "output_sha256": "dc32b70e513e3fc9c90ad9256881ec426ab126aff21b1a64a9b3e7c863ae81e9",
    "size": [
-    1376,
-    768
+    848,
+    629
    ]
   },
   {
@@ -1466,18 +1466,18 @@
    "kind": "not_drawn_recall_text_carrier_crop",
    "status": "ready_local_crop",
    "output": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-02-回忆文字承载近景.png",
-   "output_sha256": "23137f03a2cb8da3896764a7e27c348a7fcab97a3696b18d6bf28a046871194c",
+   "output_sha256": "12070f8a379c41e9d56d0e29bc577fa9bc0ecd26611037227505fca9777a6a41",
    "size": [
     700,
-    466
+    455
    ],
    "crop_of_file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
-   "crop_of_sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff",
+   "crop_of_sha256": "bdb061044853c944b43d119703d48f5c47d582479083ea426b3be00d22c7d5bd",
    "crop_xyxy": [
     340,
-    8,
+    7,
     1040,
-    474
+    462
    ],
    "same_source_pixels": true,
    "creator_decision": "创作者2026-10-27聊天回复\"不画\"：前世回忆不出任何画面（含间接镜别）；本格以已采用001-01交付稿的本地近景裁切承载冻结正文，仅文字标记回忆",
@@ -1504,7 +1504,7 @@
     {
      "id": "day_scene",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-003-02.png",
-     "sha256": "0c874b4adcc8e61fb1d99fece7d4377a53199696f13de31f4b2c9cb933a0a441"
+     "sha256": "94adf344fbf19d5f4e68965ba8cdd31d9cc58a6ad0bfd6279200096f492c700f"
     }
    ],
    "offer_options": false,
@@ -1515,7 +1515,7 @@
    "raw_bytes": 2734801,
    "raw_bit_depth": 8,
    "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-01.png",
-   "sha256": "5095c932588143d70c72c9868b8fb4a27faee85a17680277a09374fe4ef8ffca",
+   "sha256": "457fd432f3527b5903ea6fda7bf8e69e9d6a65533b0d5714b40be640e5bbf8f1",
    "bytes": 1699344,
    "size": [
     1376,
@@ -1549,7 +1549,7 @@
    "raw_bytes": 2744325,
    "raw_bit_depth": 8,
    "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-005-02.png",
-   "sha256": "a096ae0c3e2d215b6f3e11bf82c1b62dcf09d5ce806cc6ef8b4e6b94d9481932",
+   "sha256": "8195f3b8465445b6050698816852c12bef685afa94755404cd45265beb84655b",
    "bytes": 1706317,
    "size": [
     1376,
@@ -1588,7 +1588,7 @@
    "raw_bytes": 2491261,
    "raw_bit_depth": 8,
    "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
-   "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
+   "sha256": "f19632f45aecd3969f149b059dcc6249ad483677aee254f139442633635832dc",
    "bytes": 1505817,
    "size": [
     1376,
@@ -1627,7 +1627,7 @@
    "raw_bytes": 2353663,
    "raw_bit_depth": 8,
    "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-   "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+   "sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581",
    "bytes": 1456067,
    "size": [
     1376,
@@ -1655,12 +1655,12 @@
     {
      "id": "M",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
-     "sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff"
+     "sha256": "bdb061044853c944b43d119703d48f5c47d582479083ea426b3be00d22c7d5bd"
     },
     {
      "id": "Q",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+     "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
     }
    ],
    "offer_options": false,
@@ -1696,7 +1696,7 @@
     {
      "id": "Q",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+     "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
     }
    ],
    "offer_options": false,
@@ -1707,7 +1707,7 @@
    "raw_bytes": 2176999,
    "raw_bit_depth": 8,
    "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-004-01.png",
-   "sha256": "7e76fe807b3387d919a85fc78b32f3b4a97f55e1dacd457e46103a1c7360be01",
+   "sha256": "02fa73eafdf7d838491b0b78257fdc4efddf3f4c552841d26c23f08cde2e35eb",
    "bytes": 1269679,
    "size": [
     1376,
@@ -1742,7 +1742,7 @@
    "raw_bytes": 2809910,
    "raw_bit_depth": 8,
    "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-005-01.png",
-   "sha256": "ab5bd7a2524c6dfafde16e66d3ca1ddee52fc64b86ab1e5a02df5e4557bb8c8e",
+   "sha256": "3afef5dcdc72f9f28b427ea9b2f2bcdf551850ed24ce0143b825547f249d5de9",
    "bytes": 1743018,
    "size": [
     1376,
@@ -1775,7 +1775,7 @@
     {
      "id": "meet_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
-     "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
+     "sha256": "f19632f45aecd3969f149b059dcc6249ad483677aee254f139442633635832dc",
      "role": "selected scene continuity; not a replacement identity master"
     }
    ],
@@ -1788,7 +1788,7 @@
    "raw_bytes": 2496025,
    "raw_bit_depth": 8,
    "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-02.png",
-   "sha256": "10d76fa2611e7621d766dcf8c5a3bd6613ae66f57c3fc4c71303fad55a8b853a",
+   "sha256": "01e9f7ba88655c08a5a0fdb02cfd4fd3945deec3fd2e00189911737ceff8d6f7",
    "bytes": 1508039,
    "size": [
     1376,
@@ -1821,7 +1821,7 @@
     {
      "id": "meet_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
-     "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
+     "sha256": "f19632f45aecd3969f149b059dcc6249ad483677aee254f139442633635832dc",
      "role": "selected scene continuity; not a replacement identity master"
     }
    ],
@@ -1885,7 +1885,7 @@
     {
      "id": "meet_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
-     "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6",
+     "sha256": "f19632f45aecd3969f149b059dcc6249ad483677aee254f139442633635832dc",
      "role": "selected scene continuity; not a replacement identity master"
     }
    ],
@@ -1945,12 +1945,12 @@
     {
      "id": "M",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
-     "sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff"
+     "sha256": "bdb061044853c944b43d119703d48f5c47d582479083ea426b3be00d22c7d5bd"
     },
     {
      "id": "Q",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+     "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
     }
    ],
    "offer_options": false,
@@ -1961,7 +1961,7 @@
    "raw_sha256": "9a709a4e95750a0f7c04d201385e276c9c17d42eff39a4679e3f4c5a7aa5ddeb",
    "raw_bytes": 2457278,
    "raw_bit_depth": 8,
-   "sha256": "d4672a6440b8d0f63c22799a307201d683f4ae40cb49869be13032099a61d1ad",
+   "sha256": "84aa4eef29a37ac8c94adc556dfe287de6c5efb04c2e18d9514bf6f25dc7bace",
    "bytes": 1454004,
    "size": [
     1376,
@@ -1990,12 +1990,12 @@
     {
      "id": "day_scene",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-003-02.png",
-     "sha256": "0c874b4adcc8e61fb1d99fece7d4377a53199696f13de31f4b2c9cb933a0a441"
+     "sha256": "94adf344fbf19d5f4e68965ba8cdd31d9cc58a6ad0bfd6279200096f492c700f"
     },
     {
      "id": "pond_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-01.png",
-     "sha256": "5095c932588143d70c72c9868b8fb4a27faee85a17680277a09374fe4ef8ffca",
+     "sha256": "457fd432f3527b5903ea6fda7bf8e69e9d6a65533b0d5714b40be640e5bbf8f1",
      "role": "selected scene continuity; not a replacement identity master"
     }
    ],
@@ -2007,7 +2007,7 @@
    "raw_sha256": "4de9ed7be9bc2ae56642b5dcba33f550cb0de534e669711534de212fb9dae3a3",
    "raw_bytes": 2695983,
    "raw_bit_depth": 8,
-   "sha256": "f582a909a297e223057fbbd6c11b4a3f1f3696831c385fef0875702c28ab0d3a",
+   "sha256": "93c42bb49aae7237de003197f333898a19effcabcffb091fd745ba12e42b5186",
    "bytes": 1683565,
    "size": [
     1376,
@@ -2036,12 +2036,12 @@
     {
      "id": "day_scene",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-003-02.png",
-     "sha256": "0c874b4adcc8e61fb1d99fece7d4377a53199696f13de31f4b2c9cb933a0a441"
+     "sha256": "94adf344fbf19d5f4e68965ba8cdd31d9cc58a6ad0bfd6279200096f492c700f"
     },
     {
      "id": "pond_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-01.png",
-     "sha256": "5095c932588143d70c72c9868b8fb4a27faee85a17680277a09374fe4ef8ffca",
+     "sha256": "457fd432f3527b5903ea6fda7bf8e69e9d6a65533b0d5714b40be640e5bbf8f1",
      "role": "selected scene continuity; not a replacement identity master"
     }
    ],
@@ -2095,7 +2095,7 @@
     {
      "id": "hut_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-     "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+     "sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581",
      "role": "selected scene continuity; not a replacement identity master"
     }
    ],
@@ -2107,7 +2107,7 @@
    "raw_sha256": "4b6fa0ac76f0030d824afe58cd5970af53babe2a0f5e0ef66bc362e452b8f246",
    "raw_bytes": 2510221,
    "raw_bit_depth": 8,
-   "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700",
+   "sha256": "8ad6807cbd23dd5df53233b833d92ad7df609a0b8d520461ebff9837e7b6d3cd",
    "bytes": 1535280,
    "size": [
     1376,
@@ -2150,13 +2150,13 @@
     {
      "id": "hut_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-     "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+     "sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581",
      "role": "selected scene continuity; not a replacement identity master"
     },
     {
      "id": "coat_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
-     "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700",
+     "sha256": "8ad6807cbd23dd5df53233b833d92ad7df609a0b8d520461ebff9837e7b6d3cd",
      "role": "仅pink成人大衣/披持和木屋状态，领口小蓝结以S主锚为准，不复制长腰带"
     }
    ],
@@ -2168,7 +2168,7 @@
    "raw_sha256": "f554b593e580abd4117e560c1227ff82de0be54a0f34ce27a583688cf6c70598",
    "raw_bytes": 2486120,
    "raw_bit_depth": 8,
-   "sha256": "77d78996bc31297511be0e82995b0942bdb3beb38e14fc81b4352f15a62f421c",
+   "sha256": "a04b7c82c79a0f91bae19a8734343834dfa69fed2cf79288afc816d88047c943",
    "bytes": 1519810,
    "size": [
     1376,
@@ -2210,13 +2210,13 @@
     {
      "id": "hut_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-     "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+     "sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581",
      "role": "selected scene continuity; not a replacement identity master"
     },
     {
      "id": "coat_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
-     "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700",
+     "sha256": "8ad6807cbd23dd5df53233b833d92ad7df609a0b8d520461ebff9837e7b6d3cd",
      "role": "仅pink成人大衣/披持和木屋状态，领口小蓝结以S主锚为准，不复制长腰带"
     }
    ],
@@ -2291,13 +2291,13 @@
     {
      "id": "hut_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-     "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+     "sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581",
      "role": "selected scene continuity; not a replacement identity master"
     },
     {
      "id": "coat_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
-     "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700",
+     "sha256": "8ad6807cbd23dd5df53233b833d92ad7df609a0b8d520461ebff9837e7b6d3cd",
      "role": "仅pink成人大衣/披持和木屋状态，领口小蓝结以S主锚为准，不复制长腰带"
     }
    ],
@@ -2309,7 +2309,7 @@
    "raw_sha256": "69065b6545034d2f6a1bb41d9db45d1bc9995007296c424bb9c033f0d3f23948",
    "raw_bytes": 2355354,
    "raw_bit_depth": 8,
-   "sha256": "206f949b22ee26986742727058fffb89deb58dce33f7c807067aa70a9ea3b8c4",
+   "sha256": "ee2ee0d6548f44291902f56680a389295df0fcfa7ab2eced2aa004823a89fe0a",
    "bytes": 1486365,
    "size": [
     1376,
@@ -2351,13 +2351,13 @@
     {
      "id": "hut_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-     "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+     "sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581",
      "role": "selected scene continuity; not a replacement identity master"
     },
     {
      "id": "coat_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
-     "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700",
+     "sha256": "8ad6807cbd23dd5df53233b833d92ad7df609a0b8d520461ebff9837e7b6d3cd",
      "role": "仅pink成人大衣/披持和木屋状态，领口小蓝结以S主锚为准，不复制长腰带"
     }
    ],
@@ -2369,7 +2369,7 @@
    "raw_sha256": "1896641cbbd7e723a79dc9741a73ab07f7ad4321cf82546f869c6d5ae3548682",
    "raw_bytes": 2516627,
    "raw_bit_depth": 8,
-   "sha256": "11e00761412b8e1d66bdfbdef446111b2308d529fa1a8a2baa4c2a46ed6032c8",
+   "sha256": "7d84491b29544b38094c6f205c08acdf02deb7f6ea6be3798c9035a71cef1104",
    "bytes": 1511521,
    "size": [
     1376,
@@ -2412,13 +2412,13 @@
     {
      "id": "hut_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-     "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+     "sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581",
      "role": "selected scene continuity; not a replacement identity master"
     },
     {
      "id": "coat_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
-     "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700",
+     "sha256": "8ad6807cbd23dd5df53233b833d92ad7df609a0b8d520461ebff9837e7b6d3cd",
      "role": "仅pink成人大衣/披持和木屋状态，领口小蓝结以S主锚为准，不复制长腰带"
     }
    ],
@@ -2491,13 +2491,13 @@
     {
      "id": "hut_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-     "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+     "sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581",
      "role": "selected scene continuity; not a replacement identity master"
     },
     {
      "id": "coat_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
-     "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700",
+     "sha256": "8ad6807cbd23dd5df53233b833d92ad7df609a0b8d520461ebff9837e7b6d3cd",
      "role": "仅pink成人大衣/披持和木屋状态，领口小蓝结以S主锚为准，不复制长腰带"
     }
    ],
@@ -2569,19 +2569,19 @@
     {
      "id": "night_exterior_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-012-02-v2.png",
-     "sha256": "d4672a6440b8d0f63c22799a307201d683f4ae40cb49869be13032099a61d1ad",
+     "sha256": "84aa4eef29a37ac8c94adc556dfe287de6c5efb04c2e18d9514bf6f25dc7bace",
      "role": "已修正破屋外夜色/母女衣装/医生服装锚，不照抄多余角色或这一格抱姿"
     },
     {
      "id": "hut_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-     "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87",
+     "sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581",
      "role": "selected scene continuity; not a replacement identity master"
     },
     {
      "id": "coat_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
-     "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700",
+     "sha256": "8ad6807cbd23dd5df53233b833d92ad7df609a0b8d520461ebff9837e7b6d3cd",
      "role": "仅pink成人大衣/披持和木屋状态，领口小蓝结以S主锚为准，不复制长腰带"
     }
    ],
@@ -2593,7 +2593,7 @@
    "raw_sha256": "eff3a9c2bad2d64d6401223298162dc3c3824500c40d2c770dfebe68626fd7fb",
    "raw_bytes": 2384037,
    "raw_bit_depth": 8,
-   "sha256": "139811d577c43121357d9f364d4b9adee3b4abf0e2a188e3f8f973f8679f680e",
+   "sha256": "bc5ea3bc73cd73bbd26dd2c5af12a6d1f41696210572a44326db72dcacf46b95",
    "bytes": 1496069,
    "size": [
     1376,
@@ -2622,17 +2622,17 @@
     {
      "id": "M",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
-     "sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff"
+     "sha256": "bdb061044853c944b43d119703d48f5c47d582479083ea426b3be00d22c7d5bd"
     },
     {
      "id": "Q",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+     "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
     },
     {
      "id": "night_exterior_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-012-02-v2.png",
-     "sha256": "d4672a6440b8d0f63c22799a307201d683f4ae40cb49869be13032099a61d1ad",
+     "sha256": "84aa4eef29a37ac8c94adc556dfe287de6c5efb04c2e18d9514bf6f25dc7bace",
      "role": "已修正破屋外夜色/母女衣装/医生服装锚，不照抄多余角色或这一格抱姿"
     }
    ],
@@ -2668,7 +2668,7 @@
      345,
      590
     ],
-    "sha256": "7300c13f52ff3b8e66b468925b7a52a07018a99a39cd41d71d096a0aa01b7e02",
+    "sha256": "45e52641018514ebd9c6fc8ce8df766ae56578450c3e655cc9f7a7fc4ab6e584",
     "decoded_pixel_sha256": "d6f0c15d69952532dab28d49d9fff9379be763a78738a37b1e05d2e345f53d22",
     "same_source_pixels": true
    },
@@ -2691,17 +2691,17 @@
     {
      "id": "M",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
-     "sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff"
+     "sha256": "bdb061044853c944b43d119703d48f5c47d582479083ea426b3be00d22c7d5bd"
     },
     {
      "id": "Q",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+     "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
     },
     {
      "id": "night_exterior_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-012-02-v2.png",
-     "sha256": "d4672a6440b8d0f63c22799a307201d683f4ae40cb49869be13032099a61d1ad",
+     "sha256": "84aa4eef29a37ac8c94adc556dfe287de6c5efb04c2e18d9514bf6f25dc7bace",
      "role": "已修正破屋外夜色/母女衣装/医生服装锚，不照抄多余角色或这一格抱姿"
     }
    ],
@@ -2713,7 +2713,7 @@
    "raw_sha256": "024141e7acd141cb24d894ca1d0cf5b39ee44849517af162589173ae0271b3ee",
    "raw_bytes": 2560110,
    "raw_bit_depth": 8,
-   "sha256": "a56beb435071409b93c2d4cb2584ab5763c19d4ca372bd9654bba574ad073174",
+   "sha256": "88afcba9a066e61895cffb9b3dc85dca40d4bfc2c722f84215343e0d40410d0c",
    "bytes": 1517986,
    "size": [
     1376,
@@ -2742,12 +2742,12 @@
     {
      "id": "Q",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+     "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
     },
     {
      "id": "unfixed_mother_child_anchor",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-001-01-母女指控近景.png",
-     "sha256": "7300c13f52ff3b8e66b468925b7a52a07018a99a39cd41d71d096a0aa01b7e02",
+     "sha256": "45e52641018514ebd9c6fc8ce8df766ae56578450c3e655cc9f7a7fc4ab6e584",
      "role": "同一母女/外衣/伤臂阶段限用途锚；固定前后严格分开，不继承额外人物或姿态"
     }
    ],
@@ -2759,7 +2759,7 @@
    "raw_sha256": "43a9e07d340fbc3ae333aa3885b128b03ed3da1662997900711caffc709e2fd5",
    "raw_bytes": 2512975,
    "raw_bit_depth": 8,
-   "sha256": "46ec11d64700157c5a2798d8056bd1b46de4d4ec89e31e3395426f35df12cdc8",
+   "sha256": "82832994848086428a3c1747c12178d1bfe76f30567c84a525c324741e86e936",
    "bytes": 1484403,
    "size": [
     1376,
@@ -2788,12 +2788,12 @@
     {
      "id": "Q",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+     "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
     },
     {
      "id": "unfixed_mother_child_anchor",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-001-01-母女指控近景.png",
-     "sha256": "7300c13f52ff3b8e66b468925b7a52a07018a99a39cd41d71d096a0aa01b7e02",
+     "sha256": "45e52641018514ebd9c6fc8ce8df766ae56578450c3e655cc9f7a7fc4ab6e584",
      "role": "同一母女/外衣/伤臂阶段限用途锚；固定前后严格分开，不继承额外人物或姿态"
     }
    ],
@@ -2805,7 +2805,7 @@
    "raw_sha256": "54582784fa82fdef0a09815ad704f69daa24bcf0939647d939e47dbe8b1f86f9",
    "raw_bytes": 2491984,
    "raw_bit_depth": 8,
-   "sha256": "3f358f8d82b00f07a7bb312d0b97383db783f6929781ae9e70b489c489896123",
+   "sha256": "cae0cc40117c982fc5d88a13b29eb2e3f479914ab97d17902aa83f3b4f8d6412",
    "bytes": 1468565,
    "size": [
     1376,
@@ -2834,12 +2834,12 @@
     {
      "id": "Q",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+     "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
     },
     {
      "id": "unfixed_mother_child_anchor",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-001-01-母女指控近景.png",
-     "sha256": "7300c13f52ff3b8e66b468925b7a52a07018a99a39cd41d71d096a0aa01b7e02",
+     "sha256": "45e52641018514ebd9c6fc8ce8df766ae56578450c3e655cc9f7a7fc4ab6e584",
      "role": "同一母女/外衣/伤臂阶段限用途锚；固定前后严格分开，不继承额外人物或姿态"
     }
    ],
@@ -2851,7 +2851,7 @@
    "raw_sha256": "48d61edf7d8b3be569afe6de44cf265426d77694ea1ac632939cf885d65a1697",
    "raw_bytes": 2501299,
    "raw_bit_depth": 8,
-   "sha256": "6c400390730aad995065bf98da61157f9b725650177d4a865de42ca5bc754aa6",
+   "sha256": "c92c80b8d150a93cbc9d5046659b63fcdbe3c880c55b8e72aecfe6797b1eef12",
    "bytes": 1466403,
    "size": [
     1376,
@@ -2880,12 +2880,12 @@
     {
      "id": "M",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
-     "sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff"
+     "sha256": "bdb061044853c944b43d119703d48f5c47d582479083ea426b3be00d22c7d5bd"
     },
     {
      "id": "fixed_mother_child_anchor",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "a56beb435071409b93c2d4cb2584ab5763c19d4ca372bd9654bba574ad073174",
+     "sha256": "88afcba9a066e61895cffb9b3dc85dca40d4bfc2c722f84215343e0d40410d0c",
      "role": "同一母女/外衣/伤臂阶段限用途锚；固定前后严格分开，不继承额外人物或姿态"
     }
    ],
@@ -2897,7 +2897,7 @@
    "raw_sha256": "1946354b77ad856cdd7b46d2f979118a75adebd877079349ad793786051a76e0",
    "raw_bytes": 2503257,
    "raw_bit_depth": 8,
-   "sha256": "9e0ce624e78d24578c397fa4f6b2bda1de7f85c784695c3a2b7331be665fc99e",
+   "sha256": "80c5695f58d319814a33747622317219260a0f7da63188686a77d480fed620b7",
    "bytes": 1511814,
    "size": [
     1376,
@@ -2926,12 +2926,12 @@
     {
      "id": "Q",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+     "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
     },
     {
      "id": "fixed_mother_child_anchor",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "a56beb435071409b93c2d4cb2584ab5763c19d4ca372bd9654bba574ad073174",
+     "sha256": "88afcba9a066e61895cffb9b3dc85dca40d4bfc2c722f84215343e0d40410d0c",
      "role": "同一母女/外衣/伤臂阶段限用途锚；固定前后严格分开，不继承额外人物或姿态"
     }
    ],
@@ -2968,7 +2968,7 @@
      375,
      160
     ],
-    "sha256": "7542edc021dda1ad6fbe4e66874f1d513d718c8e790a6f8026139811fe76d08c",
+    "sha256": "c421a4827fd9e2b14ff98eb9d2290425640f10bb17cfaebcb1460c01d37dd55c",
     "decoded_pixel_sha256": "439a995edb2bc4a2baf2a8042b887e364969e6120a9b7a00def20ff2bb7ed054",
     "same_source_pixels": true
    }
@@ -2990,12 +2990,12 @@
     {
      "id": "Q",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+     "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
     },
     {
      "id": "fixed_mother_child_anchor",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "a56beb435071409b93c2d4cb2584ab5763c19d4ca372bd9654bba574ad073174",
+     "sha256": "88afcba9a066e61895cffb9b3dc85dca40d4bfc2c722f84215343e0d40410d0c",
      "role": "同一母女/外衣/伤臂阶段限用途锚；固定前后严格分开，不继承额外人物或姿态"
     }
    ],
@@ -3007,7 +3007,7 @@
    "raw_sha256": "40d1c4fd8d30d90f9c5f825bc8cd6bafbde7b0a5906cb42a8d0670d5c6b3f955",
    "raw_bytes": 2562932,
    "raw_bit_depth": 8,
-   "sha256": "a1283f9bb1841b593294ceb2765789ab7040495817bcf3481ab729f3ca2bc576",
+   "sha256": "d4310c45691ec82beadd70063fcac6bf6d6c84cf90f892fb64d6337e0ce1de93",
    "bytes": 1510676,
    "size": [
     1376,
@@ -3036,12 +3036,12 @@
     {
      "id": "Q",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+     "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
     },
     {
      "id": "fixed_mother_child_anchor",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "a56beb435071409b93c2d4cb2584ab5763c19d4ca372bd9654bba574ad073174",
+     "sha256": "88afcba9a066e61895cffb9b3dc85dca40d4bfc2c722f84215343e0d40410d0c",
      "role": "同一母女/外衣/伤臂阶段限用途锚；固定前后严格分开，不继承额外人物或姿态"
     }
    ],
@@ -3053,7 +3053,7 @@
    "raw_sha256": "666af7e07688a514e558617d951ee340e93b4448bf3aa30a0a99602d0fbc9ee1",
    "raw_bytes": 2592343,
    "raw_bit_depth": 8,
-   "sha256": "7c09ce943314e50f07de6ec74e8a9068c63f5029aa616b6bd8fc5b5bed0718ea",
+   "sha256": "021cbb520f921a008a1ab691b0d2a143f55a747004bfe371aec1eba70fdd2e39",
    "bytes": 1510611,
    "size": [
     1376,
@@ -3095,7 +3095,7 @@
     {
      "id": "fixed_mother_child_anchor",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "a56beb435071409b93c2d4cb2584ab5763c19d4ca372bd9654bba574ad073174",
+     "sha256": "88afcba9a066e61895cffb9b3dc85dca40d4bfc2c722f84215343e0d40410d0c",
      "role": "同一母女/外衣/伤臂阶段限用途锚；固定前后严格分开，不继承额外人物或姿态"
     },
     {
@@ -3125,7 +3125,7 @@
    "raw_sha256": "845a84ebd5eb400eb41de8e9ba33e4cba728c6865e32ba1d296982fa445e29b7",
    "raw_bytes": 2586377,
    "raw_bit_depth": 8,
-   "sha256": "7b8302f9cfc3483e0c68f27149df12968cc50e75d3292792653931250d9f1259",
+   "sha256": "4c77364d5a514b405c281d00891161232788ff0d652533f2a2305da69110593f",
    "bytes": 1542899,
    "size": [
     1376,
@@ -3167,13 +3167,13 @@
     {
      "id": "fixed_mother_child_anchor",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "a56beb435071409b93c2d4cb2584ab5763c19d4ca372bd9654bba574ad073174",
+     "sha256": "88afcba9a066e61895cffb9b3dc85dca40d4bfc2c722f84215343e0d40410d0c",
      "role": "同一母女/外衣/伤臂阶段限用途锚；固定前后严格分开，不继承额外人物或姿态"
     },
     {
      "id": "night_exterior_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-012-02-v2.png",
-     "sha256": "d4672a6440b8d0f63c22799a307201d683f4ae40cb49869be13032099a61d1ad",
+     "sha256": "84aa4eef29a37ac8c94adc556dfe287de6c5efb04c2e18d9514bf6f25dc7bace",
      "role": "已修正破屋外夜色/母女衣装/医生服装锚，不照抄多余角色或这一格抱姿"
     }
    ],
@@ -3210,7 +3210,7 @@
      205,
      115
     ],
-    "sha256": "ad5c2d865112b565a68e32840a01fcd72a7e2916df2b7b28497610e7c7be77d3",
+    "sha256": "9fc0e455abc79d607866a07a08885248e1fee451ed67004478651ddba2c68af8",
     "decoded_pixel_sha256": "a172421775143aa66c159a53ab8237c75552a03bb79190785c806c17ca0bf57a",
     "same_source_pixels": true
    }
@@ -3232,7 +3232,7 @@
     {
      "id": "Q",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+     "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
     },
     {
      "id": "L_identity",
@@ -3243,7 +3243,7 @@
     {
      "id": "mother_child_only",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-03.png",
-     "sha256": "9e0ce624e78d24578c397fa4f6b2bda1de7f85c784695c3a2b7331be665fc99e",
+     "sha256": "80c5695f58d319814a33747622317219260a0f7da63188686a77d480fed620b7",
      "role": "只母女身份/粉衣/白色支撑，不复制表情/抱姿，避免多余秦音"
     }
    ],
@@ -3255,7 +3255,7 @@
    "raw_sha256": "cee6ac6e38beb882eb8e1176dbae733c5acdb0cc8b83417332fd2928786d5c55",
    "raw_bytes": 2536754,
    "raw_bit_depth": 8,
-   "sha256": "a89a87fc76cf8011d78b5af6cea4779589455ef2fd96d8e73e1def880157ded8",
+   "sha256": "86bdfd0cf9ca8228dfb6d9a4f6f2da8787e35c9cf3c8b8ad96fcc89a3336b4fa",
    "bytes": 1549134,
    "size": [
     1376,
@@ -3284,7 +3284,7 @@
     {
      "id": "Q",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+     "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
     },
     {
      "id": "L_identity",
@@ -3295,7 +3295,7 @@
     {
      "id": "mother_child_only",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-03.png",
-     "sha256": "9e0ce624e78d24578c397fa4f6b2bda1de7f85c784695c3a2b7331be665fc99e",
+     "sha256": "80c5695f58d319814a33747622317219260a0f7da63188686a77d480fed620b7",
      "role": "只母女身份/粉衣/白色支撑，不复制表情/抱姿，避免多余秦音"
     }
    ],
@@ -3307,7 +3307,7 @@
    "raw_sha256": "ac38b7a5ea8c8a56b9e2cbaac3eea680dd427c8bc5c091b6c2781d6b10199647",
    "raw_bytes": 2598891,
    "raw_bit_depth": 8,
-   "sha256": "2781b8c0c94c21f68608245e24358d70486e9e7730e318bd99b3d25c74468fb9",
+   "sha256": "9b186c33d04b52915b7084716b452f9b8235858b636d78e01aa6c0f1e0f1ec83",
    "bytes": 1534820,
    "size": [
     1376,
@@ -3337,7 +3337,7 @@
     {
      "id": "Q",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-02.png",
-     "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a"
+     "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be"
     },
     {
      "id": "L_identity",
@@ -3348,7 +3348,7 @@
     {
      "id": "mother_child_only",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-03.png",
-     "sha256": "9e0ce624e78d24578c397fa4f6b2bda1de7f85c784695c3a2b7331be665fc99e",
+     "sha256": "80c5695f58d319814a33747622317219260a0f7da63188686a77d480fed620b7",
      "role": "只母女身份/粉衣/白色支撑，不复制表情/抱姿，避免多余秦音"
     }
    ],
@@ -3385,7 +3385,7 @@
      560,
      665
     ],
-    "sha256": "77fd0ac04f0bf30805f61ecb94a9d6d7e93728cf9dcfbe3c714c4d7233483ae1",
+    "sha256": "8a1beb64a41e841ac9e801a193e844805a112c586eed20f41f470ebc4e3e88f5",
     "decoded_pixel_sha256": "a28242a56b375ec8076cb1b610504bfa5fee5cff5f7fb666eba59f48bada5dc7",
     "same_source_pixels": true
    }
@@ -3413,7 +3413,7 @@
     {
      "id": "mother_child_only",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-03.png",
-     "sha256": "9e0ce624e78d24578c397fa4f6b2bda1de7f85c784695c3a2b7331be665fc99e",
+     "sha256": "80c5695f58d319814a33747622317219260a0f7da63188686a77d480fed620b7",
      "role": "只母女身份/粉衣/白色支撑，不复制表情/抱姿，避免多余秦音"
     }
    ],
@@ -3425,7 +3425,7 @@
    "raw_sha256": "97288f965ab7b4e69cc23eb1a92235d44ceb74295cdba98f2f8da74a3edcb0db",
    "raw_bytes": 2529670,
    "raw_bit_depth": 8,
-   "sha256": "4646164a61fc543d3f662d4c8e36e9987899994d9dd583be3c6ec0183ab67af3",
+   "sha256": "8cdb220128614a6390e51850b51fd6d15a56dfb528facabb1b9c4a296c05c867",
    "bytes": 1517232,
    "size": [
     1376,
@@ -3460,13 +3460,13 @@
     {
      "id": "mother_child_only",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-03.png",
-     "sha256": "9e0ce624e78d24578c397fa4f6b2bda1de7f85c784695c3a2b7331be665fc99e",
+     "sha256": "80c5695f58d319814a33747622317219260a0f7da63188686a77d480fed620b7",
      "role": "只母女身份/粉衣/白色支撑，不复制表情/抱姿，避免多余秦音"
     },
     {
      "id": "card_shape_anchor",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-007-01-递卡未接细节.png",
-     "sha256": "ad5c2d865112b565a68e32840a01fcd72a7e2916df2b7b28497610e7c7be77d3",
+     "sha256": "9fc0e455abc79d607866a07a08885248e1fee451ed67004478651ddba2c68af8",
      "role": "只锁深色无字卡/未接触状态，不锁错误原图演员"
     }
    ],
@@ -3478,7 +3478,7 @@
    "raw_sha256": "df295d90be9af925393461938f2f68be31f266fd7d283014abc3369d495d815d",
    "raw_bytes": 2550906,
    "raw_bit_depth": 8,
-   "sha256": "f2b2721edfef6547db35101954bd440da3724eeb3cc91ed25907437f6cfe11fd",
+   "sha256": "a16913efd6095df3f0c8662b8384fa4c60b8b0e455a89d9ab577cfe7583778ba",
    "bytes": 1529433,
    "size": [
     1376,
@@ -3514,13 +3514,13 @@
     {
      "id": "mother_child_only",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-03.png",
-     "sha256": "9e0ce624e78d24578c397fa4f6b2bda1de7f85c784695c3a2b7331be665fc99e",
+     "sha256": "80c5695f58d319814a33747622317219260a0f7da63188686a77d480fed620b7",
      "role": "只母女身份/粉衣/白色支撑，不复制表情/抱姿，避免多余秦音"
     },
     {
      "id": "card_shape_anchor",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-007-01-递卡未接细节.png",
-     "sha256": "ad5c2d865112b565a68e32840a01fcd72a7e2916df2b7b28497610e7c7be77d3",
+     "sha256": "9fc0e455abc79d607866a07a08885248e1fee451ed67004478651ddba2c68af8",
      "role": "只锁深色无字卡/未接触状态，不锁错误原图演员"
     }
    ],
@@ -3557,7 +3557,7 @@
      666,
      740
     ],
-    "sha256": "4c54dfa5c7366c3952cd0e909a39617d66fc0f139b11fc079cbc93fd77342676",
+    "sha256": "0b3a5edeb1225d9a96cef0725edc02b33b782bf45ef15c2092ce962ceac182b5",
     "decoded_pixel_sha256": "6fe77be0a33c88c29ef8de59ddf2890b0f3f3b1a10636a22e9e2b7edfb43ab2c",
     "same_source_pixels": true
    }
@@ -3585,7 +3585,7 @@
     {
      "id": "mother_child_only",
      "file": "漫画改编/开篇修订/第003话/制作成果/格图/PANEL-002-03.png",
-     "sha256": "9e0ce624e78d24578c397fa4f6b2bda1de7f85c784695c3a2b7331be665fc99e",
+     "sha256": "80c5695f58d319814a33747622317219260a0f7da63188686a77d480fed620b7",
      "role": "只母女身份/粉衣/白色支撑，不复制表情/抱姿，避免多余秦音"
     },
     {
@@ -3603,7 +3603,7 @@
    "raw_sha256": "c76db8742bb56e71837fc0b6a1bfd40ff7c45f28a83e493e66e622dce9bbf592",
    "raw_bytes": 2423793,
    "raw_bit_depth": 8,
-   "sha256": "a3683321e15dddbcf75c439daeacfdfd26af8f6aebe8485ce65019decadd36bd",
+   "sha256": "dc32b70e513e3fc9c90ad9256881ec426ab126aff21b1a64a9b3e7c863ae81e9",
    "bytes": 1569239,
    "size": [
     1376,
@@ -3633,12 +3633,12 @@
     {
      "id": "day_scene",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-003-02.png",
-     "sha256": "0c874b4adcc8e61fb1d99fece7d4377a53199696f13de31f4b2c9cb933a0a441"
+     "sha256": "94adf344fbf19d5f4e68965ba8cdd31d9cc58a6ad0bfd6279200096f492c700f"
     },
     {
      "id": "pond_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-004-01.png",
-     "sha256": "5095c932588143d70c72c9868b8fb4a27faee85a17680277a09374fe4ef8ffca"
+     "sha256": "457fd432f3527b5903ea6fda7bf8e69e9d6a65533b0d5714b40be640e5bbf8f1"
     }
    ],
    "status": "adopted",
@@ -3668,7 +3668,7 @@
     {
      "id": "meet_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
-     "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6"
+     "sha256": "f19632f45aecd3969f149b059dcc6249ad483677aee254f139442633635832dc"
     }
    ],
    "status": "unused_draft_dup_boy",
@@ -3698,12 +3698,12 @@
     {
      "id": "hut_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-     "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87"
+     "sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581"
     },
     {
      "id": "coat_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
-     "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700"
+     "sha256": "8ad6807cbd23dd5df53233b833d92ad7df609a0b8d520461ebff9837e7b6d3cd"
     }
    ],
    "status": "adopted",
@@ -3733,12 +3733,12 @@
     {
      "id": "hut_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-     "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87"
+     "sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581"
     },
     {
      "id": "coat_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
-     "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700"
+     "sha256": "8ad6807cbd23dd5df53233b833d92ad7df609a0b8d520461ebff9837e7b6d3cd"
     }
    ],
    "status": "unused_draft_grey_hut",
@@ -3768,12 +3768,12 @@
     {
      "id": "hut_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-     "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87"
+     "sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581"
     },
     {
      "id": "coat_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
-     "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700"
+     "sha256": "8ad6807cbd23dd5df53233b833d92ad7df609a0b8d520461ebff9837e7b6d3cd"
     }
    ],
    "status": "adopted",
@@ -3803,7 +3803,7 @@
     {
      "id": "meet_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
-     "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6"
+     "sha256": "f19632f45aecd3969f149b059dcc6249ad483677aee254f139442633635832dc"
     }
    ],
    "status": "unused_draft_stretched_cloth",
@@ -3833,12 +3833,12 @@
     {
      "id": "hut_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-01.png",
-     "sha256": "9bdb7870b4b679b93a3f0bd82930005dad695e9bc612dde80a490bc401660f87"
+     "sha256": "08f2559f6fedc43cc1170a5c363dece43d38fca1d625b78ddb9672182be50581"
     },
     {
      "id": "coat_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-008-02.png",
-     "sha256": "1dbe81c13d1d3198d26da943c35bb9245e8dddeb3d06a6e45e0a387347181700"
+     "sha256": "8ad6807cbd23dd5df53233b833d92ad7df609a0b8d520461ebff9837e7b6d3cd"
     }
    ],
    "status": "adopted",
@@ -3868,7 +3868,7 @@
     {
      "id": "meet_anchor",
      "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-006-01.png",
-     "sha256": "1019100131c359dbde9c9e64d615c698ca528b7f87551c49d5031933061112d6"
+     "sha256": "f19632f45aecd3969f149b059dcc6249ad483677aee254f139442633635832dc"
     }
    ],
    "status": "adopted",
@@ -4181,5 +4181,6 @@
  "moderation_unresolved_keys": [],
  "historical_undelivered_request_keys": [
   "CH002/PANEL-011-01"
- ]
+ ],
+ "v3_regen_note": "r49：v3 sheet化重出后格图由整行行图取代；旧crop_xyxy/raw_input_file/旧源sha仅作历史留档，现行字节以output_sha256/size为准"
 }

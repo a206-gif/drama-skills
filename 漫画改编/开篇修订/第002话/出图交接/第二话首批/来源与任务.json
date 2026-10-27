@@ -102,6 +102,16 @@
     1264
    ],
    "visually_inspected_this_round": true
+  },
+  {
+   "id": "V3-SHEET-PAGE-001-ROW1",
+   "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
+   "size": [
+    1376,
+    749
+   ],
+   "sha256": "bdb061044853c944b43d119703d48f5c47d582479083ea426b3be00d22c7d5bd",
+   "note": "v3重出后行图，取代旧16:9交付稿作为裁切源"
   }
  ],
  "planned_generation": [

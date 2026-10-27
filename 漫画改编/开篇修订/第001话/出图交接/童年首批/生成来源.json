@@ -1,324 +1,324 @@
 {
-  "source_commit": "cf408fb5a7d573826f0da4e0a3ef4ac51bddb9f1",
-  "authorization": "创作者本轮明确可以生成，锁旧童年画风/外貌，允许改服饰；当前仅首话008-01/02",
-  "references": [
-    {
-      "file": "参考/REF-SULI-CHILD.jpg",
-      "source_path": "漫画改编/参考画风111/女主幼年.png",
-      "source_blob": "26a6402c4bd0bd5124b90ef319d7e19eff21b561",
-      "crop_xyxy": null,
-      "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b",
-      "use": "童年苏梨唯一主身份与画风输入，沿旧脸/银灰长发/红宝石眼，服饰按剧情"
-    },
-    {
-      "file": "参考/REF-CHILDHOOD-STYLE.jpg",
-      "source_path": "漫画改编/第02话/P4-初遇.png",
-      "source_blob": "cfa6ea465fbdbe89c108cbc16dff3993764982dc",
-      "crop_xyxy": [
-        42,
-        427,
-        438,
-        930
-      ],
-      "sha256": "3c1aac1873a7340db52c3cde780b3cd428c2705d58579809a1a7ec845757cb68",
-      "use": "只取旧童年页中苏梨的绘画质感/发丝/皮肤与调色；不复制旧初遇情节"
-    },
-    {
-      "file": "参考/REF-QINYIN-OLD-FACE.jpg",
-      "source_path": "漫画改编/第02话/P2-光环与系统.png",
-      "source_blob": "4024adf3415811f43077aa811646847fc3e15bcf",
-      "crop_xyxy": [
-        30,
-        418,
-        520,
-        860
-      ],
-      "sha256": "02e2e9140e6a7112beaa55fefd3b53cc04b96a2b92b1aadc825037c853047cbb",
-      "use": "旧正片秦音脸/侧分长直发，用于纠正新稿齐刘海漂移；不是配角定妆卡，不引入原场景UI或冷蓝光"
-    }
-  ],
-  "generation": [
-    {
-      "original_output": "制作成果/格图/PANEL-008-01.png",
-      "status": "rejected",
-      "reason": "首次绘制偏线条/平涂，红毯有WELCOME原生字",
-      "size": [
-        1376,
-        768
-      ],
-      "sha256": "3b0610cb396b25a926e9f33421fa4a6b18f27799186cc51f48f1451589a9a52f",
-      "references_used": "初始两参考输入：童年苏梨+旧童年页局部",
-      "prompt_or_manual_instruction_record": "Create ONE single cinematic landscape comic panel, wide 16:9 composition, unlettered finished illustration, never a comic page or a collage. This is an exact continuation of the supplied old childhood art, NOT a redesign and NOT a new style exploration. Reference image REF-SULI-CHILD is the identity and primary painterly style anchor for nine-year-old SU LI; match her existing soft oval child face, ruby-red almond eyes, pale skin, long silver-gray softly wavy hair and fine individual hair strands. REF-CHILDHOOD-STYLE is only the old childhood rendering/color/soft lighting benchmark, not its old rural-meeting scene. Keep the same premium Japanese otome CG / Korean semi-realistic painterly illustration: softly blended luminous skin, delicate natural facial shading, highly detailed expressive eyes, layered hair, real knit/fabric textures, muted warm harmonious color, soft cinematic light, same finish on all characters. No cel shading, no heavy ink outlines, no flat vector art, no 3D doll look, no live-action photography. SU LI wears a modest ivory knitted cardigan over an ivory cotton dress with a small dusty-blue collar ribbon, a small white flower hair clip; child-sized hands and nine-year-old proportions, not a toddler, not an adult shrunk down. Her hair/face/eyes are not changed with the clothing. JIANG YUEYAN is her adult mother, not an older sister: elegant mature soft face and cheekbones, cool grey almond eyes, long silver-gray hair swept back in a loose half-up style, small pearl earrings, modest dark navy high-neck long-sleeved modern dress. Her silver-gray hair and grey eyes must not become black hair or the daughter's red eyes. Clothes and faces stay consistent between the two new frames. Modern Chinese orphanage, humble worn plaster building, rusty iron entrance gate, muddy unpaved entrance with a simple red welcome carpet, a few distant trees; this is not a rich mansion, fantasy palace or hospital. Natural low-detail space near edges for later lettering, but no blank white panels. No dialogue, lettering, speech bubbles, captions, numbers, signage text, watermark, symbols, game UI or system hologram. No romance or glamour posing. Do not add any unlisted character. SCENE 008-01: EXACTLY TWO PEOPLE: SU LI and her mother JIANG YUEYAN. Just outside the orphanage gate, the mother securely carries her school-age daughter in her arms, supporting her body naturally; a medium waist-up three-quarter view clearly shows both faces and the child's small hand gripping the mother's sleeve. SU LI has just awakened and looks up at her mother, ruby eyes red-rimmed and moist with startled recognition; the mother looks down with genuine concerned tenderness. Make SU LI visibly nine years old, not a baby in a blanket. Keep the embrace anatomically plausible with only two arms per person. The rusty gate, worn orphanage wall and red carpet on muddy ground establish the place in the softly focused background. A quiet single instant of maternal care, no sickbed, no injury, no boy, no black-haired girl yet. Keep faces, gripping hand and upper body fully visible; do not cover them with any generated text.",
-      "archived_cache": "/home/user/.cache/drama-tools/childhood-rejected-20261025/PANEL-008-01.png",
-      "note": "非交付原图移至不保证持久的缓存；摘要/哈希留档，不让废稿占用漫画制作目录"
-    },
-    {
-      "original_output": "制作成果/格图/PANEL-008-01-v2.png",
-      "status": "not_selected",
-      "reason": "去字成功，但材质修正不足，不作为后续风格锚",
-      "size": [
-        1376,
-        768
-      ],
-      "sha256": "74f4e401eea81233bd46c608008af32f952282673c4d427bcc2cbe82ee583c8f",
-      "references_used": "首次稿为结构＋旧苏梨主参考",
-      "prompt_or_manual_instruction_record": "修正首次图，保留构图，去掉WELCOME并按旧童年柔和CG重绘；没有充分达到预期，改用旧人设直接重建",
-      "archived_cache": "/home/user/.cache/drama-tools/childhood-rejected-20261025/PANEL-008-01-v2.png",
-      "note": "非交付原图移至不保证持久的缓存；摘要/哈希留档，不让废稿占用漫画制作目录"
-    },
-    {
-      "original_output": "制作成果/格图/PANEL-008-01-v3.png",
-      "status": "selected_art_style_approved",
-      "reason": "创作者认可本批画风，沿用当前格图；待组合排页与贴字检查，不推定全项验收",
-      "size": [
-        1376,
-        768
-      ],
-      "sha256": "8f1cda4559c8dfe5049e86584ca79ed503084969d3fce9c895f627060421d4fd",
-      "references_used": "旧参考画风111/女主幼年.png原尺寸输入",
-      "prompt_or_manual_instruction_record": "Use the attached ORIGINAL PAINTING as the sole strict identity AND rendering master. Extend THIS exact softly painted childhood character into a new scene; do not redraw her as a different cartoon. Produce ONE landscape 16:9 unlettered illustration. Match the reference's extremely fine silver hair, softly luminous dimensional skin, delicately modeled little nose and lips, ruby iris detail, blended edges, exquisite cotton and knitted fabric material and soft photographic-quality painted light. This is high-detail semi-realistic otome-game CG painting, NOT cel-shaded comic line art: NO black contour ink, NO outlined hair clumps, NO flat face or clothing fills, NO manga simplification. Paint hair as fine soft strands, not enclosed ink shapes. Retain the supplied girl's same face shape, almond ruby eyes, silver-gray long waves and recognizable nine-year-old child identity. Her modest ivory cardigan and ivory cotton dress with dusty-blue ribbon remain recognizable; a small white flower clip. SCENE: EXACTLY TWO PEOPLE. This nine-year-old SU LI is held securely in the arms of her adult mother JIANG YUEYAN at the old orphanage entrance after waking from a fever. Medium waist-up three-quarter view with both faces, their natural embrace, and SU LI's small hand gripping her mother's sleeve clearly visible. SU LI looks up with wet startled ruby eyes, recognizing her mother, not a happy posed portrait. Mother looks down with tender concern. Mother is clearly an adult parent, with mature soft cheekbones, cool GREY almond eyes, silver-gray long hair swept into a loose half-up hairstyle, pearl stud earrings, and modest dark-navy high-neck long-sleeved dress; do not give mother red eyes or make the pair sisters. Both people have the original reference's SAME highly refined painterly shading and material quality. Supporting arms and small child hands must be natural and anatomically coherent, a schoolchild rather than a tiny infant. Background softly out of focus: an old rusty iron gate, humble worn plaster orphanage, muddy unpaved ground, plain red carpet with NO writing, a little greenery in gentle warm daylight. Not a mansion, fantasy palace or hospital. No other person. No signage text, letters, WELCOME, numbers, logos, captions, balloons, text boxes, watermarks, system UI, frame borders, grids or collage. No makeup or glamour poses for the child. Leave natural low-detail space near edges for later lettering but no blank white blocks. The REQUIRED RESULT is faithful continuity with the attached OLD CHILDHOOD PAINTING, not a new art style and not a simplified cartoon version.",
-      "initial_selection_status": "selected_pending_creator_review",
-      "initial_selection_reason": "直接用旧童年人设重建，助手自查暂选；待创作者验风格/锁脸"
-    },
-    {
-      "original_output": "制作成果/格图/PANEL-008-02.png",
-      "status": "rejected",
-      "reason": "三人场景承接完成，但秦音变成齐刘海",
-      "size": [
-        1376,
-        768
-      ],
-      "sha256": "ff19e8f81b5db7bab78b06e99a5818586a0c38cb850eacd174191782917a688a",
-      "references_used": "旧童年苏梨原图＋首格v3作连续性输入",
-      "prompt_or_manual_instruction_record": "Create ONE single landscape 16:9 unlettered comic illustration, the next moment in the SAME orphanage visit. FIRST reference is the approved OLD CHILDHOOD SU LI painting: it is the strict primary face, hair, ruby-eye and softly painterly CG rendering master, not a generic anime suggestion. SECOND reference is the immediately preceding new scene: use it for the SAME mother, daughter, clothing, white flower hair clip, hairstyle, orphanage architecture, plain red carpet, warm diffuse daylight and pose continuity, not to repeat its camera framing. Retain the first reference's high-detail semi-realistic otome-game CG softness: fine individual hair strands, gently luminous skin with subtle color variation, delicately blended facial anatomy and edges, natural subtle iris highlights, dimensional cotton/knit fabric, refined painterly material rendering. No ink contour lines, no cel shading, no flat cartoon fills, no photoreal live actors, no plastic 3D dolls, no style redesign. EXACTLY THREE PEOPLE. On the LEFT, adult mother JIANG YUEYAN is STILL securely holding the SAME nine-year-old SU LI in her arms. Mother has the SAME mature soft face, grey eyes, silver-gray long half-up hair, small pearl earrings, dark navy high-neck long-sleeved dress. SU LI has the SAME old child-reference oval face, ruby-red almond eyes, silver-gray long waves, modest ivory knit cardigan and ivory cotton dress, dusty-blue small collar ribbon, white flower clip, small hands and schoolchild proportions. Do not age her up or turn her into a toddler. Mother gently turns to introduce QIN YIN, standing at a respectful small distance on the RIGHT. Mother smiles warmly and speaks naturally without any drawn balloon; she still supports her daughter. SU LI looks toward QIN YIN with quiet startled recognition and a small wary pause, with a trace of earlier tears, not a tantrum or an evil grin. QIN YIN is TWELVE, three years older than SU LI: a slim slightly older schoolgirl with a small delicate doll-like face, grey-blue eyes, long straight jet-black hair, a simple modest off-white long-sleeved cotton dress. QIN YIN has a sweet polite tentative smile and her hands loosely together; she is NOT an adult, NOT silver-haired, NOT ruby-eyed. Keep all three faces distinct but rendered with exactly the same painterly finish. Camera pulls back slightly to a medium-wide three-quarter view a few steps INSIDE the same humble orphanage courtyard; the same rusty iron gate, worn plaster walls, simple plain red welcome carpet and muddy unpaved entrance remain visible behind them. Modern Chinese setting, no fantasy palace or rich mansion. Keep all three faces and the daughter's holding/gripping gesture visible. No unlisted person, no boy or father, no adoption certificate, no hospital, no accusation, no car departure, no golden halo or system hologram: adoption has only been proposed, not completed. No letters anywhere, NO WELCOME on carpet, no signage text, dialogue, captions, text boxes, bubbles, logos, numbers, watermarks, borders, collage or multi-panel page. Leave natural quiet background near edges for later source-based lettering, not white blank blocks. Do not alter the established old childhood character designs or change the art style.",
-      "archived_cache": "/home/user/.cache/drama-tools/childhood-rejected-20261025/PANEL-008-02.png",
-      "note": "非交付原图移至不保证持久的缓存；摘要/哈希留档，不让废稿占用漫画制作目录"
-    },
-    {
-      "original_output": "制作成果/格图/PANEL-008-02-v2.png",
-      "status": "selected_art_style_approved",
-      "reason": "创作者认可本批画风，沿用当前格图；待组合排页与贴字检查，不推定全项验收",
-      "size": [
-        1376,
-        768
-      ],
-      "sha256": "439432c9607aded5a69277eab9766c21298cfb90c220f982cdd38be11d85a993",
-      "references_used": "第二格初稿＋旧P2秦音正片脸部裁切",
-      "prompt_or_manual_instruction_record": "仅修秦音侧分前发/旧脸身份，保留其他人物、场景、姿势、服装和画风；不复制旧裁切的系统UI/冷蓝光",
-      "initial_selection_status": "selected_pending_creator_review",
-      "initial_selection_reason": "秦音恢复侧分长直发，助手自查暂选；待创作者验收"
-    }
-  ],
-  "storyboard_sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
-  "output_targets": [
-    "制作成果/格图/PANEL-008-01-v3.png",
-    "制作成果/格图/PANEL-008-02-v2.png"
-  ],
-  "tool_settings": {
-    "offer_options": false,
-    "reason": "已锁旧画风的漫画内单格素材，非画风选项探索",
-    "requested_aspect": "landscape 16:9",
-    "model_selection": "工具未提供指定型号/seed接口，不虚报与旧档同型号",
-    "pricing": "工具无报价信息，不虚报免费；按本轮明确生成授权执行",
-    "text": "none; later source-based lettering"
+ "source_commit": "cf408fb5a7d573826f0da4e0a3ef4ac51bddb9f1",
+ "authorization": "创作者本轮明确可以生成，锁旧童年画风/外貌，允许改服饰；当前仅首话008-01/02",
+ "references": [
+  {
+   "file": "参考/REF-SULI-CHILD.jpg",
+   "source_path": "漫画改编/参考画风111/女主幼年.png",
+   "source_blob": "26a6402c4bd0bd5124b90ef319d7e19eff21b561",
+   "crop_xyxy": null,
+   "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b",
+   "use": "童年苏梨唯一主身份与画风输入，沿旧脸/银灰长发/红宝石眼，服饰按剧情"
   },
-  "status": "art_style_approved_reference_lettering_pending_creator_review",
-  "actual_image_calls": 5,
-  "scope_note": "两格任务共5次调用（含3个未采用稿）；不冒称只调用2次，不虚报平台账单/型号，青年成年无生成",
-  "reference_policy_note": "最终以旧参考画风111童年苏梨为主锚；旧P4裁切只在首次调用使用，未在后续作为渲染锚。秦音旧正片脸部裁切用于发型纠正，非配角定妆卡。",
-  "verified_downloads": [
-    {
-      "path": "漫画改编/参考画风111/女主幼年.png",
-      "blob": "26a6402c4bd0bd5124b90ef319d7e19eff21b561",
-      "size": 2024703
-    },
-    {
-      "path": "漫画改编/设定集/定妆图/A-苏梨-幼年.png",
-      "blob": "8848f457e115bba91168353a4980b89d9cb71841",
-      "size": 1606031
-    },
-    {
-      "path": "漫画改编/设定集/定妆图/G-姜月烟-裁.png",
-      "blob": "7bf401fc20cac778d99bb5a7f3c5a7f08bdec8c5",
-      "size": 1637022
-    },
-    {
-      "path": "漫画改编/第02话/P4-初遇.png",
-      "blob": "cfa6ea465fbdbe89c108cbc16dff3993764982dc",
-      "size": 2699466
-    },
-    {
-      "path": "漫画改编/第03话/P1-身世.png",
-      "blob": "d09ca1c835512e08a06e0b662a61b3ee98a1b4ff",
-      "size": 2764700
-    },
-    {
-      "path": "漫画改编/设定集/三阶段定妆设计.md",
-      "blob": "b58e3423e3066f546ca91c950ef82a4451281861",
-      "size": 11759
-    },
-    {
-      "path": "漫画改编/生图提示词-话04-10-sunburst.md",
-      "blob": "435e46ddc54093c430ee8bb76c6d5ae0f24fcac9",
-      "size": 99761
-    },
-    {
-      "path": "漫画改编/第02话/P1-重生.png",
-      "blob": "97f2c5e8f3286be48a9b6409a17a8fe138a76075",
-      "size": 2703212
-    },
-    {
-      "path": "漫画改编/第02话/P2-光环与系统.png",
-      "blob": "4024adf3415811f43077aa811646847fc3e15bcf",
-      "size": 2615748
-    }
-  ],
-  "visually_inspected_sources": [
-    "漫画改编/参考画风111/女主幼年.png",
-    "漫画改编/设定集/定妆图/A-苏梨-幼年.png",
-    "漫画改编/设定集/定妆图/G-姜月烟-裁.png",
-    "漫画改编/第02话/P4-初遇.png",
-    "漫画改编/第02话/P2-光环与系统.png"
-  ],
-  "not_visually_inspected_downloads": [
-    "漫画改编/第03话/P1-身世.png",
-    "漫画改编/第02话/P1-重生.png"
-  ],
-  "creator_feedback": {
-    "date": "2026-10-25",
-    "verbatim": "画风可以 单图镜头通常为重要转折点出现 一图多镜的排版不固定",
-    "art_style": "approved_for_this_childhood_batch",
-    "layout_policy": "普通段落一页多镜；单镜独幅/大幅通常用于重要转折；格数/大小/横竖/组合不固定；单格素材不自动等于发布页",
-    "approval_scope": "本批画风认可，不推定全部人物/剧情/整页/发布已通过",
-    "additional_image_calls_this_feedback_round": 0
+  {
+   "file": "参考/REF-CHILDHOOD-STYLE.jpg",
+   "source_path": "漫画改编/第02话/P4-初遇.png",
+   "source_blob": "cfa6ea465fbdbe89c108cbc16dff3993764982dc",
+   "crop_xyxy": [
+    42,
+    427,
+    438,
+    930
+   ],
+   "sha256": "3c1aac1873a7340db52c3cde780b3cd428c2705d58579809a1a7ec845757cb68",
+   "use": "只取旧童年页中苏梨的绘画质感/发丝/皮肤与调色；不复制旧初遇情节"
   },
-  "generation_storyboard_sha256": "a3a75642af1962c4a24a16f5197045c38aca93879f997858ae00eb7fa64536a0",
-  "current_panel_bindings": {
-    "PANEL-008-01": "制作成果/格图/PANEL-008-01-v3.png",
-    "PANEL-009-01": "制作成果/格图/PANEL-008-02-v2.png",
-    "PANEL-009-02": "制作成果/格图/PANEL-009-02-双人近景-v2.png"
-  },
-  "local_derivatives": [
-    {
-      "file": "制作成果/格图/PANEL-009-02-局部.png",
-      "kind": "unchanged_moment_crop",
-      "source": "制作成果/格图/PANEL-008-02-v2.png",
-      "crop_xyxy": [
-        580,
-        120,
-        810,
-        430
-      ],
-      "sha256": "4999b347192d8ec6cbdc8eef2120318e15817260d30e6b657ee9daa63c2f68b1",
-      "status": "historical_not_current_layout"
-    },
-    {
-      "file": "制作成果/格图/PANEL-009-03.png",
-      "kind": "local_plain_footer",
-      "rgb": [
-        250,
-        248,
-        244
-      ],
-      "sha256": "5318a7e5dcde1d2a92103360193a1dea502f7090964a5a56d27bc2208f793b84",
-      "status": "historical_not_current_layout"
-    },
-    {
-      "file": "制作成果/格图/PANEL-009-02-双人近景-v2.png",
-      "source": "制作成果/格图/PANEL-008-02-v2.png",
-      "kind": "unchanged_moment_crop",
-      "crop_xyxy": [
-        590,
-        100,
-        1150,
-        500
-      ],
-      "sha256": "9793f2d7170ca90b7727b1da7431849a8ce51e0ecbc09064814e73c7cbd26f01",
-      "status": "current_layout"
-    }
-  ],
-  "previous_local_layout_round": {
-    "date": "2026-10-25",
-    "additional_image_generation_calls": 0,
-    "source_text_bodies_changed": false,
-    "renumbering": {
-      "PANEL-008-02": "PANEL-009-01",
-      "PANEL-008-03": "PANEL-009-03",
-      "TEXT-008-03": "TEXT-009-01",
-      "TEXT-008-04": "TEXT-009-02",
-      "TEXT-008-05": "TEXT-009-03"
-    },
-    "added_panel": "PANEL-009-02 (crop reaction)",
-    "episode_candidate_counts": {
-      "pages": 9,
-      "panels": 20,
-      "texts": 24
-    },
-    "preview_pages": [
-      "PAGE-008",
-      "PAGE-009"
-    ],
-    "not_complete_episode": true
-  },
-  "local_layout_round": {
-    "date": "2026-10-25",
-    "additional_image_generation_calls": 0,
-    "version": "v5",
-    "lettering_mode": "embedded",
-    "visible_labels": false,
-    "source_storyboard_sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
-    "source_text_bodies_changed": false,
-    "preview_pages": [
-      "PAGE-008",
-      "PAGE-009"
-    ],
-    "preview": "制作成果/画内贴字-v5/看图说明.md",
-    "episode_candidate_counts": {
-      "pages": 9,
-      "panels": 19,
-      "texts": 25
-    },
-    "format": "轻椭圆对白/半透明矩形内心，按类型设细描边/左对齐，外白边/格外框0，页9白缝3px",
-    "not_complete_episode": true
-  },
-  "creator_typography_feedback": {
-    "date": "2026-10-25",
-    "old_v3_lettering": "rejected",
-    "art_approval_unchanged": true,
-    "requirements": [
-      "图内贴字，不另开白色字区",
-      "不画说话人姓名，字色/气泡/主角专属正文字体辨识",
-      "气泡底更透明，字清晰",
-      "原著未有的不硬加旁白，重故事",
-      "图片可在工作区查看"
-    ]
-  },
-  "previous_embedded_layout_round": {
-    "date": "2026-10-25",
-    "additional_image_generation_calls": 0,
-    "lettering_mode": "embedded",
-    "visible_labels": false,
-    "source_storyboard_sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
-    "preview_pages": [
-      "PAGE-008",
-      "PAGE-009"
-    ],
-    "promotional_footer": "moved_to_publication_copy",
-    "episode_candidate_counts": {
-      "pages": 9,
-      "panels": 19,
-      "texts": 25
-    },
-    "text_revision": "原文妈妈？新增对白；重生认知转第一人称内心；母亲原提议拆两泡，合并正文不变"
-  },
-  "creator_reference_typography_feedback": {
-    "date": "2026-10-25",
-    "reference": "贴字参考/用户参考来源.json",
-    "requirements": [
-      "参考附图的椭圆对白/矩形内心叙述与透底",
-      "字体/字色/位置辨人，不画姓名",
-      "白色分隔收窄，不强制参考格数"
-    ],
-    "scope": "借格式不借剧情；原画及已认可画风不变；此轮无生成授权或调用"
+  {
+   "file": "参考/REF-QINYIN-OLD-FACE.jpg",
+   "source_path": "漫画改编/第02话/P2-光环与系统.png",
+   "source_blob": "4024adf3415811f43077aa811646847fc3e15bcf",
+   "crop_xyxy": [
+    30,
+    418,
+    520,
+    860
+   ],
+   "sha256": "02e2e9140e6a7112beaa55fefd3b53cc04b96a2b92b1aadc825037c853047cbb",
+   "use": "旧正片秦音脸/侧分长直发，用于纠正新稿齐刘海漂移；不是配角定妆卡，不引入原场景UI或冷蓝光"
   }
+ ],
+ "generation": [
+  {
+   "original_output": "制作成果/格图/PANEL-008-01.png",
+   "status": "rejected",
+   "reason": "首次绘制偏线条/平涂，红毯有WELCOME原生字",
+   "size": [
+    1376,
+    768
+   ],
+   "sha256": "3b0610cb396b25a926e9f33421fa4a6b18f27799186cc51f48f1451589a9a52f",
+   "references_used": "初始两参考输入：童年苏梨+旧童年页局部",
+   "prompt_or_manual_instruction_record": "Create ONE single cinematic landscape comic panel, wide 16:9 composition, unlettered finished illustration, never a comic page or a collage. This is an exact continuation of the supplied old childhood art, NOT a redesign and NOT a new style exploration. Reference image REF-SULI-CHILD is the identity and primary painterly style anchor for nine-year-old SU LI; match her existing soft oval child face, ruby-red almond eyes, pale skin, long silver-gray softly wavy hair and fine individual hair strands. REF-CHILDHOOD-STYLE is only the old childhood rendering/color/soft lighting benchmark, not its old rural-meeting scene. Keep the same premium Japanese otome CG / Korean semi-realistic painterly illustration: softly blended luminous skin, delicate natural facial shading, highly detailed expressive eyes, layered hair, real knit/fabric textures, muted warm harmonious color, soft cinematic light, same finish on all characters. No cel shading, no heavy ink outlines, no flat vector art, no 3D doll look, no live-action photography. SU LI wears a modest ivory knitted cardigan over an ivory cotton dress with a small dusty-blue collar ribbon, a small white flower hair clip; child-sized hands and nine-year-old proportions, not a toddler, not an adult shrunk down. Her hair/face/eyes are not changed with the clothing. JIANG YUEYAN is her adult mother, not an older sister: elegant mature soft face and cheekbones, cool grey almond eyes, long silver-gray hair swept back in a loose half-up style, small pearl earrings, modest dark navy high-neck long-sleeved modern dress. Her silver-gray hair and grey eyes must not become black hair or the daughter's red eyes. Clothes and faces stay consistent between the two new frames. Modern Chinese orphanage, humble worn plaster building, rusty iron entrance gate, muddy unpaved entrance with a simple red welcome carpet, a few distant trees; this is not a rich mansion, fantasy palace or hospital. Natural low-detail space near edges for later lettering, but no blank white panels. No dialogue, lettering, speech bubbles, captions, numbers, signage text, watermark, symbols, game UI or system hologram. No romance or glamour posing. Do not add any unlisted character. SCENE 008-01: EXACTLY TWO PEOPLE: SU LI and her mother JIANG YUEYAN. Just outside the orphanage gate, the mother securely carries her school-age daughter in her arms, supporting her body naturally; a medium waist-up three-quarter view clearly shows both faces and the child's small hand gripping the mother's sleeve. SU LI has just awakened and looks up at her mother, ruby eyes red-rimmed and moist with startled recognition; the mother looks down with genuine concerned tenderness. Make SU LI visibly nine years old, not a baby in a blanket. Keep the embrace anatomically plausible with only two arms per person. The rusty gate, worn orphanage wall and red carpet on muddy ground establish the place in the softly focused background. A quiet single instant of maternal care, no sickbed, no injury, no boy, no black-haired girl yet. Keep faces, gripping hand and upper body fully visible; do not cover them with any generated text.",
+   "archived_cache": "/home/user/.cache/drama-tools/childhood-rejected-20261025/PANEL-008-01.png",
+   "note": "非交付原图移至不保证持久的缓存；摘要/哈希留档，不让废稿占用漫画制作目录"
+  },
+  {
+   "original_output": "制作成果/格图/PANEL-008-01-v2.png",
+   "status": "not_selected",
+   "reason": "去字成功，但材质修正不足，不作为后续风格锚",
+   "size": [
+    1376,
+    768
+   ],
+   "sha256": "74f4e401eea81233bd46c608008af32f952282673c4d427bcc2cbe82ee583c8f",
+   "references_used": "首次稿为结构＋旧苏梨主参考",
+   "prompt_or_manual_instruction_record": "修正首次图，保留构图，去掉WELCOME并按旧童年柔和CG重绘；没有充分达到预期，改用旧人设直接重建",
+   "archived_cache": "/home/user/.cache/drama-tools/childhood-rejected-20261025/PANEL-008-01-v2.png",
+   "note": "非交付原图移至不保证持久的缓存；摘要/哈希留档，不让废稿占用漫画制作目录"
+  },
+  {
+   "original_output": "制作成果/格图/PANEL-008-01-v3.png",
+   "status": "selected_art_style_approved",
+   "reason": "创作者认可本批画风，沿用当前格图；待组合排页与贴字检查，不推定全项验收",
+   "size": [
+    1376,
+    768
+   ],
+   "sha256": "8f1cda4559c8dfe5049e86584ca79ed503084969d3fce9c895f627060421d4fd",
+   "references_used": "旧参考画风111/女主幼年.png原尺寸输入",
+   "prompt_or_manual_instruction_record": "Use the attached ORIGINAL PAINTING as the sole strict identity AND rendering master. Extend THIS exact softly painted childhood character into a new scene; do not redraw her as a different cartoon. Produce ONE landscape 16:9 unlettered illustration. Match the reference's extremely fine silver hair, softly luminous dimensional skin, delicately modeled little nose and lips, ruby iris detail, blended edges, exquisite cotton and knitted fabric material and soft photographic-quality painted light. This is high-detail semi-realistic otome-game CG painting, NOT cel-shaded comic line art: NO black contour ink, NO outlined hair clumps, NO flat face or clothing fills, NO manga simplification. Paint hair as fine soft strands, not enclosed ink shapes. Retain the supplied girl's same face shape, almond ruby eyes, silver-gray long waves and recognizable nine-year-old child identity. Her modest ivory cardigan and ivory cotton dress with dusty-blue ribbon remain recognizable; a small white flower clip. SCENE: EXACTLY TWO PEOPLE. This nine-year-old SU LI is held securely in the arms of her adult mother JIANG YUEYAN at the old orphanage entrance after waking from a fever. Medium waist-up three-quarter view with both faces, their natural embrace, and SU LI's small hand gripping her mother's sleeve clearly visible. SU LI looks up with wet startled ruby eyes, recognizing her mother, not a happy posed portrait. Mother looks down with tender concern. Mother is clearly an adult parent, with mature soft cheekbones, cool GREY almond eyes, silver-gray long hair swept into a loose half-up hairstyle, pearl stud earrings, and modest dark-navy high-neck long-sleeved dress; do not give mother red eyes or make the pair sisters. Both people have the original reference's SAME highly refined painterly shading and material quality. Supporting arms and small child hands must be natural and anatomically coherent, a schoolchild rather than a tiny infant. Background softly out of focus: an old rusty iron gate, humble worn plaster orphanage, muddy unpaved ground, plain red carpet with NO writing, a little greenery in gentle warm daylight. Not a mansion, fantasy palace or hospital. No other person. No signage text, letters, WELCOME, numbers, logos, captions, balloons, text boxes, watermarks, system UI, frame borders, grids or collage. No makeup or glamour poses for the child. Leave natural low-detail space near edges for later lettering but no blank white blocks. The REQUIRED RESULT is faithful continuity with the attached OLD CHILDHOOD PAINTING, not a new art style and not a simplified cartoon version.",
+   "initial_selection_status": "selected_pending_creator_review",
+   "initial_selection_reason": "直接用旧童年人设重建，助手自查暂选；待创作者验风格/锁脸"
+  },
+  {
+   "original_output": "制作成果/格图/PANEL-008-02.png",
+   "status": "rejected",
+   "reason": "三人场景承接完成，但秦音变成齐刘海",
+   "size": [
+    1376,
+    768
+   ],
+   "sha256": "ff19e8f81b5db7bab78b06e99a5818586a0c38cb850eacd174191782917a688a",
+   "references_used": "旧童年苏梨原图＋首格v3作连续性输入",
+   "prompt_or_manual_instruction_record": "Create ONE single landscape 16:9 unlettered comic illustration, the next moment in the SAME orphanage visit. FIRST reference is the approved OLD CHILDHOOD SU LI painting: it is the strict primary face, hair, ruby-eye and softly painterly CG rendering master, not a generic anime suggestion. SECOND reference is the immediately preceding new scene: use it for the SAME mother, daughter, clothing, white flower hair clip, hairstyle, orphanage architecture, plain red carpet, warm diffuse daylight and pose continuity, not to repeat its camera framing. Retain the first reference's high-detail semi-realistic otome-game CG softness: fine individual hair strands, gently luminous skin with subtle color variation, delicately blended facial anatomy and edges, natural subtle iris highlights, dimensional cotton/knit fabric, refined painterly material rendering. No ink contour lines, no cel shading, no flat cartoon fills, no photoreal live actors, no plastic 3D dolls, no style redesign. EXACTLY THREE PEOPLE. On the LEFT, adult mother JIANG YUEYAN is STILL securely holding the SAME nine-year-old SU LI in her arms. Mother has the SAME mature soft face, grey eyes, silver-gray long half-up hair, small pearl earrings, dark navy high-neck long-sleeved dress. SU LI has the SAME old child-reference oval face, ruby-red almond eyes, silver-gray long waves, modest ivory knit cardigan and ivory cotton dress, dusty-blue small collar ribbon, white flower clip, small hands and schoolchild proportions. Do not age her up or turn her into a toddler. Mother gently turns to introduce QIN YIN, standing at a respectful small distance on the RIGHT. Mother smiles warmly and speaks naturally without any drawn balloon; she still supports her daughter. SU LI looks toward QIN YIN with quiet startled recognition and a small wary pause, with a trace of earlier tears, not a tantrum or an evil grin. QIN YIN is TWELVE, three years older than SU LI: a slim slightly older schoolgirl with a small delicate doll-like face, grey-blue eyes, long straight jet-black hair, a simple modest off-white long-sleeved cotton dress. QIN YIN has a sweet polite tentative smile and her hands loosely together; she is NOT an adult, NOT silver-haired, NOT ruby-eyed. Keep all three faces distinct but rendered with exactly the same painterly finish. Camera pulls back slightly to a medium-wide three-quarter view a few steps INSIDE the same humble orphanage courtyard; the same rusty iron gate, worn plaster walls, simple plain red welcome carpet and muddy unpaved entrance remain visible behind them. Modern Chinese setting, no fantasy palace or rich mansion. Keep all three faces and the daughter's holding/gripping gesture visible. No unlisted person, no boy or father, no adoption certificate, no hospital, no accusation, no car departure, no golden halo or system hologram: adoption has only been proposed, not completed. No letters anywhere, NO WELCOME on carpet, no signage text, dialogue, captions, text boxes, bubbles, logos, numbers, watermarks, borders, collage or multi-panel page. Leave natural quiet background near edges for later source-based lettering, not white blank blocks. Do not alter the established old childhood character designs or change the art style.",
+   "archived_cache": "/home/user/.cache/drama-tools/childhood-rejected-20261025/PANEL-008-02.png",
+   "note": "非交付原图移至不保证持久的缓存；摘要/哈希留档，不让废稿占用漫画制作目录"
+  },
+  {
+   "original_output": "制作成果/格图/PANEL-008-02-v2.png",
+   "status": "selected_art_style_approved",
+   "reason": "创作者认可本批画风，沿用当前格图；待组合排页与贴字检查，不推定全项验收",
+   "size": [
+    1376,
+    768
+   ],
+   "sha256": "439432c9607aded5a69277eab9766c21298cfb90c220f982cdd38be11d85a993",
+   "references_used": "第二格初稿＋旧P2秦音正片脸部裁切",
+   "prompt_or_manual_instruction_record": "仅修秦音侧分前发/旧脸身份，保留其他人物、场景、姿势、服装和画风；不复制旧裁切的系统UI/冷蓝光",
+   "initial_selection_status": "selected_pending_creator_review",
+   "initial_selection_reason": "秦音恢复侧分长直发，助手自查暂选；待创作者验收"
+  }
+ ],
+ "storyboard_sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
+ "output_targets": [
+  "制作成果/格图/PANEL-008-01-v3.png",
+  "制作成果/格图/PANEL-008-02-v2.png"
+ ],
+ "tool_settings": {
+  "offer_options": false,
+  "reason": "已锁旧画风的漫画内单格素材，非画风选项探索",
+  "requested_aspect": "landscape 16:9",
+  "model_selection": "工具未提供指定型号/seed接口，不虚报与旧档同型号",
+  "pricing": "工具无报价信息，不虚报免费；按本轮明确生成授权执行",
+  "text": "none; later source-based lettering"
+ },
+ "status": "art_style_approved_reference_lettering_pending_creator_review",
+ "actual_image_calls": 5,
+ "scope_note": "两格任务共5次调用（含3个未采用稿）；不冒称只调用2次，不虚报平台账单/型号，青年成年无生成",
+ "reference_policy_note": "最终以旧参考画风111童年苏梨为主锚；旧P4裁切只在首次调用使用，未在后续作为渲染锚。秦音旧正片脸部裁切用于发型纠正，非配角定妆卡。",
+ "verified_downloads": [
+  {
+   "path": "漫画改编/参考画风111/女主幼年.png",
+   "blob": "26a6402c4bd0bd5124b90ef319d7e19eff21b561",
+   "size": 2024703
+  },
+  {
+   "path": "漫画改编/设定集/定妆图/A-苏梨-幼年.png",
+   "blob": "8848f457e115bba91168353a4980b89d9cb71841",
+   "size": 1606031
+  },
+  {
+   "path": "漫画改编/设定集/定妆图/G-姜月烟-裁.png",
+   "blob": "7bf401fc20cac778d99bb5a7f3c5a7f08bdec8c5",
+   "size": 1637022
+  },
+  {
+   "path": "漫画改编/第02话/P4-初遇.png",
+   "blob": "cfa6ea465fbdbe89c108cbc16dff3993764982dc",
+   "size": 2699466
+  },
+  {
+   "path": "漫画改编/第03话/P1-身世.png",
+   "blob": "d09ca1c835512e08a06e0b662a61b3ee98a1b4ff",
+   "size": 2764700
+  },
+  {
+   "path": "漫画改编/设定集/三阶段定妆设计.md",
+   "blob": "b58e3423e3066f546ca91c950ef82a4451281861",
+   "size": 11759
+  },
+  {
+   "path": "漫画改编/生图提示词-话04-10-sunburst.md",
+   "blob": "435e46ddc54093c430ee8bb76c6d5ae0f24fcac9",
+   "size": 99761
+  },
+  {
+   "path": "漫画改编/第02话/P1-重生.png",
+   "blob": "97f2c5e8f3286be48a9b6409a17a8fe138a76075",
+   "size": 2703212
+  },
+  {
+   "path": "漫画改编/第02话/P2-光环与系统.png",
+   "blob": "4024adf3415811f43077aa811646847fc3e15bcf",
+   "size": 2615748
+  }
+ ],
+ "visually_inspected_sources": [
+  "漫画改编/参考画风111/女主幼年.png",
+  "漫画改编/设定集/定妆图/A-苏梨-幼年.png",
+  "漫画改编/设定集/定妆图/G-姜月烟-裁.png",
+  "漫画改编/第02话/P4-初遇.png",
+  "漫画改编/第02话/P2-光环与系统.png"
+ ],
+ "not_visually_inspected_downloads": [
+  "漫画改编/第03话/P1-身世.png",
+  "漫画改编/第02话/P1-重生.png"
+ ],
+ "creator_feedback": {
+  "date": "2026-10-25",
+  "verbatim": "画风可以 单图镜头通常为重要转折点出现 一图多镜的排版不固定",
+  "art_style": "approved_for_this_childhood_batch",
+  "layout_policy": "普通段落一页多镜；单镜独幅/大幅通常用于重要转折；格数/大小/横竖/组合不固定；单格素材不自动等于发布页",
+  "approval_scope": "本批画风认可，不推定全部人物/剧情/整页/发布已通过",
+  "additional_image_calls_this_feedback_round": 0
+ },
+ "generation_storyboard_sha256": "a3a75642af1962c4a24a16f5197045c38aca93879f997858ae00eb7fa64536a0",
+ "current_panel_bindings": {
+  "PANEL-008-01": "制作成果/格图/PANEL-008-01-v3.png",
+  "PANEL-009-01": "制作成果/格图/PANEL-008-02-v2.png",
+  "PANEL-009-02": "制作成果/格图/PANEL-009-02-双人近景-v2.png"
+ },
+ "local_derivatives": [
+  {
+   "file": "制作成果/格图/PANEL-009-02-局部.png",
+   "kind": "unchanged_moment_crop",
+   "source": "制作成果/格图/PANEL-008-02-v2.png",
+   "crop_xyxy": [
+    580,
+    120,
+    810,
+    430
+   ],
+   "sha256": "4999b347192d8ec6cbdc8eef2120318e15817260d30e6b657ee9daa63c2f68b1",
+   "status": "historical_not_current_layout"
+  },
+  {
+   "file": "制作成果/格图/PANEL-009-03.png",
+   "kind": "local_plain_footer",
+   "rgb": [
+    250,
+    248,
+    244
+   ],
+   "sha256": "5318a7e5dcde1d2a92103360193a1dea502f7090964a5a56d27bc2208f793b84",
+   "status": "historical_not_current_layout"
+  },
+  {
+   "file": "制作成果/格图/PANEL-009-02-双人近景-v2.png",
+   "source": "制作成果/格图/PANEL-008-02-v2.png",
+   "kind": "unchanged_moment_crop",
+   "crop_xyxy": [
+    590,
+    100,
+    1150,
+    500
+   ],
+   "sha256": "9793f2d7170ca90b7727b1da7431849a8ce51e0ecbc09064814e73c7cbd26f01",
+   "status": "current_layout"
+  }
+ ],
+ "previous_local_layout_round": {
+  "date": "2026-10-25",
+  "additional_image_generation_calls": 0,
+  "source_text_bodies_changed": false,
+  "renumbering": {
+   "PANEL-008-02": "PANEL-009-01",
+   "PANEL-008-03": "PANEL-009-03",
+   "TEXT-008-03": "TEXT-009-01",
+   "TEXT-008-04": "TEXT-009-02",
+   "TEXT-008-05": "TEXT-009-03"
+  },
+  "added_panel": "PANEL-009-02 (crop reaction)",
+  "episode_candidate_counts": {
+   "pages": 9,
+   "panels": 20,
+   "texts": 24
+  },
+  "preview_pages": [
+   "PAGE-008",
+   "PAGE-009"
+  ],
+  "not_complete_episode": true
+ },
+ "local_layout_round": {
+  "date": "2026-10-25",
+  "additional_image_generation_calls": 0,
+  "version": "v5",
+  "lettering_mode": "embedded",
+  "visible_labels": false,
+  "source_storyboard_sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
+  "source_text_bodies_changed": false,
+  "preview_pages": [
+   "PAGE-008",
+   "PAGE-009"
+  ],
+  "preview": "制作成果/画内贴字-v5/看图说明.md",
+  "episode_candidate_counts": {
+   "pages": 9,
+   "panels": 19,
+   "texts": 25
+  },
+  "format": "轻椭圆对白/半透明矩形内心，按类型设细描边/左对齐，外白边/格外框0，页9白缝3px",
+  "not_complete_episode": true
+ },
+ "creator_typography_feedback": {
+  "date": "2026-10-25",
+  "old_v3_lettering": "rejected",
+  "art_approval_unchanged": true,
+  "requirements": [
+   "图内贴字，不另开白色字区",
+   "不画说话人姓名，字色/气泡/主角专属正文字体辨识",
+   "气泡底更透明，字清晰",
+   "原著未有的不硬加旁白，重故事",
+   "图片可在工作区查看"
+  ]
+ },
+ "previous_embedded_layout_round": {
+  "date": "2026-10-25",
+  "additional_image_generation_calls": 0,
+  "lettering_mode": "embedded",
+  "visible_labels": false,
+  "source_storyboard_sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
+  "preview_pages": [
+   "PAGE-008",
+   "PAGE-009"
+  ],
+  "promotional_footer": "moved_to_publication_copy",
+  "episode_candidate_counts": {
+   "pages": 9,
+   "panels": 19,
+   "texts": 25
+  },
+  "text_revision": "原文妈妈？新增对白；重生认知转第一人称内心；母亲原提议拆两泡，合并正文不变"
+ },
+ "creator_reference_typography_feedback": {
+  "date": "2026-10-25",
+  "reference": "贴字参考/用户参考来源.json",
+  "requirements": [
+   "参考附图的椭圆对白/矩形内心叙述与透底",
+   "字体/字色/位置辨人，不画姓名",
+   "白色分隔收窄，不强制参考格数"
+  ],
+  "scope": "借格式不借剧情；原画及已认可画风不变；此轮无生成授权或调用"
+ }
 }

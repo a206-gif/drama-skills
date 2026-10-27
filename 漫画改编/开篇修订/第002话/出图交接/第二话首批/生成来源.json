@@ -1,153 +1,154 @@
 {
-  "schema_version": 1,
-  "date": "2026-10-25",
-  "episode": "CH002",
-  "authorization": "C 你先把童年剧本相关写好了 直接出图就可以",
-  "scope": "three_existing_childhood_tasks_only",
-  "generation_storyboard_sha256": "70bceabccd643253bfa8f7fc38c3c15b7c3f4a990f11bf57a69afe5c292cd586",
-  "previous_storyboard_sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
-  "actual_image_calls": 3,
-  "model_or_seed": "工具未提供实际底层型号/seed",
-  "pricing": "工具未提供报价或费用明细，不虚报免费或账单",
-  "calls": [
+ "schema_version": 1,
+ "date": "2026-10-25",
+ "episode": "CH002",
+ "authorization": "C 你先把童年剧本相关写好了 直接出图就可以",
+ "scope": "three_existing_childhood_tasks_only",
+ "generation_storyboard_sha256": "70bceabccd643253bfa8f7fc38c3c15b7c3f4a990f11bf57a69afe5c292cd586",
+ "previous_storyboard_sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
+ "actual_image_calls": 3,
+ "model_or_seed": "工具未提供实际底层型号/seed",
+ "pricing": "工具未提供报价或费用明细，不虚报免费或账单",
+ "calls": [
+  {
+   "call_id": "CH002-CHILD-20261025-01",
+   "panel_id": "PANEL-001-01",
+   "operation": "edit_existing",
+   "file": "制作成果/格图/PANEL-001-01.png",
+   "source_prompt_sha256": "f969f7b2aae19e202a07cde0e3f4ef6c81fb690228fa911d8e2b49a520de2be3",
+   "references_in_order": [
     {
-      "call_id": "CH002-CHILD-20261025-01",
-      "panel_id": "PANEL-001-01",
-      "operation": "edit_existing",
-      "file": "制作成果/格图/PANEL-001-01.png",
-      "source_prompt_sha256": "f969f7b2aae19e202a07cde0e3f4ef6c81fb690228fa911d8e2b49a520de2be3",
-      "references_in_order": [
-        {
-          "id": "mother_base",
-          "file": "漫画改编/开篇修订/第001话/制作成果/格图/PANEL-008-01-v3.png",
-          "sha256": "8f1cda4559c8dfe5049e86584ca79ed503084969d3fce9c895f627060421d4fd"
-        },
-        {
-          "id": "primary",
-          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
-          "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
-        }
-      ],
-      "offer_options": false,
-      "requested_aspect": "landscape approximately 16:9",
-      "actual_size": [
-        1376,
-        768
-      ],
-      "mode": "RGB",
-      "sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff",
-      "bytes": 2700426,
-      "status": "selected_pending_creator_review",
-      "tool_status": "success",
-      "visual_selfcheck": {
-        "faces_hairstyles_outfits_follow_accepted_refs": true,
-        "source_action_present": true,
-        "no_drawn_letters_balloon_ui": true,
-        "not_independent_or_creator_verdict": true
-      }
+     "id": "mother_base",
+     "file": "漫画改编/开篇修订/第001话/制作成果/格图/PANEL-008-01-v3.png",
+     "sha256": "8f1cda4559c8dfe5049e86584ca79ed503084969d3fce9c895f627060421d4fd"
     },
     {
-      "call_id": "CH002-CHILD-20261025-02",
-      "panel_id": "PANEL-002-01",
-      "operation": "new_single_panel",
-      "file": "制作成果/格图/PANEL-002-01.png",
-      "source_prompt_sha256": "e0b22390b21e35d02ae5efc4fe4a7c029b95e982b1fb61b161525449caf63457",
-      "references_in_order": [
-        {
-          "id": "primary",
-          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
-          "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
-        },
-        {
-          "id": "scene",
-          "file": "漫画改编/开篇修订/第001话/制作成果/格图/PANEL-008-02-v2.png",
-          "sha256": "439432c9607aded5a69277eab9766c21298cfb90c220f982cdd38be11d85a993"
-        },
-        {
-          "id": "qin_identity",
-          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-QINYIN-OLD-FACE.jpg",
-          "sha256": "02e2e9140e6a7112beaa55fefd3b53cc04b96a2b92b1aadc825037c853047cbb"
-        }
-      ],
-      "offer_options": false,
-      "requested_aspect": "landscape approximately 16:9",
-      "actual_size": [
-        1376,
-        768
-      ],
-      "mode": "RGB",
-      "sha256": "5a6ed8326c44a4026bdc3238e6f7f82a51289433364dfad7a2f10acc69f8970e",
-      "bytes": 2798373,
-      "status": "selected_pending_creator_review",
-      "tool_status": "success",
-      "visual_selfcheck": {
-        "faces_hairstyles_outfits_follow_accepted_refs": true,
-        "source_action_present": true,
-        "no_drawn_letters_balloon_ui": true,
-        "not_independent_or_creator_verdict": true
-      }
-    },
-    {
-      "call_id": "CH002-CHILD-20261025-03",
-      "panel_id": "PANEL-002-02",
-      "operation": "new_single_panel",
-      "file": "制作成果/格图/PANEL-002-02.png",
-      "source_prompt_sha256": "f753fa51a2141bf7342fab5154f490815c3177ce0f94d9abaa3dee313165e741",
-      "references_in_order": [
-        {
-          "id": "primary",
-          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
-          "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
-        },
-        {
-          "id": "scene",
-          "file": "漫画改编/开篇修订/第001话/制作成果/格图/PANEL-008-02-v2.png",
-          "sha256": "439432c9607aded5a69277eab9766c21298cfb90c220f982cdd38be11d85a993"
-        },
-        {
-          "id": "qin_identity",
-          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-QINYIN-OLD-FACE.jpg",
-          "sha256": "02e2e9140e6a7112beaa55fefd3b53cc04b96a2b92b1aadc825037c853047cbb"
-        }
-      ],
-      "offer_options": false,
-      "requested_aspect": "landscape approximately 16:9",
-      "actual_size": [
-        1376,
-        768
-      ],
-      "mode": "RGB",
-      "sha256": "336529222a713f55b3c283210ff308bb716236e614c6fb8f3c81d803faa65c4a",
-      "bytes": 2635060,
-      "status": "selected_pending_creator_review",
-      "tool_status": "success",
-      "visual_selfcheck": {
-        "faces_hairstyles_outfits_follow_accepted_refs": true,
-        "source_action_present": true,
-        "no_drawn_letters_balloon_ui": true,
-        "not_independent_or_creator_verdict": true
-      }
+     "id": "primary",
+     "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+     "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
     }
-  ],
-  "new_adult_images": 0,
-  "deferred": [
-    "PANEL-001-02"
-  ],
-  "note": "三项各调用一次；先记实际返回，画面与成页另核，不以成功出文件冒充验收",
-  "retakes": 0,
-  "unused_outputs": 0,
-  "selected_generated_assets": 3,
-  "parallel_submission": true,
-  "call_id_note": "逻辑编号按任务顺序；三请求并行，不代表返回先后",
-  "current_storyboard_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
-  "status": "three_generated_assets_selfchecked_pending_creator_review",
-  "cumulative_childhood_calls": {
-    "previous_batch": 5,
-    "this_batch": 3,
-    "total": 8,
-    "selected_generated_images": 5,
-    "previous_unused": 3,
-    "this_batch_unused": 0
+   ],
+   "offer_options": false,
+   "requested_aspect": "landscape approximately 16:9",
+   "actual_size": [
+    1376,
+    749
+   ],
+   "mode": "RGB",
+   "sha256": "bdb061044853c944b43d119703d48f5c47d582479083ea426b3be00d22c7d5bd",
+   "bytes": 2700426,
+   "status": "selected_pending_creator_review",
+   "tool_status": "success",
+   "visual_selfcheck": {
+    "faces_hairstyles_outfits_follow_accepted_refs": true,
+    "source_action_present": true,
+    "no_drawn_letters_balloon_ui": true,
+    "not_independent_or_creator_verdict": true
+   }
   },
-  "source_refresh_note": "当前源追加第3页细化；generation_storyboard_sha256与旧调用/输出保历史不改"
+  {
+   "call_id": "CH002-CHILD-20261025-02",
+   "panel_id": "PANEL-002-01",
+   "operation": "new_single_panel",
+   "file": "制作成果/格图/PANEL-002-01.png",
+   "source_prompt_sha256": "e0b22390b21e35d02ae5efc4fe4a7c029b95e982b1fb61b161525449caf63457",
+   "references_in_order": [
+    {
+     "id": "primary",
+     "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+     "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+    },
+    {
+     "id": "scene",
+     "file": "漫画改编/开篇修订/第001话/制作成果/格图/PANEL-008-02-v2.png",
+     "sha256": "439432c9607aded5a69277eab9766c21298cfb90c220f982cdd38be11d85a993"
+    },
+    {
+     "id": "qin_identity",
+     "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-QINYIN-OLD-FACE.jpg",
+     "sha256": "02e2e9140e6a7112beaa55fefd3b53cc04b96a2b92b1aadc825037c853047cbb"
+    }
+   ],
+   "offer_options": false,
+   "requested_aspect": "landscape approximately 16:9",
+   "actual_size": [
+    848,
+    419
+   ],
+   "mode": "RGB",
+   "sha256": "1f2392f2d4047b4236ca7cd18c5227434c4e084e85ff61c1e38d5efc5581db18",
+   "bytes": 2798373,
+   "status": "selected_pending_creator_review",
+   "tool_status": "success",
+   "visual_selfcheck": {
+    "faces_hairstyles_outfits_follow_accepted_refs": true,
+    "source_action_present": true,
+    "no_drawn_letters_balloon_ui": true,
+    "not_independent_or_creator_verdict": true
+   }
+  },
+  {
+   "call_id": "CH002-CHILD-20261025-03",
+   "panel_id": "PANEL-002-02",
+   "operation": "new_single_panel",
+   "file": "制作成果/格图/PANEL-002-02.png",
+   "source_prompt_sha256": "f753fa51a2141bf7342fab5154f490815c3177ce0f94d9abaa3dee313165e741",
+   "references_in_order": [
+    {
+     "id": "primary",
+     "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+     "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+    },
+    {
+     "id": "scene",
+     "file": "漫画改编/开篇修订/第001话/制作成果/格图/PANEL-008-02-v2.png",
+     "sha256": "439432c9607aded5a69277eab9766c21298cfb90c220f982cdd38be11d85a993"
+    },
+    {
+     "id": "qin_identity",
+     "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-QINYIN-OLD-FACE.jpg",
+     "sha256": "02e2e9140e6a7112beaa55fefd3b53cc04b96a2b92b1aadc825037c853047cbb"
+    }
+   ],
+   "offer_options": false,
+   "requested_aspect": "landscape approximately 16:9",
+   "actual_size": [
+    848,
+    421
+   ],
+   "mode": "RGB",
+   "sha256": "5c39c541b2b50ec9eeb62d33bf54e92847085379a92475998b8bb63192aee6be",
+   "bytes": 2635060,
+   "status": "selected_pending_creator_review",
+   "tool_status": "success",
+   "visual_selfcheck": {
+    "faces_hairstyles_outfits_follow_accepted_refs": true,
+    "source_action_present": true,
+    "no_drawn_letters_balloon_ui": true,
+    "not_independent_or_creator_verdict": true
+   }
+  }
+ ],
+ "new_adult_images": 0,
+ "deferred": [
+  "PANEL-001-02"
+ ],
+ "note": "三项各调用一次；先记实际返回，画面与成页另核，不以成功出文件冒充验收",
+ "retakes": 0,
+ "unused_outputs": 0,
+ "selected_generated_assets": 3,
+ "parallel_submission": true,
+ "call_id_note": "逻辑编号按任务顺序；三请求并行，不代表返回先后",
+ "current_storyboard_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
+ "status": "three_generated_assets_selfchecked_pending_creator_review",
+ "cumulative_childhood_calls": {
+  "previous_batch": 5,
+  "this_batch": 3,
+  "total": 8,
+  "selected_generated_images": 5,
+  "previous_unused": 3,
+  "this_batch_unused": 0
+ },
+ "source_refresh_note": "当前源追加第3页细化；generation_storyboard_sha256与旧调用/输出保历史不改",
+ "v3_regen_note": "r49：v3 sheet化重出后格图由整行行图取代；旧crop_xyxy/raw_input_file/旧源sha仅作历史留档，现行字节以output_sha256/size为准"
 }

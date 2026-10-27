@@ -274,7 +274,11 @@ class RepositoryReviewTests(unittest.TestCase):
             candidate.write_text(json.dumps(layout, ensure_ascii=False), encoding="utf-8")
             report = review_tool.review(layouts={"CH003": candidate})
             row = next(item for item in report["panels"] if item["key"] == "CH003/PANEL-007-01")
-            self.assertGreater(row["fit"]["scale"], 5.0)
+            # v3 sheet化后旧源图已由整行行图取代：old5 几何的不可用性改以"留白带+仍有裁切"度量——
+            # image_rect 高420 < 格高480 违反填框规则（白腰带），且对行图仍有可见裁切；
+            # 旧小图时代的放大倍率>5 前提随资产替换失效，不再使用。
+            self.assertLess(row["image_target"][3], row["panel_rect"][3])
+            self.assertGreater(row["fit"]["hidden_fraction"], 0.05)
 
     def test_report_carries_no_story_text_fields(self) -> None:
         rendered = json.dumps(self.report, ensure_ascii=False)
