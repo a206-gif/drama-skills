@@ -1,0 +1,61 @@
+{
+ "schema_version": 1,
+ "date": "2026-10-27",
+ "tool": "skills/static-comic/scripts/comic_tool.py preview",
+ "layout_sha256": "c8c319c2bb665d88814e18528a4db7bae3cfccea448f4922c1444d4187349abd",
+ "storyboard_sha256": "02ac31f56d8c0c56526282795c4d8f96b40f1177daf0e796661950775be092ee",
+ "fonts": {
+  "NotoSansCJKsc-Regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+  "LXGWWenKai-Medium.ttf": "f4b8a34d1f838fe411540cb7c97b1c384ac9738a876c4104500bc42508b2312a",
+  "NotoSerifCJKsc-Bold.otf": "8af07d4b6c2e"
+ },
+ "new_model_calls": 0,
+ "scope": "PAGE-001..009（1–8 v8重排、9=v5复制）",
+ "status": "preview_pending_creator_review",
+ "supersedes": "画内贴字-v7（抖音安全区QC前）",
+ "changes": "抖音图文工作安全区（右x2≤900/底y2≤1300）：移8框（001-04,004-02,004-03,004-04,005-01,005-02,006-01,008-02,008-03）",
+ "outputs": [
+  {
+   "file": "PAGE-001.png",
+   "sha256": "f7e3e31a71e3cd510fd3a8b094572c3dc7db0806420c60ec0d5af57e5c6f190d"
+  },
+  {
+   "file": "PAGE-002.png",
+   "sha256": "83a779645458a27af0b9027a05cb24de9e62826dce5d325f3725aaa3fab28de5"
+  },
+  {
+   "file": "PAGE-003.png",
+   "sha256": "335a2b6a1b8a28ebd6a5dc586538effe483099dceeb5e9e811fc3b41c982989d"
+  },
+  {
+   "file": "PAGE-004.png",
+   "sha256": "7f1a22f3ff5925f02cacbf9602758e61bb208428209d33d0b6912affa8a716c4"
+  },
+  {
+   "file": "PAGE-005.png",
+   "sha256": "fe1206f2107636474bc337423be5aba37ba02d585a9ec70dd67a4acdd820c295"
+  },
+  {
+   "file": "PAGE-006.png",
+   "sha256": "9345116a2253b51ad9a06d30322f808babe21253ae4641060e9083f24ad7e8fb"
+  },
+  {
+   "file": "PAGE-007.png",
+   "sha256": "0acd8a6c905654fa5a651858a8af1100354daf22749dbe1a8bf9f7703444441e"
+  },
+  {
+   "file": "PAGE-008.png",
+   "sha256": "2471b2484aad8f52e9773123b0522535f38eebd4263cfa3903d1f6d0294665ed"
+  },
+  {
+   "file": "PAGE-009.png",
+   "sha256": "f53f9d4e7b3008cc4e1c2c9b215cc9f3683eea68475d37a16fd01150fc4880bf"
+  }
+ ],
+ "creator_acceptance": {
+  "mobile_viewed": false,
+  "passed": false,
+  "scope": "PAGE-001..009"
+ },
+ "note": "v8=v7文本不变仅框位入安全区；逐页目检无压脸/手；不是冻结/发布"
+}

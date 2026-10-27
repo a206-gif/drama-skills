@@ -7,107 +7,107 @@
  "new_model_calls": 0,
  "rerendered": false,
  "published": false,
- "completeness": "CH002 12/12冻结、CH003 8/8冻结、CH001 9/9预览（全部未冻结：1–7页v7试排、8–9页v5试排；三连读可整读待反馈后冻结）",
+ "completeness": "CH002 12/12冻结、CH003 8/8冻结、CH001 9/9预览v8（未冻结）；发布形态=抖音图文帖",
  "note": "全部为既有件逐字节复制（sha对各自冻结回执/预览回执）；非平台/手机验收、未发布",
  "pages": [
   {
    "episode": "CH001",
    "page": "PAGE-001",
    "file": "CH001/PAGE-001.png",
-   "source_folder": "第001话/制作成果/画内贴字-v7",
-   "sha256": "4eb6fa8c9d4b119a4cd3b10f804115ea5d03b62b345acb86dc208851266a2946",
-   "frozen_receipt": "第001话/制作成果/画内贴字-v7/试排来源.json",
+   "source_folder": "第001话/制作成果/画内贴字-v8",
+   "sha256": "f7e3e31a71e3cd510fd3a8b094572c3dc7db0806420c60ec0d5af57e5c6f190d",
+   "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
    "frozen": false,
    "frozen_basis": "无（未冻结）",
-   "status_note": "v7回执status=preview_pending_creator_review：sheet回图裁行＋满幅贴字试排，待看图反馈"
+   "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
    "episode": "CH001",
    "page": "PAGE-002",
    "file": "CH001/PAGE-002.png",
-   "source_folder": "第001话/制作成果/画内贴字-v7",
+   "source_folder": "第001话/制作成果/画内贴字-v8",
    "sha256": "83a779645458a27af0b9027a05cb24de9e62826dce5d325f3725aaa3fab28de5",
-   "frozen_receipt": "第001话/制作成果/画内贴字-v7/试排来源.json",
+   "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
    "frozen": false,
    "frozen_basis": "无（未冻结）",
-   "status_note": "v7回执status=preview_pending_creator_review：sheet回图裁行＋满幅贴字试排，待看图反馈"
+   "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
    "episode": "CH001",
    "page": "PAGE-003",
    "file": "CH001/PAGE-003.png",
-   "source_folder": "第001话/制作成果/画内贴字-v7",
+   "source_folder": "第001话/制作成果/画内贴字-v8",
    "sha256": "335a2b6a1b8a28ebd6a5dc586538effe483099dceeb5e9e811fc3b41c982989d",
-   "frozen_receipt": "第001话/制作成果/画内贴字-v7/试排来源.json",
+   "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
    "frozen": false,
    "frozen_basis": "无（未冻结）",
-   "status_note": "v7回执status=preview_pending_creator_review：sheet回图裁行＋满幅贴字试排，待看图反馈"
+   "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
    "episode": "CH001",
    "page": "PAGE-004",
    "file": "CH001/PAGE-004.png",
-   "source_folder": "第001话/制作成果/画内贴字-v7",
-   "sha256": "fdb6c9ed1c46e43b4490c09dbc0072d3ba198f2745229d7f756c63c7c22fa530",
-   "frozen_receipt": "第001话/制作成果/画内贴字-v7/试排来源.json",
+   "source_folder": "第001话/制作成果/画内贴字-v8",
+   "sha256": "7f1a22f3ff5925f02cacbf9602758e61bb208428209d33d0b6912affa8a716c4",
+   "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
    "frozen": false,
    "frozen_basis": "无（未冻结）",
-   "status_note": "v7回执status=preview_pending_creator_review：sheet回图裁行＋满幅贴字试排，待看图反馈"
+   "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
    "episode": "CH001",
    "page": "PAGE-005",
    "file": "CH001/PAGE-005.png",
-   "source_folder": "第001话/制作成果/画内贴字-v7",
-   "sha256": "f8b1aa9a88ff2a8e059a5b03392d9796367ebab6d442eb7a0b8c5c142ffe0899",
-   "frozen_receipt": "第001话/制作成果/画内贴字-v7/试排来源.json",
+   "source_folder": "第001话/制作成果/画内贴字-v8",
+   "sha256": "fe1206f2107636474bc337423be5aba37ba02d585a9ec70dd67a4acdd820c295",
+   "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
    "frozen": false,
    "frozen_basis": "无（未冻结）",
-   "status_note": "v7回执status=preview_pending_creator_review：sheet回图裁行＋满幅贴字试排，待看图反馈"
+   "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
    "episode": "CH001",
    "page": "PAGE-006",
    "file": "CH001/PAGE-006.png",
-   "source_folder": "第001话/制作成果/画内贴字-v7",
-   "sha256": "7475eac99d2573ef3cd9aedde93dd0116d3a9ea48e8d8f7d87d4b0b0e7a4e488",
-   "frozen_receipt": "第001话/制作成果/画内贴字-v7/试排来源.json",
+   "source_folder": "第001话/制作成果/画内贴字-v8",
+   "sha256": "9345116a2253b51ad9a06d30322f808babe21253ae4641060e9083f24ad7e8fb",
+   "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
    "frozen": false,
    "frozen_basis": "无（未冻结）",
-   "status_note": "v7回执status=preview_pending_creator_review：sheet回图裁行＋满幅贴字试排，待看图反馈"
+   "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
    "episode": "CH001",
    "page": "PAGE-007",
    "file": "CH001/PAGE-007.png",
-   "source_folder": "第001话/制作成果/画内贴字-v7",
+   "source_folder": "第001话/制作成果/画内贴字-v8",
    "sha256": "0acd8a6c905654fa5a651858a8af1100354daf22749dbe1a8bf9f7703444441e",
-   "frozen_receipt": "第001话/制作成果/画内贴字-v7/试排来源.json",
+   "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
    "frozen": false,
    "frozen_basis": "无（未冻结）",
-   "status_note": "v7回执status=preview_pending_creator_review：sheet回图裁行＋满幅贴字试排，待看图反馈"
+   "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
    "episode": "CH001",
    "page": "PAGE-008",
    "file": "CH001/PAGE-008.png",
-   "source_folder": "第001话/制作成果/画内贴字-v5",
-   "sha256": "8829666cbf4e7b34b1cb16c429c68ee1464d2b78d1c708c31b7aba0c26ef7ac5",
-   "frozen_receipt": "第001话/制作成果/画内贴字-v5/试排来源.json",
+   "source_folder": "第001话/制作成果/画内贴字-v8",
+   "sha256": "2471b2484aad8f52e9773123b0522535f38eebd4263cfa3903d1f6d0294665ed",
+   "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
    "frozen": false,
    "frozen_basis": "无（未冻结）",
-   "status_note": "v5回执status=reference_format_partial_preview_pending_creator_review：两页实图局部试排待看图反馈"
+   "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
    "episode": "CH001",
    "page": "PAGE-009",
    "file": "CH001/PAGE-009.png",
-   "source_folder": "第001话/制作成果/画内贴字-v5",
+   "source_folder": "第001话/制作成果/画内贴字-v8",
    "sha256": "f53f9d4e7b3008cc4e1c2c9b215cc9f3683eea68475d37a16fd01150fc4880bf",
-   "frozen_receipt": "第001话/制作成果/画内贴字-v5/试排来源.json",
+   "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
    "frozen": false,
    "frozen_basis": "无（未冻结）",
-   "status_note": "v5回执status=reference_format_partial_preview_pending_creator_review：两页实图局部试排待看图反馈"
+   "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
    "episode": "CH002",
