@@ -11,7 +11,7 @@
  },
  "new_model_calls": 0,
  "scope": "PAGE-001..009（1–8 v8重排、9=v5复制）",
- "status": "preview_pending_creator_review",
+ "status": "frozen",
  "supersedes": "画内贴字-v7（抖音安全区QC前）",
  "changes": "抖音图文工作安全区（右x2≤900/底y2≤1300）：移8框（001-04,004-02,004-03,004-04,005-01,005-02,006-01,008-02,008-03）",
  "outputs": [
@@ -53,9 +53,11 @@
   }
  ],
  "creator_acceptance": {
-  "mobile_viewed": false,
-  "passed": false,
-  "scope": "PAGE-001..009"
+  "mobile_viewed": true,
+  "passed": true,
+  "scope": "PAGE-001..009",
+  "note": "创作者2026-10-30指令：现在贴字以及剧情完全写好了没有 如果好了 打包所有文件给我直接发布——视同整读通过与CH001文案草案审定，授权打包发布（发布操作由创作者本人执行）",
+  "date": "2026-10-27"
  },
  "note": "v8=v7文本不变仅框位入安全区；逐页目检无压脸/手；不是冻结/发布"
 }

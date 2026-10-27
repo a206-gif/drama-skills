@@ -6,6 +6,78 @@
  "uploaded": false,
  "pages": [
   {
+   "episode": "CH001",
+   "page": "PAGE-001",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-001.png",
+   "sha256": "f7e3e31a71e3cd510fd3a8b094572c3dc7db0806420c60ec0d5af57e5c6f190d",
+   "uploaded": false,
+   "note": "v8冻结后生效；封面候选=PAGE-001(备PAGE-005)；止点=PAGE-009"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-002",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-002.png",
+   "sha256": "83a779645458a27af0b9027a05cb24de9e62826dce5d325f3725aaa3fab28de5",
+   "uploaded": false,
+   "note": "v8冻结后生效；封面候选=PAGE-001(备PAGE-005)；止点=PAGE-009"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-003",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-003.png",
+   "sha256": "335a2b6a1b8a28ebd6a5dc586538effe483099dceeb5e9e811fc3b41c982989d",
+   "uploaded": false,
+   "note": "v8冻结后生效；封面候选=PAGE-001(备PAGE-005)；止点=PAGE-009"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-004",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-004.png",
+   "sha256": "7f1a22f3ff5925f02cacbf9602758e61bb208428209d33d0b6912affa8a716c4",
+   "uploaded": false,
+   "note": "v8冻结后生效；封面候选=PAGE-001(备PAGE-005)；止点=PAGE-009"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-005",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-005.png",
+   "sha256": "fe1206f2107636474bc337423be5aba37ba02d585a9ec70dd67a4acdd820c295",
+   "uploaded": false,
+   "note": "v8冻结后生效；封面候选=PAGE-001(备PAGE-005)；止点=PAGE-009"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-006",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-006.png",
+   "sha256": "9345116a2253b51ad9a06d30322f808babe21253ae4641060e9083f24ad7e8fb",
+   "uploaded": false,
+   "note": "v8冻结后生效；封面候选=PAGE-001(备PAGE-005)；止点=PAGE-009"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-007",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-007.png",
+   "sha256": "0acd8a6c905654fa5a651858a8af1100354daf22749dbe1a8bf9f7703444441e",
+   "uploaded": false,
+   "note": "v8冻结后生效；封面候选=PAGE-001(备PAGE-005)；止点=PAGE-009"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-008",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-008.png",
+   "sha256": "2471b2484aad8f52e9773123b0522535f38eebd4263cfa3903d1f6d0294665ed",
+   "uploaded": false,
+   "note": "v8冻结后生效；封面候选=PAGE-001(备PAGE-005)；止点=PAGE-009"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-009",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-009.png",
+   "sha256": "f53f9d4e7b3008cc4e1c2c9b215cc9f3683eea68475d37a16fd01150fc4880bf",
+   "uploaded": false,
+   "note": "v8冻结后生效；封面候选=PAGE-001(备PAGE-005)；止点=PAGE-009"
+  },
+  {
    "episode": "CH002",
    "page": "PAGE-001",
    "file": "CH002/PAGE-001.jpg",
@@ -206,5 +278,7 @@
    "frozen_basis": "第七轮创作者聊天确认冻结（存档登记；CH003八页回执与几何不再改）"
   }
  ],
- "note": "20页sha与三连读包/冻结回执一致；封面建议见封面与首图建议.md；平台规则/权利核验仍待创作者"
+ "note": "20页sha与三连读包/冻结回执一致；封面建议见封面与首图建议.md；平台规则/权利核验仍待创作者",
+ "order": "CH001→CH002→CH003（CH001冻结后生效）",
+ "status": "草案：CH001九行sha预填v8回执；冻结执行时转正"
 }

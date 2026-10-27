@@ -7,7 +7,7 @@
  "new_model_calls": 0,
  "rerendered": false,
  "published": false,
- "completeness": "CH002 12/12冻结、CH003 8/8冻结、CH001 9/9预览v8（未冻结）；发布形态=抖音图文帖",
+ "completeness": "CH001 9/9冻结、CH002 12/12冻结、CH003 8/8冻结；发布包三话整合已转正",
  "note": "全部为既有件逐字节复制（sha对各自冻结回执/预览回执）；非平台/手机验收、未发布",
  "pages": [
   {
@@ -17,8 +17,8 @@
    "source_folder": "第001话/制作成果/画内贴字-v8",
    "sha256": "f7e3e31a71e3cd510fd3a8b094572c3dc7db0806420c60ec0d5af57e5c6f190d",
    "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
-   "frozen": false,
-   "frozen_basis": "无（未冻结）",
+   "frozen": true,
+   "frozen_basis": "创作者整读反馈通过（2026-10-27）：创作者2026-10-30指令：现在贴字以及剧情完全写好了没有 如果好了 打包所有文件给我直接发布——视同整读通过与CH001文案草案审定，授权打包发布（发布操作由创作者本人执行）",
    "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
@@ -28,8 +28,8 @@
    "source_folder": "第001话/制作成果/画内贴字-v8",
    "sha256": "83a779645458a27af0b9027a05cb24de9e62826dce5d325f3725aaa3fab28de5",
    "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
-   "frozen": false,
-   "frozen_basis": "无（未冻结）",
+   "frozen": true,
+   "frozen_basis": "创作者整读反馈通过（2026-10-27）：创作者2026-10-30指令：现在贴字以及剧情完全写好了没有 如果好了 打包所有文件给我直接发布——视同整读通过与CH001文案草案审定，授权打包发布（发布操作由创作者本人执行）",
    "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
@@ -39,8 +39,8 @@
    "source_folder": "第001话/制作成果/画内贴字-v8",
    "sha256": "335a2b6a1b8a28ebd6a5dc586538effe483099dceeb5e9e811fc3b41c982989d",
    "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
-   "frozen": false,
-   "frozen_basis": "无（未冻结）",
+   "frozen": true,
+   "frozen_basis": "创作者整读反馈通过（2026-10-27）：创作者2026-10-30指令：现在贴字以及剧情完全写好了没有 如果好了 打包所有文件给我直接发布——视同整读通过与CH001文案草案审定，授权打包发布（发布操作由创作者本人执行）",
    "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
@@ -50,8 +50,8 @@
    "source_folder": "第001话/制作成果/画内贴字-v8",
    "sha256": "7f1a22f3ff5925f02cacbf9602758e61bb208428209d33d0b6912affa8a716c4",
    "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
-   "frozen": false,
-   "frozen_basis": "无（未冻结）",
+   "frozen": true,
+   "frozen_basis": "创作者整读反馈通过（2026-10-27）：创作者2026-10-30指令：现在贴字以及剧情完全写好了没有 如果好了 打包所有文件给我直接发布——视同整读通过与CH001文案草案审定，授权打包发布（发布操作由创作者本人执行）",
    "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
@@ -61,8 +61,8 @@
    "source_folder": "第001话/制作成果/画内贴字-v8",
    "sha256": "fe1206f2107636474bc337423be5aba37ba02d585a9ec70dd67a4acdd820c295",
    "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
-   "frozen": false,
-   "frozen_basis": "无（未冻结）",
+   "frozen": true,
+   "frozen_basis": "创作者整读反馈通过（2026-10-27）：创作者2026-10-30指令：现在贴字以及剧情完全写好了没有 如果好了 打包所有文件给我直接发布——视同整读通过与CH001文案草案审定，授权打包发布（发布操作由创作者本人执行）",
    "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
@@ -72,8 +72,8 @@
    "source_folder": "第001话/制作成果/画内贴字-v8",
    "sha256": "9345116a2253b51ad9a06d30322f808babe21253ae4641060e9083f24ad7e8fb",
    "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
-   "frozen": false,
-   "frozen_basis": "无（未冻结）",
+   "frozen": true,
+   "frozen_basis": "创作者整读反馈通过（2026-10-27）：创作者2026-10-30指令：现在贴字以及剧情完全写好了没有 如果好了 打包所有文件给我直接发布——视同整读通过与CH001文案草案审定，授权打包发布（发布操作由创作者本人执行）",
    "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
@@ -83,8 +83,8 @@
    "source_folder": "第001话/制作成果/画内贴字-v8",
    "sha256": "0acd8a6c905654fa5a651858a8af1100354daf22749dbe1a8bf9f7703444441e",
    "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
-   "frozen": false,
-   "frozen_basis": "无（未冻结）",
+   "frozen": true,
+   "frozen_basis": "创作者整读反馈通过（2026-10-27）：创作者2026-10-30指令：现在贴字以及剧情完全写好了没有 如果好了 打包所有文件给我直接发布——视同整读通过与CH001文案草案审定，授权打包发布（发布操作由创作者本人执行）",
    "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
@@ -94,8 +94,8 @@
    "source_folder": "第001话/制作成果/画内贴字-v8",
    "sha256": "2471b2484aad8f52e9773123b0522535f38eebd4263cfa3903d1f6d0294665ed",
    "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
-   "frozen": false,
-   "frozen_basis": "无（未冻结）",
+   "frozen": true,
+   "frozen_basis": "创作者整读反馈通过（2026-10-27）：创作者2026-10-30指令：现在贴字以及剧情完全写好了没有 如果好了 打包所有文件给我直接发布——视同整读通过与CH001文案草案审定，授权打包发布（发布操作由创作者本人执行）",
    "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
@@ -105,8 +105,8 @@
    "source_folder": "第001话/制作成果/画内贴字-v8",
    "sha256": "f53f9d4e7b3008cc4e1c2c9b215cc9f3683eea68475d37a16fd01150fc4880bf",
    "frozen_receipt": "第001话/制作成果/画内贴字-v8/试排来源.json",
-   "frozen": false,
-   "frozen_basis": "无（未冻结）",
+   "frozen": true,
+   "frozen_basis": "创作者整读反馈通过（2026-10-27）：创作者2026-10-30指令：现在贴字以及剧情完全写好了没有 如果好了 打包所有文件给我直接发布——视同整读通过与CH001文案草案审定，授权打包发布（发布操作由创作者本人执行）",
    "status_note": "v8回执status=preview_pending_creator_review：v7文本不变、框位入抖音工作安全区；待整读反馈"
   },
   {
