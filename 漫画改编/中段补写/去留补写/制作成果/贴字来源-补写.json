@@ -1,0 +1,311 @@
+{
+ "unit": "去留补写",
+ "nature": "补写单元贴字预览，非整话、非发布件；规则源=贴字规范.md（椭圆88底/1px描边/矩形深字/人物字体色）",
+ "new_model_calls": 0,
+ "pages": [
+  {
+   "page": "PAGE-001",
+   "file": "PAGE-001.png",
+   "sha256": "c6369f15947a5eb32db86b432478d08ab926ec785c5ff7f55038ae1bf3c62454",
+   "boxes": [
+    {
+     "panel": "PANEL-001-01",
+     "text": "TEXT-001-01",
+     "kind": "rect",
+     "speaker": "秦音"
+    },
+    {
+     "panel": "PANEL-001-02",
+     "text": "TEXT-001-02",
+     "kind": "oval",
+     "speaker": "黑衣少年"
+    },
+    {
+     "panel": "PANEL-001-03",
+     "text": "TEXT-001-03",
+     "kind": "oval",
+     "speaker": "秦音"
+    },
+    {
+     "panel": "PANEL-001-03",
+     "text": "TEXT-001-04",
+     "kind": "rect",
+     "speaker": "无"
+    }
+   ],
+   "panels": 3
+  },
+  {
+   "page": "PAGE-002",
+   "file": "PAGE-002.png",
+   "sha256": "decc211fc3a606827c966cfc4378af07b487f4a44409eae1fb25707c5df76e53",
+   "boxes": [
+    {
+     "panel": "PANEL-002-01",
+     "text": "TEXT-002-01",
+     "kind": "rect",
+     "speaker": "无"
+    },
+    {
+     "panel": "PANEL-002-02",
+     "text": "TEXT-002-02",
+     "kind": "rect",
+     "speaker": "无"
+    },
+    {
+     "panel": "PANEL-002-02",
+     "text": "TEXT-002-03",
+     "kind": "oval",
+     "speaker": "苏梨"
+    }
+   ],
+   "panels": 2
+  },
+  {
+   "page": "PAGE-003",
+   "file": "PAGE-003.png",
+   "sha256": "93b411392b33205d047324ded56bf9d96f777949ebded0e398acd2c2adbdfc52",
+   "boxes": [
+    {
+     "panel": "PANEL-003-01",
+     "text": "TEXT-003-01",
+     "kind": "oval",
+     "speaker": "苏梨"
+    },
+    {
+     "panel": "PANEL-003-02",
+     "text": "TEXT-003-02",
+     "kind": "oval",
+     "speaker": "霍谢山"
+    },
+    {
+     "panel": "PANEL-003-02",
+     "text": "TEXT-003-03",
+     "kind": "oval",
+     "speaker": "苏梨"
+    },
+    {
+     "panel": "PANEL-003-03",
+     "text": "TEXT-003-04",
+     "kind": "oval",
+     "speaker": "苏梨"
+    },
+    {
+     "panel": "PANEL-003-03",
+     "text": "TEXT-003-05",
+     "kind": "rect",
+     "speaker": "无"
+    }
+   ],
+   "panels": 3
+  },
+  {
+   "page": "PAGE-004",
+   "file": "PAGE-004.png",
+   "sha256": "a9d20a75abaa266dd3896af362736a979051d34fe533599fe71193f9c6a32de7",
+   "boxes": [
+    {
+     "panel": "PANEL-004-01",
+     "text": "TEXT-004-01",
+     "kind": "oval",
+     "speaker": "苏梨"
+    },
+    {
+     "panel": "PANEL-004-02",
+     "text": "TEXT-004-02",
+     "kind": "rect",
+     "speaker": "无"
+    },
+    {
+     "panel": "PANEL-004-03",
+     "text": "TEXT-004-03",
+     "kind": "rect",
+     "speaker": "无"
+    }
+   ],
+   "panels": 3
+  },
+  {
+   "page": "PAGE-005",
+   "file": "PAGE-005.png",
+   "sha256": "b6e3246dcf0ccd53156497216eb86bbec63bd0a5b8a4547f3c91864e2152cb64",
+   "boxes": [
+    {
+     "panel": "PANEL-005-01",
+     "text": "TEXT-005-01",
+     "kind": "rect",
+     "speaker": "无"
+    },
+    {
+     "panel": "PANEL-005-01",
+     "text": "TEXT-005-02",
+     "kind": "oval",
+     "speaker": "苏澄"
+    },
+    {
+     "panel": "PANEL-005-02",
+     "text": "TEXT-005-03",
+     "kind": "oval",
+     "speaker": "苏梨"
+    },
+    {
+     "panel": "PANEL-005-02",
+     "text": "TEXT-005-04",
+     "kind": "oval",
+     "speaker": "苏澄"
+    },
+    {
+     "panel": "PANEL-005-03",
+     "text": "TEXT-005-05",
+     "kind": "rect",
+     "speaker": "无"
+    }
+   ],
+   "panels": 3
+  },
+  {
+   "page": "PAGE-006",
+   "file": "PAGE-006.png",
+   "sha256": "d960a37d276d197942106f19b03de9099a8636582be6722d1382e4f51bdc5ebc",
+   "boxes": [
+    {
+     "panel": "PANEL-006-01",
+     "text": "TEXT-006-01",
+     "kind": "oval",
+     "speaker": "姜月烟"
+    },
+    {
+     "panel": "PANEL-006-02",
+     "text": "TEXT-006-02",
+     "kind": "oval",
+     "speaker": "苏庭渊"
+    }
+   ],
+   "panels": 2
+  },
+  {
+   "page": "PAGE-007",
+   "file": "PAGE-007.png",
+   "sha256": "0a07d4e566113c859545b09730c659863e4e0746ffbc1753dfa35745d20df121",
+   "boxes": [
+    {
+     "panel": "PANEL-007-01",
+     "text": "TEXT-007-01",
+     "kind": "oval",
+     "speaker": "苏庭渊"
+    },
+    {
+     "panel": "PANEL-007-01",
+     "text": "TEXT-007-02",
+     "kind": "rect",
+     "speaker": "无"
+    },
+    {
+     "panel": "PANEL-007-02",
+     "text": "TEXT-007-03",
+     "kind": "oval",
+     "speaker": "苏梨"
+    }
+   ],
+   "panels": 2
+  },
+  {
+   "page": "PAGE-008",
+   "file": "PAGE-008.png",
+   "sha256": "0d90125e0357a366a5983b045987512dfe723b117d70e8374131d34c7d479b02",
+   "boxes": [
+    {
+     "panel": "PANEL-008-01",
+     "text": "TEXT-008-01",
+     "kind": "oval",
+     "speaker": "苏梨"
+    },
+    {
+     "panel": "PANEL-008-02",
+     "text": "TEXT-008-02",
+     "kind": "oval",
+     "speaker": "苏庭渊"
+    }
+   ],
+   "panels": 2
+  },
+  {
+   "page": "PAGE-009",
+   "file": "PAGE-009.png",
+   "sha256": "652338afb5c24e7ceccc18e3aaf7c5b17cff0553db1ecbf87a71b9ab59662734",
+   "boxes": [
+    {
+     "panel": "PANEL-009-01",
+     "text": "TEXT-009-01",
+     "kind": "oval",
+     "speaker": "姜月烟"
+    },
+    {
+     "panel": "PANEL-009-02",
+     "text": "TEXT-009-02",
+     "kind": "oval",
+     "speaker": "苏梨"
+    }
+   ],
+   "panels": 2
+  },
+  {
+   "page": "PAGE-010",
+   "file": "PAGE-010.png",
+   "sha256": "36b88791080bcda5838622ece295de8744c2f8524b738f9e57e0c6c3cf4da939",
+   "boxes": [
+    {
+     "panel": "PANEL-010-01",
+     "text": "TEXT-010-01",
+     "kind": "rect",
+     "speaker": "无"
+    },
+    {
+     "panel": "PANEL-010-01",
+     "text": "TEXT-010-02",
+     "kind": "oval",
+     "speaker": "苏庭渊"
+    },
+    {
+     "panel": "PANEL-010-02",
+     "text": "TEXT-010-03",
+     "kind": "oval",
+     "speaker": "霍谢山"
+    },
+    {
+     "panel": "PANEL-010-03",
+     "text": "TEXT-010-04",
+     "kind": "oval",
+     "speaker": "苏梨"
+    }
+   ],
+   "panels": 3
+  },
+  {
+   "page": "PAGE-011",
+   "file": "PAGE-011.png",
+   "sha256": "e6e4f0dcb99027c18823815fd3de722b399b995795e3ebbe3eb1e4f2e88f5e38",
+   "boxes": [
+    {
+     "panel": "PANEL-011-01",
+     "text": "TEXT-011-01",
+     "kind": "oval",
+     "speaker": "苏梨"
+    },
+    {
+     "panel": "PANEL-011-02",
+     "text": "TEXT-011-02",
+     "kind": "oval",
+     "speaker": "霍谢山"
+    },
+    {
+     "panel": "PANEL-011-02",
+     "text": "TEXT-011-03",
+     "kind": "rect",
+     "speaker": "无"
+    }
+   ],
+   "panels": 2
+  }
+ ]
+}
