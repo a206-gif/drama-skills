@@ -202,9 +202,9 @@ class RepositoryReviewTests(unittest.TestCase):
                 self.assertTrue(row["frozen"])
                 self.assertTrue(row["frozen_basis"])
 
-    def test_opening_three_read_package_is_copy_only_and_labels_unfrozen_ch001(self) -> None:
-        # Round 14: three-episode continuous-read package; round 23: CH001 now contributes
-        # nine unfrozen preview pages (v7 lettered pp1-7 from creator sheets + v5 pp8-9).
+    def test_opening_three_read_package_is_copy_only_and_labels_all_frozen(self) -> None:
+        # Round 14: three-episode continuous-read package; round 30: CH001 frozen per the
+        # creator's packaging/publish instruction, so all 29 rows are frozen now.
         package = ROOT / "漫画改编/开篇修订/三连读预览-开篇三话"
         manifest = json.loads((package / "来源.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["new_model_calls"], 0)
@@ -223,12 +223,8 @@ class RepositoryReviewTests(unittest.TestCase):
                 receipt = json.loads((ROOT / "漫画改编/开篇修订" / row["frozen_receipt"]).read_text(encoding="utf-8"))
                 frozen = next(r for r in receipt["outputs"] if Path(r["file"]).name == Path(row["file"]).name)
                 self.assertEqual(frozen["sha256"], row["sha256"])
-                if row["episode"] == "CH001":
-                    self.assertFalse(row["frozen"])
-                    self.assertTrue(row["status_note"])
-                else:
-                    self.assertTrue(row["frozen"])
-                    self.assertTrue(row["frozen_basis"])
+                self.assertTrue(row["frozen"])
+                self.assertTrue(row["frozen_basis"])
         whole = json.loads((ROOT / "漫画改编/开篇修订/第002话/制作成果/整话预览-CH002/来源.json")
                            .read_text(encoding="utf-8"))
         self.assertTrue(whole["creator_acceptance"]["mobile_viewed"])
