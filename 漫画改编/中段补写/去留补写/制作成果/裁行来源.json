@@ -4,237 +4,248 @@
    "sheet": "SHEET-PAGE-001.png",
    "panel": "PANEL-001-01.png",
    "box": [
-    6,
-    6,
-    842,
-    430
-   ]
+    0,
+    0,
+    848,
+    418
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-001.png",
    "panel": "PANEL-001-02.png",
    "box": [
     0,
-    430,
+    418,
     848,
-    885
-   ]
+    845
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-001.png",
    "panel": "PANEL-001-03.png",
    "box": [
     0,
-    885,
-    425,
-    1264
-   ]
-  },
-  {
-   "sheet": "SHEET-PAGE-001.png",
-   "panel": "PANEL-001-04.png",
-   "box": [
-    425,
-    885,
+    845,
     848,
     1264
-   ]
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-001.png",
-   "hidden_pct": 0.9,
+   "hidden_pct": 0.0,
    "rows": 3,
-   "cells": 4
+   "cells": 3,
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-002.png",
    "panel": "PANEL-002-01.png",
    "box": [
-    6,
-    6,
-    841,
+    0,
+    0,
+    848,
     632
-   ]
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-002.png",
    "panel": "PANEL-002-02.png",
    "box": [
-    6,
+    0,
     632,
-    841,
-    1257
-   ]
+    848,
+    1264
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-002.png",
-   "hidden_pct": 2.5,
+   "hidden_pct": 0.0,
    "rows": 2,
-   "cells": 2
+   "cells": 2,
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-003.png",
    "panel": "PANEL-003-01.png",
    "box": [
-    5,
-    2,
-    843,
-    418
-   ]
+    0,
+    0,
+    848,
+    419
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-003.png",
    "panel": "PANEL-003-02.png",
    "box": [
-    5,
-    418,
-    843,
-    842
-   ]
+    0,
+    419,
+    848,
+    846
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-003.png",
    "panel": "PANEL-003-03.png",
    "box": [
-    5,
-    842,
-    843,
-    1262
-   ]
+    0,
+    846,
+    848,
+    1264
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-003.png",
-   "hidden_pct": 1.5,
-   "rows": 3,
-   "cells": 3
-  },
-  {
-   "sheet": "SHEET-PAGE-004-候选安全版.png",
-   "panel": "PANEL-004-01.png",
-   "box": [
-    20,
-    21,
-    828,
-    429
-   ],
-   "adopted": "创作者2026-10-30采用候选安全版为P4正式版；原刀刃构图审核拦截不重发"
-  },
-  {
-   "sheet": "SHEET-PAGE-004-候选安全版.png",
-   "panel": "PANEL-004-02.png",
-   "box": [
-    20,
-    429,
-    828,
-    836
-   ],
-   "adopted": "创作者2026-10-30采用候选安全版为P4正式版；原刀刃构图审核拦截不重发"
-  },
-  {
-   "sheet": "SHEET-PAGE-004-候选安全版.png",
-   "panel": "PANEL-004-03.png",
-   "box": [
-    20,
-    836,
-    828,
-    1242
-   ],
-   "adopted": "创作者2026-10-30采用候选安全版为P4正式版；原刀刃构图审核拦截不重发"
-  },
-  {
-   "sheet": "SHEET-PAGE-004-候选安全版.png",
-   "hidden_pct": 8.0,
+   "hidden_pct": 0.0,
    "rows": 3,
    "cells": 3,
-   "adopted": "创作者2026-10-30采用候选安全版为P4正式版；原刀刃构图审核拦截不重发"
+   "style": "风格锁厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-004.png",
+   "panel": "PANEL-004-01.png",
+   "box": [
+    15,
+    16,
+    833,
+    424
+   ],
+   "style": "风格锁厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-004.png",
+   "panel": "PANEL-004-02.png",
+   "box": [
+    15,
+    424,
+    833,
+    840
+   ],
+   "style": "风格锁厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-004.png",
+   "panel": "PANEL-004-03.png",
+   "box": [
+    15,
+    840,
+    833,
+    1249
+   ],
+   "style": "风格锁厚涂"
+  },
+  {
+   "sheet": "SHEET-PAGE-004.png",
+   "hidden_pct": 5.9,
+   "rows": 3,
+   "cells": 3,
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-005.png",
    "panel": "PANEL-005-01.png",
    "box": [
-    23,
-    17,
-    825,
-    423
-   ]
+    0,
+    0,
+    848,
+    418
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-005.png",
    "panel": "PANEL-005-02.png",
    "box": [
-    23,
-    423,
-    825,
-    838
-   ]
+    0,
+    418,
+    848,
+    844
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-005.png",
    "panel": "PANEL-005-03.png",
    "box": [
-    23,
-    838,
-    825,
-    1246
-   ]
+    0,
+    844,
+    848,
+    1264
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-005.png",
-   "hidden_pct": 8.0,
+   "hidden_pct": 0.0,
    "rows": 3,
-   "cells": 3
+   "cells": 3,
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-006.png",
    "panel": "PANEL-006-01.png",
    "box": [
-    13,
-    15,
-    834,
+    17,
+    17,
+    831,
     632
-   ]
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-006.png",
    "panel": "PANEL-006-02.png",
    "box": [
-    13,
+    17,
     632,
-    834,
-    1249
-   ]
+    831,
+    1250
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-006.png",
-   "hidden_pct": 5.5,
+   "hidden_pct": 6.4,
    "rows": 2,
-   "cells": 2
+   "cells": 2,
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-007.png",
    "panel": "PANEL-007-01.png",
    "box": [
     0,
-    10,
+    0,
     848,
-    630
-   ]
+    632
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-007.png",
    "panel": "PANEL-007-02.png",
    "box": [
     0,
-    630,
+    632,
     848,
-    1251
-   ]
+    1264
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-007.png",
-   "hidden_pct": 1.8,
+   "hidden_pct": 0.0,
    "rows": 2,
-   "cells": 2
+   "cells": 2,
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-008.png",
@@ -244,7 +255,8 @@
     6,
     839,
     632
-   ]
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-008.png",
@@ -253,14 +265,16 @@
     8,
     632,
     839,
-    1257
-   ]
+    1258
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-008.png",
-   "hidden_pct": 3.0,
+   "hidden_pct": 2.9,
    "rows": 2,
-   "cells": 2
+   "cells": 2,
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-009.png",
@@ -269,24 +283,27 @@
     0,
     0,
     848,
-    629
-   ]
+    632
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-009.png",
    "panel": "PANEL-009-02.png",
    "box": [
     0,
-    629,
+    632,
     848,
     1264
-   ]
+   ],
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-009.png",
    "hidden_pct": 0.0,
    "rows": 2,
-   "cells": 2
+   "cells": 2,
+   "style": "风格锁厚涂"
   },
   {
    "sheet": "SHEET-PAGE-010.png",
@@ -296,7 +313,8 @@
     23,
     425,
     431
-   ]
+   ],
+   "style": "初版线稿平涂（待风格锁重出）"
   },
   {
    "sheet": "SHEET-PAGE-010.png",
@@ -306,7 +324,8 @@
     23,
     820,
     431
-   ]
+   ],
+   "style": "初版线稿平涂（待风格锁重出）"
   },
   {
    "sheet": "SHEET-PAGE-010.png",
@@ -316,7 +335,8 @@
     431,
     820,
     833
-   ]
+   ],
+   "style": "初版线稿平涂（待风格锁重出）"
   },
   {
    "sheet": "SHEET-PAGE-010.png",
@@ -326,13 +346,15 @@
     833,
     820,
     1238
-   ]
+   ],
+   "style": "初版线稿平涂（待风格锁重出）"
   },
   {
    "sheet": "SHEET-PAGE-010.png",
    "hidden_pct": 10.1,
    "rows": 3,
-   "cells": 4
+   "cells": 4,
+   "style": "初版线稿平涂（待风格锁重出）"
   },
   {
    "sheet": "SHEET-PAGE-011.png",
@@ -342,7 +364,8 @@
     14,
     835,
     629
-   ]
+   ],
+   "style": "初版线稿平涂（待风格锁重出）"
   },
   {
    "sheet": "SHEET-PAGE-011.png",
@@ -352,13 +375,15 @@
     629,
     835,
     1248
-   ]
+   ],
+   "style": "初版线稿平涂（待风格锁重出）"
   },
   {
    "sheet": "SHEET-PAGE-011.png",
    "hidden_pct": 5.5,
    "rows": 2,
-   "cells": 2
+   "cells": 2,
+   "style": "初版线稿平涂（待风格锁重出）"
   }
  ]
 }
