@@ -1,0 +1,491 @@
+{
+ "schema_version": 1,
+ "date": "2026-10-30",
+ "kind": "一次性全量发布草案（开篇29＋中段25＝54页）",
+ "uploaded": false,
+ "cap_note": "抖音图文PC口径≤35张/帖：54张单帖PC端不可行；移动端>35未验证。合规替代=同批两帖（开篇29＋中段25）一次发完；或移动端实测54张单帖（风险自担）。待创作者决断。",
+ "pages": [
+  {
+   "episode": "CH001",
+   "page": "PAGE-001",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-001.png",
+   "sha256": "f7e3e31a71e3cd510fd3a8b094572c3dc7db0806420c60ec0d5af57e5c6f190d",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-002",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-002.png",
+   "sha256": "83a779645458a27af0b9027a05cb24de9e62826dce5d325f3725aaa3fab28de5",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-003",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-003.png",
+   "sha256": "335a2b6a1b8a28ebd6a5dc586538effe483099dceeb5e9e811fc3b41c982989d",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-004",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-004.png",
+   "sha256": "7f1a22f3ff5925f02cacbf9602758e61bb208428209d33d0b6912affa8a716c4",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-005",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-005.png",
+   "sha256": "fe1206f2107636474bc337423be5aba37ba02d585a9ec70dd67a4acdd820c295",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-006",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-006.png",
+   "sha256": "9345116a2253b51ad9a06d30322f808babe21253ae4641060e9083f24ad7e8fb",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-007",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-007.png",
+   "sha256": "0acd8a6c905654fa5a651858a8af1100354daf22749dbe1a8bf9f7703444441e",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-008",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-008.png",
+   "sha256": "2471b2484aad8f52e9773123b0522535f38eebd4263cfa3903d1f6d0294665ed",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH001",
+   "page": "PAGE-009",
+   "file": "第001话/制作成果/画内贴字-v8/PAGE-009.png",
+   "sha256": "f53f9d4e7b3008cc4e1c2c9b215cc9f3683eea68475d37a16fd01150fc4880bf",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-001",
+   "file": "CH002/PAGE-001.jpg",
+   "sha256": "b6ebd7b602f56d5b904a5942902b31be8b4b9da164f892e7361c849cb59ffc45",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-002",
+   "file": "CH002/PAGE-002.png",
+   "sha256": "7913a323f1dac63aa94936ae4a605380b8c09546ae5e156d763e9bf634b12cf2",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-003",
+   "file": "CH002/PAGE-003.png",
+   "sha256": "8e1e7a18a818ae94d5f1ace30056f38fca22cb79b3ea0ff4baa89ea670b0d521",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-004",
+   "file": "CH002/PAGE-004.jpg",
+   "sha256": "6dcd6678dbd0e53d3654eafaee9ee7ed278063e2e22502cf3242bc0735e49b1b",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-005",
+   "file": "CH002/PAGE-005.jpg",
+   "sha256": "d08b2bc833ffa9d80447e924e117161b8f7b8e61abac56a0f4b374f17a4bb533",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-006",
+   "file": "CH002/PAGE-006.jpg",
+   "sha256": "6964aceb44cd506913508fd16ba1c030f854dd9e1b8f81d5daa6b093415e5b69",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-007",
+   "file": "CH002/PAGE-007.jpg",
+   "sha256": "af18aa58abb04dd162646c24b699b45734314a8bd7d036ebae32f9350c66b37c",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-008",
+   "file": "CH002/PAGE-008.jpg",
+   "sha256": "40c28bc6015887f361f75694cbce23f0ae5bb56f3c0d92425693d55e464cf2c9",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-009",
+   "file": "CH002/PAGE-009.jpg",
+   "sha256": "bb0c2dc1a78d0b067d08474a92147d8a1adbec6943210b9b1b7fc81d75282bdc",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-010",
+   "file": "CH002/PAGE-010.jpg",
+   "sha256": "514ccb601bf86f73e4b051cb2c12d60af6ab2da95403a560b6b5b75e2295a144",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-011",
+   "file": "CH002/PAGE-011.jpg",
+   "sha256": "2178722a4162a8471166f015995beb71e8065166b1d90e961d18e483a3d77d33",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH002",
+   "page": "PAGE-012",
+   "file": "CH002/PAGE-012.jpg",
+   "sha256": "f6a0258e94c971eb99b36d0257c87596445e70ab76d51f03ca8e87e70084e587",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-001",
+   "file": "CH003/PAGE-001.jpg",
+   "sha256": "5982c296657782b7f200833a92324596b569155b42e85eb1ed31bbbe6fe14a4f",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-002",
+   "file": "CH003/PAGE-002.jpg",
+   "sha256": "356f2d06930826a3e304b25311c61935e5afc6de7ff3d6c4b1f31318aae3600d",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-003",
+   "file": "CH003/PAGE-003.jpg",
+   "sha256": "039f488fcd58068ffd9a0ee8607f5c540f793b3222ca98758a0abbd6bee0292e",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-004",
+   "file": "CH003/PAGE-004.jpg",
+   "sha256": "8db2e43b05771e69c58d49b7b2cb2c619f527a19a5030a9c3c643c7139db9990",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-005",
+   "file": "CH003/PAGE-005.jpg",
+   "sha256": "536399e35c330c0423cf4a4d163ceec3f752e088ea5030a58f32b588aca9b2b9",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-006",
+   "file": "CH003/PAGE-006.jpg",
+   "sha256": "8c3b8812735a3987ec199e2a044ed60f3ef965bc08d1430e898a611cd98a87f5",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-007",
+   "file": "CH003/PAGE-007.jpg",
+   "sha256": "2ab6f9f0ec25d48202ce8e4025f91cb3b05c0e82324efdc2dfaf058add018750",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "CH003",
+   "page": "PAGE-008",
+   "file": "CH003/PAGE-008.jpg",
+   "sha256": "43ce793eae337cd075b6c541ed22deb4e5469bc07abc35c35d69cf393e70dc4d",
+   "uploaded": false,
+   "section": "开篇"
+  },
+  {
+   "episode": "中段-去留",
+   "page": "PAGE-001",
+   "file": "中段补写/去留补写/制作成果/贴字预览-补写/PAGE-001.png",
+   "sha256": "c6369f15947a5eb32db86b432478d08ab926ec785c5ff7f55038ae1bf3c62454",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-去留",
+   "page": "PAGE-002",
+   "file": "中段补写/去留补写/制作成果/贴字预览-补写/PAGE-002.png",
+   "sha256": "decc211fc3a606827c966cfc4378af07b487f4a44409eae1fb25707c5df76e53",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-去留",
+   "page": "PAGE-003",
+   "file": "中段补写/去留补写/制作成果/贴字预览-补写/PAGE-003.png",
+   "sha256": "5985f81b055f1e29c9712462a9e84f59e3d3834e8af51974903476d8d0728b90",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-去留",
+   "page": "PAGE-004",
+   "file": "中段补写/去留补写/制作成果/贴字预览-补写/PAGE-004.png",
+   "sha256": "a9d20a75abaa266dd3896af362736a979051d34fe533599fe71193f9c6a32de7",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-去留",
+   "page": "PAGE-005",
+   "file": "中段补写/去留补写/制作成果/贴字预览-补写/PAGE-005.png",
+   "sha256": "160d9276ac3f9e00b3d822c4129b80fdeee5268e0af24ce8c87462d4af867b69",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-去留",
+   "page": "PAGE-006",
+   "file": "中段补写/去留补写/制作成果/贴字预览-补写/PAGE-006.png",
+   "sha256": "bcb84431083e37126bb2a707dda73feae21bcb9266cdf69445344338d157842d",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-去留",
+   "page": "PAGE-007",
+   "file": "中段补写/去留补写/制作成果/贴字预览-补写/PAGE-007.png",
+   "sha256": "0a07d4e566113c859545b09730c659863e4e0746ffbc1753dfa35745d20df121",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-去留",
+   "page": "PAGE-008",
+   "file": "中段补写/去留补写/制作成果/贴字预览-补写/PAGE-008.png",
+   "sha256": "0d90125e0357a366a5983b045987512dfe723b117d70e8374131d34c7d479b02",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-去留",
+   "page": "PAGE-009",
+   "file": "中段补写/去留补写/制作成果/贴字预览-补写/PAGE-009.png",
+   "sha256": "652338afb5c24e7ceccc18e3aaf7c5b17cff0553db1ecbf87a71b9ab59662734",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-去留",
+   "page": "PAGE-010",
+   "file": "中段补写/去留补写/制作成果/贴字预览-补写/PAGE-010.png",
+   "sha256": "71f77d7027443d479e99000396b7c73c8749c8e05652e9abf9763906cd1277d3",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-去留",
+   "page": "PAGE-011",
+   "file": "中段补写/去留补写/制作成果/贴字预览-补写/PAGE-011.png",
+   "sha256": "e6e4f0dcb99027c18823815fd3de722b399b995795e3ebbe3eb1e4f2e88f5e38",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-蟹肉",
+   "page": "PAGE-001",
+   "file": "中段补写/蟹肉补写/制作成果/贴字预览-补写/PAGE-001.png",
+   "sha256": "336d7d8aedf3553e5138b8c9de7b5a0b0a56ec9a41393dcc31a0944910ef9452",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-蟹肉",
+   "page": "PAGE-002",
+   "file": "中段补写/蟹肉补写/制作成果/贴字预览-补写/PAGE-002.png",
+   "sha256": "955fbde22a0d448b1c45cbba28ca220e1f9bda8ef7ce2a3930c800c38b23bd92",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-蟹肉",
+   "page": "PAGE-003",
+   "file": "中段补写/蟹肉补写/制作成果/贴字预览-补写/PAGE-003.png",
+   "sha256": "9f4c832825263132935432b9566564c768ececa608d46b24245ed05fbee13f0c",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-蟹肉",
+   "page": "PAGE-004",
+   "file": "中段补写/蟹肉补写/制作成果/贴字预览-补写/PAGE-004.png",
+   "sha256": "5b1db2772dd4d5ea2da8afb82486b8408369aa22a526ffce825c5af49fe39389",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-蟹肉",
+   "page": "PAGE-005",
+   "file": "中段补写/蟹肉补写/制作成果/贴字预览-补写/PAGE-005.png",
+   "sha256": "5848a07d6df963ca0aa62f16abb5f9c17487f8874253af60bc65487150620d9d",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-蟹肉",
+   "page": "PAGE-006",
+   "file": "中段补写/蟹肉补写/制作成果/贴字预览-补写/PAGE-006.png",
+   "sha256": "79eb9cb85aa63579d5e1be4323ea6661a52822a8cfa9f737b1deef140fdc2d8b",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-蟹肉",
+   "page": "PAGE-007",
+   "file": "中段补写/蟹肉补写/制作成果/贴字预览-补写/PAGE-007.png",
+   "sha256": "59e6ebdd0011c71119a44c013ad13340d1ff48f7a01907092ab9efe54ca64c9d",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-蟹肉",
+   "page": "PAGE-008",
+   "file": "中段补写/蟹肉补写/制作成果/贴字预览-补写/PAGE-008.png",
+   "sha256": "dec5e386fd16c2127b9ec4cc9082319ba860ef864245f347ba753130e2ba1776",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-蟹肉",
+   "page": "PAGE-009",
+   "file": "中段补写/蟹肉补写/制作成果/贴字预览-补写/PAGE-009.png",
+   "sha256": "55a6aadcc2c532d782a2f848bc3b1e904f7092c47d2fa6811c92f54ac8585189",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-蟹肉",
+   "page": "PAGE-010",
+   "file": "中段补写/蟹肉补写/制作成果/贴字预览-补写/PAGE-010.png",
+   "sha256": "4a7c749ba35fb0edf91cae68a5c8a05293d28f4ce3797abb67c5b63bf0ca5863",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-蟹肉",
+   "page": "PAGE-011",
+   "file": "中段补写/蟹肉补写/制作成果/贴字预览-补写/PAGE-011.png",
+   "sha256": "dc5452dadbd8dee44ee11f004a03bdba51b0cf3a589f9ba7e29d664cfa427ad9",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-蟹肉",
+   "page": "PAGE-012",
+   "file": "中段补写/蟹肉补写/制作成果/贴字预览-补写/PAGE-012.png",
+   "sha256": "715fad4cee53776f15d5a90e75aec26468df76b7098a154dcf7d1128d4483879",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-蟹肉",
+   "page": "PAGE-013",
+   "file": "中段补写/蟹肉补写/制作成果/贴字预览-补写/PAGE-013.png",
+   "sha256": "aecac35d5543a67b67ac5aaba0876987ddc24022be90bb9f581be332c2741e19",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  },
+  {
+   "episode": "中段-蟹肉",
+   "page": "PAGE-014",
+   "file": "中段补写/蟹肉补写/制作成果/贴字预览-补写/PAGE-014.png",
+   "sha256": "ed23c37b232ab0ad8be0b1280ac35de71458d3b3834ec93b6087b0561bd3b5d8",
+   "uploaded": false,
+   "section": "中段",
+   "frozen": false,
+   "note": "贴字预览未冻结；冻结后sha复核转正"
+  }
+ ]
+}

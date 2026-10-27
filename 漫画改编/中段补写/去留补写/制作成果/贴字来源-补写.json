@@ -64,7 +64,7 @@
   {
    "page": "PAGE-003",
    "file": "PAGE-003.png",
-   "sha256": "93b411392b33205d047324ded56bf9d96f777949ebded0e398acd2c2adbdfc52",
+   "sha256": "5985f81b055f1e29c9712462a9e84f59e3d3834e8af51974903476d8d0728b90",
    "boxes": [
     {
      "panel": "PANEL-003-01",
@@ -128,7 +128,7 @@
   {
    "page": "PAGE-005",
    "file": "PAGE-005.png",
-   "sha256": "b6e3246dcf0ccd53156497216eb86bbec63bd0a5b8a4547f3c91864e2152cb64",
+   "sha256": "160d9276ac3f9e00b3d822c4129b80fdeee5268e0af24ce8c87462d4af867b69",
    "boxes": [
     {
      "panel": "PANEL-005-01",
@@ -166,7 +166,7 @@
   {
    "page": "PAGE-006",
    "file": "PAGE-006.png",
-   "sha256": "d960a37d276d197942106f19b03de9099a8636582be6722d1382e4f51bdc5ebc",
+   "sha256": "bcb84431083e37126bb2a707dda73feae21bcb9266cdf69445344338d157842d",
    "boxes": [
     {
      "panel": "PANEL-006-01",
@@ -252,7 +252,7 @@
   {
    "page": "PAGE-010",
    "file": "PAGE-010.png",
-   "sha256": "36b88791080bcda5838622ece295de8744c2f8524b738f9e57e0c6c3cf4da939",
+   "sha256": "71f77d7027443d479e99000396b7c73c8749c8e05652e9abf9763906cd1277d3",
    "boxes": [
     {
      "panel": "PANEL-010-01",

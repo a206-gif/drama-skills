@@ -46,7 +46,7 @@
   {
    "page": "PAGE-003",
    "file": "PAGE-003.png",
-   "sha256": "07f364709ba7ac4c6d55f071dcb40c8d15e054bba03630153011ffa4e3ff4de6",
+   "sha256": "9f4c832825263132935432b9566564c768ececa608d46b24245ed05fbee13f0c",
    "boxes": [
     {
      "panel": "PANEL-003-01",
@@ -150,7 +150,7 @@
   {
    "page": "PAGE-007",
    "file": "PAGE-007.png",
-   "sha256": "03935d0ed754160c62e17cb9388013619ba3a32ddbe2ade2a46242d2a4f43c07",
+   "sha256": "59e6ebdd0011c71119a44c013ad13340d1ff48f7a01907092ab9efe54ca64c9d",
    "boxes": [
     {
      "panel": "PANEL-007-01",

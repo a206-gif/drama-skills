@@ -37,6 +37,8 @@ SPEAKERS = {
     "家庭医生": ("#33503A", "#E8F0E8"),
 }
 NARR_COLOR = "#20282C"
+# 定向微调（unit,page,text_id)->(dx,dy)：QC实看后人工修正触脸/触手框位；空表=全自动
+OVERRIDES: dict[tuple[str, str, str], tuple[int, int]] = {}
 PAGE_W, PAGE_H, SEAM = 1080, 1440, 3
 ALPHA = 88
 
@@ -96,6 +98,7 @@ def wrap(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeTypeFont, max
 
 
 def compose(unit: str, pages: dict[str, list[dict]], cells: list[dict], sheet_dir: Path, out_dir: Path) -> list[dict]:
+    """unit/page/text 级 override 见 OVERRIDES。"""
     out_dir.mkdir(parents=True, exist_ok=True)
     by_sheet: dict[str, list[dict]] = {}
     for c in cells:
@@ -159,10 +162,18 @@ def compose(unit: str, pages: dict[str, list[dict]], cells: list[dict], sheet_di
                     if th + 26 <= (py1 - py0) / 2.4:
                         break
                     size -= 2
+                ddx, ddy = OVERRIDES.get((unit, page, t["id"]), (0, 0))
                 if kind == "oval":
+                    cap = int((py1 - py0) * 0.30)
+                    while int(th * 1.414) + 16 > cap and size > 26:
+                        size -= 2
+                        font = ImageFont.truetype(str(fpath), size)
+                        lines = wrap(odraw, t["body"], font, maxw)
+                        tw = max(odraw.textlength(x, font=font) for x in lines)
+                        th = size * 1.45 * len(lines)
                     ew, eh = int(tw * 1.414) + 20, int(th * 1.414) + 16
-                    cx = (px0 + px1) // 2
-                    cy = py0 + eh // 2 + 10 if slot == 0 else py1 - eh // 2 - 10
+                    cx = (px0 + px1) // 2 + ddx
+                    cy = (py0 + eh // 2 + 10 if slot == 0 else py1 - eh // 2 - 10) + ddy
                     odraw.ellipse((cx - ew // 2, cy - eh // 2, cx + ew // 2, cy + eh // 2), fill=hexa(light, ALPHA))
                     ty = cy - th // 2
                     tail = [(cx - 14, cy + eh // 2 - 4), (cx + 14, cy + eh // 2 - 4), (cx, cy + eh // 2 + 16)] if slot == 0 else [
@@ -172,8 +183,8 @@ def compose(unit: str, pages: dict[str, list[dict]], cells: list[dict], sheet_di
                     align = "center"
                 else:
                     ew, eh = int(tw) + 24, int(th) + 16
-                    ex = px0 + 12
-                    ey = py0 + 10 if slot == 0 else py1 - eh - 10
+                    ex = px0 + 12 + ddx
+                    ey = (py0 + 10 if slot == 0 else py1 - eh - 10) + ddy
                     odraw.rectangle((ex, ey, ex + ew, ey + eh), fill=hexa(light if t["speaker"] != "无" else "#FFFFFF", ALPHA))
                     tx, ty = ex + 12, ey + 8
                     align = "left"
