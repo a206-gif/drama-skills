@@ -1,0 +1,288 @@
+{
+ "去留补写": [
+  {
+   "sheet": "SHEET-PAGE-001.png",
+   "panel": "PANEL-001-01.png",
+   "box": [
+    6,
+    6,
+    842,
+    430
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-001.png",
+   "panel": "PANEL-001-02.png",
+   "box": [
+    0,
+    430,
+    848,
+    885
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-001.png",
+   "panel": "PANEL-001-03.png",
+   "box": [
+    0,
+    885,
+    425,
+    1264
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-001.png",
+   "panel": "PANEL-001-04.png",
+   "box": [
+    425,
+    885,
+    848,
+    1264
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-001.png",
+   "hidden_pct": 0.9,
+   "rows": 3,
+   "cells": 4
+  },
+  {
+   "sheet": "SHEET-PAGE-002.png",
+   "panel": "PANEL-002-01.png",
+   "box": [
+    6,
+    6,
+    841,
+    632
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-002.png",
+   "panel": "PANEL-002-02.png",
+   "box": [
+    6,
+    632,
+    841,
+    1257
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-002.png",
+   "hidden_pct": 2.5,
+   "rows": 2,
+   "cells": 2
+  },
+  {
+   "sheet": "SHEET-PAGE-003.png",
+   "panel": "PANEL-003-01.png",
+   "box": [
+    5,
+    2,
+    843,
+    418
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-003.png",
+   "panel": "PANEL-003-02.png",
+   "box": [
+    5,
+    418,
+    843,
+    842
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-003.png",
+   "panel": "PANEL-003-03.png",
+   "box": [
+    5,
+    842,
+    843,
+    1262
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-003.png",
+   "hidden_pct": 1.5,
+   "rows": 3,
+   "cells": 3
+  },
+  {
+   "sheet": "SHEET-PAGE-004-候选安全版.png",
+   "panel": "PANEL-004-01.png",
+   "box": [
+    20,
+    21,
+    828,
+    429
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-004-候选安全版.png",
+   "panel": "PANEL-004-02.png",
+   "box": [
+    20,
+    429,
+    828,
+    836
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-004-候选安全版.png",
+   "panel": "PANEL-004-03.png",
+   "box": [
+    20,
+    836,
+    828,
+    1242
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-004-候选安全版.png",
+   "hidden_pct": 8.0,
+   "rows": 3,
+   "cells": 3
+  },
+  {
+   "sheet": "SHEET-PAGE-005.png",
+   "panel": "PANEL-005-01.png",
+   "box": [
+    23,
+    17,
+    825,
+    423
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-005.png",
+   "panel": "PANEL-005-02.png",
+   "box": [
+    23,
+    423,
+    825,
+    838
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-005.png",
+   "panel": "PANEL-005-03.png",
+   "box": [
+    23,
+    838,
+    825,
+    1246
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-005.png",
+   "hidden_pct": 8.0,
+   "rows": 3,
+   "cells": 3
+  },
+  {
+   "sheet": "SHEET-PAGE-006.png",
+   "panel": "PANEL-006-01.png",
+   "box": [
+    13,
+    15,
+    834,
+    632
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-006.png",
+   "panel": "PANEL-006-02.png",
+   "box": [
+    13,
+    632,
+    834,
+    1249
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-006.png",
+   "hidden_pct": 5.5,
+   "rows": 2,
+   "cells": 2
+  },
+  {
+   "sheet": "SHEET-PAGE-007.png",
+   "panel": "PANEL-007-01.png",
+   "box": [
+    0,
+    10,
+    848,
+    630
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-007.png",
+   "panel": "PANEL-007-02.png",
+   "box": [
+    0,
+    630,
+    848,
+    1251
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-007.png",
+   "hidden_pct": 1.8,
+   "rows": 2,
+   "cells": 2
+  },
+  {
+   "sheet": "SHEET-PAGE-008.png",
+   "panel": "PANEL-008-01.png",
+   "box": [
+    8,
+    6,
+    839,
+    632
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-008.png",
+   "panel": "PANEL-008-02.png",
+   "box": [
+    8,
+    632,
+    839,
+    1257
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-008.png",
+   "hidden_pct": 3.0,
+   "rows": 2,
+   "cells": 2
+  },
+  {
+   "sheet": "SHEET-PAGE-009.png",
+   "panel": "PANEL-009-01.png",
+   "box": [
+    0,
+    0,
+    848,
+    629
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-009.png",
+   "panel": "PANEL-009-02.png",
+   "box": [
+    0,
+    629,
+    848,
+    1264
+   ]
+  },
+  {
+   "sheet": "SHEET-PAGE-009.png",
+   "hidden_pct": 0.0,
+   "rows": 2,
+   "cells": 2
+  }
+ ]
+}
