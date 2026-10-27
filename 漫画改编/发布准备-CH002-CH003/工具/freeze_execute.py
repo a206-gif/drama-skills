@@ -11,7 +11,6 @@ import argparse
 import hashlib
 import json
 import shutil
-import sys
 from datetime import date
 from pathlib import Path
 
