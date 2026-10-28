@@ -1,0 +1,64 @@
+{
+ "schema_version": 1,
+ "date": "2026-10-30",
+ "tool": "中段补写/工具/补字合成-补写贴字合成.py",
+ "layout_sha256": "b5eb234e4785a4a329169b6d0f4df876bc41933690c3645b7c22c106a5706bc3",
+ "storyboard_sha256": "3900307517f7fb0715ccf17ec31ad9a15a7f37bf864d82f13eaa647e87796727",
+ "fonts": {
+  "NotoSansCJKsc-Regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+  "LXGWWenKai-Medium.ttf": "f4b8a34d1f838fe411540cb7c97b1c384ac9738a876c4104500bc42508b2312a",
+  "NotoSerifCJKsc-Bold.otf": "8af07d4b6c2e"
+ },
+ "new_model_calls": 0,
+ "scope": "PAGE-001..11",
+ "status": "frozen",
+ "supersedes": "无（首冻）",
+ "changes": "v3重出+重裁+贴字后首冻",
+ "frozen_basis": "创作者整读47页通过（2026-10-30，Arena选项'整读通过'）",
+ "outputs": [
+  {
+   "file": "PAGE-001.png",
+   "sha256": "b00d0b78b1d05e719d0a791158bb0b794907ea490cd45dc7e244c23d29107772"
+  },
+  {
+   "file": "PAGE-002.png",
+   "sha256": "529be7c0acb1ce309d997bf0bce3808123cee65ad2f384bf3c692f68b88de42a"
+  },
+  {
+   "file": "PAGE-003.png",
+   "sha256": "c46b65baab8ce5e60d3896e93baa6d9614242c99a794cb65a37f3183700ca8b9"
+  },
+  {
+   "file": "PAGE-004.png",
+   "sha256": "06bf0ae65ef3efa1bf94951bd72405358fabe45d9c3fd221ae80af496ec35daa"
+  },
+  {
+   "file": "PAGE-005.png",
+   "sha256": "60982511326884141be8da007057205efb8d586d7fe6285db4d8634a60d2795e"
+  },
+  {
+   "file": "PAGE-006.png",
+   "sha256": "ad898b28c8fab982125f6e92ded3684917bf2585d1b23e5471eefd9a52df10d1"
+  },
+  {
+   "file": "PAGE-007.png",
+   "sha256": "d3f62201f709a3a18d91d03702fab09386d4aa20570b325e31f4d44ae1602e8b"
+  },
+  {
+   "file": "PAGE-008.png",
+   "sha256": "3abea9ac192929bba1b016124d43a3bed5c9dfbd0e71a442ce0438ca4a6573d3"
+  },
+  {
+   "file": "PAGE-009.png",
+   "sha256": "f5bf65a37371b545e1cd68375c192a51401289045346f34239216221261be005"
+  },
+  {
+   "file": "PAGE-010.png",
+   "sha256": "e28232b1f4bc054f06b97fdd594ad40fdefd918ff2a4359d863a0fa852a77bbd"
+  },
+  {
+   "file": "PAGE-011.png",
+   "sha256": "f6084bf1ed0a43f3bf59751e84be29dfe539e5d6298eb41cccbbac5cd7b79aec"
+  }
+ ]
+}

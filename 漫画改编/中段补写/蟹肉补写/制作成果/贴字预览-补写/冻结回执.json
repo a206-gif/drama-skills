@@ -1,0 +1,76 @@
+{
+ "schema_version": 1,
+ "date": "2026-10-30",
+ "tool": "中段补写/工具/补字合成-补写贴字合成.py",
+ "layout_sha256": "8856884f27ac448a698aec9c11f9fe76b731e9434349ac97f675105a69c453a1",
+ "storyboard_sha256": "892ac121534a032b5644a3b9b5d6d73d2b4018b1eec01431b1cd5e872adca719",
+ "fonts": {
+  "NotoSansCJKsc-Regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+  "LXGWWenKai-Medium.ttf": "f4b8a34d1f838fe411540cb7c97b1c384ac9738a876c4104500bc42508b2312a",
+  "NotoSerifCJKsc-Bold.otf": "8af07d4b6c2e"
+ },
+ "new_model_calls": 0,
+ "scope": "PAGE-001..14",
+ "status": "frozen",
+ "supersedes": "无（首冻）",
+ "changes": "v3重出+重裁+贴字后首冻",
+ "frozen_basis": "创作者整读47页通过（2026-10-30，Arena选项'整读通过'）",
+ "outputs": [
+  {
+   "file": "PAGE-001.png",
+   "sha256": "d427ebe6412c57364d5b69734a4ffb8406335b39c8e81d1a18917b2d152fbd48"
+  },
+  {
+   "file": "PAGE-002.png",
+   "sha256": "761ac355d41343e66e4bf8ad4b213ddc874d1f6d1ba0a90ccdfe3f7eda88d383"
+  },
+  {
+   "file": "PAGE-003.png",
+   "sha256": "4a813be9ffd9b28447e817b63a9a97bc4d37cd2112e0403babc009bac22aa220"
+  },
+  {
+   "file": "PAGE-004.png",
+   "sha256": "061d60679e0e4efe05a918baf040b5f238537f15927d818f7e5a199db6230099"
+  },
+  {
+   "file": "PAGE-005.png",
+   "sha256": "1f3d37c52bfb1c9630d52fdaef5a4fc14bf7ef0abbc108cbc12aa759d2ddb5d4"
+  },
+  {
+   "file": "PAGE-006.png",
+   "sha256": "2c2bf105c13d4ebfa2446642acc8c62002428861ec5bf8a7179b80b17f9a9ca8"
+  },
+  {
+   "file": "PAGE-007.png",
+   "sha256": "864d7875940e0450df10b68e9e4d70fbdab244beb0241137aacc02fef89bf1f9"
+  },
+  {
+   "file": "PAGE-008.png",
+   "sha256": "7303f183d369f1223f3998dee6553c5440cfa78bf4cb39827fb1c96bcebba84a"
+  },
+  {
+   "file": "PAGE-009.png",
+   "sha256": "6b3c5f66e3fb5c0c1f174c47f663eb974b44afd7968e86f52f749eb2b9fc2db3"
+  },
+  {
+   "file": "PAGE-010.png",
+   "sha256": "191c9ed57ba605d087a88ddc514631611a14285a3afa546e5e9ea75de2e173f2"
+  },
+  {
+   "file": "PAGE-011.png",
+   "sha256": "c639925716077cf9afcb764131a6034b158d508b9d0d06e54509d316311bbb1a"
+  },
+  {
+   "file": "PAGE-012.png",
+   "sha256": "fc93118241b8522d26d84547e7b1a28ef78543b9079634ecf8426b72cf863fab"
+  },
+  {
+   "file": "PAGE-013.png",
+   "sha256": "c55f7ff4154138875e6f6e4dfada8e528794a055230f47bf470ac89ad49a8671"
+  },
+  {
+   "file": "PAGE-014.png",
+   "sha256": "8f709333227084287fc86bc6046c58dbcc21accb3c597988de9ec1a15d646405"
+  }
+ ]
+}

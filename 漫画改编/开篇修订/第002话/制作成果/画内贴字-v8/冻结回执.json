@@ -1,0 +1,68 @@
+{
+ "schema_version": 1,
+ "date": "2026-10-30",
+ "tool": "skills/static-comic/scripts/comic_tool.py render",
+ "layout_sha256": "22a70aff21cbb6990551c2c8a5b013ff3d76df01aaa7dcd8618a9055345127c0",
+ "storyboard_sha256": "586abfc426612c456ec08f06bdb1fb08a9ea4fb8accc5ffd67ec84f649f6768b",
+ "fonts": {
+  "NotoSansCJKsc-Regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+  "LXGWWenKai-Medium.ttf": "f4b8a34d1f838fe411540cb7c97b1c384ac9738a876c4104500bc42508b2312a",
+  "NotoSerifCJKsc-Bold.otf": "8af07d4b6c2e"
+ },
+ "new_model_calls": 0,
+ "scope": "PAGE-001..012",
+ "status": "frozen",
+ "supersedes": "v6(未冻结态)",
+ "changes": "满框后v7+v8指针规则",
+ "frozen_basis": "创作者整读47页通过（2026-10-30，Arena选项'整读通过'）",
+ "outputs": [
+  {
+   "file": "PAGE-001.png",
+   "sha256": "dbfc69a2f1fcd1cdc9bfba538b3641da66bdca9a5a3ba7a9a26fe5e310703618"
+  },
+  {
+   "file": "PAGE-002.png",
+   "sha256": "ffaeb3de3523f256cc75c346babcee3611a1e9c3d9c13c8581ddab9d1c180b88"
+  },
+  {
+   "file": "PAGE-003.png",
+   "sha256": "067e1aea89df0127d23eae23bd3ba823209358225b440617e57cd68550b6a78a"
+  },
+  {
+   "file": "PAGE-004.png",
+   "sha256": "07bb9bb6d8659c8d413099335cf5c8138ccfa246f08fd49f10fde4627b873f51"
+  },
+  {
+   "file": "PAGE-005.png",
+   "sha256": "924068da04ab31d73519d1a5cfb8dcd25c6a7973bf8ce6233085b05974078fcc"
+  },
+  {
+   "file": "PAGE-006.png",
+   "sha256": "b43d4b4284a40f148696d0fd717db71abf4e21278e405be39146f0b0923fd93d"
+  },
+  {
+   "file": "PAGE-007.png",
+   "sha256": "3c420d024fcc1a0bbd9d14651639b8df71c86d2cc34ccd6529434991dde4f4cb"
+  },
+  {
+   "file": "PAGE-008.png",
+   "sha256": "028d5aaa1740d0fea06bb95559b8330b488c2bd7646370d49721c33ee73b5627"
+  },
+  {
+   "file": "PAGE-009.png",
+   "sha256": "f9dd9deab0b924508c77ae916ae32d03c9fab898f10823a7ce785a9207c11b32"
+  },
+  {
+   "file": "PAGE-010.png",
+   "sha256": "e251e362af47247e82ee6937218026d95d7dbc6739d082b22bdab91a207af396"
+  },
+  {
+   "file": "PAGE-011.png",
+   "sha256": "37c258a45893fd6eee8349a5598793c19998af92901068e0b74a7cd6d2bbf66a"
+  },
+  {
+   "file": "PAGE-012.png",
+   "sha256": "c654ab6482a4926c6ced63e5512b0f476d44d0afaccf34b2026da69190f23b52"
+  }
+ ]
+}

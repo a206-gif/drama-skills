@@ -1,0 +1,52 @@
+{
+ "schema_version": 1,
+ "date": "2026-10-30",
+ "tool": "skills/static-comic/scripts/comic_tool.py render",
+ "layout_sha256": "67e1e62f25424150327fb6fd2a3b38f3847e49f3e04b0735799b79140c5abc8b",
+ "storyboard_sha256": "435193b607f3364965cb0c2b87a563c4e681ba2c6a8253e9c96ff0f796ba161b",
+ "fonts": {
+  "NotoSansCJKsc-Regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+  "LXGWWenKai-Medium.ttf": "f4b8a34d1f838fe411540cb7c97b1c384ac9738a876c4104500bc42508b2312a",
+  "NotoSerifCJKsc-Bold.otf": "8af07d4b6c2e"
+ },
+ "new_model_calls": 0,
+ "scope": "PAGE-001..008",
+ "status": "frozen",
+ "supersedes": "v7",
+ "changes": "满框v7→v9指针规则",
+ "frozen_basis": "创作者整读47页通过（2026-10-30，Arena选项'整读通过'）",
+ "outputs": [
+  {
+   "file": "PAGE-001.png",
+   "sha256": "2504e0b597243188c2ef0b3bfdb6703134df19083ec7098ef613397efb7451c4"
+  },
+  {
+   "file": "PAGE-002.png",
+   "sha256": "af8c7368b3f93f3e962f889bf592db32b8871965b0498b2f57e78dd7a86a9241"
+  },
+  {
+   "file": "PAGE-003.png",
+   "sha256": "888e8d3e15315ab7d14cf03fef0f8f62775601bc680ea1d16f56646653e37323"
+  },
+  {
+   "file": "PAGE-004.png",
+   "sha256": "e29eacefccc73273320e2d400b9c7e4882b7575bc40c164fb30cf3b4d4975ebf"
+  },
+  {
+   "file": "PAGE-005.png",
+   "sha256": "3d0a842e3764ce21e2c49f9b29d44b0fa6a3ecc91bc8cdec2f539d7dcf492928"
+  },
+  {
+   "file": "PAGE-006.png",
+   "sha256": "86f749a7075e54cec8f79004e426288bcf2274ce4c4826cd4cf3df5b5c991285"
+  },
+  {
+   "file": "PAGE-007.png",
+   "sha256": "b3ddd284bf13938410fcc63d446f27895bc447658e7e88bcb66cbec529c8db9f"
+  },
+  {
+   "file": "PAGE-008.png",
+   "sha256": "53ec8b7857e5515a758ead61eb105da552a623e1da2cab29d742f0737e9c5a7c"
+  }
+ ]
+}
