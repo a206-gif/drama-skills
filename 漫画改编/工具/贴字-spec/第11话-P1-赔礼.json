@@ -1,0 +1,44 @@
+{
+ "image": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第11话/P1-赔礼.png",
+ "output": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第11话/P1-赔礼-贴字.png",
+ "font": "/home/user/.cache/drama-tools/fonts/CJK-old.ttf",
+ "min_font": 18,
+ "items": [
+  {
+   "type": "box",
+   "panel": 1,
+   "corner": "tl",
+   "width": 0.36,
+   "lines": [
+    "上京来的客人姓霍。昨天在厨房里，他差点被当成凶手。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 1,
+   "corner": "tr",
+   "width": 0.34,
+   "lines": [
+    "昨天的事是我不对，今天正式来赔礼。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 2,
+   "corner": "tr",
+   "width": 0.4,
+   "lines": [
+    "无事献殷勤。"
+   ]
+  },
+  {
+   "type": "box",
+   "panel": 2,
+   "corner": "br",
+   "width": 0.4,
+   "lines": [
+    "苏澄不喜欢他。从第一眼就不喜欢。"
+   ]
+  }
+ ]
+}

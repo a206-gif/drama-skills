@@ -1,0 +1,62 @@
+{
+ "image": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第12话/P7-帮帮我.png",
+ "output": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第12话/P7-帮帮我-贴字.png",
+ "font": "/home/user/.cache/drama-tools/fonts/CJK-old.ttf",
+ "min_font": 18,
+ "items": [
+  {
+   "type": "oval",
+   "panel": 2,
+   "corner": "tr",
+   "width": 0.42,
+   "lines": [
+    "姐姐今天，没有什么话要对我说吗。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 1,
+   "corner": "tl",
+   "width": 0.44,
+   "lines": [
+    "下次做了坏事，记得收尾干净一些。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 1,
+   "corner": "tc",
+   "width": 0.3,
+   "lines": [
+    "或者，来求求我。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 1,
+   "corner": "bl",
+   "width": 0.46,
+   "lines": [
+    "说『姐姐，帮帮我』，我会勉为其难地帮你。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 2,
+   "corner": "br",
+   "width": 0.34,
+   "lines": [
+    "姐姐，帮帮我。"
+   ]
+  },
+  {
+   "type": "box",
+   "panel": 2,
+   "corner": "bc",
+   "width": 0.4,
+   "lines": [
+    "他学得很快。快得让人心慌。"
+   ]
+  }
+ ]
+}

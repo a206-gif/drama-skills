@@ -1,0 +1,66 @@
+{
+ "image": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第12话/P1-霍音音.png",
+ "output": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第12话/P1-霍音音-贴字.png",
+ "font": "/home/user/.cache/drama-tools/fonts/CJK-old.ttf",
+ "min_font": 18,
+ "items": [
+  {
+   "type": "box",
+   "panel": 1,
+   "corner": "tl",
+   "width": 0.34,
+   "lines": [
+    "她起身就走。她赌他不敢让她走。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 1,
+   "corner": "tr",
+   "width": 0.3,
+   "lines": [
+    "刘叔，备车。"
+   ]
+  },
+  {
+   "type": "box",
+   "panel": 2,
+   "corner": "tl",
+   "width": 0.34,
+   "lines": [
+    "他原本想在生日宴上，当众解除婚约，让她难堪。可现在他先慌了。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 2,
+   "corner": "tr",
+   "width": 0.32,
+   "lines": [
+    "音音现在的名字，不叫秦音。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 2,
+   "width": 0.26,
+   "lines": [
+    "叫霍音音。"
+   ],
+   "at": [
+    0.8,
+    0.42
+   ],
+   "fixed": true
+  },
+  {
+   "type": "oval",
+   "panel": 3,
+   "corner": "tr",
+   "width": 0.24,
+   "lines": [
+    "继续说。"
+   ]
+  }
+ ]
+}

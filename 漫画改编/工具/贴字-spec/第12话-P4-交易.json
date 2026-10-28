@@ -1,0 +1,53 @@
+{
+ "image": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第12话/P4-交易.png",
+ "output": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第12话/P4-交易-贴字.png",
+ "font": "/home/user/.cache/drama-tools/fonts/CJK-old.ttf",
+ "min_font": 18,
+ "items": [
+  {
+   "type": "oval",
+   "panel": 1,
+   "corner": "bl",
+   "width": 0.44,
+   "lines": [
+    "我想和你做一笔交易。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 3,
+   "corner": "tr",
+   "width": 0.44,
+   "lines": [
+    "看你更在意音音，还是……你自己。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 2,
+   "corner": "tl",
+   "width": 0.44,
+   "lines": [
+    "音音是无辜的，她什么都不知道。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 4,
+   "corner": "tl",
+   "width": 0.44,
+   "lines": [
+    "……你要和我交易什么。"
+   ]
+  },
+  {
+   "type": "box",
+   "panel": 4,
+   "corner": "br",
+   "width": 0.44,
+   "lines": [
+    "她确认了一件事：那层光环，是可以被削的。"
+   ]
+  }
+ ]
+}

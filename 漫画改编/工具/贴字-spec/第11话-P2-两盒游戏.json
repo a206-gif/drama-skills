@@ -1,0 +1,44 @@
+{
+ "image": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第11话/P2-两盒游戏.png",
+ "output": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第11话/P2-两盒游戏-贴字.png",
+ "font": "/home/user/.cache/drama-tools/fonts/CJK-old.ttf",
+ "min_font": 18,
+ "items": [
+  {
+   "type": "oval",
+   "panel": 2,
+   "corner": "tl",
+   "width": 0.42,
+   "lines": [
+    "听说小澄喜欢游戏，赛车类的，带了两份。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 2,
+   "corner": "bl",
+   "width": 0.3,
+   "lines": [
+    "……谢了。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 3,
+   "corner": "tr",
+   "width": 0.4,
+   "lines": [
+    "姐姐不喜欢这个。"
+   ]
+  },
+  {
+   "type": "box",
+   "panel": 4,
+   "corner": "tl",
+   "width": 0.42,
+   "lines": [
+    "赛车。这个词，苏梨记了一辈子。"
+   ]
+  }
+ ]
+}

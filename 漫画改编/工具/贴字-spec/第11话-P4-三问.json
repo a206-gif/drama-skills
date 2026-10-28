@@ -1,0 +1,44 @@
+{
+ "image": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第11话/P4-三问.png",
+ "output": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第11话/P4-三问-贴字.png",
+ "font": "/home/user/.cache/drama-tools/fonts/CJK-old.ttf",
+ "min_font": 18,
+ "items": [
+  {
+   "type": "oval",
+   "panel": 1,
+   "corner": "tl",
+   "width": 0.34,
+   "lines": [
+    "霍老爷子膝下三儿一女，你父亲最小，最得宠。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 1,
+   "corner": "tr",
+   "width": 0.34,
+   "lines": [
+    "他走得突然——是病，还是人为的意外？"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 2,
+   "corner": "bl",
+   "width": 0.42,
+   "lines": [
+    "苏小姐，你这话什么意思。"
+   ]
+  },
+  {
+   "type": "box",
+   "panel": 3,
+   "corner": "tl",
+   "width": 0.44,
+   "lines": [
+    "她一句一句往下问，像在拆一件早就知道答案的东西。"
+   ]
+  }
+ ]
+}

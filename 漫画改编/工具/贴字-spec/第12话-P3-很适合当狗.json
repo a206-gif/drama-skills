@@ -1,0 +1,44 @@
+{
+ "image": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第12话/P3-很适合当狗.png",
+ "output": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第12话/P3-很适合当狗-贴字.png",
+ "font": "/home/user/.cache/drama-tools/fonts/CJK-old.ttf",
+ "min_font": 18,
+ "items": [
+  {
+   "type": "box",
+   "panel": 1,
+   "corner": "tr",
+   "width": 0.32,
+   "lines": [
+    "他擦了很久。酒渗进布料，擦不干净。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 2,
+   "corner": "tr",
+   "width": 0.4,
+   "lines": [
+    "现在，自己把衣服擦干净。你太脏了。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 2,
+   "corner": "br",
+   "width": 0.42,
+   "lines": [
+    "霍总真听话。也很适合当狗嘛。"
+   ]
+  },
+  {
+   "type": "box",
+   "panel": 3,
+   "corner": "bl",
+   "width": 0.44,
+   "lines": [
+    "他明白了——她是在给那个不在场的人出头。"
+   ]
+  }
+ ]
+}

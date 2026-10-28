@@ -1,0 +1,26 @@
+{
+ "image": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第11话/P5-反客为主.png",
+ "output": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第11话/P5-反客为主-贴字.png",
+ "font": "/home/user/.cache/drama-tools/fonts/CJK-old.ttf",
+ "min_font": 18,
+ "items": [
+  {
+   "type": "oval",
+   "panel": 1,
+   "corner": "tr",
+   "width": 0.3,
+   "lines": [
+    "我们很熟吗？我为什么要信任你。"
+   ]
+  },
+  {
+   "type": "box",
+   "panel": 1,
+   "corner": "br",
+   "width": 0.36,
+   "lines": [
+    "上京来的霍家人，第一次发现——这位病秧子，不好拿捏。"
+   ]
+  }
+ ]
+}

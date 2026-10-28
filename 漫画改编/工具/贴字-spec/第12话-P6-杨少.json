@@ -1,0 +1,79 @@
+{
+ "image": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第12话/P6-杨少.png",
+ "output": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第12话/P6-杨少-贴字.png",
+ "font": "/home/user/.cache/drama-tools/fonts/CJK-old.ttf",
+ "min_font": 18,
+ "items": [
+  {
+   "type": "box",
+   "panel": 1,
+   "corner": "tl",
+   "width": 0.44,
+   "lines": [
+    "杨家少爷坐着轮椅来拦她的车，话都说不清。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 1,
+   "corner": "br",
+   "width": 0.4,
+   "lines": [
+    "杨少说，请看。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 3,
+   "corner": "tl",
+   "width": 0.3,
+   "lines": [
+    "还有别的证据吗。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 3,
+   "corner": "tc",
+   "width": 0.28,
+   "lines": [
+    "那我就放心了。"
+   ]
+  },
+  {
+   "type": "box",
+   "panel": 3,
+   "corner": "bl",
+   "width": 0.32,
+   "lines": [
+    "U 盘丢给刘叔，当场销毁。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 3,
+   "width": 0.3,
+   "lines": [
+    "小姐，真的没关系吗。"
+   ],
+   "at": [
+    0.84,
+    0.88
+   ],
+   "fixed": true
+  },
+  {
+   "type": "oval",
+   "panel": 3,
+   "width": 0.34,
+   "lines": [
+    "没关系。他只是太想保护我了。"
+   ],
+   "at": [
+    0.83,
+    0.6
+   ],
+   "fixed": true
+  }
+ ]
+}

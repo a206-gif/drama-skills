@@ -1,0 +1,53 @@
+{
+ "image": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第12话/P5-街角.png",
+ "output": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第12话/P5-街角-贴字.png",
+ "font": "/home/user/.cache/drama-tools/fonts/CJK-old.ttf",
+ "min_font": 18,
+ "items": [
+  {
+   "type": "box",
+   "panel": 1,
+   "corner": "tl",
+   "width": 0.3,
+   "lines": [
+    "街角的暗处，有人在看。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 2,
+   "corner": "tl",
+   "width": 0.28,
+   "lines": [
+    "看得开心吗。"
+   ]
+  },
+  {
+   "type": "box",
+   "panel": 2,
+   "corner": "tr",
+   "width": 0.34,
+   "lines": [
+    "相机里全是偷拍的照片。她的一张，嘴唇的特写，他没删。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 2,
+   "corner": "bl",
+   "width": 0.24,
+   "lines": [
+    "听话。"
+   ]
+  },
+  {
+   "type": "box",
+   "panel": 2,
+   "corner": "br",
+   "width": 0.32,
+   "lines": [
+    "项圈一点点扣紧。这一次，咒语没有生效。"
+   ]
+  }
+ ]
+}

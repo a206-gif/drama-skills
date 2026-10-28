@@ -1,0 +1,44 @@
+{
+ "image": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第12话/P8-怪物.png",
+ "output": "漫画改编/发布准备-一次性全量/发布包-全量12话-20261030/旧稿存档-第12话/P8-怪物-贴字.png",
+ "font": "/home/user/.cache/drama-tools/fonts/CJK-old.ttf",
+ "min_font": 18,
+ "items": [
+  {
+   "type": "box",
+   "panel": 1,
+   "corner": "tl",
+   "width": 0.32,
+   "lines": [
+    "入夜。他做了个梦，梦里他把助听器摘了。"
+   ]
+  },
+  {
+   "type": "oval",
+   "panel": 1,
+   "corner": "tr",
+   "width": 0.28,
+   "lines": [
+    "姐姐，我听不见。"
+   ]
+  },
+  {
+   "type": "box",
+   "panel": 1,
+   "corner": "bl",
+   "width": 0.36,
+   "lines": [
+    "醒来时，那股亢奋还没退。他盯着镜子里的自己，像在看一只不受控的怪物。"
+   ]
+  },
+  {
+   "type": "box",
+   "panel": 1,
+   "corner": "br",
+   "width": 0.2,
+   "lines": [
+    "他要杀了它。"
+   ]
+  }
+ ]
+}
