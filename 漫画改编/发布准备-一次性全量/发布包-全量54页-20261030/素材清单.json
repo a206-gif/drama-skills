@@ -1,0 +1,462 @@
+{
+ "schema_version": 1,
+ "date": "2026-10-30",
+ "kind": "release_prep_no_upload",
+ "uploaded": false,
+ "authorization": "创作者整读通过+重冻+文案审定（2026-10-30）；发布本身仍由创作者执行，助理不上传",
+ "batch_intent": "r39：全部内容同一批次发布，开篇不先于中段",
+ "post_order": [
+  "第001话（9张）",
+  "第002话（12张）",
+  "第003话（8张）",
+  "中段-去留（11张）",
+  "中段-蟹肉（14张）"
+ ],
+ "pages": [
+  {
+   "post": "第001话（9张）",
+   "page": "PAGE-001",
+   "file": "第001话/PAGE-001.png",
+   "sha256": "f7e3e31a71e3cd510fd3a8b094572c3dc7db0806420c60ec0d5af57e5c6f190d",
+   "size_bytes": 2489540,
+   "uploaded": false
+  },
+  {
+   "post": "第001话（9张）",
+   "page": "PAGE-002",
+   "file": "第001话/PAGE-002.png",
+   "sha256": "83a779645458a27af0b9027a05cb24de9e62826dce5d325f3725aaa3fab28de5",
+   "size_bytes": 2141410,
+   "uploaded": false
+  },
+  {
+   "post": "第001话（9张）",
+   "page": "PAGE-003",
+   "file": "第001话/PAGE-003.png",
+   "sha256": "335a2b6a1b8a28ebd6a5dc586538effe483099dceeb5e9e811fc3b41c982989d",
+   "size_bytes": 2250906,
+   "uploaded": false
+  },
+  {
+   "post": "第001话（9张）",
+   "page": "PAGE-004",
+   "file": "第001话/PAGE-004.png",
+   "sha256": "a50c623f5c696f8be6b8edb89255e67546bdf26dea6e937d54cf9aa22db72de1",
+   "size_bytes": 2466173,
+   "uploaded": false
+  },
+  {
+   "post": "第001话（9张）",
+   "page": "PAGE-005",
+   "file": "第001话/PAGE-005.png",
+   "sha256": "8ecb0f5b885575cdc04abf7dccf116cfe21cf33fbb5b7fc283f79d2011adbb2e",
+   "size_bytes": 2550960,
+   "uploaded": false
+  },
+  {
+   "post": "第001话（9张）",
+   "page": "PAGE-006",
+   "file": "第001话/PAGE-006.png",
+   "sha256": "3afe212747e166ee562998d552fc5fd3a1c0dc6b67763049af7c3d4c53be4dbc",
+   "size_bytes": 2299958,
+   "uploaded": false
+  },
+  {
+   "post": "第001话（9张）",
+   "page": "PAGE-007",
+   "file": "第001话/PAGE-007.png",
+   "sha256": "0acd8a6c905654fa5a651858a8af1100354daf22749dbe1a8bf9f7703444441e",
+   "size_bytes": 2544231,
+   "uploaded": false
+  },
+  {
+   "post": "第001话（9张）",
+   "page": "PAGE-008",
+   "file": "第001话/PAGE-008.png",
+   "sha256": "911d3de769147a909f74c14cde4422c3cd980c10e79141e90b001a1308f9b754",
+   "size_bytes": 2189833,
+   "uploaded": false
+  },
+  {
+   "post": "第001话（9张）",
+   "page": "PAGE-009",
+   "file": "第001话/PAGE-009.png",
+   "sha256": "8cc328efc266fca76813f6f12b87ae824847d1c67cbecbe62e77a592f3c587be",
+   "size_bytes": 2601429,
+   "uploaded": false
+  },
+  {
+   "post": "第002话（12张）",
+   "page": "PAGE-001",
+   "file": "第002话/PAGE-001.png",
+   "sha256": "dbfc69a2f1fcd1cdc9bfba538b3641da66bdca9a5a3ba7a9a26fe5e310703618",
+   "size_bytes": 2340029,
+   "uploaded": false
+  },
+  {
+   "post": "第002话（12张）",
+   "page": "PAGE-002",
+   "file": "第002话/PAGE-002.png",
+   "sha256": "ffaeb3de3523f256cc75c346babcee3611a1e9c3d9c13c8581ddab9d1c180b88",
+   "size_bytes": 1926614,
+   "uploaded": false
+  },
+  {
+   "post": "第002话（12张）",
+   "page": "PAGE-003",
+   "file": "第002话/PAGE-003.png",
+   "sha256": "067e1aea89df0127d23eae23bd3ba823209358225b440617e57cd68550b6a78a",
+   "size_bytes": 2387377,
+   "uploaded": false
+  },
+  {
+   "post": "第002话（12张）",
+   "page": "PAGE-004",
+   "file": "第002话/PAGE-004.png",
+   "sha256": "07bb9bb6d8659c8d413099335cf5c8138ccfa246f08fd49f10fde4627b873f51",
+   "size_bytes": 2348565,
+   "uploaded": false
+  },
+  {
+   "post": "第002话（12张）",
+   "page": "PAGE-005",
+   "file": "第002话/PAGE-005.png",
+   "sha256": "924068da04ab31d73519d1a5cfb8dcd25c6a7973bf8ce6233085b05974078fcc",
+   "size_bytes": 2291576,
+   "uploaded": false
+  },
+  {
+   "post": "第002话（12张）",
+   "page": "PAGE-006",
+   "file": "第002话/PAGE-006.png",
+   "sha256": "b43d4b4284a40f148696d0fd717db71abf4e21278e405be39146f0b0923fd93d",
+   "size_bytes": 2645027,
+   "uploaded": false
+  },
+  {
+   "post": "第002话（12张）",
+   "page": "PAGE-007",
+   "file": "第002话/PAGE-007.png",
+   "sha256": "3c420d024fcc1a0bbd9d14651639b8df71c86d2cc34ccd6529434991dde4f4cb",
+   "size_bytes": 2111076,
+   "uploaded": false
+  },
+  {
+   "post": "第002话（12张）",
+   "page": "PAGE-008",
+   "file": "第002话/PAGE-008.png",
+   "sha256": "028d5aaa1740d0fea06bb95559b8330b488c2bd7646370d49721c33ee73b5627",
+   "size_bytes": 2365719,
+   "uploaded": false
+  },
+  {
+   "post": "第002话（12张）",
+   "page": "PAGE-009",
+   "file": "第002话/PAGE-009.png",
+   "sha256": "f9dd9deab0b924508c77ae916ae32d03c9fab898f10823a7ce785a9207c11b32",
+   "size_bytes": 2411823,
+   "uploaded": false
+  },
+  {
+   "post": "第002话（12张）",
+   "page": "PAGE-010",
+   "file": "第002话/PAGE-010.png",
+   "sha256": "e251e362af47247e82ee6937218026d95d7dbc6739d082b22bdab91a207af396",
+   "size_bytes": 2319034,
+   "uploaded": false
+  },
+  {
+   "post": "第002话（12张）",
+   "page": "PAGE-011",
+   "file": "第002话/PAGE-011.png",
+   "sha256": "37c258a45893fd6eee8349a5598793c19998af92901068e0b74a7cd6d2bbf66a",
+   "size_bytes": 2203638,
+   "uploaded": false
+  },
+  {
+   "post": "第002话（12张）",
+   "page": "PAGE-012",
+   "file": "第002话/PAGE-012.png",
+   "sha256": "c654ab6482a4926c6ced63e5512b0f476d44d0afaccf34b2026da69190f23b52",
+   "size_bytes": 2300965,
+   "uploaded": false
+  },
+  {
+   "post": "第003话（8张）",
+   "page": "PAGE-001",
+   "file": "第003话/PAGE-001.png",
+   "sha256": "2504e0b597243188c2ef0b3bfdb6703134df19083ec7098ef613397efb7451c4",
+   "size_bytes": 2425020,
+   "uploaded": false
+  },
+  {
+   "post": "第003话（8张）",
+   "page": "PAGE-002",
+   "file": "第003话/PAGE-002.png",
+   "sha256": "af8c7368b3f93f3e962f889bf592db32b8871965b0498b2f57e78dd7a86a9241",
+   "size_bytes": 2485389,
+   "uploaded": false
+  },
+  {
+   "post": "第003话（8张）",
+   "page": "PAGE-003",
+   "file": "第003话/PAGE-003.png",
+   "sha256": "888e8d3e15315ab7d14cf03fef0f8f62775601bc680ea1d16f56646653e37323",
+   "size_bytes": 2119451,
+   "uploaded": false
+  },
+  {
+   "post": "第003话（8张）",
+   "page": "PAGE-004",
+   "file": "第003话/PAGE-004.png",
+   "sha256": "e29eacefccc73273320e2d400b9c7e4882b7575bc40c164fb30cf3b4d4975ebf",
+   "size_bytes": 2047883,
+   "uploaded": false
+  },
+  {
+   "post": "第003话（8张）",
+   "page": "PAGE-005",
+   "file": "第003话/PAGE-005.png",
+   "sha256": "3d0a842e3764ce21e2c49f9b29d44b0fa6a3ecc91bc8cdec2f539d7dcf492928",
+   "size_bytes": 2370520,
+   "uploaded": false
+  },
+  {
+   "post": "第003话（8张）",
+   "page": "PAGE-006",
+   "file": "第003话/PAGE-006.png",
+   "sha256": "86f749a7075e54cec8f79004e426288bcf2274ce4c4826cd4cf3df5b5c991285",
+   "size_bytes": 2373682,
+   "uploaded": false
+  },
+  {
+   "post": "第003话（8张）",
+   "page": "PAGE-007",
+   "file": "第003话/PAGE-007.png",
+   "sha256": "b3ddd284bf13938410fcc63d446f27895bc447658e7e88bcb66cbec529c8db9f",
+   "size_bytes": 2243296,
+   "uploaded": false
+  },
+  {
+   "post": "第003话（8张）",
+   "page": "PAGE-008",
+   "file": "第003话/PAGE-008.png",
+   "sha256": "53ec8b7857e5515a758ead61eb105da552a623e1da2cab29d742f0737e9c5a7c",
+   "size_bytes": 2469073,
+   "uploaded": false
+  },
+  {
+   "post": "中段-去留（11张）",
+   "page": "PAGE-001",
+   "file": "中段-去留/PAGE-001.png",
+   "sha256": "b00d0b78b1d05e719d0a791158bb0b794907ea490cd45dc7e244c23d29107772",
+   "size_bytes": 2231954,
+   "uploaded": false
+  },
+  {
+   "post": "中段-去留（11张）",
+   "page": "PAGE-002",
+   "file": "中段-去留/PAGE-002.png",
+   "sha256": "529be7c0acb1ce309d997bf0bce3808123cee65ad2f384bf3c692f68b88de42a",
+   "size_bytes": 2482860,
+   "uploaded": false
+  },
+  {
+   "post": "中段-去留（11张）",
+   "page": "PAGE-003",
+   "file": "中段-去留/PAGE-003.png",
+   "sha256": "c46b65baab8ce5e60d3896e93baa6d9614242c99a794cb65a37f3183700ca8b9",
+   "size_bytes": 2440955,
+   "uploaded": false
+  },
+  {
+   "post": "中段-去留（11张）",
+   "page": "PAGE-004",
+   "file": "中段-去留/PAGE-004.png",
+   "sha256": "06bf0ae65ef3efa1bf94951bd72405358fabe45d9c3fd221ae80af496ec35daa",
+   "size_bytes": 2192029,
+   "uploaded": false
+  },
+  {
+   "post": "中段-去留（11张）",
+   "page": "PAGE-005",
+   "file": "中段-去留/PAGE-005.png",
+   "sha256": "60982511326884141be8da007057205efb8d586d7fe6285db4d8634a60d2795e",
+   "size_bytes": 2343651,
+   "uploaded": false
+  },
+  {
+   "post": "中段-去留（11张）",
+   "page": "PAGE-006",
+   "file": "中段-去留/PAGE-006.png",
+   "sha256": "ad898b28c8fab982125f6e92ded3684917bf2585d1b23e5471eefd9a52df10d1",
+   "size_bytes": 2166287,
+   "uploaded": false
+  },
+  {
+   "post": "中段-去留（11张）",
+   "page": "PAGE-007",
+   "file": "中段-去留/PAGE-007.png",
+   "sha256": "d3f62201f709a3a18d91d03702fab09386d4aa20570b325e31f4d44ae1602e8b",
+   "size_bytes": 2080604,
+   "uploaded": false
+  },
+  {
+   "post": "中段-去留（11张）",
+   "page": "PAGE-008",
+   "file": "中段-去留/PAGE-008.png",
+   "sha256": "3abea9ac192929bba1b016124d43a3bed5c9dfbd0e71a442ce0438ca4a6573d3",
+   "size_bytes": 2264672,
+   "uploaded": false
+  },
+  {
+   "post": "中段-去留（11张）",
+   "page": "PAGE-009",
+   "file": "中段-去留/PAGE-009.png",
+   "sha256": "f5bf65a37371b545e1cd68375c192a51401289045346f34239216221261be005",
+   "size_bytes": 2280578,
+   "uploaded": false
+  },
+  {
+   "post": "中段-去留（11张）",
+   "page": "PAGE-010",
+   "file": "中段-去留/PAGE-010.png",
+   "sha256": "e28232b1f4bc054f06b97fdd594ad40fdefd918ff2a4359d863a0fa852a77bbd",
+   "size_bytes": 2152903,
+   "uploaded": false
+  },
+  {
+   "post": "中段-去留（11张）",
+   "page": "PAGE-011",
+   "file": "中段-去留/PAGE-011.png",
+   "sha256": "f6084bf1ed0a43f3bf59751e84be29dfe539e5d6298eb41cccbbac5cd7b79aec",
+   "size_bytes": 2321661,
+   "uploaded": false
+  },
+  {
+   "post": "中段-蟹肉（14张）",
+   "page": "PAGE-001",
+   "file": "中段-蟹肉/PAGE-001.png",
+   "sha256": "d427ebe6412c57364d5b69734a4ffb8406335b39c8e81d1a18917b2d152fbd48",
+   "size_bytes": 2295501,
+   "uploaded": false
+  },
+  {
+   "post": "中段-蟹肉（14张）",
+   "page": "PAGE-002",
+   "file": "中段-蟹肉/PAGE-002.png",
+   "sha256": "761ac355d41343e66e4bf8ad4b213ddc874d1f6d1ba0a90ccdfe3f7eda88d383",
+   "size_bytes": 2142979,
+   "uploaded": false
+  },
+  {
+   "post": "中段-蟹肉（14张）",
+   "page": "PAGE-003",
+   "file": "中段-蟹肉/PAGE-003.png",
+   "sha256": "4a813be9ffd9b28447e817b63a9a97bc4d37cd2112e0403babc009bac22aa220",
+   "size_bytes": 2189565,
+   "uploaded": false
+  },
+  {
+   "post": "中段-蟹肉（14张）",
+   "page": "PAGE-004",
+   "file": "中段-蟹肉/PAGE-004.png",
+   "sha256": "061d60679e0e4efe05a918baf040b5f238537f15927d818f7e5a199db6230099",
+   "size_bytes": 2315380,
+   "uploaded": false
+  },
+  {
+   "post": "中段-蟹肉（14张）",
+   "page": "PAGE-005",
+   "file": "中段-蟹肉/PAGE-005.png",
+   "sha256": "1f3d37c52bfb1c9630d52fdaef5a4fc14bf7ef0abbc108cbc12aa759d2ddb5d4",
+   "size_bytes": 2433244,
+   "uploaded": false
+  },
+  {
+   "post": "中段-蟹肉（14张）",
+   "page": "PAGE-006",
+   "file": "中段-蟹肉/PAGE-006.png",
+   "sha256": "2c2bf105c13d4ebfa2446642acc8c62002428861ec5bf8a7179b80b17f9a9ca8",
+   "size_bytes": 2073380,
+   "uploaded": false
+  },
+  {
+   "post": "中段-蟹肉（14张）",
+   "page": "PAGE-007",
+   "file": "中段-蟹肉/PAGE-007.png",
+   "sha256": "864d7875940e0450df10b68e9e4d70fbdab244beb0241137aacc02fef89bf1f9",
+   "size_bytes": 2255863,
+   "uploaded": false
+  },
+  {
+   "post": "中段-蟹肉（14张）",
+   "page": "PAGE-008",
+   "file": "中段-蟹肉/PAGE-008.png",
+   "sha256": "7303f183d369f1223f3998dee6553c5440cfa78bf4cb39827fb1c96bcebba84a",
+   "size_bytes": 2195961,
+   "uploaded": false
+  },
+  {
+   "post": "中段-蟹肉（14张）",
+   "page": "PAGE-009",
+   "file": "中段-蟹肉/PAGE-009.png",
+   "sha256": "6b3c5f66e3fb5c0c1f174c47f663eb974b44afd7968e86f52f749eb2b9fc2db3",
+   "size_bytes": 2127813,
+   "uploaded": false
+  },
+  {
+   "post": "中段-蟹肉（14张）",
+   "page": "PAGE-010",
+   "file": "中段-蟹肉/PAGE-010.png",
+   "sha256": "191c9ed57ba605d087a88ddc514631611a14285a3afa546e5e9ea75de2e173f2",
+   "size_bytes": 2207848,
+   "uploaded": false
+  },
+  {
+   "post": "中段-蟹肉（14张）",
+   "page": "PAGE-011",
+   "file": "中段-蟹肉/PAGE-011.png",
+   "sha256": "c639925716077cf9afcb764131a6034b158d508b9d0d06e54509d316311bbb1a",
+   "size_bytes": 2219671,
+   "uploaded": false
+  },
+  {
+   "post": "中段-蟹肉（14张）",
+   "page": "PAGE-012",
+   "file": "中段-蟹肉/PAGE-012.png",
+   "sha256": "fc93118241b8522d26d84547e7b1a28ef78543b9079634ecf8426b72cf863fab",
+   "size_bytes": 2153314,
+   "uploaded": false
+  },
+  {
+   "post": "中段-蟹肉（14张）",
+   "page": "PAGE-013",
+   "file": "中段-蟹肉/PAGE-013.png",
+   "sha256": "c55f7ff4154138875e6f6e4dfada8e528794a055230f47bf470ac89ad49a8671",
+   "size_bytes": 2171291,
+   "uploaded": false
+  },
+  {
+   "post": "中段-蟹肉（14张）",
+   "page": "PAGE-014",
+   "file": "中段-蟹肉/PAGE-014.png",
+   "sha256": "8f709333227084287fc86bc6046c58dbcc21accb3c597988de9ec1a15d646405",
+   "size_bytes": 2423313,
+   "uploaded": false
+  }
+ ],
+ "captions": [
+  {
+   "file": "发布顺序与文案汇编-开篇三话.md",
+   "sha256": "25250080e8e1931ae76992face4ddbed207683eb8333b9401ebd9457afe5f68a",
+   "approved": "2026-10-30"
+  },
+  {
+   "file": "发布顺序与文案汇编-中段.md",
+   "sha256": "a8626dfcf75cd8074e2b7cb275351da48950c0f1b9fddd0880952fec1d0275f2",
+   "approved": "2026-10-30"
+  }
+ ],
+ "caption_status": "定稿；发帖前无需再审"
+}
