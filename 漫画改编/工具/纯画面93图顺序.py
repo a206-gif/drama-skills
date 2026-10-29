@@ -32,7 +32,11 @@ def old(ep: str, n=None):
 
 
 def rel(p: str) -> str:
-    return Path(p).as_posix()
+    q = Path(p)
+    try:
+        return q.resolve().relative_to(ROOT.resolve()).as_posix()
+    except ValueError:
+        return q.as_posix()
 
 
 def main() -> int:
