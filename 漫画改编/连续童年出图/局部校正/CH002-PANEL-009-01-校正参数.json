@@ -1,0 +1,54 @@
+{
+  "crop_xyxy": [
+    565,
+    290,
+    945,
+    475
+  ],
+  "source_raw_sha256": "f75931ab31372462b5e276f372db94fee831a6b73c372cee5b8b20367a1815e0",
+  "source_call_id": "ART-FIRST-20261025-016",
+  "operation": "only giving-portion potato-skin-to-soft-centre color correction, no new geometry/action/hand",
+  "mask_file": "漫画改编/连续童年出图/局部校正/CH002-PANEL-009-01-软芯蒙版.png",
+  "mask_sha256": "b589d19e04b1cc78e2797596741f7bfb33d933b5e8a59d33115f9df9ccf5af6f",
+  "selection_polygon": [
+    [
+      105,
+      49
+    ],
+    [
+      142,
+      61
+    ],
+    [
+      160,
+      85
+    ],
+    [
+      161,
+      116
+    ],
+    [
+      130,
+      111
+    ],
+    [
+      110,
+      90
+    ]
+  ],
+  "selection_hsv": {
+    "h_degrees": "h >= 325 or h <= 12",
+    "s": "0.15 < s < 0.72",
+    "v": "0.18 < v < 0.72"
+  },
+  "replacement_hsv": {
+    "h": 0.1111111111111111,
+    "s": 0.62,
+    "v": "min(0.90,0.18 + 0.78 * original_v)"
+  },
+  "rounding": "round(channel * 255)",
+  "edited_pixels": 838,
+  "outside_mask_unchanged": true,
+  "not_pixel_identical_to_raw_crop": true,
+  "result_sha256": "ee18c41bcb64c899f9d5eeec1a7c1fec89ebf9890b5570496d83c2035af4cf01"
+}

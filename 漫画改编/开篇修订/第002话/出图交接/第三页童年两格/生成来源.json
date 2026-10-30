@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-25",
+  "episode": "CH002",
+  "scope": "PAGE-003_two_explicit_childhood_tasks",
+  "based_on_commit": "7719151713b407d3143dd20039cdd931b2bd3567",
+  "authorization": {
+    "user_reply": "A",
+    "selected_option": "继续第3页两格——请求同行、放下后牵走，先写准再直接出图",
+    "standing_instruction": "童年剧本相关写好了直接出图，不重复问同批开工",
+    "scope": "CH002 PAGE-003 two panels only"
+  },
+  "generation_storyboard_sha256": "ec25c4f892d32c1c599fc572bbce0ce177b0ff90b601e9463bab0592b15f6047",
+  "current_storyboard_sha256": "2c54f6b56d150e17b1c7b9797a28b348947f250d6a1680ad82171a7c9f878438",
+  "previous_storyboard_sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
+  "actual_image_calls": 2,
+  "parallel_submission": true,
+  "call_id_note": "按任务顺序的逻辑编号，并非完成先后",
+  "model_and_seed": "工具未返回实际底层型号/seed，不保证同旧模型",
+  "pricing": "工具无报价/账单，未知，不虚报免费",
+  "calls": [
+    {
+      "call_id": "CH002-PAGE003-20261025-01",
+      "panel_id": "PANEL-003-01",
+      "file": "制作成果/格图/PANEL-003-01.png",
+      "operation": "new_single_panel",
+      "source_prompt_sha256": "e5a7354bccb37f24b233e64139d79835eadbd2f2d48c581f455a5ccc08fb153b",
+      "references_in_order": [
+        {
+          "id": "primary",
+          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+          "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+        },
+        {
+          "id": "mother_held",
+          "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
+          "sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff"
+        },
+        {
+          "id": "recent_scene",
+          "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-01.png",
+          "sha256": "5a6ed8326c44a4026bdc3238e6f7f82a51289433364dfad7a2f10acc69f8970e"
+        }
+      ],
+      "offer_options": false,
+      "actual_size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "bytes": 2730368,
+      "sha256": "32937cd8bce9331b2b72dd2ade860f6e258b33f51447034c24c71921109e98a0",
+      "status": "selected_pending_creator_review",
+      "tool_status": "success",
+      "visual_selfcheck": "已看真实图：第一格抱持且母女手接触；第二格双脚落地/两女孩牵手/母亲空手，脸发衣装与旧方向连续；无字/无UI/不提前池塘。非用户或独立验收"
+    },
+    {
+      "call_id": "CH002-PAGE003-20261025-02",
+      "panel_id": "PANEL-003-02",
+      "file": "制作成果/格图/PANEL-003-02.png",
+      "operation": "new_single_panel",
+      "source_prompt_sha256": "2dfe808b63bac375f195993413edf7733455623ecdec18b0b3d52ec238953ba4",
+      "references_in_order": [
+        {
+          "id": "primary",
+          "file": "漫画改编/开篇修订/第001话/出图交接/童年首批/参考/REF-SULI-CHILD.jpg",
+          "sha256": "3208394f8ee9eda70b022ae0f5a1f5012b00f00005617f803a99c6ebcaa7c47b"
+        },
+        {
+          "id": "recent_scene",
+          "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-002-01.png",
+          "sha256": "5a6ed8326c44a4026bdc3238e6f7f82a51289433364dfad7a2f10acc69f8970e"
+        },
+        {
+          "id": "mother_held",
+          "file": "漫画改编/开篇修订/第002话/制作成果/格图/PANEL-001-01.png",
+          "sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff"
+        }
+      ],
+      "offer_options": false,
+      "actual_size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "bytes": 2667963,
+      "sha256": "0c874b4adcc8e61fb1d99fece7d4377a53199696f13de31f4b2c9cb933a0a441",
+      "status": "selected_pending_creator_review",
+      "tool_status": "success",
+      "visual_selfcheck": "已看真实图：第一格抱持且母女手接触；第二格双脚落地/两女孩牵手/母亲空手，脸发衣装与旧方向连续；无字/无UI/不提前池塘。非用户或独立验收"
+    }
+  ],
+  "status": "two_assets_selfchecked_page3_lettered_pending_creator_review",
+  "retakes": 0,
+  "unused_outputs": 0,
+  "selected_generated_assets": 2,
+  "cumulative_childhood_calls": {
+    "previous_batches": 8,
+    "this_batch": 2,
+    "total": 10,
+    "selected_generated_images": 7,
+    "previous_unused": 3,
+    "this_batch_unused": 0
+  }
+}

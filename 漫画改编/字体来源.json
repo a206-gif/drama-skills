@@ -1,0 +1,35 @@
+{
+  "license": "SIL Open Font License 1.1；字体许可不等于原著或旧图改编许可",
+  "fonts": [
+    {
+      "role": "配角/默认正文；labelled旧模式默认字",
+      "filename": "NotoSansCJKsc-Regular.otf",
+      "family": "Noto Sans CJK SC",
+      "style": "Regular",
+      "repository": "notofonts/noto-cjk",
+      "source_path": "Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf",
+      "blob": "dc15562470b4f842321894787a0d066879ccff8b",
+      "license_file": "字体许可/NotoSans-LICENSE.txt"
+    },
+    {
+      "role": "苏梨全部对白/内心正文（embedded）；旧labelled兼容名签",
+      "filename": "LXGWWenKai-Medium.ttf",
+      "family": "LXGW WenKai",
+      "style": "Medium",
+      "repository": "lxgw/LxgwWenKai",
+      "source_path": "fonts/TTF/LXGWWenKai-Medium.ttf",
+      "blob": "8776123c24ebf011b0ecc6923708cef2d9cadfb0",
+      "license_file": "字体许可/LXGWWenKai-OFL.txt"
+    },
+    {
+      "role": "霍谢山全部对白/内心正文（embedded）；旧labelled兼容名签",
+      "filename": "NotoSerifCJKsc-Bold.otf",
+      "family": "Noto Serif CJK SC",
+      "style": "Bold",
+      "repository": "notofonts/noto-cjk",
+      "source_path": "Serif/OTF/SimplifiedChinese/NotoSerifCJKsc-Bold.otf",
+      "blob": "f1bd9c86c5765f3358815fb84b19003fd5711747",
+      "license_file": "字体许可/NotoSerif-LICENSE.txt"
+    }
+  ]
+}

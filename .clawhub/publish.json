@@ -19,7 +19,7 @@
         "**/*"
       ],
       "maintainer": "worldwonderer",
-      "packageDigest": "9755faec352d7a448d1c9e137097599d74124539331ffeabb5fdcc6ef2f372e2",
+      "packageDigest": "a1b1107520046f6e6e26c5921dab744a30d4412769bf318a7250fd77a64aed36",
       "path": "skills/short-drama",
       "publisher": "worldwonderer",
       "rebuildOn": [],
@@ -48,7 +48,7 @@
         "storyboard",
         "video-production"
       ],
-      "version": "1.0.0"
+      "version": "1.0.1"
     },
     {
       "catalogMigration": true,
@@ -394,6 +394,37 @@
         "video-production"
       ],
       "version": "1.0.0"
+    },
+    {
+      "categories": [
+        "creative",
+        "automation"
+      ],
+      "displayName": "静态分页漫画",
+      "disposition": "excluded",
+      "excludeReason": "新增源码技能，ClawHub 分发权利与上架审核尚未确认；不随本轮发布。",
+      "include": [
+        "**/*"
+      ],
+      "maintainer": "worldwonderer",
+      "path": "skills/static-comic",
+      "publisher": "worldwonderer",
+      "rebuildOn": [],
+      "rights": {
+        "evidence": ".clawhub/README.md#static-comic",
+        "status": "unconfirmed"
+      },
+      "runtimeDependsOn": [
+        "bin:python>=3.9"
+      ],
+      "slug": "static-comic",
+      "supportedRuntimes": [],
+      "topics": [
+        "static-comics",
+        "novel-adaptation",
+        "image-layout"
+      ],
+      "version": "0.1.0"
     }
   ]
 }

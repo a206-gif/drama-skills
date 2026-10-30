@@ -7,7 +7,7 @@
 <h1 align="center">Drama Skills</h1>
 
 <p align="center">
-  <b>An AI short-drama creation workflow for screenwriters, motion-comic studios, and directors: eleven skills that take an idea or a source novel to episode scripts, storyboards, image/video prompts, and a finished cut.</b>
+  <b>An AI creation workflow for screenwriters, comic/motion-comic studios, and directors: twelve skills that take an idea or novel to scripts, storyboards, prompts, and static comic pages or a finished film.</b>
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 <p align="center">
   <a href="https://github.com/zenstory-ai/drama-skills/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/zenstory-ai/drama-skills?style=flat-square&color=22D3EE&logo=github&logoColor=white&label=Stars"></a>
   <a href="https://github.com/zenstory-ai/drama-skills/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/zenstory-ai/drama-skills?style=flat-square&color=081431&label=Release"></a>
-  <img alt="Skills 11" src="https://img.shields.io/badge/Skills-11-081431?style=flat-square">
+  <img alt="Skills 12" src="https://img.shields.io/badge/Skills-12-081431?style=flat-square">
   <a href="https://www.python.org/"><img alt="Python 3.9%2B" src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat-square&logo=python&logoColor=white"></a>
   <a href="https://github.com/zenstory-ai/drama-skills/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/zenstory-ai/drama-skills/ci.yml?style=flat-square&label=CI"></a>
   <a href="./LICENSE"><img alt="License MIT" src="https://img.shields.io/badge/License-MIT-1F6FEB?style=flat-square"></a>
@@ -40,10 +40,11 @@ effects added in the edit. Video generation cost about ¥40.
 Drama Skills covers the whole AI short-drama / motion-comic pipeline from idea or novel to a finished cut:
 **source analysis → episode script → visual design → image prompts and storyboard → video prompts →
 confirmed production → editing → review**.
-It installs as 11 skills into the coding agent you already use (Claude Code, Codex, and any other runtime
+An independent `static-comic` path creates **static, multi-panel novel-promotion comics** that invite readers to search for and read the source novel, not video.
+It installs as 12 skills into the coding agent you already use (Claude Code, Codex, and any other runtime
 that supports the Agent Skill spec); the writing model is that agent's model.
 
-- **Five Markdown files are the creative facts** — each episode maintains only `剧本.md` (script),
+- **Five Markdown files are the creative facts** — each drama/video episode maintains only `剧本.md` (script),
   `视觉设定.md` (visual design), `分镜.md` (storyboard), `图片提示词.md` (image prompts) and
   `视频提示词.md` (video prompts), plus `剪辑单.md` (cut list) when you cut a film. There is no parallel
   database; editing a file is editing that layer of decisions.
@@ -177,6 +178,31 @@ Starting from a source novel, with the first pass stopping at a text handoff:
 
 > Use `输入/story.txt`, which I own or am authorized to adapt. First list the facts, character motivations, and unrevealed information that must be preserved, then propose the episode split; do not treat chapter count as episode count. Write only EP001 and hand off three of its shots with start/end action, both hands, held props, and gaze. Distinguish `IMG-*`, pending `PLAN-*`, and actually inspected `REF-*`; stop at text and do not generate images, video, voices, or music.
 
+## Novel-promotion page comics for Douyin / Xiaohongshu photo posts
+
+Use the independent [`static-comic`](skills/static-comic/SKILL.md), not video storyboards or still-frame-plus-voice films:
+
+```text
+Use $static-comic to create a promotional comic post from the authorized range of 输入/novel.txt:
+multiple panels per page, portrait 3:4, for Douyin and Xiaohongshu photo posts.
+The goal is to encourage searching for and reading the source novel, not to adapt the entire story.
+Images must convey facts accurately, with detailed, explicit dialogue and narration.
+Read the actual previous ending before continuing; ongoing events must not disappear between episodes.
+First establish source-backed appeal, spoiler boundaries, stopping point and exact book title;
+then deliver the storyboard, text-free panel prompts, final-page search caption and post copy. Stop at text.
+```
+
+Sample the novel’s real appeal, give a genuine taste of its reading experience, and preserve a concrete reason to continue in the novel. Do not invent events to attract searches.
+Generate text-free panels first, then letter dialogue, captions, sound effects and the exact book-search caption by text ID from the storyboard.
+With real panel images and an explicit Chinese font, the local tool exports numbered PNG/JPG pages.
+Panels declare the intended information and concrete transition; dialogue identifies its addressee and captions their narrator. Add panels/pages rather than lose necessary detail.
+Sequel checks and exports require `--previous` with the actual previous storyboard and reconcile every pending event. Structural coverage is not proof of narrative or image accuracy.
+Rendered dialogue, thoughts, and narration include visible identity/type labels; per-speaker label fonts are supported and measured for missing glyphs and overflow.
+Checks need only Python 3.9+; rendering additionally needs optional Pillow and an actual font.
+1080×1440 and about 3–5 panels per page are editable creative defaults, **not official platform limits**.
+Check both upload previews before publishing. No automatic novel selection, paid generation, upload, or video Dashboard integration.
+See the [static-comic workflow guide (Chinese)](docs/static-comic-workflow.md).
+
 ## See what it produces
 
 The three excerpts below come from files in this repository or from one real run; cuts are marked with "…". The full
@@ -253,7 +279,7 @@ ERROR: SHOT-EP001-003: 分镜时长 2 秒与视频提示词 3 秒不一致；视
 The first line: the frozen keyframe names the character "Zhou Bosen" but the visual basis does not cover him; if he is
 genuinely not visible, declare him off-screen. The second: the storyboard says 2 seconds and the video prompt says 3.
 
-## The eleven skills
+## The twelve skills
 
 ```mermaid
 flowchart LR
@@ -283,6 +309,7 @@ flowchart LR
 
 | Skill | Responsibility |
 |---|---|
+| `static-comic` | Novel-promotion comics: source-backed appeal, spoiler/stopping decisions, detailed image/text information, explicit dialogue/narration, episode handoffs, exact book-search lettering, and static PNG/JPG posts |
 | `short-drama` | Init, routing, visual direction/Look Development, and Dashboard |
 | `short-drama-novel-analyze` | Sampled adaptation triage, chapter index, per-chapter function extraction, story units and rhythm, adaptation value, and episode candidates for a long source |
 | `short-drama-develop` | Traceable adaptation, Agent-led indexing/slicing/resume for complete multi-episode scripts, story engine, episode map, director brief, genre & hook playbook |

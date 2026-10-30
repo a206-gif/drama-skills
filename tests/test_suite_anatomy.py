@@ -8,6 +8,7 @@ SUITE = Path(__file__).resolve().parents[1]
 CORE = SUITE / "skills/short-drama"
 
 EXPECTED_SKILLS = {
+    "static-comic",
     "short-drama",
     "short-drama-novel-analyze",
     "short-drama-develop",
@@ -227,6 +228,7 @@ class SuiteAnatomyTests(unittest.TestCase):
         # documents. Only tools that remain part of the public workflow belong
         # in SKILL.md; historical JSON fixtures are still exercised separately.
         expected = {
+            "static-comic": {"scripts/comic_tool.py"},
             "short-drama-novel-analyze": {"scripts/novel_index.py"},
             "short-drama-produce": {"scripts/production_tool.py"},
             "short-drama-edit": {"scripts/edit_tool.py"},

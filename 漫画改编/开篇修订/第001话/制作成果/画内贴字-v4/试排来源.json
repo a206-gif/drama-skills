@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-25",
+  "status": "historical_superseded_by_reference_v5",
+  "scope": "selected_pages",
+  "episode": "CH001",
+  "episode_pages": 9,
+  "selected_pages": [
+    "PAGE-008",
+    "PAGE-009"
+  ],
+  "episode_media_checked": false,
+  "lettering_mode": "embedded",
+  "visible_labels": false,
+  "storyboard_sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5",
+  "layout_sha256": "d4b34896c41f7c685cf10fd1cc8fba7196d0f7161939df397ff006d3e3ef2f15",
+  "outputs": [
+    {
+      "file": "PAGE-008.png",
+      "sha256": "23d65f0145ad3679674633c86da6e1e9144637f3faa456faf5797ea05a20398e",
+      "size": [
+        1080,
+        1440
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "PAGE-009.png",
+      "sha256": "40bc066f16fd406b788dd8d52550cf867fe6495be137ed4ab12280d10059c8c1",
+      "size": [
+        1080,
+        1440
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "raw_images_changed": false,
+  "new_model_calls": 0,
+  "style_references": [
+    {
+      "file": "贴字参考/旧02-P2-贴字-参考.jpg",
+      "original_git_blob": "1a1381c70b9b455a7d594c6a2dd6731abfcbe9c3",
+      "original_sha256": "a74615e6c54c2e40b1d6b6a156a138cf07e8a0c026b4ca4f9b65d11307d5b3b9",
+      "sha256": "8c7c9efc85dfde2941d93ace14bdb33ee7a34db5b06a5c33e019143a42167eac",
+      "scope": "排字位置/透明层/框形参考，不采旧剧情/年龄/角色造型"
+    },
+    {
+      "file": "贴字参考/旧02-P4-贴字-参考.jpg",
+      "original_git_blob": "4759a4b42871392943361462479d44d83b8467e6",
+      "original_sha256": "9223104182b4c680fdfcc0f01f544de07bcb5261bc3fd2364a10da150945f836",
+      "sha256": "a6d8d3ddf09d236c0125cdd6e87c8cc67982e7fa9bcc611eef1225426ed44d25",
+      "scope": "排字位置/透明层/框形参考，不采旧剧情/年龄/角色造型"
+    }
+  ],
+  "source_story_proof": {
+    "novel_blob": "c3e238ef89050c0a715d508f56d65f5e813bdebf",
+    "lines": [
+      144,
+      164
+    ],
+    "dialogue_mother_and_daughter": "L152、L154源意",
+    "rebirth_thought": "L162人物认知转为第一人称，不新增全知解说",
+    "mother_introduction_body_unchanged_when_concatenated": true,
+    "crop_exact_source_pixels": true,
+    "crop_xyxy": [
+      590,
+      100,
+      1150,
+      500
+    ]
+  },
+  "visual_review": "已分别看两张1080×1440缓存图，新导出PNG哈希一致；不是独立审查或手机/平台验收",
+  "render_flags": {
+    "lettering_mode": "embedded",
+    "visible_labels": false,
+    "selected_media_checked": true,
+    "episode_media_checked": false
+  },
+  "phone_approximation": "已查看360px宽软件缩览，不是实机/平台测试",
+  "body_font_bindings": {
+    "苏梨": {
+      "font": "LXGWWenKai-Medium.ttf",
+      "font_git_blob": "8776123c24ebf011b0ecc6923708cef2d9cadfb0",
+      "scope": "all_dialogue_and_thought_body",
+      "appears_in_selected_pages": true
+    },
+    "霍谢山": {
+      "font": "NotoSerifCJKsc-Bold.otf",
+      "font_git_blob": "f1bd9c86c5765f3358815fb84b19003fd5711747",
+      "scope": "all_dialogue_and_thought_body",
+      "appears_in_selected_pages": false
+    }
+  },
+  "original_status": "embedded_partial_preview_pending_creator_review",
+  "superseded_by": "../画内贴字-v5/看图说明.md"
+}

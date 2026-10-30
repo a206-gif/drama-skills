@@ -1,0 +1,28 @@
+{
+  "provided_by": "user_chat_attachment",
+  "original_filename": "image-1.png",
+  "original_size": [
+    941,
+    1672
+  ],
+  "original_sha256": "215bb793d8efb879424b310164b2b25ce4c29dd11ee000aa431f15bc4335ea36",
+  "file": "USER-20261025-细隔贴字参考.jpg",
+  "sha256": "e52ac280fae2ccd9e8a0910f01f01d3af13f7b129ea117f95be4d9fa4b53f5d5",
+  "purpose": "仅借对白椭圆/内心叙述矩形、透底、字色字体位置及细白分隔；不采图内人物/年龄/犬只/台词剧情",
+  "measured_reference_white_core_rows": [
+    [
+      540,
+      541
+    ],
+    [
+      1068,
+      1068
+    ]
+  ],
+  "measurement_note": "98%以上整行RGB三通道均>=235的亮线核心，不计抗锯齿边缘；不是平台标准或原始分镜参数",
+  "saved_size": [
+    600,
+    1066
+  ],
+  "saved_mode": "RGB"
+}

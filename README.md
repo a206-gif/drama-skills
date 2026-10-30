@@ -5,7 +5,7 @@
 <h1 align="center">Drama Skills</h1>
 
 <p align="center">
-  <b>面向编剧、漫剧工作室和编导的 AI 短剧创作工作流：十一个技能，从一个点子或一部原著做到分集剧本、分镜、图片/视频提示词和成片。</b>
+  <b>面向编剧、漫画/漫剧工作室和编导的 AI 创作工作流：十二个技能，从点子或原著做到剧本、分镜、提示词，以及静态漫画页或视频成片。</b>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 <p align="center">
   <a href="https://github.com/zenstory-ai/drama-skills/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/zenstory-ai/drama-skills?style=flat-square&color=22D3EE&logo=github&logoColor=white&label=Stars"></a>
   <a href="https://github.com/zenstory-ai/drama-skills/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/zenstory-ai/drama-skills?style=flat-square&color=081431&label=Release"></a>
-  <img alt="Skills 11" src="https://img.shields.io/badge/Skills-11-081431?style=flat-square">
+  <img alt="Skills 12" src="https://img.shields.io/badge/Skills-12-081431?style=flat-square">
   <a href="https://www.python.org/"><img alt="Python 3.9%2B" src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat-square&logo=python&logoColor=white"></a>
   <a href="https://github.com/zenstory-ai/drama-skills/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/zenstory-ai/drama-skills/ci.yml?style=flat-square&label=CI"></a>
   <a href="./LICENSE"><img alt="License MIT" src="https://img.shields.io/badge/License-MIT-1F6FEB?style=flat-square"></a>
@@ -36,10 +36,11 @@
 
 Drama Skills 覆盖 AI 短剧 / 漫剧从点子或原著到成片的全流程：**原著分析 → 分集剧本 → 视觉设定 →
 图片提示词与分镜 → 视频提示词 → 确认后生产 → 剪辑成片 → 审查**。
-它以 11 个 skill 的形式装进你已经在用的编程 Agent（Claude Code、Codex 及其他支持 Agent Skill 规范的环境），
+另有独立的 `static-comic` 路径，将小说改为一页多格的**原著推广型静态漫画**，吸引读者搜索并阅读原著，不生成视频。
+它以 12 个 skill 的形式装进你已经在用的编程 Agent（Claude Code、Codex 及其他支持 Agent Skill 规范的环境），
 写作用的模型就是该 Agent 的模型。
 
-- **五份 Markdown 就是创作事实** — 每集只维护 `剧本.md`、`视觉设定.md`、`分镜.md`、`图片提示词.md`、
+- **五份 Markdown 就是创作事实** — 短剧/视频漫剧每集只维护 `剧本.md`、`视觉设定.md`、`分镜.md`、`图片提示词.md`、
   `视频提示词.md`，剪成片时多一份 `剪辑单.md`。没有并行的数据库，改哪份文件就是改哪一层决定。
 - **人物和造型跨镜不走样，靠的是写进文件、脚本能核对的事实** — 需要跨镜保持的造型写成一条能原样贴进提示词的短语（连续性锁）；
   每一镜写完关键帧后要说明它依据了哪些条目；漏了的，检查脚本会指出来，真实报错见下文。
@@ -156,6 +157,26 @@ done
 
 > 用我拥有或获准改编的 `输入/故事.txt`，先列出必须保留的事实、人物动机与暂不可揭示的信息，再提出分集方案；章节数不要直接当集数。只写第一集，并交接其中三个镜头的起止动作、双手、持物和视线。区分 `IMG-*`、待提供的 `PLAN-*` 与已实际检查的 `REF-*`，止步于文本，不生成图片、视频、配音或音乐。
 
+## 小说推文漫画（抖音 / 小红书图文）
+
+使用独立的 [`static-comic`](skills/static-comic/SKILL.md)，而不是视频分镜或“关键帧加配音”的静态漫剧：
+
+```text
+用 $static-comic 将我获准推广改编的 输入/小说.txt 指定范围做成第 1 篇漫画推文，
+一页多格、竖版 3:4，用于抖音和小红书图文；目的是吸引读者搜索并阅读原著，不是完整漫画化。
+画面准确，台词旁白详细明确；续话先读上话结尾，正在讲的事不能无交代跳过。
+先定原著卖点、剧透边界、停点和准确书名，再做分镜、逐格无字提示词、末页搜书提示与发布文案，止步于文本。
+```
+
+默认围绕真实原著卖点选段，给到阅读体验后留下续读理由，末页明确该搜哪本书；不虚构情节拉搜、不默认画完整本小说。
+先逐格无字出图，再按分镜中的文字 ID 排气泡、旁白、拟声字和准确搜书信息；有实际格图和中文字体后，
+本地工具可导出编号 PNG/JPG。每格明确“信息”和“衔接”，对白明确对话对象、旁白明确叙述身份，必要时增格增页。
+实际排字显示姓名/文字类型名签，支持按人物给名签指定专属字体；名签也计入缺字与溢出检查，不只标在制作字段。
+续话的检查/导出须用 `--previous` 提供实际上话分镜，待续事件逐项继续、解决或有依据地明确暂缓；机械核对不能代替图文语义自检。
+结构检查只需 Python 3.9+，渲染另需可选 Pillow 与实际字体。
+1080×1440、每页约 3–5 格是可覆盖的创作起点，**不是平台官方限制**；发布前分别核对两边的实际预览。
+不自动选取仓库小说、不自动付费出图、不上传，也不接入视频 Dashboard。完整操作见 [静态漫画工作流](docs/static-comic-workflow.md)。
+
 ## 看看它的输出
 
 下面三段节选都来自仓库里的文件或一次真实运行，省略处以「……」标出。完整版（原著快评的回填对照、改编契约、
@@ -220,7 +241,7 @@ ERROR: SHOT-EP001-002: 冻结关键帧提示词写到人物「周薄森」，视
 ERROR: SHOT-EP001-003: 分镜时长 2 秒与视频提示词 3 秒不一致；视频提示词只能原样照抄已接受的镜头时长
 ```
 
-## 十一个技能
+## 十二个技能
 
 ```mermaid
 flowchart LR
@@ -250,6 +271,7 @@ flowchart LR
 
 | 技能 | 职责 |
 |---|---|
+| `static-comic` | 原著推广型小说推文：卖点选段、剧透停点、话/页/格分镜、细致图文与明确对白旁白、跨话事件承接、准确搜书提示与静态 PNG/JPG 交接 |
 | `short-drama` | 初始化、路由、视觉方向/Look Development 与 Dashboard |
 | `short-drama-novel-analyze` | 长篇原著的抽样改编快评、章节索引、逐章功能提取、剧情单元与节奏、改编价值与分集候选 |
 | `short-drama-develop` | 小说/长材料的可追溯改编、多集整稿的 Agent 主导切片与续跑、故事引擎、分集地图、导演阐述、题材与钩子手册 |

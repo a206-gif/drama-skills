@@ -1,0 +1,221 @@
+{
+  "status": "panel_preview_rendered",
+  "scope": "selected_panel",
+  "episode": "CH001",
+  "checked_previous": null,
+  "episode_pages": 9,
+  "source_page": "PAGE-001",
+  "source_page_panels": 3,
+  "selected_panel": "PANEL-001-01",
+  "selected_media_checked": true,
+  "page_media_checked": false,
+  "episode_media_checked": false,
+  "lettering_mode": "embedded",
+  "visible_labels": false,
+  "storyboard": {
+    "file": "漫画分镜.md",
+    "sha256": "d1a163c07a47248b0537ab7dbdc465b1367cef16f1af1bda5ec8a8857e1a98c5"
+  },
+  "layout_sha256": "c53a36864ed2f86090ad875dd73ad85d13f64ef559d7c52716eb7c228662c4a2",
+  "panel_snapshot": {
+    "id": "PANEL-001-01",
+    "rect": [
+      48,
+      48,
+      984,
+      432
+    ],
+    "image": "制作成果/格图/PANEL-001-01.png",
+    "texts": [
+      {
+        "id": "TEXT-001-01",
+        "rect": [
+          6,
+          250,
+          286,
+          106
+        ],
+        "font_size": 34,
+        "padding": 6,
+        "breaks": [
+          8
+        ]
+      },
+      {
+        "id": "TEXT-001-02",
+        "rect": [
+          680,
+          250,
+          280,
+          150
+        ],
+        "font_size": 34,
+        "padding": 10,
+        "breaks": [
+          4
+        ],
+        "tail": [
+          983,
+          300
+        ]
+      }
+    ]
+  },
+  "lettering_snapshot": {
+    "mode": "embedded",
+    "bubble_opacity": 88,
+    "kinds": {
+      "dialogue": {
+        "shape": "oval",
+        "align": "center",
+        "stroke_width": 1,
+        "stroke_color": "#263238",
+        "outline_color": "#FFFFFF"
+      },
+      "thought": {
+        "shape": "rect",
+        "align": "left",
+        "stroke_width": 0,
+        "outline_color": "#FFFFFF"
+      },
+      "narration": {
+        "shape": "rect",
+        "align": "left",
+        "color": "#20282C",
+        "stroke_width": 0,
+        "outline_color": "#FFFFFF"
+      }
+    },
+    "speakers": {
+      "苏梨": {
+        "color": "#843B60",
+        "dialogue_color": "#F2CDD9"
+      },
+      "霍谢山": {
+        "color": "#284F70",
+        "dialogue_color": "#C4DEF1"
+      },
+      "姜月烟": {
+        "color": "#294444",
+        "dialogue_color": "#F1F5F0"
+      },
+      "秦音": {
+        "color": "#654C7C",
+        "dialogue_color": "#DED3EC"
+      },
+      "系统（仅秦音可闻）": {
+        "color": "#3B617E",
+        "dialogue_color": "#D7EAF6",
+        "dialogue_shape": "rect"
+      },
+      "来客（画外）": {
+        "color": "#3C454C",
+        "dialogue_color": "#F1F3F1"
+      }
+    }
+  },
+  "panel_border_width": 0,
+  "input_image": {
+    "file": "制作成果/格图/PANEL-001-01.png",
+    "sha256": "ac944bd483aa76a66a9cbf5dbfc11461a0bedddd24a49c06374598f2e6fd9cc6",
+    "size": [
+      1024,
+      504
+    ]
+  },
+  "fit": {
+    "method": "ImageOps.fit/LANCZOS",
+    "focus": [
+      0.5,
+      0.5
+    ]
+  },
+  "texts": [
+    {
+      "id": "TEXT-001-01",
+      "kind": "narration",
+      "speaker": "无",
+      "font_file": "NotoSansCJKsc-Regular.otf",
+      "font_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "font_face": [
+        "Noto Sans CJK SC",
+        "Regular"
+      ],
+      "font_size": 34
+    },
+    {
+      "id": "TEXT-001-02",
+      "kind": "dialogue",
+      "speaker": "来客（画外）",
+      "font_file": "NotoSansCJKsc-Regular.otf",
+      "font_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "font_face": [
+        "Noto Sans CJK SC",
+        "Regular"
+      ],
+      "font_size": 34
+    }
+  ],
+  "renderers": {
+    "project_helper_sha256": "976d1413310321993760993b283132706cead63e22f08fd3a6a775ec3c667e8d",
+    "comic_tool_sha256": "f8e2c5749ed9774c740b0227995de214729a50d906f339d5fdba9a402ea48b86"
+  },
+  "output": {
+    "file": "PANEL-001-01.png",
+    "sha256": "de23a93ad6cf89dbb58435f6ad64ec0ad5dcddc952300508bd1724e1ae7d76d7",
+    "size": [
+      984,
+      432
+    ],
+    "mode": "RGB"
+  },
+  "note": "单格局部试排；未核其余格图，不是完整页/话、独立审查或手机平台验收；没有生成格图或上传",
+  "date": "2026-10-25",
+  "based_on_commit": "faa2b873d7e2fae1641ec36c665d7396a4cc275a",
+  "new_model_calls": 0,
+  "raw_image_changed": false,
+  "canonical_storyboards_changed": false,
+  "preserved_source_texts": true,
+  "protected_pixel_regions": {
+    "portrait": [
+      415,
+      0,
+      594,
+      176
+    ],
+    "suli_head_and_central_back": [
+      300,
+      140,
+      490,
+      432
+    ],
+    "suli_hand_and_flower": [
+      445,
+      298,
+      490,
+      420
+    ]
+  },
+  "outside_lettering_bounds_pixel_identical": true,
+  "visual_review": "已看984×432实际探针与360×158近似缩览，正式PNG与所看探针哈希相同；为局部创作自检，非独立审查/实机/平台验收",
+  "source_art_provenance": {
+    "repository": "a206-gif/drama-skills",
+    "commit": "cf408fb5a7d573826f0da4e0a3ef4ac51bddb9f1",
+    "path": "漫画改编/第01话/P1-节哀.png",
+    "git_blob": "84e3469d0ab105eccf2bf71e6fe87382d7e60577",
+    "crop_xyxy": [
+      0,
+      0,
+      1024,
+      504
+    ]
+  },
+  "source_typing_note": "TEXT-001-01是第三人称叙述，TEXT-001-02是来客画外对白；没有女主/男主正文，不为展示专属字体改类型/加台词",
+  "supersedes": "../../出图交接/首格贴字检查-v2.png",
+  "style_application": "沿用v5，不含分隔缝示范：单格输出没有格间白线，也不是一张新增独幅故事页",
+  "runtime": {
+    "python": "3.11.2",
+    "pillow": "11.3.0",
+    "note": "本次实测环境；跨版本需重新核字体、像素与输出SHA，不承诺跨版本字节相同"
+  }
+}

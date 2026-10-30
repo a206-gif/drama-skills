@@ -1,0 +1,175 @@
+{
+  "status": "panel_preview_rendered",
+  "scope": "selected_panel",
+  "episode": "CH002",
+  "checked_previous": "CH001",
+  "episode_pages": 12,
+  "source_page": "PAGE-001",
+  "source_page_panels": 2,
+  "selected_panel": "PANEL-001-01",
+  "selected_media_checked": true,
+  "page_media_checked": false,
+  "episode_media_checked": false,
+  "lettering_mode": "embedded",
+  "visible_labels": false,
+  "storyboard": {
+    "file": "漫画分镜.md",
+    "sha256": "70bceabccd643253bfa8f7fc38c3c15b7c3f4a990f11bf57a69afe5c292cd586"
+  },
+  "layout_sha256": "ff1e0eb71a92f065ac68238ca999420da4ca822998c45e5dca16c804c7b85036",
+  "panel_snapshot": {
+    "id": "PANEL-001-01",
+    "rect": [
+      48,
+      48,
+      984,
+      660
+    ],
+    "image": "制作成果/格图/PANEL-001-01.png",
+    "texts": [
+      {
+        "id": "TEXT-001-01",
+        "rect": [
+          230,
+          212,
+          220,
+          150
+        ],
+        "font_size": 36,
+        "padding": 10,
+        "tail": [
+          475,
+          278
+        ],
+        "breaks": [
+          2
+        ]
+      },
+      {
+        "id": "TEXT-001-02",
+        "rect": [
+          12,
+          444,
+          352,
+          160
+        ],
+        "font_size": 34,
+        "padding": 6,
+        "breaks": [
+          5,
+          15
+        ]
+      }
+    ]
+  },
+  "lettering_snapshot": {
+    "mode": "embedded",
+    "bubble_opacity": 88,
+    "kinds": {
+      "dialogue": {
+        "shape": "oval",
+        "align": "center",
+        "stroke_width": 1,
+        "stroke_color": "#263238",
+        "outline_color": "#FFFFFF"
+      },
+      "thought": {
+        "shape": "rect",
+        "align": "left",
+        "stroke_width": 0,
+        "outline_color": "#FFFFFF"
+      },
+      "narration": {
+        "shape": "rect",
+        "align": "left",
+        "color": "#20282C",
+        "stroke_width": 0,
+        "outline_color": "#FFFFFF"
+      }
+    },
+    "speakers": {
+      "苏梨": {
+        "color": "#843B60",
+        "dialogue_color": "#F2CDD9"
+      },
+      "霍谢山": {
+        "color": "#284F70",
+        "dialogue_color": "#C4DEF1"
+      },
+      "姜月烟": {
+        "color": "#294444",
+        "dialogue_color": "#F1F5F0"
+      },
+      "秦音": {
+        "color": "#654C7C",
+        "dialogue_color": "#DED3EC"
+      },
+      "系统（仅秦音可闻）": {
+        "color": "#3B617E",
+        "dialogue_color": "#D7EAF6",
+        "dialogue_shape": "rect"
+      }
+    }
+  },
+  "panel_border_width": 0,
+  "input_image": {
+    "file": "制作成果/格图/PANEL-001-01.png",
+    "sha256": "555f7232f98527846317bbec20a746e2548027e346c9fd9104509a8b5da9d3ff",
+    "size": [
+      1376,
+      768
+    ]
+  },
+  "fit": {
+    "method": "ImageOps.fit/LANCZOS",
+    "focus": [
+      0.5,
+      0.5
+    ]
+  },
+  "texts": [
+    {
+      "id": "TEXT-001-01",
+      "kind": "dialogue",
+      "speaker": "苏梨",
+      "font_file": "LXGWWenKai-Medium.ttf",
+      "font_sha256": "f4b8a34d1f838fe411540cb7c97b1c384ac9738a876c4104500bc42508b2312a",
+      "font_face": [
+        "LXGW WenKai",
+        "Medium"
+      ],
+      "font_size": 36
+    },
+    {
+      "id": "TEXT-001-02",
+      "kind": "thought",
+      "speaker": "苏梨",
+      "font_file": "LXGWWenKai-Medium.ttf",
+      "font_sha256": "f4b8a34d1f838fe411540cb7c97b1c384ac9738a876c4104500bc42508b2312a",
+      "font_face": [
+        "LXGW WenKai",
+        "Medium"
+      ],
+      "font_size": 34
+    }
+  ],
+  "renderers": {
+    "project_helper_sha256": "976d1413310321993760993b283132706cead63e22f08fd3a6a775ec3c667e8d",
+    "comic_tool_sha256": "f8e2c5749ed9774c740b0227995de214729a50d906f339d5fdba9a402ea48b86"
+  },
+  "output": {
+    "file": "PANEL-001-01.png",
+    "sha256": "4883e8763a8eed7c2b02cc7864ab9caf42e7dab7fede2aa34f066ed4cbc5e7ce",
+    "size": [
+      984,
+      660
+    ],
+    "mode": "RGB"
+  },
+  "note": "单格局部试排；未核其余格图，不是完整页/话、独立审查或手机平台验收；没有生成格图或上传",
+  "this_round_image_generation": {
+    "calls": 3,
+    "receipt": "../../../出图交接/第二话首批/生成来源.json",
+    "note": "上方note仅描述本地单格排字步骤未生图；整轮此前已完成3次图像调用"
+  }
+}
