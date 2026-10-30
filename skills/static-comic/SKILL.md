@@ -201,3 +201,20 @@ python3 {技能目录}/scripts/comic_tool.py render 项目/第001话/排版.json
 收尾复核补充：身份锚、衣装/阶段锚与卡/食物等物件锚分开限用途；按真实掌握/接触连接判物件归属，不因人物站位或一手指向就编成第二次交换。工具未交付请求保原状态；若有独立已允许且准确的既存素材，可按原叙事信息采用不同安全镜别，明确来源和画外边界，不采用未知被拦输出、不声称原请求通过或反复改写绕审核。任务素材就绪、模型产图、审核结果与最终图文验收分别记录。
 
 批量重出后必做设计漂移自检：用PIL把同批sheet拼成带页码标签的蒙太奇（约4列、每格H≈520）一次性查看高清图，逐格对照"分镜出场表+人设锚"核对每格出场者与设计（发色/年龄/服装/在场与否）；发现误画（如拦人者画成错角色）即以锚定强化prompt单独重出该页，并在进度台账注明纠错原因。平行生成批次越大人设漂移概率越高，自检不可省。
+
+## r68 画风基准 v4 与 prompt 模板（2026-10-31 创作者终决）
+
+- 唯一渲染基准=`漫画改编/中段补写/参考/画风基准参考v4-厚涂写实.png`（单张插画、无文字无分格、厚涂写实）；generate_image 的 images 只传它单张。封面-美术盖版-v3.png、v3/v2/v1 基准一律禁用（创作者判旧套画风方向错：prompt 风格描述曾写反）。
+- 每格 prompt 结构=scene 段（无禁词）＋逐字 STYLE LOCK 段＋逐字 NEGATIVE 尾缀：
+  STYLE LOCK:
+  semi-realistic painterly illustration, thick visible impasto brushwork,
+  NO lineart, NO cel shading, oil canvas texture, subtle grain,
+  low-saturation cool palette with warm skin undertones,
+  cinematic soft warm light, soft-edge shadows, shallow depth of field,
+  fine skin texture, wet detailed eyes with catchlights.
+  NEGATIVE:
+  anime, manga, shoujo, cel shading, flat colors, lineart, screentone, chibi,
+  watercolor wash, pastel gradient, cartoon, glossy plastic skin,
+  text, letters, signs, watermark, logo, frame, multiple panels.
+- scene 段禁词：manga, shoujo, anime, cel shading, linework, cartoon, watercolor, pastel（STYLE LOCK/NEGATIVE 两块为逐字模板不受此限）。
+- 出图后必须向创作者报告：实际模型端点名＋单图通道 403 状态；单通道 403 未恢复时禁止自行降级到其他模型/双候选通道，停下汇报。
