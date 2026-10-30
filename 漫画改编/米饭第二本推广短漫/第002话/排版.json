@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "storyboard": "漫画分镜.md",
+  "canvas": {
+    "width": 1080,
+    "height": 1440,
+    "margin": 48
+  },
+  "pages": [
+    {
+      "id": "PAGE-003",
+      "panels": [
+        {
+          "id": "PANEL-003-01",
+          "rect": [48, 48, 984, 380],
+          "image": "制作成果/格图/PANEL-003-01.png",
+          "focus": [0.5, 0.5],
+          "texts": [
+            {
+              "id": "TEXT-003-01",
+              "rect": [30, 20, 650, 80],
+              "font_size": 34,
+              "padding": 16
+            }
+          ]
+        },
+        {
+          "id": "PANEL-003-02",
+          "rect": [48, 452, 984, 430],
+          "image": "制作成果/格图/PANEL-003-02.png",
+          "focus": [0.5, 0.5],
+          "texts": [
+            {
+              "id": "TEXT-003-02",
+              "rect": [30, 20, 500, 80],
+              "font_size": 34,
+              "padding": 16
+            },
+            {
+              "id": "TEXT-003-03",
+              "rect": [30, 320, 600, 80],
+              "font_size": 34,
+              "padding": 16,
+              "tail": [300, 300]
+            }
+          ]
+        },
+        {
+          "id": "PANEL-003-03",
+          "rect": [48, 906, 984, 486],
+          "image": "制作成果/格图/PANEL-003-03.png",
+          "focus": [0.5, 0.5],
+          "texts": [
+            {
+              "id": "TEXT-003-04",
+              "rect": [30, 20, 400, 80],
+              "font_size": 36,
+              "padding": 16,
+              "tail": [220, 120]
+            },
+            {
+              "id": "TEXT-003-05",
+              "rect": [520, 380, 430, 80],
+              "font_size": 34,
+              "padding": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAGE-004",
+      "panels": [
+        {
+          "id": "PANEL-004-01",
+          "rect": [48, 48, 984, 430],
+          "image": "制作成果/格图/PANEL-004-01.png",
+          "focus": [0.5, 0.5],
+          "texts": [
+            {
+              "id": "TEXT-004-01",
+              "rect": [30, 20, 800, 80],
+              "font_size": 34,
+              "padding": 16
+            },
+            {
+              "id": "TEXT-004-02",
+              "rect": [30, 330, 800, 80],
+              "font_size": 34,
+              "padding": 16
+            }
+          ]
+        },
+        {
+          "id": "PANEL-004-02",
+          "rect": [48, 502, 984, 430],
+          "image": "制作成果/格图/PANEL-004-02.png",
+          "focus": [0.5, 0.5],
+          "texts": [
+            {
+              "id": "TEXT-004-03",
+              "rect": [30, 20, 500, 80],
+              "font_size": 36,
+              "padding": 16,
+              "tail": [260, 120]
+            },
+            {
+              "id": "TEXT-004-04",
+              "rect": [600, 320, 350, 80],
+              "font_size": 36,
+              "padding": 16
+            }
+          ]
+        },
+        {
+          "id": "PANEL-004-03",
+          "rect": [48, 956, 984, 436],
+          "image": "制作成果/格图/PANEL-004-03.png",
+          "focus": [0.5, 0.5],
+          "texts": [
+            {
+              "id": "TEXT-004-05",
+              "rect": [30, 20, 800, 80],
+              "font_size": 34,
+              "padding": 16
+            },
+            {
+              "id": "TEXT-004-06",
+              "rect": [30, 120, 500, 80],
+              "font_size": 36,
+              "padding": 16
+            },
+            {
+              "id": "TEXT-004-07",
+              "rect": [600, 120, 350, 80],
+              "font_size": 36,
+              "padding": 16
+            },
+            {
+              "id": "TEXT-004-08",
+              "rect": [30, 310, 920, 100],
+              "font_size": 32,
+              "padding": 16
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
