@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="720" viewBox="0 0 1080 1440">
+<rect width="1080" height="1440" fill="#eae6e0"/>
+<rect x="48" y="48" width="984" height="310" fill="#c9d3de" stroke="#303943" stroke-width="4"/>
+<text x="72" y="103" font-family="sans-serif" font-size="31" fill="#263543">PANEL-002-01 </text>
+<text x="72" y="153" font-family="sans-serif" font-size="33" fill="#263543">已删除邮件</text>
+<text x="72" y="333" font-family="sans-serif" font-size="23" fill="#263543">示意格 · 非成图</text>
+<rect x="48" y="370" width="984" height="360" fill="#aebbc9" stroke="#303943" stroke-width="4"/>
+<text x="72" y="425" font-family="sans-serif" font-size="31" fill="#263543">PANEL-002-02 </text>
+<text x="72" y="475" font-family="sans-serif" font-size="33" fill="#263543">空白的记录</text>
+<text x="72" y="705" font-family="sans-serif" font-size="23" fill="#263543">示意格 · 非成图</text>
+<rect x="48" y="742" width="486" height="650" fill="#d7c9bd" stroke="#303943" stroke-width="4"/>
+<text x="72" y="797" font-family="sans-serif" font-size="31" fill="#263543">PANEL-002-03 </text>
+<text x="72" y="847" font-family="sans-serif" font-size="33" fill="#263543">关机走动</text>
+<text x="72" y="1367" font-family="sans-serif" font-size="23" fill="#263543">示意格 · 非成图</text>
+<rect x="546" y="742" width="486" height="650" fill="#bcc9c5" stroke="#303943" stroke-width="4"/>
+<text x="570" y="797" font-family="sans-serif" font-size="31" fill="#263543">PANEL-002-04 </text>
+<text x="570" y="847" font-family="sans-serif" font-size="33" fill="#263543">手贴墙面</text>
+<text x="570" y="1367" font-family="sans-serif" font-size="23" fill="#263543">示意格 · 非成图</text>
+</svg>

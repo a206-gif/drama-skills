@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="720" viewBox="0 0 1080 1440">
+<rect width="1080" height="1440" fill="#eae6e0"/>
+<rect x="48" y="48" width="984" height="280" fill="#c9d3de" stroke="#303943" stroke-width="4"/>
+<text x="72" y="103" font-family="sans-serif" font-size="31" fill="#263543">PANEL-002-01 </text>
+<text x="72" y="153" font-family="sans-serif" font-size="33" fill="#263543">提问</text>
+<text x="72" y="303" font-family="sans-serif" font-size="23" fill="#263543">示意格 · 非成图</text>
+<rect x="48" y="340" width="984" height="310" fill="#aebbc9" stroke="#303943" stroke-width="4"/>
+<text x="72" y="395" font-family="sans-serif" font-size="31" fill="#263543">PANEL-002-02 </text>
+<text x="72" y="445" font-family="sans-serif" font-size="33" fill="#263543">律师回答</text>
+<text x="72" y="625" font-family="sans-serif" font-size="23" fill="#263543">示意格 · 非成图</text>
+<rect x="48" y="662" width="984" height="400" fill="#d7c9bd" stroke="#303943" stroke-width="4"/>
+<text x="72" y="717" font-family="sans-serif" font-size="31" fill="#263543">PANEL-002-03 </text>
+<text x="72" y="767" font-family="sans-serif" font-size="33" fill="#263543">告别与不安</text>
+<text x="72" y="1037" font-family="sans-serif" font-size="23" fill="#263543">示意格 · 非成图</text>
+<rect x="48" y="1074" width="984" height="318" fill="#bcc9c5" stroke="#303943" stroke-width="4"/>
+<text x="72" y="1129" font-family="sans-serif" font-size="31" fill="#263543">PANEL-002-04 </text>
+<text x="72" y="1179" font-family="sans-serif" font-size="33" fill="#263543">回家查资料</text>
+<text x="72" y="1367" font-family="sans-serif" font-size="23" fill="#263543">示意格 · 非成图</text>
+</svg>
