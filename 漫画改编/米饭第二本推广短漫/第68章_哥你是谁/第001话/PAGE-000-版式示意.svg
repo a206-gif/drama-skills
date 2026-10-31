@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="720" viewBox="0 0 1080 1440">
+<rect width="1080" height="1440" fill="#eae6e0"/>
+<rect x="48" y="48" width="984" height="480" fill="#dfd0bf" stroke="#303943" stroke-width="4"/>
+<text x="72" y="103" font-family="sans-serif" font-size="31" fill="#263543">PANEL-000-01</text>
+<text x="72" y="153" font-family="sans-serif" font-size="33" fill="#263543">成年两人 · 家中同框</text>
+<text x="72" y="503" font-family="sans-serif" font-size="23" fill="#263543">几何示意 · 非成图</text>
+<rect x="48" y="540" width="470" height="430" fill="#c9d3de" stroke="#303943" stroke-width="4"/>
+<text x="72" y="595" font-family="sans-serif" font-size="31" fill="#263543">PANEL-000-02</text>
+<text x="72" y="645" font-family="sans-serif" font-size="33" fill="#263543">沈安近景</text>
+<text x="72" y="945" font-family="sans-serif" font-size="23" fill="#263543">几何示意 · 非成图</text>
+<rect x="530" y="540" width="502" height="430" fill="#b8c5cc" stroke="#303943" stroke-width="4"/>
+<text x="554" y="595" font-family="sans-serif" font-size="31" fill="#263543">PANEL-000-03</text>
+<text x="554" y="645" font-family="sans-serif" font-size="33" fill="#263543">沈渊近景</text>
+<text x="554" y="945" font-family="sans-serif" font-size="23" fill="#263543">几何示意 · 非成图</text>
+<rect x="48" y="982" width="984" height="410" fill="#aebbc9" stroke="#303943" stroke-width="4"/>
+<text x="72" y="1037" font-family="sans-serif" font-size="31" fill="#263543">PANEL-000-04</text>
+<text x="72" y="1087" font-family="sans-serif" font-size="33" fill="#263543">法庭外景 · 转场</text>
+<text x="72" y="1367" font-family="sans-serif" font-size="23" fill="#263543">几何示意 · 非成图</text>
+</svg>
